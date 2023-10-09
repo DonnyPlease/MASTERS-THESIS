@@ -1,0 +1,1 @@
+print('MAIN PROGRAM STARTED')
