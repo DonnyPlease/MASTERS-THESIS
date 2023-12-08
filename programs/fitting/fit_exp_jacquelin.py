@@ -200,7 +200,7 @@ class FitExp():
             print("Cannot calculate R-squared statistic.")
             
         y_fit = self.predict()
-        res = self.y - y_fit
+        res = np.log(self.y+1) - np.log(y_fit+1)
         print("     Mean of residuals = ", np.mean(res))
         print("     RMSE = ",np.sqrt(np.mean(np.power(res, 2))))
         
@@ -248,7 +248,7 @@ class FitExp():
         Returns:
             np.array: prediction of the fitted function for the given x values.
         """
-        if x == None:  # if x is not given, use the x values that were used
+        if x is None:  # if x is not given, use the x values that were used
             x = self.x  # to fit the function
 
         prediction = np.zeros(len(x))  # initialize prediction
@@ -285,7 +285,7 @@ class FitExp():
         None
         """
         y_fit = self.predict()  # calculate the prediction
-        res = self.y - y_fit  # calculate the residuals
+        res = np.log(self.y+1) - np.log(y_fit+1)  # calculate the residuals TODO: residuals ->> log(residuals)
         
         # create the plot
         fig, (ax1,ax2) = plt.subplots(2,1,
@@ -298,13 +298,10 @@ class FitExp():
         # name the axes and the title
         ax1.set_xlabel('E [keV]')
         ax1.set_ylabel('Electron counts')
-        ax1.set_title('{}-exponential fit'.format(self.exp_count))
         
         # set the scale of the y axis
         if log: 
             ax1.set_yscale('log')
-            ax1.set_title('''{}-exponential fit 
-                          (log scale)'''.format(self.exp_count))
         
         # plot the residuals if the keyword parameter is set to True
         if residuals:
@@ -315,12 +312,17 @@ class FitExp():
         
         plt.tight_layout()  # make sure the labels are not cut off
         
-        # show or save the plot
+        # show the plot if the keyword parameter is set to True
+        
         if show:
             plt.show()
+            
+        # save the plot if the keyword parameter is set to True    
         if save:
-            plt.savefig(save_name)
-        
+            try:
+                plt.savefig(save_name)
+            except:
+                print("Could not save the plot.")
         # close the plot to avoid memory leaks
         plt.close()
 
