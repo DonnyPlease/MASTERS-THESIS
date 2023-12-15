@@ -200,9 +200,13 @@ class FitExp():
             print("Cannot calculate R-squared statistic.")
             
         y_fit = self.predict()
-        res = np.log(self.y+1) - np.log(y_fit+1)
-        print("     Mean of residuals = ", np.mean(res))
-        print("     RMSE = ",np.sqrt(np.mean(np.power(res, 2))))
+        try:
+            res = np.log(self.y+1) - np.log(y_fit+1)
+            print("     Mean of residuals = ", np.mean(res))
+            print("     RMSE = ",np.sqrt(np.mean(np.power(res, 2))))
+        except:
+            print("     Mean of residuals could not be calculated because of the logs")
+            print("     It is possible that the predicted values are negative if the constant is negative")
         
         print("#"*50)
         print("#"*50)
