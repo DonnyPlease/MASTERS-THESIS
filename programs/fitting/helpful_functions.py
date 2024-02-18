@@ -31,7 +31,7 @@ def create_filenames(params):
                                          int(sim[2])).replace('.','') 
             for sim in params]
 
-def plot_histogram(bins,counts,prediction,t_hot,save_name,vertical_at=0):
+def plot_histogram(bins,counts,prediction,t_hot,save_name,exp_count,vertical_at=0):
     """
     Plot the histogram, the prediction.
     """
@@ -47,13 +47,16 @@ def plot_histogram(bins,counts,prediction,t_hot,save_name,vertical_at=0):
         print("Could not plot the fitted function.")
         
     # If vertical_at is not 0, plot a vertical line at that point
-    if vertical_at != 0:
-        ax1.axvline(x=bins[vertical_at], c='g', ls='--')    
+    try:
+        if vertical_at != 0:
+            ax1.axvline(x=bins[vertical_at], c='g', ls='--')    
+    except:
+        print("Could not draw the vertical line.")
         
     # name the axes and the title
     ax1.set_xlabel('E [keV]')
     ax1.set_ylabel('Electron counts')
-    ax1.set_title('{}-exponential fit'.format(1))
+    # ax1.set_title('{}-exponential fit'.format(1))
     
     
     text = r'$T_{hot}$'+': {:.2f} keV'.format(t_hot)
@@ -62,7 +65,7 @@ def plot_histogram(bins,counts,prediction,t_hot,save_name,vertical_at=0):
     # set the scale of the y axis to log
     ax1.set_yscale('log')
     ax1.set_title('''{}-exponential fit 
-                    (log scale)'''.format(1))
+                    (log scale)'''.format(exp_count))
     
     plt.tight_layout()  # make sure the labels are not cut off
     
@@ -75,5 +78,23 @@ def plot_histogram(bins,counts,prediction,t_hot,save_name,vertical_at=0):
     # close the plot to avoid memory leaks
     plt.close()
     
+    
+def custom_rmse(jacquelin_fit,x,y):
+    f = jacquelin_fit  # rename
+    
+    condition = x < (0.9*x[-1])
+    x = x[condition]
+    y = y[condition]
+    
+    y_fit = f.predict(x)  # predict
+    
+    condition = y_fit>0
+    y = y[condition]
+    y_fit = y_fit[condition]
+    
+    res = np.log(y) - np.log(y_fit)  # logarithmic residuals
+    rmse = np.sqrt(np.mean(np.power(res, 2)))  # root mean square of residuals
+    return rmse
+        
 if __name__ == "__main__":
     pass
