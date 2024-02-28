@@ -1,6 +1,8 @@
-- pocitat histogramy z obidvoch suborov surovych dat
-- negativne teploty vo fitoch - analyzovat
-- experimentovat s tou funkciou na pocitanie rezidui
-- refaktorovat, aby sme mohli vzdy analyzovat konkretne jeden histogram
 
- 
+- Experimentovat s tou funkciou na pocitanie rezidui
+
+- Doplnit moznost jednoducho urezat histogram zprava
+
+- Iterativne rezat koniec histogramov a sledovat vyvoj teplot
+
+- Sediet a rozmyslat co dalej

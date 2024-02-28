@@ -1,88 +1,142 @@
 import numpy as np
 from matplotlib import pyplot as plt
-from helpful_functions import load_histogram, load_parameters, create_filenames
+from helpful_functions import load_histogram, load_parameters
+from helpful_functions import create_filenames, create_filename
 from helpful_functions import plot_histogram
 from helpful_functions import custom_rmse
-PREFIX = 'old_data/trimmed_histograms/'
+
+HISTOGRAMS_SOURCE_FOLDER_PATH = 'old_data/trimmed_histograms/'
+FITTED_HISTOGRAMS_FOLDER_NAME = 'fitting/fitted_histograms_without_constant/'
 
 from fit_exp_jacquelin import FitExp
 
-def fit_reduced(new_bins,new_counts,exp_count,name,failed,plots,plot=True):
+def fit_reduced(bins, counts, original_bins, original_counts, exp_count, file_name, plot=True):
     t_hot = 0
     rmse = 0
+    success = True
+    include_constant = False
+    jacquelin_fit = FitExp(bins, counts, exp_count=exp_count, constant=include_constant)
     try:
-        f = FitExp(new_bins, new_counts, exp_count=exp_count, constant=True)
-        params = f.fit(verbose=False)
-        rmse = custom_rmse(f,new_bins,new_counts)
-        print("RMSE for ", exp_count, " exp. starting with energy ", new_bins[0], "  : ",rmse)
-        t_hot = - 1./max(params[2::2])
+        params = jacquelin_fit.fit(verbose=False)
+        rmse = custom_rmse(jacquelin_fit, bins, counts)
+        print("RMSE for ", exp_count, " exp. starting with energy ", bins[0], "  : ", rmse)
+        
+        highest_negative_exponent = 1
+        if include_constant:
+            highest_negative_exponent = max([p for p in params[2::2] if p < 0])
+        else:
+            highest_negative_exponent = max([p for p in params[1::2] if p < 0])
+            
+        if highest_negative_exponent is None:
+            raise Exception("Fit is bad - it has no nonnegative temperature.")
+        t_hot = -1./highest_negative_exponent
     except:
-        failed.append((files_names[i],exp_count))
+        success = False
         
     start_index = 1
     try:
-        start_index = np.log(params[1]/params[3])/(params[4]-params[2]) # log(a1/a2)/(b2-b1)
+        if include_constant:
+            start_index = np.log(params[1]/params[3])/(params[4]-params[2]) # log(a1/a2)/(b2-b1)
+        else:
+            start_index = np.log(params[0]/params[2])/(params[3]-params[1])+20 # log(a1/a2)/(b2-b1)+
         start_index = int(start_index)
     except:
         print("new start index could not be calculated")
-        start_index = 0
+        start_index = 1
 
-    
     # Plot the histogram and the fitted function and save it
     if plot:
         try:
-            t_hot = -  1./max(params[2::2])
-            plot_histogram(bins, counts, f.predict(bins),t_hot, name,exp_count,vertical_at=start_index)
+            plot_histogram(original_bins, original_counts, 
+                           jacquelin_fit,
+                           t_hot, 
+                           file_name,
+                           exp_count,
+                           vertical_at=[start_index,bins[0],bins[-1]])
             print("suucessfuly plotted and saved")
-            plots.append((name,exp_count))
         except:
             print("Something happened when trying to plot:")
-            print("\t\tname:\t", name)
+            print("\t\tname:\t", file_name)
             print("\t\texp_count:\t", exp_count)
 
         
-    return start_index, t_hot, rmse
+    return start_index, t_hot, rmse, success
         
+def cut_histogram_from_left(bins, counts, start_index):
+    return bins[start_index:], counts[start_index:]
 
+def cut_histogram_from_right(bins, counts, percentage_of_max_energy):
+    condition = bins < percentage_of_max_energy*bins[-1]
+    return bins[condition], counts[condition]
 
+def fit_one_histogram(folder_name, sequence = [3,2], cut_each_iteration_percentage=0.10):    
+    success_list = []
+    # Load histogram and set start_index
+    bins, counts = load_histogram(HISTOGRAMS_SOURCE_FOLDER_PATH + folder_name)
+    
+    
+    minimum = np.min(counts)
+    counts = np.array(counts) - minimum
+     
+    start_index = 0
+    
+    for i, exp_count in enumerate(sequence):
+        print(i, " ", exp_count, " ", start_index)
+        
+        # Cut from left based on starting index because of the procedure
+        bins_for_fit, counts_for_fit = cut_histogram_from_left(bins, counts, start_index)
+        
+        # Cut from right based on the parameter
+        bins_for_fit, counts_for_fit = cut_histogram_from_right(bins_for_fit, counts_for_fit, 1-i*cut_each_iteration_percentage)
+        
+        # Cut from left by 20 in case the previous fit was not successful
+        for j in range(len(success_list)):
+            if not success_list[-j-1][0]:
+                bins_for_fit, counts_for_fit = cut_histogram_from_left(bins_for_fit, counts_for_fit, 10*(j+1))
+                print("Moving start")
+            else: 
+                break
+        
+        
+        histogram_name = FITTED_HISTOGRAMS_FOLDER_NAME+folder_name[:-1]+'_{}.pdf'.format(i)
+        start_index_new, t_hot, rmse, success = fit_reduced(bins_for_fit, 
+                                            counts_for_fit,
+                                            bins,
+                                            counts,
+                                            exp_count=exp_count, 
+                                            file_name=histogram_name,
+                                            plot=True)
+        if exp_count == 2:
+            pass
+        else:
+            start_index = start_index_new
+            
+        with open("logs.txt", "a") as logs:
+            logs.write("{}\t,{:.4f}\t,{:.4f}\t,{}\n".format(histogram_name, t_hot, rmse, start_index))
+
+        success_list.append((success,exp_count))
+        
+    return success_list
 
 if __name__ == "__main__":
     params = load_parameters('old_data/params.txt')
     files_names = create_filenames(params)
-    print(PREFIX + files_names[0])
     
     temp_file = open('dataset.txt','w')
-    
     
     # For every set of parameters, load the histogram and fit it
     # with decreasing number of bins (start with start_index, which is 
     # updated after every iteration)) 
     failed = []
-    plots =[]
-    for i in range(len(files_names)):  # For every histogram
-        # if i > 20: break
+    for i in range(len(files_names)):  # For every histogram 
         print(files_names[i])
         
-        # Load histogram
-        bins, counts = load_histogram(PREFIX + files_names[i])
-
-        start_index = 0
+        success_list = fit_one_histogram(files_names[i])
         
-        name = 'fitting/fitted_histograms/'+files_names[i][:-1]+'_3.pdf'
-        start_index, t_hot, rmse = fit_reduced(bins[start_index:],counts[start_index:],
-                                  exp_count=3,name=name,failed=failed,plots=plots,plot=True)
+        for (success, count) in success_list:
+            if not success:
+                failed.append(files_names[i] + f"{count}")       
         
-        with open("logs.txt","a") as logs:
-            logs.write("{},{},{},{}\n".format(name,t_hot,rmse,start_index))
-        
-        name = 'fitting/fitted_histograms/'+files_names[i][:-1]+'_2.pdf'
-        start_index, t_hot, rmse = fit_reduced(bins[start_index:],counts[start_index:],
-                                  exp_count=2,name=name,failed=failed,plots=plots,plot=True)
-        
-        with open("logs.txt","a") as logs:
-            logs.write("{},{},{},{}\n".format(name,t_hot,rmse,start_index))
-
-       
     print("FAILED:")
     with open("failed.txt","w") as file:    
         for f in failed:  
@@ -91,14 +145,7 @@ if __name__ == "__main__":
             print(f)
             
     print("\n")
-    
-    print("PLOTTED:")      
-    with open("plotted.txt","w") as file:
-        for p in plots:
-            file.write(str(p))
-            file.write('\n')  
-            print(p)
-            
+              
     print("Failed: ", len(failed)) 
         
             

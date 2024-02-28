@@ -31,9 +31,9 @@ if __name__ == "__main__":
                 name = "hist_1e{}_{:.2f}_{}".format(i,l,a).replace(".","")
                 print(name) 
                 
-                with open('histograms/'+name+"/bins.txt", 'r') as file:
+                with open('original_histograms/'+name+"/bins.txt", 'r') as file:
                     bins = [float(line.strip()) for line in file]
-                with open('histograms/'+name+"/counts.txt", 'r') as file:
+                with open('original_histograms/'+name+"/counts.txt", 'r') as file:
                     counts = [float(line.strip()) for line in file]    
 
                 x = np.array([(bins[i]+bins[i+1])/2 for i in range(len(bins)-1)])
@@ -46,8 +46,8 @@ if __name__ == "__main__":
                 x = x[:max_index]
                 y = y[:max_index]
                 new_ind = np.where(y>0)[0]
-                x = x[new_ind][15:-10]
-                y = y[new_ind][15:-10]
+                x = x[new_ind][15:-50]
+                y = y[new_ind][15:-50]
                 
                 path = "trimmed_histograms/"+name
                 try:
