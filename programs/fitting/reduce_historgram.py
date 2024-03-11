@@ -5,6 +5,8 @@ from helpful_functions import create_filenames, create_filename
 from helpful_functions import plot_histogram
 from helpful_functions import custom_rmse
 
+from Dataset import DatasetRecord, DatasetUtils
+
 HISTOGRAMS_SOURCE_FOLDER_PATH = 'old_data/trimmed_histograms/'
 FITTED_HISTOGRAMS_FOLDER_NAME = 'fitting/fitted_histograms_without_constant/'
 
@@ -59,6 +61,31 @@ def fit_reduced(bins, counts, original_bins, original_counts, exp_count, file_na
             print("\t\tname:\t", file_name)
             print("\t\texp_count:\t", exp_count)
 
+    try:
+        if exp_count == 2 and not include_constant:
+            with open('dataset/auto_fit.txt','a') as dataset:
+                one_data = DatasetRecord()
+                one_data.I = file_name.split('_')[-4]
+                
+                one_data.L = file_name.split('_')[-3]
+                one_data.L = one_data.L[:1] + '.' + one_data.L[1:]
+                
+                one_data.alpha = file_name.split('_')[-2]
+                one_data.t_hot = str(t_hot)
+                one_data.min_energy = str(bins[0])
+                one_data.max_energy = str(bins[-1])
+                one_data.type = 'j2_wo'
+                one_data.a = str(params[0])
+                one_data.b = str(params[1])
+                one_data.c = str(params[2])
+                one_data.d = str(params[3])
+                one_data.e = str(0)
+                one_data.f = str(0)
+                one_data.g = str(0)
+                
+                dataset.write(one_data.to_text())
+    except:
+        print("some error 444")
         
     return start_index, t_hot, rmse, success
         
