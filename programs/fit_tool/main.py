@@ -163,7 +163,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         L = "{:.2f}".format(hist.L)
         alpha = str(hist.alpha)
         key = (I,L,alpha)
-        
+        print(key)
         if self.autofit_dataset.get(key) is not None:
             self.current_autofit = self.autofit_dataset[key]
         else:
