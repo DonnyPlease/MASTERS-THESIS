@@ -22,7 +22,7 @@ class DatasetRecord():
         self.g = '0'
 
     def make_key(self):
-        return (self.I, self.L, self.alpha)
+        return (self.I, "{:.2f}".format(float(self.L)), self.alpha)
     
     def __hash__(self):
         return hash((self.I, self.L, self.alpha))
