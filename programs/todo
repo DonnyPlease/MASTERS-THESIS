@@ -1,8 +1,2 @@
+Find out how to manually define a loss function that would guarantee an ascending trend in the intensity parameter
 
-- Experimentovat s tou funkciou na pocitanie rezidui
-
-- Doplnit moznost jednoducho urezat histogram zprava
-
-- Iterativne rezat koniec histogramov a sledovat vyvoj teplot
-
-- Sediet a rozmyslat co dalej

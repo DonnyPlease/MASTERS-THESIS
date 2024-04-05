@@ -3,6 +3,7 @@ import sys, os
 import numpy as np
 from PyQt6 import QtWidgets, uic
 from PyQt6.QtWidgets import QVBoxLayout, QFileDialog, QTableWidgetItem
+from PyQt6.QtCore import Qt
 
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
@@ -18,7 +19,11 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         super(MainWindow, self).__init__(*args, **kwargs)
         self.setupUi(self)
 
-        
+        # # Replace list view with custom list view
+        # self.listViewHistograms = ListWidgetHistograms()
+        # self.layout.replaceWidget(self.listViewHistograms, self.listWidgetHistograms)
+        # self.deleteLater(self.listViewHistograms)
+         
         # Connects
         self.pushButtonSetRange.clicked.connect(self.set_range)
         self.pushButtonRemoveRange.clicked.connect(self.clear_range)
@@ -56,11 +61,21 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.current_autofit = None
         self.current_custom_fit = None
         
-        self.example_plot()
+        self.initialize_folders()
 
+    def keyPressEvent(self, event):
+        if event.key() == Qt.Key.Key_Return or event.key() == Qt.Key.Key_Enter:
+            # Check if QListWidget has focus
+            if self.listViewHistograms.hasFocus():
+                selected_item = self.listViewHistograms.currentItem()
+                self.try_select_item(selected_item)
+        else:
+            super().keyPressEvent(event)
+    
     def choose_folder(self):
         folder_path = QFileDialog.getExistingDirectory(self, "Select a folder")
         self.histograms_folder = folder_path
+        print(folder_path)
         if folder_path:
             self.populate_list(folder_path)
             self.set_text_label_folder_path()
@@ -97,6 +112,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.listViewHistograms.addItems(folders)
 
     def on_item_double_clicked(self, item):
+        self.try_select_item(item)
+        
+    def try_select_item(self, item):
         try:
            self.new_item_chosen(item) 
         except:
@@ -129,11 +147,14 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         folder_path = self.histograms_folder + '/' + folder_name
         self.mpl_canvas.histogram.load_from_folder(folder_path)
     
-    def example_plot(self):
-       x = self.mpl_canvas.histogram.bins = np.linspace(0, 7, 100)
-       self.mpl_canvas.histogram.counts = np.sin(x)
-       self.mpl_canvas.draw_histogram()
-
+    def initialize_folders(self):
+        self.histograms_folder = 'C:/Users/samue/OneDrive/Dokumenty/FJFI/MASTERS-THESIS/programs/old_data/trimmed_histograms'
+        self.populate_list(self.histograms_folder)
+        
+        self.dataset_folder = 'C:/Users/samue/OneDrive/Dokumenty/FJFI/MASTERS-THESIS/programs/dataset'
+        self.load_dataset()
+        
+        
     def set_range(self):
         self.mpl_canvas.draw_histogram()
         self.mpl_canvas.setting_range = 1

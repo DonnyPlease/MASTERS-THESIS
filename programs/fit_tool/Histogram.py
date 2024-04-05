@@ -1,5 +1,5 @@
 import numpy as np
-
+from Histogram_utils import bins_from_bins_edges
 
 class Histogram():
     def __init__(self):
@@ -19,6 +19,8 @@ class Histogram():
     def load_from_folder(self, path):
         self.bins = np.loadtxt(path+'/bins.txt')
         self.counts = np.loadtxt(path+'/counts.txt')
+        if self.bins.shape[0] == self.counts.shape[0]+1:
+            self.bins = bins_from_bins_edges(self.bins)
         self.folder_name = path
         self.set_parameters_from_folder_name()
     
