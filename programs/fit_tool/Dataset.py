@@ -90,11 +90,19 @@ class DatasetUtils():
             for line in lines:
                 one_data = DatasetRecord(line)
                 autofit_dataset[one_data.make_key()] = one_data
-                print(one_data.make_key())
+                # print(one_data.make_key())
         return final_dataset, autofit_dataset
     
     def overwrite_final(folder, final_dataset):
         with open(folder+'/'+'final_dataset.txt', 'w') as f:
             for key, value in final_dataset.items():
                 f.write(value.to_text())
-            
+    
+    def dataset_to_dict(dataset):
+        data = {"1e19": [], "1e18": [], "1e17": []}
+        for key, item in dataset.items():
+            i, l, alpha = key
+            l = float(l)
+            alpha = float(alpha)
+            data[i].append((l,alpha,item.t_hot))
+        return data 
