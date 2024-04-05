@@ -8,8 +8,6 @@ dataset, _ = DatasetUtils.load_datasets_to_dicts('dataset')
 
 data = DatasetUtils.dataset_to_dict(dataset)
     
-# print(data["1e18"])
-current = "1e17"
 for current in ["1e17", "1e18", "1e19"]:
     # Extract the data points
     x = [item[0] for item in data[current]]

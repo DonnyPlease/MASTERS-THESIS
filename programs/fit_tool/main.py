@@ -217,11 +217,17 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.populate_table_column_with_data(self.custom_fit_result, 1)
         
     def save_custom_to_dict(self):
-        key = self.custom_fit_result.make_key()
-        print("Saving with key:")
-        print(key)
-        self.final_dataset[key] = self.custom_fit_result
-        self.save_final_dataset()
+        print("Saving ", end='')
+        try:
+            key = self.custom_fit_result.make_key()
+            print("with key:")
+            print(key)
+        
+            self.final_dataset[key] = self.custom_fit_result
+            self.save_final_dataset()
+            print("Save successful")
+        except:
+            print("failed")
         
     def save_original_fit_to_final(self):
         key = self.current_autofit.make_key()
