@@ -43,7 +43,7 @@ class Histogram():
         pass
 
     def fit(self):
-        pass
+        pass 
     
     def get_file_name(self):
         return self.file_name

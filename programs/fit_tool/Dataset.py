@@ -3,9 +3,6 @@ from collections import UserDict
 
 class DatasetRecord():
     def __init__(self, text_line = ''):
-        if text_line != '':
-            self.initialize_from_text(text_line)
-            return
         self.I = 0
         self.L = 0
         self.alpha = 0
@@ -20,6 +17,17 @@ class DatasetRecord():
         self.e = '0'
         self.f = '0'
         self.g = '0'
+        self.a_stdev = '0'
+        self.b_stdev = '0'
+        self.c_stdev = '0'
+        self.d_stdev = '0'
+        self.e_stdev = '0'
+        self.f_stdev = '0'
+        self.g_stdev = '0'
+        self.t_hot_stdev = '0'
+        if text_line != '':
+            self.initialize_from_text(text_line)
+            
 
     def make_key(self):
         return (self.I, "{:.2f}".format(float(self.L)), self.alpha)
@@ -52,6 +60,15 @@ class DatasetRecord():
         self.e = params[11]
         self.f = params[12]
         self.g = params[13]
+        self.a_stdev = params[14]
+        self.b_stdev = params[15]
+        self.c_stdev = params[16]
+        self.d_stdev = params[17]
+        self.e_stdev = params[18]
+        self.f_stdev = params[19]
+        self.g_stdev = params[20]
+        self.t_hot_stdev = params[21]
+         
 
     def to_text(self):
         params = [self.I, 
@@ -67,7 +84,15 @@ class DatasetRecord():
                   self.d,
                   self.e,
                   self.f,
-                  self.g]
+                  self.g,
+                  self.a_stdev,
+                  self.b_stdev,
+                  self.c_stdev,
+                  self.d_stdev,
+                  self.e_stdev,
+                  self.f_stdev,
+                  self.g_stdev,
+                  self.t_hot_stdev]
         line = ''
         for p in params:
             line += p + ','

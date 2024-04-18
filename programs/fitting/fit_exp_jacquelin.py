@@ -230,6 +230,8 @@ class FitExp():
         F = self._calculate_linearized_vector(integrals)
         b_1 = np.dot(np.linalg.inv(np.matmul(F, np.transpose(F))), 
                                                     np.matmul(F, self.y))    
+        
+        self.std_errors = self.std_error_of_fit_parameters(F, b_1)
         pol_coefs = self._get_polynomial_coefs(b_1)
         roots = np.roots(pol_coefs)
         G = self._calculate_vector_of_exponentials(roots)
@@ -240,7 +242,31 @@ class FitExp():
         if verbose: self.show_results()
 
         return self.params
-        
+    
+    def std_error_of_fit_parameters(self, F, b_1):
+        # Calculate Residuals
+        residuals = self.y - np.dot(F, b_1)
+
+        # Compute Residual Sum of Squares (RSS)
+        RSS = np.sum(residuals**2)
+
+        # Estimate Variance of Residuals
+        n = len(self.y)
+        k = F.shape[1]  # Number of predictors (columns of F), including intercept
+        variance_residuals = RSS / (n - k - 1)
+
+        # Compute Variance-Covariance Matrix
+        var_cov_matrix = np.linalg.inv(np.dot(F.T, F)) * variance_residuals
+
+        # Extract Diagonal Elements
+        variances = np.diag(var_cov_matrix)
+
+        # Take Square Roots
+        return np.sqrt(variances)
+    
+    def std_error_of_final_coeffients(self, std_errors):
+        pass  
+      
     def predict(self, x=None):
         """Function that calculates the prediction of the fitted function
         based on the fitted parameters.

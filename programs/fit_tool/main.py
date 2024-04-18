@@ -200,7 +200,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.tableWidget.setItem(0,col,QTableWidgetItem(data.I)) 
         self.tableWidget.setItem(1,col,QTableWidgetItem(data.L)) 
         self.tableWidget.setItem(2,col,QTableWidgetItem(data.alpha)) 
-        self.tableWidget.setItem(3,col,QTableWidgetItem(data.t_hot)) 
+        self.tableWidget.setItem(3,col,QTableWidgetItem(data.t_hot+' ± '+data.t_hot_stdev)) 
         self.tableWidget.setItem(4,col,QTableWidgetItem(data.type)) 
         self.tableWidget.setItem(5,col,QTableWidgetItem(data.min_energy)) 
         self.tableWidget.setItem(6,col,QTableWidgetItem(data.max_energy)) 

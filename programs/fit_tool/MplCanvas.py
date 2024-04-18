@@ -1,4 +1,5 @@
 import numpy as np
+import statsmodels.api as sm
 
 from Histogram import Histogram
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
@@ -70,18 +71,22 @@ class MplCanvas(FigureCanvas):
         y /= 1e10
         # popt, pcov = curve_fit(self.expoonential_function, x ,y)
         # a, b = popt
-        a, b = self.fit_linearly_using_log(x, y)
+        a, b, a_stdev, b_stdev = self.fit_linearly_using_log(x, y)
+        
         a *= 1e10
         custom_fit_result = DatasetRecord()
         custom_fit_result.I = "1e"+str(self.histogram.I)
         custom_fit_result.L = str(self.histogram.L)
         custom_fit_result.alpha = str(self.histogram.alpha)
-        custom_fit_result.t_hot = str(-1/b)
+        custom_fit_result.t_hot = f"{-1/b:.4f}"
         custom_fit_result.type = 'e1'
         custom_fit_result.min_energy = str(self.histogram.left_cut) if self.histogram.left_cut is not None else int(np.min(x))
         custom_fit_result.max_energy = str(self.histogram.right_cut) if self.histogram.right_cut is not None else int(np.max(x))
         custom_fit_result.a = str(a)
         custom_fit_result.b = str(b)
+        custom_fit_result.a_stdev = str(a_stdev)
+        custom_fit_result.b_stdev = str(b_stdev)
+        custom_fit_result.t_hot_stdev = f"{b_stdev/b**2:.4f}"
         self.custom_fit_result = custom_fit_result
         self.draw_histogram()
         return custom_fit_result
@@ -93,14 +98,19 @@ class MplCanvas(FigureCanvas):
     
     def fit_linearly_using_log(self, x, y):
         y_log = np.log(y)
-        x_reshaped = x.reshape(-1, 1)
-        regression_model = LinearRegression()
-        regression_model.fit(x_reshaped, y_log)
-
-        b = regression_model.coef_[0]
-        ln_a = regression_model.intercept_
-        a = np.exp(ln_a)
-        return a,b
+        x_for_fit = x.reshape(-1, 1)
+        x_for_fit = sm.add_constant(x_for_fit)
+        model = sm.OLS(y_log, x_for_fit)
+        results = model.fit()
+        
+        a = results.params[0]
+        b = results.params[1]
+        a_stdev = results.bse[0]
+        b_stdev = results.bse[1]
+        A = np.exp(a)  # Transform intercept to exponential form
+        b = b  # Slope is the same
+        A_stdev = a_stdev*A  # Transform intercept to exponential form
+        return A,b, A_stdev, b_stdev
     
     def expoonential_function(self, x, a, b):
         return a*np.exp(b*x)
