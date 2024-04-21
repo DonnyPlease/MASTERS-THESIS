@@ -13,8 +13,9 @@ from helpful_functions import custom_rmse
 from dataset.Dataset import DatasetRecord, DatasetUtils
 from fit_exp_jacquelin_refactored import FitExp
 
-HISTOGRAMS_SOURCE_FOLDER_PATH = 'old_data/trimmed_histograms/'
-FITTED_HISTOGRAMS_FOLDER_NAME = 'fitting/fitted_histograms_without_constant/'
+# HISTOGRAMS_SOURCE_FOLDER_PATH = 'old_data/trimmed_histograms/'
+HISTOGRAMS_SOURCE_FOLDER_PATH = 'old_data/moved_histograms/trimmed_histograms/'
+FITTED_HISTOGRAMS_FOLDER_NAME = 'fitting/fitted_histograms_without_constant2/'
 
 def get_t_hot_and_error(params, std_errors, exp_count):
     # Get the temperature of the hottest plasma
@@ -79,7 +80,7 @@ def fit_reduced(bins, counts, original_bins, original_counts, exp_count, file_na
 
     try:
         if exp_count == 2 and not include_constant:
-            with open('dataset/auto_fit2.txt','a') as dataset:
+            with open('dataset/auto_fit3.txt','a') as dataset:
                 one_data = DatasetRecord()
                 one_data.I = file_name.split('_')[-4]
                 
