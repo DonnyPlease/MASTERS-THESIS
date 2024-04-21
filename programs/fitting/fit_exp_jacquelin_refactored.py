@@ -158,11 +158,11 @@ class FitExp():
         return self.params
     
     def std_error_of_fit_parameters(self, X, b):
-        residuals = self.y - np.dot(X, b)
+        residuals = self.y - np.dot(X.T, b)
         residual_sum_of_squares = np.sum(residuals**2)
 
         n = len(self.y)
-        k = X.shape[1]  # Number of predictors (columns of F), including intercept
+        k = X.shape[0]  # Number of predictors (columns of F), including intercept
         variance_of_residuals = residual_sum_of_squares / (n - k - 1)
 
         # Variance-Covariance Matrix
