@@ -124,18 +124,18 @@ class MplCanvas(FigureCanvas):
             y = self.expoonential_function(x, float(self.custom_fit_result.a), float(self.custom_fit_result.b))
         elif self.custom_fit_result.type == 'j2_wo':
             y = self.double_exponential_function(x, 
-                                                 float(self.autofit_result.a),
                                                  float(self.autofit_result.b),
                                                  float(self.autofit_result.c),
-                                                 float(self.autofit_result.d))
+                                                 float(self.autofit_result.d),
+                                                 float(self.autofit_result.e))
         self.axes.plot(x, y, label='Custom fit', color='orange')
         
     def plot_original_fit(self):
         x = np.array(self.histogram.bins)
         if self.autofit_result.type == 'j2_wo':
             y = self.double_exponential_function(x, 
-                                                 float(self.autofit_result.a),
                                                  float(self.autofit_result.b),
                                                  float(self.autofit_result.c),
-                                                 float(self.autofit_result.d))
+                                                 float(self.autofit_result.d),
+                                                 float(self.autofit_result.e))
         self.axes.plot(x, y, label='Original (auto-) fit', color='red')

@@ -97,7 +97,7 @@ def fit_reduced(bins, counts, original_bins, original_counts, exp_count, file_na
                 one_data.b = str(params[1])
                 one_data.c = str(params[2])
                 one_data.d = str(params[3])
-                one_data.e = str(0)
+                one_data.e = str(params[4])
                 one_data.f = str(0)
                 one_data.g = str(0)
                 

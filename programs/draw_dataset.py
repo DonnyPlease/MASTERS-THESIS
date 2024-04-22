@@ -39,5 +39,7 @@ for current in ["1e17", "1e18", "1e19"]:
     plt.ylabel('aplha [deg]')
     plt.title("I = " + current)
     # plt.show()
+    
+    plt.scatter(x,y,c='r',s=10,marker='o')
     plt.savefig("dataset/I_" + current + ".png")
     
