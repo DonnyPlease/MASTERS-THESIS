@@ -128,6 +128,7 @@ class MplCanvas(FigureCanvas):
                                                  float(self.autofit_result.c),
                                                  float(self.autofit_result.d),
                                                  float(self.autofit_result.e))
+
         self.axes.plot(x, y, label='Custom fit', color='orange')
         
     def plot_original_fit(self):
@@ -138,4 +139,5 @@ class MplCanvas(FigureCanvas):
                                                  float(self.autofit_result.c),
                                                  float(self.autofit_result.d),
                                                  float(self.autofit_result.e))
+
         self.axes.plot(x, y, label='Original (auto-) fit', color='red')

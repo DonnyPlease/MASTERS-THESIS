@@ -40,6 +40,6 @@ for current in ["1e17", "1e18", "1e19"]:
     plt.title("I = " + current)
     # plt.show()
     
-    plt.scatter(x,y,c='r',s=10,marker='o')
+    plt.scatter(x,y,c='black',s=10,marker='o')
     plt.savefig("dataset/I_" + current + ".png")
     
