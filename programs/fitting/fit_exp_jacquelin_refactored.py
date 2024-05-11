@@ -146,6 +146,7 @@ class FitExp():
         b_1 = np.dot(np.linalg.inv(np.matmul(F, np.transpose(F))), np.matmul(F, self.y))    
         
         self.std_errors = self.std_error_of_fit_parameters(F, b_1)
+        self.std_errors = self.std_error_of_final_coeffients(b_1[0], b_1[1], self.std_errors[0], self.std_errors[1])
         polynomial_coefs = self.get_polynomial_coefs(b_1)
         polynomial_roots = np.roots(polynomial_coefs)
         G = self.get_vector_of_exponentials(polynomial_roots)
@@ -166,13 +167,15 @@ class FitExp():
         variance_of_residuals = residual_sum_of_squares / (n - k - 1)
 
         # Variance-Covariance Matrix
-        var_cov_matrix = np.linalg.inv(np.dot(X.T, X)) * variance_of_residuals
+        var_cov_matrix = np.linalg.inv(np.dot(X, X.T)) * variance_of_residuals
         variances = np.diag(var_cov_matrix)
 
         return np.sqrt(variances)
     
-    def std_error_of_final_coeffients(self, std_errors):
-        pass  
+    def std_error_of_final_coeffients(self, A, B, dA, dB):
+        db1 = np.sqrt(dA**2/(B**2+4*A)+dB**2*1/4*(1+B/np.sqrt(B**2+4*A))**2)
+        db2 = np.sqrt(dA**2/(B**2+4*A)+dB**2*1/4*(1-B/np.sqrt(B**2+4*A))**2)
+        return [0, 0, db1, 0, db2]
       
     def predict(self, x=None):
         if x is None:   # If x is not given, use the x values that were used

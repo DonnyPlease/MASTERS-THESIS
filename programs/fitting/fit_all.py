@@ -21,15 +21,16 @@ def get_t_hot_and_error(params, std_errors, exp_count):
     # Get the temperature of the hottest plasma
     t_hot = 0
     t_hot_error = 0
+    results = [r for r in list(zip(params, std_errors))[2::2] if r[0] < 0]
     
-    highest_negative_exponent = max([p for p in params[2::2] if p < 0])
+    highest_negative_exponent = max([r[0] for r in results])
     if highest_negative_exponent is None:
         raise Exception("Fit is bad - it has no nonnegative temperature.")
         
     t_hot = -1./highest_negative_exponent
      
     if exp_count == 2:
-        t_hot_error = 1./t_hot**2 * std_errors[2::2][np.argmax([p for p in params[2::2] if p < 0])]
+        t_hot_error = 1./highest_negative_exponent**2 * results[np.argmax([r[0] for r in results])][1]
     
     return t_hot, t_hot_error
 
@@ -80,7 +81,7 @@ def fit_reduced(bins, counts, original_bins, original_counts, exp_count, file_na
 
     try:
         if exp_count == 2 and not include_constant:
-            with open('dataset/auto_fit3.txt','a') as dataset:
+            with open('dataset/auto_fit5.txt','a') as dataset:
                 one_data = DatasetRecord()
                 one_data.I = file_name.split('_')[-4]
                 

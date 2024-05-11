@@ -42,6 +42,25 @@ def create_filenames(params):
     """
     return [create_filename(int(sim[0]), sim[1], int(sim[2])) for sim in params]
 
+def load_histograms(foldername):
+    params = load_parameters(foldername+'params.txt')
+    filenames = create_filenames(params)
+    histograms = []
+    for filename in filenames:
+        histograms.append((load_histogram(foldername+filename), params_from_filename(filename)))
+    return histograms
+
+def params_from_filename(filename):
+    I = filename.split('_')[-3]
+    L = filename.split('_')[-2]
+    L = L[:1] + '.' + L[1:]
+    alpha = filename.split('_')[-1].replace('/','')
+    return (I,L,alpha)
+
+def load_folder_names(params_path):
+    params = load_parameters(params_path)
+    return create_filenames(params)
+
 def plot_histogram(bins,counts,jacquelin_fit,t_hot,save_name,exp_count,vertical_at=[0,0,0]):
     """
     Plot the histogram, the prediction.

@@ -101,7 +101,6 @@ def fit_one_histogram(folder_name, sequence = [3,2], cut_each_iteration_percenta
     # Load histogram and set start_index
     bins, counts = load_histogram(HISTOGRAMS_SOURCE_FOLDER_PATH + folder_name)
     
-    
     minimum = np.min(counts)
     counts = np.array(counts) - minimum
      
