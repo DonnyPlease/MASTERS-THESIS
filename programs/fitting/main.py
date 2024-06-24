@@ -3,7 +3,6 @@ from matplotlib import pyplot as plt
 from helpful_functions import load_histogram, load_parameters, create_filenames, load_folder_names_from_params_file
 from reduce_historgram import fit
 PREFIX = "old_data/original_histograms/"
-from fit_exp_jacquelin import FitExp
 
 if __name__ == "__main__":
     files_names = load_folder_names_from_params_file("old_data/params.txt")

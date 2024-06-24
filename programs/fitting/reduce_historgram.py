@@ -2,6 +2,9 @@ import sys, os
 IMPORT_PATH = 'C:/Users/samue/OneDrive/Dokumenty/FJFI/MASTERS-THESIS/programs/fitting/'
 sys.path.append(IMPORT_PATH)
 
+IMPORT_PATH = 'C:/Users/samue/OneDrive/Dokumenty/FJFI/MASTERS-THESIS/programs/' 
+sys.path.append(IMPORT_PATH)
+
 import numpy as np
 from matplotlib import pyplot as plt
 from helpful_functions import load_histogram, load_parameters

@@ -81,7 +81,7 @@ def fit_reduced(bins, counts, original_bins, original_counts, exp_count, file_na
 
     try:
         if exp_count == 2 and not include_constant:
-            with open('dataset/auto_fit5.txt','a') as dataset:
+            with open('dataset/auto_fit6.txt','a') as dataset:
                 one_data = DatasetRecord()
                 one_data.I = file_name.split('_')[-4]
                 

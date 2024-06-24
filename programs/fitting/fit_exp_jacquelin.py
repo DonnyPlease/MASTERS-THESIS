@@ -245,7 +245,7 @@ class FitExp():
     
     def std_error_of_fit_parameters(self, F, b_1):
         # Calculate Residuals
-        residuals = self.y - np.dot(F, b_1)
+        residuals = self.y - np.dot(F.T, b_1)
 
         # Compute Residual Sum of Squares (RSS)
         RSS = np.sum(residuals**2)
