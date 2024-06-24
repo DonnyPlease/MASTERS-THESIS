@@ -1,9 +1,14 @@
+import sys, os
+IMPORT_PATH = 'C:/Users/samue/OneDrive/Dokumenty/FJFI/MASTERS-THESIS/programs/fitting/'
+sys.path.append(IMPORT_PATH)
+
 import numpy as np
 from matplotlib import pyplot as plt
 from helpful_functions import load_histogram, load_parameters
 from helpful_functions import create_filenames, create_filename
 from helpful_functions import plot_histogram
 from helpful_functions import custom_rmse
+from logs import logger
 
 from Dataset import DatasetRecord, DatasetUtils
 
@@ -96,6 +101,10 @@ def cut_histogram_from_right(bins, counts, percentage_of_max_energy):
     condition = bins < percentage_of_max_energy*bins[-1]
     return bins[condition], counts[condition]
 
+def log_failed_fits(failed_fits):
+    for f in failed_fits:
+        logger.log("failed.txt", str(f))
+    
 def fit_one_histogram(folder_name, sequence = [3,2], cut_each_iteration_percentage=0.10):    
     success_list = []
     # Load histogram and set start_index
@@ -105,14 +114,11 @@ def fit_one_histogram(folder_name, sequence = [3,2], cut_each_iteration_percenta
     counts = np.array(counts) - minimum
      
     start_index = 0
-    
     for i, exp_count in enumerate(sequence):
         print(i, " ", exp_count, " ", start_index)
         
-        # Cut from left based on starting index because of the procedure
         bins_for_fit, counts_for_fit = cut_histogram_from_left(bins, counts, start_index)
         
-        # Cut from right based on the parameter
         bins_for_fit, counts_for_fit = cut_histogram_from_right(bins_for_fit, counts_for_fit, 1-i*cut_each_iteration_percentage)
         
         # Cut from left by 20 in case the previous fit was not successful
@@ -122,7 +128,6 @@ def fit_one_histogram(folder_name, sequence = [3,2], cut_each_iteration_percenta
                 print("Moving start")
             else: 
                 break
-        
         
         histogram_name = FITTED_HISTOGRAMS_FOLDER_NAME+folder_name[:-1]+'_{}.pdf'.format(i)
         start_index_new, t_hot, rmse, success = fit_reduced(bins_for_fit, 
@@ -144,34 +149,26 @@ def fit_one_histogram(folder_name, sequence = [3,2], cut_each_iteration_percenta
         
     return success_list
 
-if __name__ == "__main__":
-    params = load_parameters('old_data/params.txt')
-    files_names = create_filenames(params)
-    
-    temp_file = open('dataset.txt','w')
+def fit(files_names, target_folder = ""):
+    temp_file = open(target_folder+"dataset.txt","w")
     
     # For every set of parameters, load the histogram and fit it
     # with decreasing number of bins (start with start_index, which is 
     # updated after every iteration)) 
-    failed = []
-    for i in range(len(files_names)):  # For every histogram 
-        print(files_names[i])
-        
-        success_list = fit_one_histogram(files_names[i])
-        
+    failed_fits = []
+    for file_name in files_names:  # For every histogram 
+        print("Currently fitting histogram from: " + file_name)
+        success_list = fit_one_histogram(file_name)
         for (success, count) in success_list:
             if not success:
-                failed.append(files_names[i] + f"{count}")       
-        
-    print("FAILED:")
-    with open("failed.txt","w") as file:    
-        for f in failed:  
-            file.write(str(f))    
-            file.write('\n')  
-            print(f)
-            
-    print("\n")
+                failed_fits.append(file_name + f"{count}")       
+    
+    log_failed_fits(failed_fits)
               
-    print("Failed: ", len(failed)) 
+    print("Failed: ", len(failed_fits)) 
+    
+
+if __name__ == "__main__":
+    print("This is reduce_histogram.py file.")
         
             

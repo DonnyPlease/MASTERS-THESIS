@@ -57,7 +57,7 @@ def params_from_filename(filename):
     alpha = filename.split('_')[-1].replace('/','')
     return (I,L,alpha)
 
-def load_folder_names(params_path):
+def load_folder_names_from_params_file(params_path):
     params = load_parameters(params_path)
     return create_filenames(params)
 

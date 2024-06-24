@@ -16,7 +16,7 @@ def double_exp(x,params):
     return a0 + a1*np.exp(-x*b1) + a2*np.exp(-x*b2)
 
 def weighted_squared_error(y, y_pred):
-    return np.sum((y-y_pred)**2/y)/len(y)
+    return np.sum(((y-y_pred)**2)/y)/len(y)
 
 def one_double_exp_fit(x, y, b1, b2):
     X = np.stack([np.ones(x.shape), np.exp(-x*b1), np.exp(-x*b2)], axis=-1)
@@ -112,6 +112,9 @@ class ParameterOptimizer():
         
     def get_y_pred(self, x):
         return double_exp(x, self.params)
+    
+    def get_residuals(self):
+        return self.y - self.get_y_pred(self.x)
     
     def get_mean_weighted_squared_error(self):
         return weighted_squared_error(self.y, self.get_y_pred(self.x))
