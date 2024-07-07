@@ -12,20 +12,19 @@ HISTOGRAMS_SOURCE_FOLDER_PATH = "old_data/moved_histograms/histograms_new/"
 CURRENT_FOLDER_PATH = os.path.dirname(os.path.abspath(__file__)).replace("\\","/") + "/"
 
 if __name__ == "__main__":
+    ENERGY_CUT = 10 # in keV
     mode = INTEGRATE 
-    
     if mode == INTEGRATE:
         histograms = load_histograms(HISTOGRAMS_SOURCE_FOLDER_PATH)
         integrals = []
         for histogram in histograms:
             data = histogram[0]
             params = histogram[1]
-            integral = integrate_histogram(data[0], data[1], cut=10)
+            integral = integrate_histogram(data[0], data[1], energy_cut=ENERGY_CUT)
             integrals.append((params[0], params[1], params[2], integral))
-        np.savetxt(CURRENT_FOLDER_PATH+"integrals.txt", integrals, delimiter=',', fmt='%s')
+        np.savetxt(CURRENT_FOLDER_PATH+"integrals_cut{}.txt".format(ENERGY_CUT), integrals, delimiter=',', fmt='%s')
         
     mode = PLOT
     if mode == PLOT:
-        draw_integrals(CURRENT_FOLDER_PATH+"integrals.txt", CURRENT_FOLDER_PATH)
-    
+        draw_integrals(CURRENT_FOLDER_PATH+"integrals_cut{}.txt".format(ENERGY_CUT), CURRENT_FOLDER_PATH, energy_cut=ENERGY_CUT)
     

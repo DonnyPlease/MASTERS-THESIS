@@ -29,6 +29,7 @@
 
 \usepackage{listings}  % balíček vhodný pro ukázky kódu 
 \usepackage{amsmath} % balíček pro pokročilou matematickou sazbu
+\usepackage{bm}
 %\usepackage{color} % pro možnost barevného textu
 %\usepackage{fancybox} % umožňuje pokročilé rámečkování
 %\usepackage{index} % nutno použít v případě tvorby rejstříku balíčkem makeindex
@@ -50,8 +51,12 @@
 \parindent=0pt % odsazení 1. řádku odstavce
 \parskip=7pt   % mezera mezi odstavci
 
+
 \newcommand{\ti}{\textit} % zkrácený příkaz pro kurzívu
 \newcommand{\tb}{\textbf} % zkrácený příkaz pro tučné písmo
+
+\newcommand{\boltz}{k_\mathrm{B}}
+\newcommand{\norm}[1]{\lvert #1 \rvert}
 
 
 %% --- zde jsou makra, tj. "konstanty" - některé musíte změnit! --- %%
@@ -87,7 +92,9 @@
 
 \newcommand{\prohlaseni}{Hereby I declare that this thesis is my original authorial work, which I have worked out on my own with the guidance of my supervisor. All sources, references, and literature used or excerpted during the elaboration of this work are properly cited and listed in complete reference to the due soruce.}
 
-\newcommand{\podekovani}{I would like to thank my supervisor Doc. Ing. Ondřej Klimo, Ph.D. for valuable guidance throughout the entire process. I would like to thank my parents who have supported unconditionally me in unimaginable ways. I would also like to thank my sister and my brother, whose advice helped me find motivation in the times of struggle.}
+\newcommand{\podekovani}{I would like to thank my supervisor Doc. Ing. Ondřej Klimo, Ph.D. for valuable guidance throughout the entire process. I would like to thank my parents who have supported unconditionally me in unimaginable ways. I would also like to thank my sister and my brother, whose advice helped me find motivation in the times of struggle.
+
+Huge thanks goes to my friends (yes, even those of you who think plasma is not real), because without you life would be boring and it would be hard to find meaning in anything.}
 
 
 \begin{document}
@@ -226,11 +233,9 @@ In Prague on .................... &........................................ \\	%
 
 %%%%%%%%%%%% SEZNAM POUŽITÝCH ZDROJŮ (LITERATURA) %%%%%%%%%%%%
 \clearpage
-\addcontentsline{toc}{chapter}{Seznam použitých zdrojů} % SEM NESAHEJTE!
-\begin{thebibliography}{99}   
-% následující text (2 řádky) zaměňte citacemi svých zdrojů
-	\bibitem{odkaz} Author. \ti{Book name}. City. Publisher. Year. 
-\end{thebibliography}
+\addcontentsline{toc}{chapter}{Bibliography}
+\printbibliography
+
 % formát: ČSN ISO 690. Můžete si to vygenerovat na http://www.citacepro.com (přihlaste se přes odkaz "ČVUT"), umí to vygenerovat TeX
 % řazení: abecedně podle autora (resp. provního slova, není-li znám autor)
 

@@ -19,6 +19,338 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{arber2015}{article}{}
+      \name{author}{11}{}{%
+        {{hash=5d59bc87f9df037ad01a8771d21cae6a}{%
+           family={Arber},
+           familyi={A\bibinitperiod},
+           given={T.\bibnamedelimi D.},
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=4ad15ddff138dc47ae0c1da17ece3b06}{%
+           family={Bennett},
+           familyi={B\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=42c32fbc0243408def6d2666c28cbad8}{%
+           family={Brady},
+           familyi={B\bibinitperiod},
+           given={C.\bibnamedelimi S.},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=98bdb1353088e11f88af563dfff611a2}{%
+           family={Lawrence-Douglas},
+           familyi={L\bibinithyphendelim D\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=89ef41c2176ebe1b9a2deb66e38e315c}{%
+           family={Ramsay},
+           familyi={R\bibinitperiod},
+           given={M.\bibnamedelimi G.},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=53f7bf5963c6aead4aafcbb7fc2d5ec4}{%
+           family={Sircombe},
+           familyi={S\bibinitperiod},
+           given={N.\bibnamedelimi J.},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=1c2a2bd19b6dced6dccbfd86308b7aad}{%
+           family={Gillies},
+           familyi={G\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9dac33abab4ddc1f11cb1468cbe40d91}{%
+           family={Evans},
+           familyi={E\bibinitperiod},
+           given={R.\bibnamedelimi G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=157625c94d6f8c7ca6052d4e84e40200}{%
+           family={Schmitz},
+           familyi={S\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=7c54b8956af1b23c45ec779bf37ab3d7}{%
+           family={Bell},
+           familyi={B\bibinitperiod},
+           given={A.\bibnamedelimi R.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=a5a3b47e15da60b22b3f12a1a09db3c5}{%
+           family={Ridgers},
+           familyi={R\bibinitperiod},
+           given={C.\bibnamedelimi P.},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Institute of Physics Publishing}%
+      }
+      \strng{namehash}{388f33a091445c4d41e035790e143da6}
+      \strng{fullhash}{2961b237423c30eab7f6d81aaa5a3cf1}
+      \strng{bibnamehash}{388f33a091445c4d41e035790e143da6}
+      \strng{authorbibnamehash}{388f33a091445c4d41e035790e143da6}
+      \strng{authornamehash}{388f33a091445c4d41e035790e143da6}
+      \strng{authorfullhash}{2961b237423c30eab7f6d81aaa5a3cf1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Particle-in-cell (PIC) methods have a long history in the study of laser-plasma interactions. Early electromagnetic codes used the Yee staggered grid for field variables combined with a leapfrog EM-field update and the Boris algorithm for particle pushing. The general properties of such schemes are well documented. Modern PIC codes tend to add to these high-order shape functions for particles, Poisson preserving field updates, collisions, ionisation, a hybrid scheme for solid density and high-field QED effects. In addition to these physics packages, the increase in computing power now allows simulations with real mass ratios, full 3D dynamics and multi-speckle interaction. This paper presents a review of the core algorithms used in current laser-plasma specific PIC codes. Also reported are estimates of self-heating rates, convergence of collisional routines and test of ionisation models which are not readily available elsewhere. Having reviewed the status of PIC algorithms we present a summary of recent applications of such codes in laser-plasma physics, concentrating on SRS, short-pulse laser-solid interactions, fast-electron transport, and QED effects.}
+      \field{issn}{13616587}
+      \field{issue}{11}
+      \field{journaltitle}{Plasma Physics and Controlled Fusion}
+      \field{month}{9}
+      \field{title}{Contemporary particle-in-cell approach to laser-plasma modelling}
+      \field{volume}{57}
+      \field{year}{2015}
+      \verb{doi}
+      \verb 10.1088/0741-3335/57/11/113001
+      \endverb
+      \keyw{laser-plasmas,numerical,particle-in-cell}
+    \endentry
+    \entry{birdsall1985}{book}{}
+      \name{author}{2}{}{%
+        {{hash=176908bbaf0a2516fd26afc3709fcf35}{%
+           family={Birdsall},
+           familyi={B\bibinitperiod},
+           given={Charles\bibnamedelima K.},
+           giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=d48a8faf0ad27804e2c34de5d8ede363}{%
+           family={Langdon},
+           familyi={L\bibinitperiod},
+           given={A.\bibnamedelimi Bruce.},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill}%
+      }
+      \strng{namehash}{abc4cfe2cba182a52bbee4fcbab3bab9}
+      \strng{fullhash}{abc4cfe2cba182a52bbee4fcbab3bab9}
+      \strng{bibnamehash}{abc4cfe2cba182a52bbee4fcbab3bab9}
+      \strng{authorbibnamehash}{abc4cfe2cba182a52bbee4fcbab3bab9}
+      \strng{authornamehash}{abc4cfe2cba182a52bbee4fcbab3bab9}
+      \strng{authorfullhash}{abc4cfe2cba182a52bbee4fcbab3bab9}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Includes indexes.}
+      \field{isbn}{0070053715}
+      \field{title}{Plasma physics via computer simulation}
+      \field{year}{1985}
+    \endentry
+    \entry{brunel1987}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b8a9e8518ada629aa2325d2d4f69f4b3}{%
+           family={Brunel},
+           familyi={B\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{b8a9e8518ada629aa2325d2d4f69f4b3}
+      \strng{fullhash}{b8a9e8518ada629aa2325d2d4f69f4b3}
+      \strng{bibnamehash}{b8a9e8518ada629aa2325d2d4f69f4b3}
+      \strng{authorbibnamehash}{b8a9e8518ada629aa2325d2d4f69f4b3}
+      \strng{authornamehash}{b8a9e8518ada629aa2325d2d4f69f4b3}
+      \strng{authorfullhash}{b8a9e8518ada629aa2325d2d4f69f4b3}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0031-9007}
+      \field{issue}{1}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{7}
+      \field{title}{Not-so-resonant, resonant absorption}
+      \field{volume}{59}
+      \field{year}{1987}
+      \field{pages}{52\bibrangedash 55}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.59.52
+      \endverb
+    \endentry
+    \entry{cai2006}{article}{}
+      \name{author}{4}{}{%
+        {{hash=6799b3ed75b650d0ca6a3416d6650ce4}{%
+           family={Cai},
+           familyi={C\bibinitperiod},
+           given={Hong-bo},
+           giveni={H\bibinithyphendelim b\bibinitperiod}}}%
+        {{hash=306f61b972c01e5452d64353ce1974d6}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=ad31ba5c2b6fa80de0a019f1070023e9}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Shao-ping},
+           giveni={S\bibinithyphendelim p\bibinitperiod}}}%
+        {{hash=f393f555c82e487c2ad0cf1ca1032c50}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Chun-yang},
+           giveni={C\bibinithyphendelim y\bibinitperiod}}}%
+      }
+      \strng{namehash}{7e8062d8cc7a92492e116752988b2936}
+      \strng{fullhash}{533b588e6ed9fb0b3d90338c87b56dcd}
+      \strng{bibnamehash}{533b588e6ed9fb0b3d90338c87b56dcd}
+      \strng{authorbibnamehash}{533b588e6ed9fb0b3d90338c87b56dcd}
+      \strng{authornamehash}{7e8062d8cc7a92492e116752988b2936}
+      \strng{authorfullhash}{533b588e6ed9fb0b3d90338c87b56dcd}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{<p>An analytical fluid model for J×B heating during the normal incidence by a short ultraintense linearly polarized laser on a solid-density plasma is proposed. The steepening of an originally smooth electron density profile as the electrons are pushed inward by the laser is included self-consistently. It is shown that the J×B heating includes two distinct coupling processes depending on the initial laser and plasma conditions: for a moderate intensity (a⩽1), the ponderomotive force of the laser light can drive a large plasma wave at the point ne=4γ0nc resonantly. When this plasma wave is damped, the energy is transferred to the plasma. At higher intensity, the electron density is steepened to a high level by the time-independent ponderomotive force, ne&amp;gt;4γ0nc, so that no 2ω resonance will occur, but the longitudinal component of the oscillating ponderomotive field can lead to an absorption mechanism similar to “vacuum heating.”</p>}
+      \field{issn}{1070-664X}
+      \field{issue}{11}
+      \field{journaltitle}{Physics of Plasmas}
+      \field{month}{11}
+      \field{title}{Short-pulse laser absorption via J×B heating in ultrahigh intensity laser plasma interaction}
+      \field{volume}{13}
+      \field{year}{2006}
+      \verb{doi}
+      \verb 10.1063/1.2372463
+      \endverb
+    \endentry
+    \entry{plasma-intro3}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a5b8b2e287cbcd596b1a245e40c69dd9}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Francis\bibnamedelima F.},
+           giveni={F\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Plenum Press}%
+      }
+      \strng{namehash}{a5b8b2e287cbcd596b1a245e40c69dd9}
+      \strng{fullhash}{a5b8b2e287cbcd596b1a245e40c69dd9}
+      \strng{bibnamehash}{a5b8b2e287cbcd596b1a245e40c69dd9}
+      \strng{authorbibnamehash}{a5b8b2e287cbcd596b1a245e40c69dd9}
+      \strng{authornamehash}{a5b8b2e287cbcd596b1a245e40c69dd9}
+      \strng{authorfullhash}{a5b8b2e287cbcd596b1a245e40c69dd9}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{2nd ed. Revised edition of: Introduction to plasma physics. 1974. Includes index. "This complete introduction to plasma physics and controlled fusion by one of the pioneering scientists in this expanding field offers both a simple and intuitive discussion of the basic concepts of this subject and an insight into the challenging problems of current research. In a wholly lucid manner the work covers single-particle motions, fluid equations for plasmas, wave motions, diffusion and resistivity, Landau damping, plasma instabilities and nonlinear problems. For students, this outstanding text offers a painless introduction to this important field; for teachers, a large collection of problems; and for researchers, a concise review of the fundamentals as well as original treatments of a number of topics never before explained so clearly. This revised edition contains new material on kinetic effects, including Bernstein waves and the plasma dispersion function, and on nonlinear wave equations and solitons."-- v. 1. Plasma physics.}
+      \field{isbn}{0306413329}
+      \field{title}{Introduction to plasma physics and controlled fusion}
+      \field{year}{1984}
+    \endentry
+    \entry{hot-electrons1}{article}{}
+      \name{author}{5}{}{%
+        {{hash=ce77c4a6369373107f6ec176941c08ae}{%
+           family={Cui},
+           familyi={C\bibinitperiod},
+           given={Yun\bibnamedelima Qian},
+           giveni={Y\bibinitperiod\bibinitdelim Q\bibinitperiod}}}%
+        {{hash=650c6e19d12fc06285c7e9a4e00887ce}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Wei\bibnamedelima Min},
+           giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=10558f1e8967170f96bc8a67bd606bda}{%
+           family={Sheng},
+           familyi={S\bibinitperiod},
+           given={Zheng\bibnamedelima Ming},
+           giveni={Z\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=c4afd6c4fb17774c8709c4e7d275f716}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yu\bibnamedelima Tong},
+           giveni={Y\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=2f4cc163c8766d4437008ea260208de8}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{7bbacd5b81cab0ae445f3880140a567c}
+      \strng{fullhash}{1b609536cc6956ce31d62870678d0a74}
+      \strng{bibnamehash}{1b609536cc6956ce31d62870678d0a74}
+      \strng{authorbibnamehash}{1b609536cc6956ce31d62870678d0a74}
+      \strng{authornamehash}{7bbacd5b81cab0ae445f3880140a567c}
+      \strng{authorfullhash}{1b609536cc6956ce31d62870678d0a74}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Laser absorption in the interaction between ultra-intense femtosecond laser and solid density plasma is studied integratedly for the intensity range Iλ2 ≃ 1014-1020 W cm-2 μm2 by particle-in-cell simulations with collision modulus included. The collisional effect is found to be significant when the incident laser intensity is less than 1016 W cm-2 μm 2, which tends to enhance the resonance absorption and reduce the vacuum heating under different plasma parameters. At higher intensities, various collisionless absorption mechanisms dominate with a large number of hot electrons produced. The scaling of hot electron temperatures is found to depend upon the dominant absorption mechanisms. At moderate intensity around 10 17 W cm-2, the scaling law is Thot ∞(Iλ2)1/3 when the incident angle matches the optimized angle of resonance absorption; otherwise, Thot ∞ (Iλ2)α with α > 1/3, which changes with laser incident angles and preplasma scale lengths; in the case of vacuum heating, usually α > 1. At laser intensity above 1018 W cm-2 μm2 when the absorption mechanism is dominated by ponderomotive acceleration, the scaling becomes Thot ∞ (Iλ2)1/2. The angular distributions of hot electrons are also shown to be dependent upon the absorption mechanisms. © 2013 IOP Publishing Ltd.}
+      \field{issue}{8}
+      \field{journaltitle}{Plasma Physics and Controlled Fusion}
+      \field{month}{8}
+      \field{title}{Laser absorption and hot electron temperature scalings in laser-plasma interactions}
+      \field{volume}{55}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.1088/0741-3335/55/8/085008
+      \endverb
+    \endentry
+    \entry{dawson1962}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8eff4f600ad6cc866ec36733fca306b9}{%
+           family={Dawson},
+           familyi={D\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{8eff4f600ad6cc866ec36733fca306b9}
+      \strng{fullhash}{8eff4f600ad6cc866ec36733fca306b9}
+      \strng{bibnamehash}{8eff4f600ad6cc866ec36733fca306b9}
+      \strng{authorbibnamehash}{8eff4f600ad6cc866ec36733fca306b9}
+      \strng{authornamehash}{8eff4f600ad6cc866ec36733fca306b9}
+      \strng{authorfullhash}{8eff4f600ad6cc866ec36733fca306b9}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A one-dimensional plasma model consisting of a large number of identical charge sheets embedded in a uniform fixed neutralizing background is investigated by following the sheet motions on a high-speed computer. The thermalizing properties and ergodic behavior of the system are examined and found to be in agreement with the assumption that one is equally likely to find the system in equal volumes of the available phase space. The velocity distribution, Debye shielding, drag on fast and slow sheets, diffusion in velocity space, the Landau damping of the Fourier modes, the amplitude distribution function for the Fourier modes, and the distribution of electric fields felt by the sheets were obtained for the plasma in thermal equilibrium and compared with theoretically predicted values. In every case, except one, the drag on a slow sheet, the numerical results agreed with theory to within the statistical accuracy of the results. The numerical results for the drag on a slow sheet were about a factor of 2 lower than the theory predicated indicating that the approximations made in the theory are not entirely valid. An understanding of the cause of the discrepancy might lead to a better understanding of collisional processes in plasmas.}
+      \field{issue}{4}
+      \field{journaltitle}{Physics of Fluids}
+      \field{title}{One-dimensional plasma model}
+      \field{volume}{5}
+      \field{year}{1962}
+      \field{pages}{445\bibrangedash 459}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1063/1.1706638
+      \endverb
+    \endentry
+    \entry{esirkepov2001}{article}{}
+      \name{author}{1}{}{%
+        {{hash=317e3ebb5321e3f7bbf2eee64e71b6cf}{%
+           family={Esirkepov},
+           familyi={E\bibinitperiod},
+           given={TZh},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{317e3ebb5321e3f7bbf2eee64e71b6cf}
+      \strng{fullhash}{317e3ebb5321e3f7bbf2eee64e71b6cf}
+      \strng{bibnamehash}{317e3ebb5321e3f7bbf2eee64e71b6cf}
+      \strng{authorbibnamehash}{317e3ebb5321e3f7bbf2eee64e71b6cf}
+      \strng{authornamehash}{317e3ebb5321e3f7bbf2eee64e71b6cf}
+      \strng{authorfullhash}{317e3ebb5321e3f7bbf2eee64e71b6cf}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The new method of local electric current density assignment in the Particle-in-Cell code in Cartesian geometry is presented. The method is valid for an arbitrary quasi-particle form-factor assuming that quasi-particle trajectory over time step is a straight line. The method allows one to implement the PIC code without solving Poisson equation. The presented formula for the current density associated with the motion of a single quasi-particle is the unique linear combination of form-factor differences in consistency with the discrete continuity equation. The computation scheme is demonstrated in 2D and 3D. }
+      \field{journaltitle}{Computer Physics Communications}
+      \field{title}{Exact charge conservation scheme for Particle-in-Cell simulation with an arbitrary form-factor}
+      \field{volume}{135}
+      \field{year}{2001}
+      \field{pages}{144\bibrangedash 153}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/S0010-4655(00)00228-9
+      \endverb
+      \verb{urlraw}
+      \verb www.elsevier.nl/locate/cpc
+      \endverb
+      \verb{url}
+      \verb www.elsevier.nl/locate/cpc
+      \endverb
+      \keyw{5265Rr Keywords: Particle-in-Cell method,5265y,Charge conservation,Continuity equation}
+    \endentry
     \entry{plasma-intro}{inproceedings}{}
       \name{author}{1}{}{%
         {{hash=584d27c4d52f916f677c821843c41870}{%
@@ -52,7 +384,612 @@
       \endverb
       \keyw{2-fluid model,Dispersion relation,Electromagnetic wave propagation,Langmuir waves,Nonlinear waves,Plasma properties}
     \endentry
+    \entry{atoms-in-lasers}{book}{}
+      \name{author}{3}{}{%
+        {{hash=b573826dd20a011501cdaa423ab001a4}{%
+           family={Joachain},
+           familyi={J\bibinitperiod},
+           given={C.\bibnamedelimi J.},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=7094ad005958449ee43f0847bbfe1bf5}{%
+           family={Kylstra},
+           familyi={K\bibinitperiod},
+           given={N.\bibnamedelimi J.},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=a09ffb5d6beab39b439661e8270c2018}{%
+           family={Potvliege},
+           familyi={P\bibinitperiod},
+           given={R.\bibnamedelimi M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{b2672bdbbf2532295edced5cf6d6f570}
+      \strng{fullhash}{b2672bdbbf2532295edced5cf6d6f570}
+      \strng{bibnamehash}{b2672bdbbf2532295edced5cf6d6f570}
+      \strng{authorbibnamehash}{b2672bdbbf2532295edced5cf6d6f570}
+      \strng{authornamehash}{b2672bdbbf2532295edced5cf6d6f570}
+      \strng{authorfullhash}{b2672bdbbf2532295edced5cf6d6f570}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780521793018}
+      \field{month}{12}
+      \field{title}{Atoms in Intense Laser Fields}
+      \field{year}{2011}
+      \verb{doi}
+      \verb 10.1017/CBO9780511993459
+      \endverb
+    \endentry
+    \entry{laser-plasma4}{book}{}
+      \name{author}{1}{}{%
+        {{hash=747d86ec308afd699f88f1f549abf87d}{%
+           family={Kruer},
+           familyi={K\bibinitperiod},
+           given={William\bibnamedelima L.},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{747d86ec308afd699f88f1f549abf87d}
+      \strng{fullhash}{747d86ec308afd699f88f1f549abf87d}
+      \strng{bibnamehash}{747d86ec308afd699f88f1f549abf87d}
+      \strng{authorbibnamehash}{747d86ec308afd699f88f1f549abf87d}
+      \strng{authornamehash}{747d86ec308afd699f88f1f549abf87d}
+      \strng{authorfullhash}{747d86ec308afd699f88f1f549abf87d}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781003003243}
+      \field{month}{8}
+      \field{title}{The Physics Of Laser Plasma Interactions}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.1201/9781003003243
+      \endverb
+    \endentry
+    \entry{laser-plasma5}{book}{}
+      \name{author}{1}{}{%
+        {{hash=fd78e52d16df1b23a1fd4fc254689868}{%
+           family={Macchi},
+           familyi={M\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {National Research Council}%
+      }
+      \list{publisher}{1}{%
+        {Springer Dordrecht}%
+      }
+      \strng{namehash}{fd78e52d16df1b23a1fd4fc254689868}
+      \strng{fullhash}{fd78e52d16df1b23a1fd4fc254689868}
+      \strng{bibnamehash}{fd78e52d16df1b23a1fd4fc254689868}
+      \strng{authorbibnamehash}{fd78e52d16df1b23a1fd4fc254689868}
+      \strng{authornamehash}{fd78e52d16df1b23a1fd4fc254689868}
+      \strng{authorfullhash}{fd78e52d16df1b23a1fd4fc254689868}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{isbn}{978-94-007-6124-7}
+      \field{title}{A Superintense Laser-Plasma Interaction Theory Primer}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.1007/978-94-007-6125-4
+      \endverb
+      \verb{urlraw}
+      \verb http://www.springer.com/series/8902
+      \endverb
+      \verb{url}
+      \verb http://www.springer.com/series/8902
+      \endverb
+    \endentry
+    \entry{laser-plasma6}{book}{}
+      \name{author}{1}{}{%
+        {{hash=078de7ef47e8f12b02ee1b9712f28e2c}{%
+           family={Michel},
+           familyi={M\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{078de7ef47e8f12b02ee1b9712f28e2c}
+      \strng{fullhash}{078de7ef47e8f12b02ee1b9712f28e2c}
+      \strng{bibnamehash}{078de7ef47e8f12b02ee1b9712f28e2c}
+      \strng{authorbibnamehash}{078de7ef47e8f12b02ee1b9712f28e2c}
+      \strng{authornamehash}{078de7ef47e8f12b02ee1b9712f28e2c}
+      \strng{authorfullhash}{078de7ef47e8f12b02ee1b9712f28e2c}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-031-23423-1}
+      \field{title}{Introduction to Laser-Plasma Interactions}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.1007/978-3-031-23424-8
+      \endverb
+    \endentry
+    \entry{pfeifer2006}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ca36de992cf52d36224491785b421435}{%
+           family={Pfeifer},
+           familyi={P\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=21e20fe888d4a41af73da5c096ae0c9a}{%
+           family={Spielmann},
+           familyi={S\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+        {{hash=07cc12394817dbd0441d55c1f3c6a9f3}{%
+           family={Gerber},
+           familyi={G\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{6863f25f9c237f5daf75fa5746073a7e}
+      \strng{fullhash}{6863f25f9c237f5daf75fa5746073a7e}
+      \strng{bibnamehash}{6863f25f9c237f5daf75fa5746073a7e}
+      \strng{authorbibnamehash}{6863f25f9c237f5daf75fa5746073a7e}
+      \strng{authornamehash}{6863f25f9c237f5daf75fa5746073a7e}
+      \strng{authorfullhash}{6863f25f9c237f5daf75fa5746073a7e}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0034-4885}
+      \field{issue}{2}
+      \field{journaltitle}{Reports on Progress in Physics}
+      \field{month}{2}
+      \field{title}{Femtosecond x-ray science}
+      \field{volume}{69}
+      \field{year}{2006}
+      \field{pages}{443\bibrangedash 505}
+      \range{pages}{63}
+      \verb{doi}
+      \verb 10.1088/0034-4885/69/2/R04
+      \endverb
+    \endentry
+    \entry{reich2000}{article}{}
+      \name{author}{4}{}{%
+        {{hash=766c2eebf24b18e525d79e70d1f19e0d}{%
+           family={Reich},
+           familyi={R\bibinitperiod},
+           given={Ch.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=584d27c4d52f916f677c821843c41870}{%
+           family={Gibbon},
+           familyi={G\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c0e2a1cb80278d30782fb643cfba5596}{%
+           family={Uschmann},
+           familyi={U\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=6f488c4308f37271dce8132b7cca5739}{%
+           family={Förster},
+           familyi={F\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{5234b6cc43198b11cc007fdd029c5313}
+      \strng{fullhash}{e54e07d148a3b3dbfda64134a919a0d2}
+      \strng{bibnamehash}{e54e07d148a3b3dbfda64134a919a0d2}
+      \strng{authorbibnamehash}{e54e07d148a3b3dbfda64134a919a0d2}
+      \strng{authornamehash}{5234b6cc43198b11cc007fdd029c5313}
+      \strng{authorfullhash}{e54e07d148a3b3dbfda64134a919a0d2}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0031-9007}
+      \field{issue}{21}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{5}
+      \field{title}{Yield Optimization and Time Structure of Femtosecond Laser Plasma K-alpha Sources}
+      \field{volume}{84}
+      \field{year}{2000}
+      \field{pages}{4846\bibrangedash 4849}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.84.4846
+      \endverb
+    \endentry
+    \entry{schwoerer2004}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=8b8e593bfd78d79c51c0fab2cb9b2bb0}{%
+           family={Schwoerer},
+           familyi={S\bibinitperiod},
+           given={Heinrich},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b8e593bfd78d79c51c0fab2cb9b2bb0}
+      \strng{fullhash}{8b8e593bfd78d79c51c0fab2cb9b2bb0}
+      \strng{bibnamehash}{8b8e593bfd78d79c51c0fab2cb9b2bb0}
+      \strng{authorbibnamehash}{8b8e593bfd78d79c51c0fab2cb9b2bb0}
+      \strng{authornamehash}{8b8e593bfd78d79c51c0fab2cb9b2bb0}
+      \strng{authorfullhash}{8b8e593bfd78d79c51c0fab2cb9b2bb0}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{9}
+      \field{title}{Generation of X-Rays by Intense Femtosecond Lasers}
+      \field{year}{2004}
+      \field{pages}{235\bibrangedash 254}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1007/978-3-540-39848-6_17
+      \endverb
+    \endentry
+    \entry{absorption1}{article}{}
+      \name{author}{7}{}{%
+        {{hash=2ca01856f5889bac02856748af4c9f86}{%
+           family={Sheng},
+           familyi={S\bibinitperiod},
+           given={Zheng-Ming},
+           giveni={Z\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=62e4ad29a064bac07ad8d4df7889f3e9}{%
+           family={Weng},
+           familyi={W\bibinitperiod},
+           given={Su-Ming},
+           giveni={S\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=f81ec128e3bee70079dcf331c496249a}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Lu-Le},
+           giveni={L\bibinithyphendelim L\bibinitperiod}}}%
+        {{hash=453fcb40af795ab56c5c23aa4ef3e6ea}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Wei-Min},
+           giveni={W\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=93474cd1b78f679e5150758c139b7163}{%
+           family={Cui},
+           familyi={C\bibinitperiod},
+           given={Yun-Qian},
+           giveni={Y\bibinithyphendelim Q\bibinitperiod}}}%
+        {{hash=fb194450e9046854896c4ca5f2dc8d01}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Min},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2f4cc163c8766d4437008ea260208de8}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{20bcbf4940f09df0c89b76a4391d671b}
+      \strng{fullhash}{04ad9884afad56f55f52b20c9333d577}
+      \strng{bibnamehash}{20bcbf4940f09df0c89b76a4391d671b}
+      \strng{authorbibnamehash}{20bcbf4940f09df0c89b76a4391d671b}
+      \strng{authornamehash}{20bcbf4940f09df0c89b76a4391d671b}
+      \strng{authorfullhash}{04ad9884afad56f55f52b20c9333d577}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1674-1056}
+      \field{issue}{1}
+      \field{journaltitle}{Chinese Physics B}
+      \field{month}{1}
+      \field{title}{Absorption of ultrashort intense lasers in laser–solid interactions}
+      \field{volume}{24}
+      \field{year}{2015}
+      \verb{doi}
+      \verb 10.1088/1674-1056/24/1/015201
+      \endverb
+    \endentry
+    \entry{laser-plasma1}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ff7ecbf40f05f9b983d84b2135d0f378}{%
+           family={Takabe},
+           familyi={T\bibinitperiod},
+           given={Hideaki},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{ff7ecbf40f05f9b983d84b2135d0f378}
+      \strng{fullhash}{ff7ecbf40f05f9b983d84b2135d0f378}
+      \strng{bibnamehash}{ff7ecbf40f05f9b983d84b2135d0f378}
+      \strng{authorbibnamehash}{ff7ecbf40f05f9b983d84b2135d0f378}
+      \strng{authornamehash}{ff7ecbf40f05f9b983d84b2135d0f378}
+      \strng{authorfullhash}{ff7ecbf40f05f9b983d84b2135d0f378}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Physics of Laser Plasmas and Applications - Volume 1}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb http://www.springer.com/series/15614
+      \endverb
+      \verb{url}
+      \verb http://www.springer.com/series/15614
+      \endverb
+    \endentry
+    \entry{tskhakaya2007}{article}{}
+      \name{author}{4}{}{%
+        {{hash=5871b396d9d2bb497cc30d3761dbdc90}{%
+           family={Tskhakaya},
+           familyi={T\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9eb7c5ad2833718e71e9dcf0c575a60b}{%
+           family={Matyash},
+           familyi={M\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=a00cee35baadb952574e0c6f19b304c0}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7bcc7d8645f9c6cb2cb756f53378368d}{%
+           family={Taccogna},
+           familyi={T\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{68d291074093f1389efe8143150a258c}
+      \strng{fullhash}{055c2101b2e153869bf34b29a57c6019}
+      \strng{bibnamehash}{055c2101b2e153869bf34b29a57c6019}
+      \strng{authorbibnamehash}{055c2101b2e153869bf34b29a57c6019}
+      \strng{authornamehash}{68d291074093f1389efe8143150a258c}
+      \strng{authorfullhash}{055c2101b2e153869bf34b29a57c6019}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper is the first in a series of three papers to summarize the recent work of an European-wide collaboration which is ongoing since about one decade using Particle-in-Cell (PIC) methods in low temperature plasma physics. In the present first paper the main aspects of this computational technique will be presented. In the second paper, an overview of applications in low-temperature plasma modelling will be given, whereas the third part will put emphasis on the specific results of modelling ion thrusters. © 2007 WILEY-VCH Verlag GmbH & Co. KGaA, Weinheim.}
+      \field{issue}{8-9}
+      \field{journaltitle}{Contributions to Plasma Physics}
+      \field{title}{The particle-in-cell method}
+      \field{volume}{47}
+      \field{year}{2007}
+      \field{pages}{563\bibrangedash 594}
+      \range{pages}{32}
+      \verb{doi}
+      \verb 10.1002/ctpp.200710072
+      \endverb
+      \keyw{MC simulations,PIC simulations}
+    \endentry
+    \entry{wang2010}{article}{}
+      \name{author}{10}{}{%
+        {{hash=ebbba2f353e9b7182274b65988d6f9e6}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jianguo},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c2098adbdc9bc98a904463edb86ab07c}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Zaigao},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=471e61c37bc3e62dbe8655e02a002343}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yue},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=633bd2e10610be92bd806e104cd8d01b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Dianhui},
+           giveni={D\bibinitperiod}}}%
+        {{hash=66055c087f069e4bd4627f68f2f6b81b}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Chunliang},
+           giveni={C\bibinitperiod}}}%
+        {{hash=532e1ec030013bb0c5bf0a2199ddffd9}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yongdong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=12e5f236440c38aa177fc80c98951042}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Hongguang},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f1fd98fa2e36f9e711cd4bf518d0a915}{%
+           family={Qiao},
+           familyi={Q\bibinitperiod},
+           given={Hailiang},
+           giveni={H\bibinitperiod}}}%
+        {{hash=288a64f2d888f1bd4be60e9b06998ea8}{%
+           family={Fu},
+           familyi={F\bibinitperiod},
+           given={Meiyan},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e5f09d4dd527bc7dd5835a5ad978fa72}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Yuan},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{d261e34f44bdd285285695928704def2}
+      \strng{fullhash}{769b59456a9d7143acade44ee1219e07}
+      \strng{bibnamehash}{d261e34f44bdd285285695928704def2}
+      \strng{authorbibnamehash}{d261e34f44bdd285285695928704def2}
+      \strng{authornamehash}{d261e34f44bdd285285695928704def2}
+      \strng{authorfullhash}{769b59456a9d7143acade44ee1219e07}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper introduces a self-developed, three-dimensional parallel fully electromagnetic particle simulation code UNIPIC-3D. In this code, the electromagnetic fields are updated using the second-order, finite-difference time-domain method, and the particles are moved using the relativistic Newton-Lorentz force equation. The electromagnetic field and particles are coupled through the current term in Maxwell's equations. Two numerical examples are used to verify the algorithms adopted in this code, numerical results agree well with theoretical ones. This code can be used to simulate the high-power microwave (HPM) devices, such as the relativistic backward wave oscillator, coaxial vircator, and magnetically insulated line oscillator, etc. UNIPIC-3D is written in the object-oriented C++ language and can be run on a variety of platforms including WINDOWS, LINUX, and UNIX. Users can use the graphical user's interface to create the complex geometric structures of the simulated HPM devices, which can be automatically meshed by UNIPIC-3D code. This code has a powerful postprocessor which can display the electric field, magnetic field, current, voltage, power, spectrum, momentum of particles, etc. For the sake of comparison, the results computed by using the two-and-a-half-dimensional UNIPIC code are also provided for the same parameters of HPM devices, the numerical results computed from these two codes agree well with each other. © 2010 American Institute of Physics.}
+      \field{issn}{1070664X}
+      \field{issue}{7}
+      \field{journaltitle}{Physics of Plasmas}
+      \field{month}{7}
+      \field{title}{Three-dimensional parallel UNIPIC-3D code for simulations of high-power microwave devices}
+      \field{volume}{17}
+      \field{year}{2010}
+      \verb{doi}
+      \verb 10.1063/1.3454766
+      \endverb
+    \endentry
+    \entry{absorption2}{article}{}
+      \name{author}{2}{}{%
+        {{hash=85c05a73eafb91075721b86f00342577}{%
+           family={Wilks},
+           familyi={W\bibinitperiod},
+           given={S.C.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d761174c56170ada83db6a493f3a7e7f}{%
+           family={Kruer},
+           familyi={K\bibinitperiod},
+           given={W.L.},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{59f601a41887b9b2755c8308011dcdaf}
+      \strng{fullhash}{59f601a41887b9b2755c8308011dcdaf}
+      \strng{bibnamehash}{59f601a41887b9b2755c8308011dcdaf}
+      \strng{authorbibnamehash}{59f601a41887b9b2755c8308011dcdaf}
+      \strng{authornamehash}{59f601a41887b9b2755c8308011dcdaf}
+      \strng{authorfullhash}{59f601a41887b9b2755c8308011dcdaf}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00189197}
+      \field{issue}{11}
+      \field{journaltitle}{IEEE Journal of Quantum Electronics}
+      \field{title}{Absorption of ultrashort, ultra-intense laser light by solids and overdense plasmas}
+      \field{volume}{33}
+      \field{year}{1997}
+      \field{pages}{1954\bibrangedash 1968}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1109/3.641310
+      \endverb
+    \endentry
+    \entry{ultra-laser}{article}{}
+      \name{author}{11}{}{%
+        {{hash=28b8f0a36e6e29fdd0b6a700461738b5}{%
+           family={Yanovsky},
+           familyi={Y\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+        {{hash=3920f35a7768b5998fd9b8b27304109b}{%
+           family={Chvykov},
+           familyi={C\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+        {{hash=e669b70191da89f34ce65ec20a668652}{%
+           family={Kalinchenko},
+           familyi={K\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d1f4c22bd965e4b7a91975d8ddbba81a}{%
+           family={Rousseau},
+           familyi={R\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0c18e2aa0652dae1dbc497d8812a8adf}{%
+           family={Planchon},
+           familyi={P\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=5c159ec2f41c964b3a03d28658b4b4e7}{%
+           family={Matsuoka},
+           familyi={M\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=a9d736e884c287acd9cc730afc6dbd4f}{%
+           family={Maksimchuk},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5581cd5b49609070f2b388a302b59305}{%
+           family={Nees},
+           familyi={N\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=86a2da2d7e525023aabdf6b196bb7450}{%
+           family={Cheriaux},
+           familyi={C\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=1657e84c35301b08ee253f3b944f5a13}{%
+           family={Mourou},
+           familyi={M\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=9569f034c27102ee9fa1204d11ad6565}{%
+           family={Krushelnick},
+           familyi={K\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{c6b5d021ad62e9accea6c07a4036172f}
+      \strng{fullhash}{360c5aa9102b21f79fce409a824f2990}
+      \strng{bibnamehash}{c6b5d021ad62e9accea6c07a4036172f}
+      \strng{authorbibnamehash}{c6b5d021ad62e9accea6c07a4036172f}
+      \strng{authornamehash}{c6b5d021ad62e9accea6c07a4036172f}
+      \strng{authorfullhash}{360c5aa9102b21f79fce409a824f2990}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1094-4087}
+      \field{issue}{3}
+      \field{journaltitle}{Optics Express}
+      \field{title}{Ultra-high intensity- 300-TW laser at 0.1 Hz repetition rate}
+      \field{volume}{16}
+      \field{year}{2008}
+      \field{pages}{2109}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1364/OE.16.002109
+      \endverb
+    \endentry
+    \entry{yee1966}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0d0fc22b2b6281d3fabd724f4df6882d}{%
+           family={Yee},
+           familyi={Y\bibinitperiod},
+           given={Kane\bibnamedelima S.},
+           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{0d0fc22b2b6281d3fabd724f4df6882d}
+      \strng{fullhash}{0d0fc22b2b6281d3fabd724f4df6882d}
+      \strng{bibnamehash}{0d0fc22b2b6281d3fabd724f4df6882d}
+      \strng{authorbibnamehash}{0d0fc22b2b6281d3fabd724f4df6882d}
+      \strng{authornamehash}{0d0fc22b2b6281d3fabd724f4df6882d}
+      \strng{authorfullhash}{0d0fc22b2b6281d3fabd724f4df6882d}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Maxwell's equations are replaced by a set of finite difference equations. It is shown that if one chooses the field points appropriately, the set of finite difference equations is applicable for a boundary condition involving perfectly conducting surfaces. An example is given of the scattering of an electromagnetic pulse by a perfectly conducting cylinder.}
+      \field{issue}{3}
+      \field{journaltitle}{IEEE Transactions on Antennas and Propagation}
+      \field{month}{5}
+      \field{title}{Numerical Solution of Initial Boundary Value Problems Involving Maxwell's Equations in Isotropic Media}
+      \field{volume}{14}
+      \field{year}{1966}
+      \field{pages}{302\bibrangedash 307}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/TAP.1966.1138693
+      \endverb
+    \endentry
   \enddatalist
+  \missing{constants}
 \endrefsection
 \endinput
 

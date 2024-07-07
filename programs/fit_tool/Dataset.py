@@ -129,5 +129,5 @@ class DatasetUtils():
             i, l, alpha = key
             l = float(l)
             alpha = float(alpha)
-            data[i].append((l,alpha,item.t_hot))
+            data[i].append((l, alpha, item.t_hot, item.t_hot_stdev))
         return data 

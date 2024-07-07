@@ -2,14 +2,25 @@ import numpy as np
 from scipy.interpolate import griddata
 import matplotlib.pyplot as plt
 
-def integrate_histogram(bins, counts, cut=0):
+def integrate_histogram(bins, counts, energy_cut=0):
     """
     Integrate the histogram by summing the counts and multiplying by the bin width.
     """
-    starting_index = np.where(bins >= cut)[0][0]
-    bin_width = bins[1] - bins[0]
-    return np.sum(counts[starting_index:]) * bin_width
-
+    starting_index = np.where(bins >= energy_cut)[0][0]
+    counts = np.array(counts[starting_index:])
+    bins = np.array(bins[starting_index:])
+    energies = bins[:-1] + np.diff(bins)/2
+    return np.dot(counts, energies)
+    
+def integrate_only_hot_electrons(histogram):
+    # Integrate th histogram analytically N = N0*exp(-E/t_hot)
+    
+    t_hot = histogram.t_hot
+    n0 = histogram.n0_hot
+    
+    return 
+    
+ 
 def create_dict_from_file(filename):
     """
     Create a dictionary from a file. The file should contain the data in the format:
@@ -24,7 +35,7 @@ def create_dict_from_file(filename):
     
     return data
 
-def draw_integrals(file_name, target_folder):
+def draw_integrals(file_name, target_folder, energy_cut):
     data = create_dict_from_file(file_name)
          
     for current in ["1e17", "1e18", "1e19"]:
@@ -32,14 +43,8 @@ def draw_integrals(file_name, target_folder):
         x = [item[0] for item in data[current]] # L
         y = [item[1] for item in data[current]] # alpha
         z = [item[2] for item in data[current]] # integral
-
+        
         # Define the grid for interpolation
-        # Define the range of x and y
-        x_min = min(x)
-        x_max = max(x)
-        y_min = min(y)
-        y_max = max(y)
-
         num_points = 20
 
         # Define the grid
@@ -59,8 +64,8 @@ def draw_integrals(file_name, target_folder):
         plt.title("I = " + current)
         # plt.show()
         
-        plt.scatter(x,y,c='black',s=10,marker='o')
-        plt.savefig(target_folder + "I_" + current + ".png")
+        # plt.scatter(x,y,c='black',s=10,marker='o')
+        plt.savefig(target_folder + "I_" + current + "_cut_{}.png".format(energy_cut))
         
 if __name__ == "__main__":
     ### Test the function integrate_histogram

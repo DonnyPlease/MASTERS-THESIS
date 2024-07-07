@@ -3,10 +3,7 @@ from fit_tool.Dataset import DatasetUtils
 import numpy as np
 import matplotlib.pyplot as plt
 
-
-dataset, _ = DatasetUtils.load_datasets_to_dicts('dataset')
-
-data = DatasetUtils.dataset_to_dict(dataset)
+T_HOT, T_HOT_STDEV = 0, 1
 
 def plot_maximum_absorption_curve():
     curve_x = np.logspace(-1.13,0.75,30)
@@ -24,12 +21,17 @@ def draw(X,Y,Z):
     plt.xticks(ticks,ticks)
     plt.show()
 
-def draw_dataset():
-    for current in ["1e17", "1e18", "1e19"]:
+def draw_dataset(data, what=T_HOT, show=False, save=False, add_data_points=False):
+    for intensity in ["1e17", "1e18", "1e19"]:
         # Extract the data points
-        x = [item[0] for item in data[current]]
-        y = [item[1] for item in data[current]]
-        z = [item[2] for item in data[current]]
+        x = [item[0] for item in data[intensity]]
+        y = [item[1] for item in data[intensity]]
+        z = []
+        if what == T_HOT:
+            z = [item[2] for item in data[intensity]]
+        elif what == T_HOT_STDEV:
+            z = [item[3] for item in data[intensity]]
+        
 
         # Define the grid for interpolation
         # Define the range of x and y
@@ -38,7 +40,7 @@ def draw_dataset():
         y_min = min(y)
         y_max = max(y)
 
-        num_points = 50
+        num_points = 10
         # Define the grid
         x_grid = np.logspace(np.log10(np.min(x)), np.log10(np.max(x)), num_points)
         y_grid = np.linspace(np.min(y), np.max(y), num_points)
@@ -55,14 +57,22 @@ def draw_dataset():
         plt.ylabel(r'$\alpha$ [°]')
         ticks=[0.01,0.02,0.05,0.1,0.2,0.5,1,2,5]
         plt.xticks(ticks,ticks)
-        # plt.show()
+        if show: 
+            plt.show()
         
-        if current == "1e17":
-            plot_maximum_absorption_curve()
+        # if intensity == "1e17":
+        #     plot_maximum_absorption_curve()
         
-        plt.savefig("dataset/I_" + current + ".png")
-        plt.scatter(x,y,c='white',s=10,marker='o')
-        plt.savefig("dataset/I_" + current + "wp.png")
+        if save: 
+            name = "dataset/I_" + intensity + "t_hot.png" if what == T_HOT else "dataset/I_" + intensity + "t_hot_stdev.png"
+            plt.savefig(name)
+            
+        if add_data_points:
+            plt.scatter(x,y,c='white',s=10,marker='o')
+            if save: plt.savefig(name[:-4]+"_wp.png") 
 
 if __name__ == "__main__": 
-    draw_dataset()
+    dataset, _ = DatasetUtils.load_datasets_to_dicts('dataset')
+    data = DatasetUtils.dataset_to_dict(dataset)
+    draw_dataset(data, T_HOT_STDEV, show=False, save=True, add_data_points=True)
+    

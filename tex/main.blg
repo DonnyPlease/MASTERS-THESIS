@@ -1,15 +1,17 @@
 [0] Config.pm:306> INFO - This is Biber 2.18
 [0] Config.pm:309> INFO - Logfile is 'main.blg'
-[145] biber-MSWIN64:340> INFO - === 
-[194] Biber.pm:418> INFO - Reading 'main.bcf'
-[355] Biber.pm:978> INFO - Found 1 citekeys in bib section 0
-[374] Biber.pm:4401> INFO - Processing section 0
-[391] Biber.pm:4592> INFO - Looking for bibtex file 'bibliographyExport.bib' for section 0
-[457] bibtex.pm:1713> INFO - LaTeX decoding ...
-[468] bibtex.pm:1518> INFO - Found BibTeX data source 'bibliographyExport.bib'
-[536] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[536] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[536] Biber.pm:4221> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[536] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
-[538] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[539] bbl.pm:757> INFO - Output to main.bbl
+[263] biber-MSWIN64:340> INFO - === 
+[354] Biber.pm:418> INFO - Reading 'main.bcf'
+[502] Biber.pm:978> INFO - Found 24 citekeys in bib section 0
+[521] Biber.pm:4401> INFO - Processing section 0
+[552] Biber.pm:4592> INFO - Looking for bibtex file 'bibliographyExport.bib' for section 0
+[620] bibtex.pm:1713> INFO - LaTeX decoding ...
+[684] bibtex.pm:1518> INFO - Found BibTeX data source 'bibliographyExport.bib'
+[980] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[980] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[980] Biber.pm:4221> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[980] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[1052] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1070] bbl.pm:757> INFO - Output to main.bbl
+[1071] Biber.pm:130> WARN - I didn't find a database entry for 'constants' (section 0)
+[1071] Biber.pm:132> INFO - WARNINGS: 1

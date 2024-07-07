@@ -19,6 +19,7 @@ dataset, _ = DatasetUtils.load_datasets_to_dicts('dataset')
 data = DatasetUtils.dataset_to_dict(dataset)
 
 data = data["1e17"]
+print(data)
 
 x = np.array([[item[0], item[1]] for item in data])
 y = np.array([float(item[2]) for item in data])

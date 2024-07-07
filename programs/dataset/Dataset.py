@@ -129,5 +129,21 @@ class DatasetUtils():
             i, l, alpha = key
             l = float(l)
             alpha = float(alpha)
-            data[i].append((l,alpha,item.t_hot))
-        return data 
+            data[i].append((l,alpha,float(item.t_hot)))
+        return data
+    
+    def load_final_dataset(folder):
+        final_dataset, _ = DatasetUtils.load_datasets_to_dicts(folder)
+        return final_dataset
+    
+    def dataset_to_tensors(dataset):
+        X = []
+        Y = []
+        for key, item in dataset.items():
+            i, l, alpha = key
+            i_float = float(i)
+            l_float = float(l)
+            alpha_float = float(alpha)
+            X.append([i_float,l_float,alpha_float])
+            Y.append([float(item.t_hot), float(item.t_hot_stdev)])
+        return X, Y
