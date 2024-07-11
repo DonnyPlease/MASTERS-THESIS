@@ -5,20 +5,75 @@ import matplotlib.pyplot as plt
 
 T_HOT, T_HOT_STDEV = 0, 1
 
+I_AXIS_NAME = r'$I$ [W/cm$^2$]'
+L_AXIS_NAME = r'$L$ [μm]'
+A_AXIS_NAME =  r'$\alpha$ [°]'
+
+AXIS_NAME = {
+    "i": I_AXIS_NAME,
+    "l": L_AXIS_NAME,
+    "a": A_AXIS_NAME
+}
+
+TICKS = {
+    "i": [1e17, 1e18, 1e19],
+    "l": [0.01,0.02,0.05,0.1,0.2,0.5,1,2,5],
+    "a": [0,10,20,30,40,50,60]
+}
+
+
 def plot_maximum_absorption_curve():
     curve_x = np.logspace(-1.13,0.75,30)
     curve_y = np.arcsin(0.68*np.power(curve_x*2*np.pi,np.ones_like(curve_x)*-1/3))*180/np.pi
     plt.plot(curve_x,curve_y, color='#7FFF00',linewidth=2)
 
-def draw(X,Y,Z):
+def draw_slice(i_values, l_values, a_values, values_to_plot, slice_at=0, axes=["l","a"]):
+    final_values = None
+    x_grid = None
+    y_grid = None
+    
+    if axes == ["l","a"]:
+        final_values = values_to_plot[:,slice_at,:]
+        final_values = final_values.T
+        x_grid = l_values
+        y_grid = a_values
+        print("\t at I = ", i_values[slice_at])
+    elif axes == ["i","l"]:
+        final_values = values_to_plot[:,:,slice_at]
+        x_grid = i_values
+        y_grid = l_values
+        print("\t at alpha = ", a_values[slice_at])
+    elif axes == ["i","a"]:
+        final_values = values_to_plot[slice_at,:,:]
+        x_grid = i_values.T
+        y_grid = a_values
+        print("\tat l = ", l_values[slice_at])
+    
+    draw(x_grid, y_grid, final_values, axes=axes)
+    
+
+def draw(X,Y,Z, axes=["l","a"], scatterPoints=None):
     plt.figure(figsize=(8, 6))
     plt.pcolormesh(X, Y, Z, cmap='inferno', shading='auto')
-    plt.colorbar(label=r'$T_{hot}$ [keV]')
-    plt.xscale('log')
-    plt.xlabel(r'$L$ [μm]')
-    plt.ylabel(r'$\alpha$ [°]')
-    ticks=[0.01,0.02,0.05,0.1,0.2,0.5,1,2,5]
-    plt.xticks(ticks,ticks)
+    plt.colorbar(label=r'$T_{hot}$ [keV]',format="%.3f")
+    
+    if scatterPoints is not None:
+        plt.scatter(scatterPoints[0],scatterPoints[1],c='white',s=3,marker='o')
+            
+    # Set x-axis 
+    if axes[0] in "il":
+        plt.xscale('log')
+    plt.xlabel(AXIS_NAME[axes[0]])
+    x_ticks = TICKS[axes[0]]
+    
+    # Set y-axis
+    if axes[1] in "il":
+        plt.yscale('log')
+    plt.ylabel(AXIS_NAME[axes[1]])
+    y_ticks = TICKS[axes[1]]    
+    
+    plt.xticks(x_ticks,x_ticks)
+    plt.yticks(y_ticks,y_ticks)
     plt.show()
 
 def draw_dataset(data, what=T_HOT, show=False, save=False, add_data_points=False):

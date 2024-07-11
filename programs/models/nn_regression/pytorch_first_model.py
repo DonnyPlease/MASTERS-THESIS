@@ -21,12 +21,13 @@ from transformer import Transformer
 # create a Model class
 class Model(nn.Module):
     # input layer -> hidden layer 1 -> hidden layer 2 -> output layer
-    def __init__(self, input_size=3, hidden_size=32, transformer=None):
+    def __init__(self, input_size=3, hidden_size=64, transformer=None):
         super(Model, self).__init__()
         self.fc1 = nn.Linear(input_size, hidden_size)
         self.fc2 = nn.Linear(hidden_size, hidden_size)
         self.out = nn.Linear(hidden_size, 1)
         self.transformer = transformer if transformer else Transformer()
+        self.dropout = nn.Dropout(0.1)
        
     def scale_input(self, x):
         x = torch.tensor(self.transformer.transform(x), dtype=torch.float32)
@@ -34,10 +35,9 @@ class Model(nn.Module):
      
     def forward(self, x):
         # x = self.scale_input(x)
-        
         # forward pass
-        x = F.relu(self.fc1(x))
-        x = F.relu(self.fc2(x))
+        x = F.elu(self.fc1(x))
+        x = F.elu(self.fc2(x))
         x = self.out(x)
         return x
 
@@ -52,7 +52,7 @@ def split_data(x, y):
     y = torch.tensor(y)
     y = y[:,0]
 
-    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
+    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.1, random_state=41, shuffle=True)
     x_train = x_train.float()
     x_test = x_test.float()
     y_train = torch.FloatTensor(y_train)
@@ -77,10 +77,10 @@ if __name__ == "__main__":
     
     # set the loss and optimizer
     criterion = nn.MSELoss()
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.1)
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
     
     # Training the model
-    n_epochs = 1000
+    n_epochs = 3500
     train_losses = np.zeros(n_epochs)
     for i in range(n_epochs):
         model.train()
@@ -108,6 +108,7 @@ if __name__ == "__main__":
     outputs = model.forward(x_test).squeeze()
     loss = criterion(outputs, y_test)
     print(f'Mean Squared Error on Test Data: {loss.item():.4f}')
+    print(f"Root Mean Squared Error on Test Data: {np.sqrt(loss.item()):.4f}")
     
     # save the model
     torch.save(model, 'model.pth')
@@ -121,25 +122,14 @@ if __name__ == "__main__":
     x = np.zeros((len(lengths)*len(alphas), 3))
     for i, l in enumerate(lengths):
         for j, a in enumerate(alphas):
-            x[i*len(alphas) + j] = [1e19 8, l, a]
-    print(x)        
+            x[i*len(alphas) + j] = [1e17, l, a]
+     
     x = transformer.transform(x)
     x = torch.tensor(x, dtype=torch.float32)
     y_pred = model.forward(x).detach().numpy()
-    print(y_pred.shape)
-    # Make a grid from lengths and alphas
-    # lengths, alphas = np.meshgrid(lengths, alphas)
-    
+
     # Reshape the predictions into a grid
     y_pred = y_pred.reshape((len(lengths), len(alphas)))
-    
-    print(y_pred.shape)
-    print(lengths.shape)
-    print(alphas.shape)
-    
-    print(y_pred)
-    print(lengths)
-    print(alphas)
     
     draw(lengths, alphas, y_pred.T)
     

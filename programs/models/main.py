@@ -32,8 +32,8 @@ plt.colorbar()
 plt.show()
 
 
-UK = pykrige.uk.UniversalKriging(lengths_log_scaled, alphas, t_hot, weight=True, nlags=20, variogram_model='hole-effect', verbose=True, enable_plotting=True)
-
+UK = pykrige.uk.UniversalKriging(lengths_log_scaled, alphas, t_hot, weight=True, nlags=20, variogram_model='gaussian', verbose=True, enable_plotting=True)
+print(UK.variogram_model_parameters)
 gridx = np.linspace(0, 1, 100)
 gridy = np.linspace(0, 1, 100)
 zstar, ss = UK.execute('grid', gridx, gridy)
@@ -46,6 +46,7 @@ print(zstar)
 print(gridx.shape)
 print(gridy.shape)
 print(zstar.shape)
-
+print(zstar)
 draw(10**gridx*5.0, gridy*60.0, zstar)
+draw(10**gridx*5.0, gridy*60.0, np.sqrt(ss))
 

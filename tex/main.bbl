@@ -103,6 +103,83 @@
       \endverb
       \keyw{laser-plasmas,numerical,particle-in-cell}
     \endentry
+    \entry{beg1997}{article}{}
+      \name{author}{10}{}{%
+        {{hash=51393e0ab9e4e64019271189176776a8}{%
+           family={Beg},
+           familyi={B\bibinitperiod},
+           given={F.\bibnamedelimi N.},
+           giveni={F\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=7c54b8956af1b23c45ec779bf37ab3d7}{%
+           family={Bell},
+           familyi={B\bibinitperiod},
+           given={A.\bibnamedelimi R.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=39a970d34e5a4266b609c643903b3b00}{%
+           family={Dangor},
+           familyi={D\bibinitperiod},
+           given={A.\bibnamedelimi E.},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=48c7eacf5ef7daeead100c418933c1d6}{%
+           family={Danson},
+           familyi={D\bibinitperiod},
+           given={C.\bibnamedelimi N.},
+           giveni={C\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=85e9fc9d7988cc4c37f7daac344f4186}{%
+           family={Fews},
+           familyi={F\bibinitperiod},
+           given={A.\bibnamedelimi P.},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=81f6c81c78d3513eba15fc5d5212a21b}{%
+           family={Glinsky},
+           familyi={G\bibinitperiod},
+           given={M.\bibnamedelimi E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=a6218457865256f03c16b0d526d9075a}{%
+           family={Hammel},
+           familyi={H\bibinitperiod},
+           given={B.\bibnamedelimi A.},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=c064a0e691eef75bb2309344efeefda9}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f1494c1fd009eb73ad4b355537ec0e9c}{%
+           family={Norreys},
+           familyi={N\bibinitperiod},
+           given={P.\bibnamedelimi A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=13d00162b1e59e4a01f941aa01a79e9c}{%
+           family={Tatarakis},
+           familyi={T\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ce58e625219298381acd563e73e0ba1f}
+      \strng{fullhash}{88d81115be9d9819213b5b8110a658ac}
+      \strng{bibnamehash}{ce58e625219298381acd563e73e0ba1f}
+      \strng{authorbibnamehash}{ce58e625219298381acd563e73e0ba1f}
+      \strng{authornamehash}{ce58e625219298381acd563e73e0ba1f}
+      \strng{authorfullhash}{88d81115be9d9819213b5b8110a658ac}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{<p>The interaction of a 1053 nm picosecond laser pulse with a solid target has been studied for focused intensities of up to 1019 W cm−2. The maximum ion energy cutoff Emax (which is related to the hot electron temperature) is in the range 1.0–12.0 MeV and is shown to scale as Emax≈I1/3. The hot electron temperatures were in the range 70–400 keV for intensities up to 5×1018 W cm−2 with an indication of a high absorption of laser energy. Measurements of x-ray/γ-ray bremsstrahlung emission suggest the existence of at least two electron temperatures. Collimation of the plasma flow has been observed by optical probing techniques.</p>}
+      \field{issn}{1070-664X}
+      \field{issue}{2}
+      \field{journaltitle}{Physics of Plasmas}
+      \field{month}{2}
+      \field{title}{A study of picosecond laser–solid interactions up to 1019 W cm−2}
+      \field{volume}{4}
+      \field{year}{1997}
+      \field{pages}{447\bibrangedash 457}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1063/1.872103
+      \endverb
+    \endentry
     \entry{birdsall1985}{book}{}
       \name{author}{2}{}{%
         {{hash=176908bbaf0a2516fd26afc3709fcf35}{%
@@ -236,7 +313,7 @@
       \field{title}{Introduction to plasma physics and controlled fusion}
       \field{year}{1984}
     \endentry
-    \entry{hot-electrons1}{article}{}
+    \entry{cui2013}{article}{}
       \name{author}{5}{}{%
         {{hash=ce77c4a6369373107f6ec176941c08ae}{%
            family={Cui},
@@ -384,6 +461,52 @@
       \endverb
       \keyw{2-fluid model,Dispersion relation,Electromagnetic wave propagation,Langmuir waves,Nonlinear waves,Plasma properties}
     \endentry
+    \entry{haines2009}{article}{}
+      \name{author}{4}{}{%
+        {{hash=4577d57b0b6083592a098694f13b719a}{%
+           family={Haines},
+           familyi={H\bibinitperiod},
+           given={M.\bibnamedelimi G.},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=85926510ed797392edaa1f02e56facf7}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={M.\bibnamedelimi S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=51393e0ab9e4e64019271189176776a8}{%
+           family={Beg},
+           familyi={B\bibinitperiod},
+           given={F.\bibnamedelimi N.},
+           giveni={F\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=f7a972f6f37cc6e2ad25b9f0647170d2}{%
+           family={Stephens},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi B.},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{43fc8515a022d981153756f178bed2cc}
+      \strng{fullhash}{1580baa6f3ebe4a9c5c2f3df29e304f4}
+      \strng{bibnamehash}{1580baa6f3ebe4a9c5c2f3df29e304f4}
+      \strng{authorbibnamehash}{1580baa6f3ebe4a9c5c2f3df29e304f4}
+      \strng{authornamehash}{43fc8515a022d981153756f178bed2cc}
+      \strng{authorfullhash}{1580baa6f3ebe4a9c5c2f3df29e304f4}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0031-9007}
+      \field{issue}{4}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{1}
+      \field{title}{Hot-Electron Temperature and Laser-Light Absorption in Fast Ignition}
+      \field{volume}{102}
+      \field{year}{2009}
+      \field{pages}{045008}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.102.045008
+      \endverb
+    \endentry
     \entry{atoms-in-lasers}{book}{}
       \name{author}{3}{}{%
         {{hash=b573826dd20a011501cdaa423ab001a4}{%
@@ -421,6 +544,62 @@
       \field{year}{2011}
       \verb{doi}
       \verb 10.1017/CBO9780511993459
+      \endverb
+    \endentry
+    \entry{kluge2011}{article}{}
+      \name{author}{6}{}{%
+        {{hash=53e917b0a5c275a0eeae139ba8530510}{%
+           family={Kluge},
+           familyi={K\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=52776b44c25a2ac1417f8261a4eaa6c5}{%
+           family={Cowan},
+           familyi={C\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=382cdf61f4e661bf6c49a5169aea7ef8}{%
+           family={Debus},
+           familyi={D\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9d3b0e2d3fde066f86e511406335ac4a}{%
+           family={Schramm},
+           familyi={S\bibinitperiod},
+           given={U.},
+           giveni={U\bibinitperiod}}}%
+        {{hash=c4454fe45d7f0814d61019978930cefb}{%
+           family={Zeil},
+           familyi={Z\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=bc7e475dfc6998b9999dd7d0c4f7e89c}{%
+           family={Bussmann},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2f93a3584c97632a9e20e2b95b8ee181}
+      \strng{fullhash}{fc9387cda58efbe3425e732872ce29c1}
+      \strng{bibnamehash}{fc9387cda58efbe3425e732872ce29c1}
+      \strng{authorbibnamehash}{fc9387cda58efbe3425e732872ce29c1}
+      \strng{authornamehash}{2f93a3584c97632a9e20e2b95b8ee181}
+      \strng{authorfullhash}{fc9387cda58efbe3425e732872ce29c1}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0031-9007}
+      \field{issue}{20}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{11}
+      \field{title}{Electron Temperature Scaling in Laser Interaction with Solids}
+      \field{volume}{107}
+      \field{year}{2011}
+      \field{pages}{205003}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.107.205003
       \endverb
     \endentry
     \entry{laser-plasma4}{book}{}
@@ -518,6 +697,57 @@
       \verb 10.1007/978-3-031-23424-8
       \endverb
     \endentry
+    \entry{miller2023}{article}{}
+      \name{author}{5}{}{%
+        {{hash=ae356d0f72a3bebc7f19a4feb3149f95}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={Kyle\bibnamedelima G.},
+           giveni={K\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=265c1ff7d33b462fbae74dd0d3ae3a42}{%
+           family={Rusby},
+           familyi={R\bibinitperiod},
+           given={Dean\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=44d6e6f4e862f11cacc05fabee63c3f4}{%
+           family={Kemp},
+           familyi={K\bibinitperiod},
+           given={Andreas\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=9efb6e053169777e5002252245df2702}{%
+           family={Wilks},
+           familyi={W\bibinitperiod},
+           given={Scott\bibnamedelima C.},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=9aa9e55782750b5bc992ea6e1a9573ba}{%
+           family={Mori},
+           familyi={M\bibinitperiod},
+           given={Warren\bibnamedelima B.},
+           giveni={W\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{1bd17c15baac6149d2db624949235e5d}
+      \strng{fullhash}{66e7d7dad53ee509d45e2d3dafe2cc09}
+      \strng{bibnamehash}{66e7d7dad53ee509d45e2d3dafe2cc09}
+      \strng{authorbibnamehash}{66e7d7dad53ee509d45e2d3dafe2cc09}
+      \strng{authornamehash}{1bd17c15baac6149d2db624949235e5d}
+      \strng{authorfullhash}{66e7d7dad53ee509d45e2d3dafe2cc09}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2643-1564}
+      \field{issue}{1}
+      \field{journaltitle}{Physical Review Research}
+      \field{month}{3}
+      \field{title}{Maximizing MeV x-ray dose in relativistic laser-solid interactions}
+      \field{volume}{5}
+      \field{year}{2023}
+      \field{pages}{L012044}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevResearch.5.L012044
+      \endverb
+    \endentry
     \entry{pfeifer2006}{article}{}
       \name{author}{3}{}{%
         {{hash=ca36de992cf52d36224491785b421435}{%
@@ -603,6 +833,56 @@
       \range{pages}{4}
       \verb{doi}
       \verb 10.1103/PhysRevLett.84.4846
+      \endverb
+    \endentry
+    \entry{fonseca2009}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=6ecb271e02d47e6b546f36c9350d7ff8}{%
+           family={Ricardo},
+           familyi={R\bibinitperiod},
+           given={Fonseca},
+           giveni={F\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=4bf8141af95be2755e1e23a55af6555b}{%
+           family={Jaroszynski},
+           familyi={J\bibinitperiod},
+           given={Dino\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=c03eaf3a37f819123955eeeef452ec55}{%
+           family={Bingham},
+           familyi={B\bibinitperiod},
+           given={R.A.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=24d23e628d5a10f4b4f1298c6c5353f0}{%
+           family={Cairns},
+           familyi={C\bibinitperiod},
+           given={R.A},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{6ecb271e02d47e6b546f36c9350d7ff8}
+      \strng{fullhash}{6ecb271e02d47e6b546f36c9350d7ff8}
+      \strng{bibnamehash}{6ecb271e02d47e6b546f36c9350d7ff8}
+      \strng{authorbibnamehash}{6ecb271e02d47e6b546f36c9350d7ff8}
+      \strng{authornamehash}{6ecb271e02d47e6b546f36c9350d7ff8}
+      \strng{authorfullhash}{6ecb271e02d47e6b546f36c9350d7ff8}
+      \strng{editorbibnamehash}{3cf6841583ee6fc440d6c3daa0a8d459}
+      \strng{editornamehash}{3cf6841583ee6fc440d6c3daa0a8d459}
+      \strng{editorfullhash}{3cf6841583ee6fc440d6c3daa0a8d459}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780429146954}
+      \field{journaltitle}{Laser-Plasma Interactions}
+      \field{month}{3}
+      \field{title}{Computational Challenges in Laser-Plasma Interactions}
+      \field{year}{2009}
+      \verb{doi}
+      \verb 10.1201/9781584887799
       \endverb
     \endentry
     \entry{schwoerer2004}{inbook}{}
@@ -989,7 +1269,15 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{constants}
+  \missing{acton}
+  \missing{cite-the-constants}
+  \missing{fitexp-summary}
+  \missing{fitexp-summary2}
+  \missing{fitexp-trans}
+  \missing{jacquelin}
+  \missing{lin-reg}
+  \missing{prony}
+  \missing{prony2}
 \endrefsection
 \endinput
 

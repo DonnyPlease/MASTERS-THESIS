@@ -147,3 +147,7 @@ class DatasetUtils():
             X.append([i_float,l_float,alpha_float])
             Y.append([float(item.t_hot), float(item.t_hot_stdev)])
         return X, Y
+    
+    def load_data_for_regression(folder):
+        dataset = DatasetUtils.load_final_dataset(folder)
+        return DatasetUtils.dataset_to_tensors(dataset)
