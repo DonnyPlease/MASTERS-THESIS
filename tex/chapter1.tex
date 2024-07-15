@@ -5,7 +5,7 @@ A plasma is a quasi-neutral gas of charged and neutral particles which exhibits 
 \end{equation}
 \noindent where $Ze$ is the charge of one positively charged ion and $e$ is elementary charge \cite{plasma-intro}. 
 
-The non-neutral particles in plasma are subject to electric and magnetic fields generated either by external sources or by neighbouring particles. The long-range nature of $1/r$ Coulomb potential ensures that macroscopic fields dominate over forces created by microscopic fluctuations \cite{plasma-intro}. To explain the collective behaviour properly, one can start by writing \textit{Vlasov equation} \cite{laser-plasma4}:
+The non-neutral particles in plasma are subject to electric and magnetic fields generated either by external sources or by neighbouring particles. The long-range nature of Coulomb potential ensures that macroscopic fields dominate over forces created by microscopic fluctuations \cite{plasma-intro}. To explain the collective behaviour properly, one can start by writing \textit{Vlasov equation} \cite{laser-plasma4}:
 \begin{equation}
 	\frac{\partial f_j}{\partial t} + \bm{v} \cdot \frac{\partial f_j}{\partial \bm{x}} + \frac{q_j}{m_j}\left(\bm{E} + \frac{\bm{v}\times\bm{B}}{c}\right)\cdot \frac{\partial f_j}{\partial \bm{v}} = 0
 \end{equation}
@@ -20,7 +20,7 @@ After calculating the 0th and 1st moment of Vlasov equation (averaging through $
 	\label{eq:momentum}
 	n_j \left(\frac{\partial \bm{u}_j}{\partial t} + \left(\bm{u}_j\cdot\nabla\right)\bm{u}_j\right) = \frac{n_j q_j}{m_j}\left(\bm{E} + \frac{\bm{u}_j\times\bm{B}}{\mathrm{c}}\right) - \frac{1}{m_j}\nabla p_j
 \end{equation}
-\noindent where $p_j$ is pressure and in case of negligible heat flow also the energy equation:
+\noindent where $p_j$ is isotropic pressure and in case of negligible heat flow also the adiabatic state equation:
 \begin{equation}
 	\label{eq:energy}
 	p_jn_j^{-\gamma} = \mathrm{const.}.
@@ -31,15 +31,15 @@ After calculating the 0th and 1st moment of Vlasov equation (averaging through $
 \label{sec:temperature-intro}
 In this thesis, we are studying so called \textit{hot electrons} produced by the interaction of short laser pulse of high intensity with plasma. All important details of the physical phenomena will be covered in later sections, but let us now look at what is meant by $hot$ and how the temperature of plasma is usually understood.
 
-In a gas in the thermal equilibrium, particles can have all velocities usually with Maxwellian distribution (in three dimensions) \cite{plasma-intro3}:
+In a gas in the thermal equilibrium, particles velocities are given by Maxwellian distribution (in three dimensions) \cite{plasma-intro3}:
 \begin{equation}
 	f(\bm{v}) = n\left(\frac{m}{2\pi \boltz}\right)^{3/2}\exp\left(-\frac{\frac{1}{2}m v^2}{\boltz T}\right)
 \end{equation} 
-\noindent where $v = \norm{\bm{v}}$, $\boltz$ is the Boltzmann constant and $T$ is temperature. The average kinetic energy $E_{av}$ is then \cite{plasma-intro3}:
+\noindent where $v = \norm{\bm{v}}$ is magnitude of velocity, $m$ is mass. $\boltz$ is the Boltzmann constant and $T$ is temperature. The average kinetic energy $E_{av}$ is then \cite{plasma-intro3}:
 \begin{equation}
 	E_{av}=\frac{3}{2}\boltz T
 \end{equation}
-Because of this relation between $E_{av}$ and $T$, it is customary in plasma physics to give the temperature the same units as energy. If $\boltz T = 1 \, \mathrm{eV} = 1.6 \times 10^{-19}\, \mathrm{J}$, then \cite{plasma-intro3}:
+Because of this relation between $E_{av}$ and $T$, it is customary in plasma physics to express the temperature in the same units as energy. If $\boltz T = 1 \, \mathrm{eV} = 1.6 \times 10^{-19}\, \mathrm{J}$, then \cite{plasma-intro3}:
 \begin{equation}
 	T = \frac{1.6 \times 10^{-19}}{1.38\times 10^{-23}}=11600
 \end{equation}
@@ -47,17 +47,26 @@ Because of this relation between $E_{av}$ and $T$, it is customary in plasma phy
 \begin{equation}
 	1 \mathrm{eV} = 11600\,\mathrm{K}
 \end{equation} 
-The electrons and the ions can have different temperature \cite{plasma-intro3}. What is more, there can be multiple groups of electrons with different distributions, but we will describe this more deeply in one of the later sections.
+The electrons and the ions can have different temperature \cite{plasma-intro3}. Moreover, there can be multiple groups of electrons with different distributions, but we will describe this more deeply in one of the later sections.
 
-\section{Ionization}
-Any substance can become plasma with the sufficient increase of its temperature. The threshold can vary, but usually can be found in the order of 1 eV, because any neutral atom binds the outer electron with a binding energy in order of 1 eV \cite{laser-plasma1}. The second important factor for ionization is the density of the condensed matter.
-
-\subsection*{Density of plasma}
-The thermodynamic equilibrium condition for the fraction of electrons $n(\epsilon)$ with energy $\epsilon$ is then:
+\subsection*{Critical density}
+Now consider a high frequency electric field $\bm{E} = \bm{E(x)}\exp\left(-i\omega t\right)$. The frequency $\omega$ is assumed to be greater than electron plasma frequency $\omega_{\mathrm{pe}}$ defined as $\omega_{\mathrm{pe}}^2=4\pi e^2 n_\mathrm{e}/m_\mathrm{e}$ with $n_\mathrm{e}=Zn_{i}$ being electron density and $m_\mathrm{e}$ electron mass. Maxwell equations plus equation of motion of electron fluid give us:
 \begin{equation}
-	n(\epsilon) \propto g(\epsilon)f(\epsilon)
+	\nabla \times \bm{B} = -\frac{i\omega}{c}\epsilon\bm{E},
 \end{equation}
-\noindent where $g(\epsilon)$ is the density of state and $f(\epsilon)$ is the Fermi-Dirac distribution (function of $T$). In the extreme situation of density close to that of a vacuum, found in interstellar space, there are many states for free electrons that escaped from bound state, and $g(\epsilon)$ is large for free state compared to bound states. For example, for hydrogen atom with given principal quantum number $n^*$ there are $2\left(n^{*}\right)^2$ bound states. This is after the assumption that electron with $n>n^*$ is easily de-trapped. This means that the density of bound states is very low compared to free states and it is for this reason that the interstellar space is assumed to be filled with plasma even though $T\approx0$~\cite{laser-plasma1}.
+where $\epsilon = 1 - \omega_{\mathrm{pe}}^2/\omega^2$ defines the dielectric function of the plasma \cite{laser-plasma4}. After further derivation using the other Maxwell equations and vector identities we can get:
+\begin{equation}
+	\nabla^2 \bm{B} + \frac{\omega^2}{c^2}\epsilon\bm{B} + \frac{1}{\epsilon}\nabla\epsilon \times \left(\nabla \times \bm{B}\right) = 0
+\end{equation}
+Assuming space dependency described by $\exp\left(i\bm{k}\cdot\bm{x}\right)$, the dispersion relation is then:
+\begin{equation}
+	\omega^2 = \omega_{\mathrm{pe}}^2 + k^2c^2.
+\end{equation}
+It is possible to show, that $k$ becomes imaginary for $\omega < \omega_{\mathrm{pe}}$. This can be interpreted the following way: electrons screen the field of a light wave if $\omega < \omega_{\mathrm{pe}}$. Because of that, $\omega_{\mathrm{pe}}=\omega$ defines the maximum plasma density to which a light wave can penetrate - \textit{critical density}:
+\begin{equation}
+	n_{\mathrm{cr}} = \frac{\omega^2 m_\mathrm{e}}{4 \pi e^2} = 1.1 \times 10^{21} / \lambda_\mu^2 \, \mathrm{cm}^{-3}, 
+\end{equation}
+where  $\lambda_\mu$ is the wavelength of the light in microns in vacuum \cite{laser-plasma4}.
 
 The examples of plasmas of different densities and temperatures found in the real world can be seen in the table \ref{tab:den-temp}.
 
@@ -65,7 +74,7 @@ The examples of plasmas of different densities and temperatures found in the rea
 	\centering
 	\begin{tabular}{lcc}
 		\textbf{Type}		& \textbf{Electron density}			 			 	& \textbf{Electron temperature} \\ 
-			 				& $n_\mathrm{e}$ $\left[\mathrm{(cm)}^{-3}\right]$  &  $T_\mathrm{e}$ $\left[\mathrm{eV}\right]$ \\ \hline
+		& $n_\mathrm{e}$ $\left[\mathrm{(cm)}^{-3}\right]$  &  $T_\mathrm{e}$ $\left[\mathrm{eV}\right]$ \\ \hline
 		Stars 				& $10^{26}$          	& $2 \times 10^3$       \\
 		Laser fusion    	& $10^{25}$           	& $3 \times 10^3$       \\
 		Magnetic fusion		& $10^{15}$ 			& $10^3$         		\\
@@ -79,48 +88,33 @@ The examples of plasmas of different densities and temperatures found in the rea
 	\label{tab:den-temp}
 \end{table}
 
-\subsection*{Critical density}
-Now consider a high frequency electric field $\bm{E} = \bm{E(x)}\exp\left(-i\omega t\right)$. The frequency $\omega$ is assumed to be greater than electron plasma frequency $\omega_{\mathrm{pe}}$ defined as $\omega_{\mathrm{pe}}^2=4\pi e^2 n_0/m$ with $n_0=Zn_{0i}$ being electron density. Maxwell equations give us:
-\begin{equation}
-	\nabla \times \bm{B} = -\frac{i\omega}{c}\epsilon\bm{E},
-\end{equation}
-where $\epsilon = 1 - \omega_{\mathrm{pe}}^2/\omega^2$ defines the dielectric function of the plasma \cite{laser-plasma4}. After further derivation using the other Maxwell equations and vector identities we can get:
-\begin{equation}
-	\nabla^2 \bm{B} + \frac{\omega^2}{c^2}\epsilon\bm{B} + \frac{1}{\epsilon}\nabla\epsilon \times \left(\nabla \times \bm{B}\right) = 0
-\end{equation}
-Assuming space dependency described by $\exp\left(i\bm{k}\cdot\bm{x}\right)$, the dispersion relation is then:
-\begin{equation}
-	\omega^2 = \omega_{\mathrm{pe}}^2 + k^2c^2.
-\end{equation}
-It is possible to show, that $k$ becomes imaginary for $\omega < \omega_{\mathrm{pe}}$. It can be interpreted the following way: electrons shield out the field of a light wave if $\omega < \omega_{\mathrm{pe}}$. Because of that, $\omega_{\mathrm{pe}}=\omega$ defines the maximum plasma density to which a light wave can penetrate - \textit{critical density}:
-\begin{equation}
-	n_{\mathrm{cr}} = \frac{\omega^2 m}{4 \pi e^2} = 1.1 \times 10^{21} / \lambda_\mu^2 \, \mathrm{cm}^{-3}, 
-\end{equation}
-where $\lambda_\mu$ is the wavelength of the light in microns in vacuum \cite{laser-plasma4}.
+
+\section{Ionization}
+Any substance can become plasma with the sufficient increase of its temperature. The threshold can vary, but usually can be found in the order of 1 eV, because any neutral atom binds the outer electron with a binding energy in order of 1 eV \cite{laser-plasma1}. 
 
 \subsection*{Ionization mechanisms}
-There are several mechanisms which can be used to describe ionization. One can start with directly hitting the atoms with fast particles, but for that one would need a stream of such particles. More common way of ionization is achieved by electromagnetic radiation (photoionization) or even via electrical breakdown in strong electric fields \cite{plasma-intro}. For this thesis, the only relevant ionization is through electromagnetic radiation - in our case a laser.
+There are several mechanisms which can be used to describe ionization. One can start with directly hitting the atoms with fast particles, but for that one would need a stream of such particles. More common way of ionization is achieved by electromagnetic radiation (photoionization) or even via electrical breakdown in strong electric fields \cite{plasma-intro}. For this thesis, the most relevant ionization is through electromagnetic radiation - in our case a laser.
 
-Firstly, oscillating electromagnetic field makes free electrons oscillate as well and they can ionize other atoms via collisions. New free electrons freed by the collisions can then also hit other atoms an so on.
+Firstly, oscillating electromagnetic field makes free electrons oscillate and they can ionize other atoms via collisions. New free electrons freed by the collisions can then also hit other atoms and an avalanche if ionization events can develop.
 
 There are also non-collisional mechanisms of ionization. Imagine field of hydrogen atom at Bohr radius $a_\mathrm{B}$ - the most probable distance of electron from the atomic nucleus:
 \begin{equation}
-	a_\mathrm{B} = \frac{\hbar}{me^2} = 5.3 \times 10^{-9} \, \mathrm{ cm}
+	a_\mathrm{B} = \frac{\hbar^2}{m_\mathrm{e}e^2} = 5.3 \times 10^{-9} \, \mathrm{ cm}
 \end{equation}
-\noindent where $\hbar$ is the reduced Planck constant, $m$ is the mass of an electron and $e$ is the elementary charge.
+\noindent where $\hbar$ is the reduced Planck constant.
 The electric field for hydrogen $E_{\mathrm{H}}$ is then:
 \begin{equation}
-	E_{\mathrm{H}} = \frac{e}{4\pi\epsilon_0 a_\mathrm{B}^2} \simeq 5.1 \times 10^{9} \, \mathrm{V.m}^{-1}.
+	E_{\mathrm{H}} = \frac{e}{a_\mathrm{B}^2} \simeq 5.1 \times 10^{9} \, \mathrm{V.m}^{-1}.
 \end{equation}
-\noindent Then the \textit{atomic intensity} for hydrogen $I_{\mathrm{H}}$ is \cite{plasma-intro}:
+\noindent The corresponding so called \textit{atomic intensity} for hydrogen $I_{\mathrm{H}}$ is \cite{plasma-intro}:
 \begin{equation}
-	I_{\mathrm{H}} = \frac{\epsilon_0 c E_{\mathrm{H}}^2}{2} \simeq 3.51 \times 10^{16} \, \mathrm{W.cm}^{-2}
+	I_{\mathrm{H}} = \frac{E_{\mathrm{H}}^2}{8\pi} \simeq 3.51 \times 10^{16} \, \mathrm{W.cm}^{-2}
 \end{equation}
-\noindent where $\mathrm{c}$ is the speed of light in vacuum.
+\noindent where c is the speed of light in vacuum.
 
 It is reasonable to think that to ionize the hydrogen atom one needs $I_\mathrm{L}>I_{\mathrm{H}}$, where $I_{\mathrm{L}}$ is the intensity of the laser. In reality, the ionization occurs already for smaller laser intensities due to so called \textit{multiphoton absorption} \cite{plasma-intro} and \textit{quantum tunnelling} \cite{laser-plasma1}. The first one can occur, because the electron can climb the virtual energy states one after another and it can get hit by next photon before it falls back to lower energy state \cite{laser-plasma1}. The calculation of these transitions is non-trivial, because one has to solve time-dependant Schroedinger equation. The reader can find deeper analysis in \cite{atoms-in-lasers}.
 
-The tunnelling effect is as well a consequence of the external electric field. The superposition of the electric field which binds the electron to the atom and the strong electric field of the laser results in conditions that allow the electron escape the potential well even if the electron energy is not higher than the threshold energy for instant ionization. Let $V_H(r)= -\frac{C}{r}$ Coulomb potential of hydrogen nucleus, where $C = \frac{e^2}{4\pi\epsilon_0}$. The superposition with strong external field gives us:
+The tunnelling effect is as well a consequence of the external electric field. The superposition of the electric field which binds the electron to the atom and the strong electric field of the laser results in conditions that allow the electron escape the potential well even if the electron energy is not higher than the threshold energy for instant ionization. Let $V_H(r)= -\frac{C}{r}$ Coulomb potential of hydrogen nucleus, where in CGS unit $C = e^2$. The superposition with strong external field gives us:
 \begin{equation}
 	V_F = V_H(r) + eE_{\mathrm{ext}}(r)
 \end{equation}
@@ -129,11 +123,11 @@ Let $E_{\mathrm{ext}}(r) = -10^{10}r\,\mathrm{V/m}$. The final potential $V_\mat
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\textwidth]{figures/tunnelling}
-	\caption{The potential of hydrogen atom modified by external field: $E_{\mathrm{ext}} = -10^{10}r\,\mathrm{V/m}$. $r$ is shown in radial coordinates with units of Bohr radius $\mathrm{a_B}$. Energy of ground state of electron in hydrogen atom $E_0 = 13.6 eV$ is highlighted.}
+	\caption{The potential of hydrogen atom modified by external field: $E_{\mathrm{ext}} = -10^{10}r\,\mathrm{V/m}$. $r$ is shown the radial coordinate normalized to Bohr radius $\mathrm{a_B}$. Energy of ground state of electron in hydrogen atom $E_0 = 13.6\, \mathrm{eV}$ is highlighted.}
 	\label{fig:tunnelling}
 \end{figure}
 
-The stronger is the external field, the shorter is the tunnelling distance for the electron to escape. The field can even be so strong that the potential barrier will have its peak below the ground state energy. In that case, the electron is instantly considered to be free \cite{laser-plasma1}. 
+The stronger is the external field, the shorter is the tunnelling distance for the electron to escape and the the higher is the probability that this can happen. The field can even be so strong that the potential barrier will have its peak below the ground state energy. In that case, the electron is instantly considered to be free \cite{laser-plasma1}. 
 
 It is possible to estimate, which mechanism is more dominant cause of ionization by calculating so called \textit{Keldysh parameter} $\gamma_\mathrm{K} = \frac{\omega_0}{\omega_t}$, where $\omega_0$ is the frequency of the laser and $\omega_t = \frac{eE_{\mathrm{ext}}}{\sqrt{2mE_\mathrm{i}}}$, where $E_\mathrm{i}$ represents the energy the electron needs to receive to be ionized \cite{laser-plasma1}.
 
@@ -141,7 +135,7 @@ The ionization processes can be explored in greater depth, but the fundamental c
 
 \section{Absorption of ultra-short, ultra-intense lasers}
 Modern lasers can generate pulses with durations of only few femtoseconds and extremely high intensities (up to 
-$10^{22}\,\mathrm{W.cm}^{-2}$) \cite{absorption2,ultra-laser}. The interaction of such pulses with dense plasma produces hot electrons \cite{laser-plasma5}. This interaction initiates several processes of energy transfer from the laser's electromagnetic field to the electrons. Let us examine the most significant of these processes.
+$10^{22}\,\mathrm{W.cm}^{-2}$) \cite{absorption2,ultra-laser}. The interaction of such pulses with dense plasma produces hot electrons \cite{laser-plasma5}. There are several processes of energy transfer from the laser's electromagnetic field to the electrons. Let us examine the most significant of these processes.
 
 \subsection*{Collisional absorption}
 The principles of collisional absorption are similar to those of collisional ionization. In this process, an electron oscillates due to the influence of the laser field and transfers part of its kinetic energy to other ions through collisions. However, since the frequency of ion-electron collisions scales as $\nu_{ie} \propto E^{-3/2}$, this absorption mechanism is primarily significant for laser intensities below $10^{15}\,\mathrm{W.cm}^{-2}$ \cite{absorption1}. Given that this thesis focuses on intensities above this threshold, further discussion on collisional absorption is unnecessary.
@@ -149,13 +143,12 @@ The principles of collisional absorption are similar to those of collisional ion
 \subsection*{Resonance absorption}
 The first non-collisional absorption process we will describe is the \textit{resonance absorption}. This phenomenon can occur during the propagation of a p-polarized light wave through a density gradient. By p-polarized, we refer to a wave that is linearly polarized with its polarization vector lying in the plane of incidence. The complete analytical description is difficult, but after few simplifications it is possible to obtain reasonable idea of the principle \cite{laser-plasma6}. 
 
-Laser light will reach density $n_t = n_{\mathrm{cr}}\cos^2\theta$ (from Snell's law \cite{absorption2}), where $\theta$ is the angle of incidence \cite{laser-plasma6}. Because of the p-polarization, some light energy will tunnel through the critical density and the electron plasma will be resonantly excited at frequency of the laser $\omega_0$. The resonant wave is then capable of accelerating electrons and is defined by:
+Laser light will reach density $n_t = n_{\mathrm{cr}}\cos^2\theta$ (from Snell's law \cite{absorption2}), where $\theta$ is the angle of incidence \cite{laser-plasma6}. At this turning point, some light energy will tunnel through the critical density and the electron plasma will be resonantly excited at frequency of the laser $\omega_0$. The resonant wave is then capable of accelerating electrons and is defined by:
 \begin{equation}
 	\label{eq:resonance}
 	\frac{E_d}{\epsilon} = \frac{E_L}{\sqrt{2\pi\omega_0 L_n/c}}\phi\left(\tau\right)
 \end{equation}
-where $\epsilon$ is plasma dielectric function, $L_n$ is the density length scale and the parameter $\tau= \left(\omega_0 L_n/c\right)^{1/3}\sin\theta$ \cite{absorption2}. It can be approximated that $\phi\left(\tau\right) \propto \exp\left(-2\tau^3/3\right)$ \cite{laser-plasma6}.
-Deeper derivation of te equation \ref{eq:resonance} can be found in \cite{laser-plasma6} starting on page 139.
+where $\epsilon$ is plasma dielectric function, $L_n$ is the density length scale and the parameter $\tau= \left(\omega_0 L_n/c\right)^{1/3}\sin\theta$ and $\phi\left(\tau\right) \propto \exp\left(-2\tau^3/3\right)$ \cite{absorption2,laser-plasma6}.
 
 The angle of optimum resonance absorption for exponential density profile $\theta_{opt}$ can then be estimated as a function of $L$:
 \begin{equation}
@@ -165,14 +158,14 @@ where $L$ is normalized to the laser wavelength \cite{absorption1}.
 
 
 \subsection*{Vacuum heating}
-The second non-collisional absorption process (and no less important than the first one) is called \textit{Vacuum heating} or sometimes \textit{Brunel effect} or even \textit{“not-so-resonant” resonance absorption} \cite{brunel1987}. It was proposed by Mr.~Brunel in 1987 it was later confirmed by many experiments \cite{absorption2}.
+The second non-collisional absorption process (and no less important than the first one) is called \textit{Vacuum heating} or sometimes \textit{Brunel effect} or even \textit{“not-so-resonant” resonance absorption} \cite{brunel1987}. It was proposed by Brunel in 1987 it was later confirmed by many experiments \cite{absorption2}.
 
-Like before, p-polarized laser pulse is needed. At the angle of incidence $\theta$ the laser is hitting the target with steep density profile (a big gradient). A part of the pulse is refracted and a part is reflected. The incoming laser wave $\bm{E}_\mathrm{L}$ and reflected wave $\bm{E}_\mathrm{R}$ are in superposition at point of incidence $x=0$ and the resulting field has a perpendicular component with amplitude $E_0 =  2E_\mathrm{L}\sin\theta$, under approximation that $E_\mathrm{L}=E_\mathrm{R}$. Poisson's equation at the surface gives us \cite{absorption2}:
+Like before, p-polarized laser pulse is needed. At the angle of incidence $\theta$ the laser is hitting the target with steep density profile (a big gradient). A part of the pulse is reflected. The incoming laser wave $\bm{E}_\mathrm{L}$ and reflected wave $\bm{E}_\mathrm{R}$ are in superposition perpendicular to the target surface and the resulting field has a perpendicular component with amplitude $E_0 =  2E_\mathrm{L}\sin\theta$, under approximation that $E_\mathrm{R}=E_\mathrm{L}$. Poisson's equation at the surface gives us \cite{absorption2}:
 \begin{equation}
 	\label{eq:poisson}
-	\Delta E = -4\pi e\int_{x=-\Delta x}^{x=0}n \mathrm{d}x=4\pi e n \Delta x.
+	\Delta E = -4\pi e\int_{x=-\Delta x}^{x=0}n_\mathrm{e} \mathrm{d}x=4\pi e n_\mathrm{e} \Delta x.
 \end{equation}
-The electrons are pulled out from plasma by that field according to the equation \ref{eq:poisson}. If $n=N/\left(A\Delta x\right)$ with $N/A$ being number of electrons pulled out into vacuum per unit area and if $\Delta E = E_0$, we get \cite{absorption2}:
+The electrons are pulled out from plasma by the field $E_0$. If $n=N/\left(A\Delta x\right)$ with $N/A$ being number of electrons pulled out into vacuum per unit area $A$ and if $\Delta E = E_0$, we get \cite{absorption2}:
 \begin{equation}
 	\frac{N}{A} = \frac{2E_0 \sin \theta}{4\pi e}.
 \end{equation}
@@ -180,12 +173,13 @@ The energy absorbed $E_{\mathrm{abs}}$ by the electrons is then \cite{absorption
 \begin{equation}
 	E_{\mathrm{abs}} = \frac{1}{2}N m_\mathrm{e} v_{\mathrm{e}}^2.
 \end{equation}
-After calculating the power absorbed by unit area and after substituting $v_0$ with \textit{quiver velocity} $v_{osc}$ defined by: $\frac{ v_{osc}}{c} = \frac{eE_0}{m_{\mathrm{e}}c\omega_0}$, we get the absorbed fraction of the power $f_{\mathrm{VH}} = I_{\mathrm{abs}}/I_0$ \cite{absorption2}:
+After calculating the power absorbed by unit area and after substituting $v_\mathrm{e}$ with \textit{quiver velocity} $v_{osc}$ defined by: $\frac{ v_{osc}}{c} = \frac{eE_0}{m_{\mathrm{e}}c\omega_0}$, we get the absorbed fraction of the power $f_{\mathrm{VH}} = I_{\mathrm{abs}}/I_0$ \cite{absorption2}:
 \begin{equation}
 	f_{\mathrm{VH}} = 8 \frac{v_{\mathrm{osc}}}{c}sin^3\theta
 \end{equation}
-Note that we made a simplification by letting $E_\mathrm{L}=E_\mathrm{R}$. Another option would be to directly write $E_0 =  \left(1+R^{1/2}\right)E_\mathrm{L}\sin\theta$, where $R$ is the reflectivity \cite{absorption1}. We also neglected that the electron in vacuum is very fast and therefore relativistic correction has to be made. It is possible to generally follow a more rigorous path found for example in \cite{laser-plasma5} and \cite{absorption1}. Then the formula for $f_{\mathrm{VH}}$ is expanded to:
+Note that we made a simplification by letting $E_\mathrm{R}=E_\mathrm{L}$. Another option would be to directly write $E_0 =  \left(1+R^{1/2}\right)E_\mathrm{L}\sin\theta$, where $R$ is the reflectivity \cite{absorption1}. We also neglected that the electron in vacuum is very fast and therefore relativistic correction has to be made. It is possible to generally follow a more rigorous path found for example in \cite{laser-plasma5} and \cite{absorption1}. Then the formula for $f_{\mathrm{VH}}$ is expanded to:
 \begin{equation}
+	\label{eq:vac-heating}
 	f_{\mathrm{VH}} = \frac{\eta}{2\pi}\frac{1}{a_0}\frac{sin\theta}{cos\theta}\left(1+R^{1/2}\right)\left\{\left[1+\left(1+R^{1/2}\right)^2a_0^2\sin^2\theta\right]^{1/2}-1\right\},
 \end{equation}
 where $\eta = 1.74$ and $a_0 = eE_\mathrm{L}/(m_\mathrm{e}\omega_0c)$.
@@ -193,7 +187,7 @@ where $\eta = 1.74$ and $a_0 = eE_\mathrm{L}/(m_\mathrm{e}\omega_0c)$.
 \subsection*{$\bm{J}\times \bm{B}$ heating}
 The last absorption mechanism we want to discuss is usually called $\bm{J}\times \bm{B}$ \textit{heating}. In the sections above, we discussed the heating of plasma due to electron motion in the direction of the oscillating $\bm{E}$ component of the laser beam. That is of course caused by the $e\bm{E}$ part of the Lorentz force. The other part - $\bm{j \times B}$ - can be neglected in non-relativistic cases. However, for laser intensities higher than $10^{17}\,\mathrm{W.cm}^{-2}$ it is not possible to explain all absorption using the classical limit and another consideration has to be made \cite{cai2006}.
 
-Let $\phi$ and $\bm{A}$ be scalar and vector potential ($\bm{E} = \nabla \phi$ and $\bm{B} = \nabla \times \bm{A}$) satisfying Coulomb gauge $\nabla \cdot \bm{A} = 0$. Also, we can separate transverse and longitudinal part of electron momentum $\bm{p} = \bm{p}_\mathrm{t}+\bm{p}_\mathrm{l}$  Then the equations of motion for electron can be written as \cite{cai2006}:
+Let $\phi$ and $\bm{A}$ be scalar and vector potential ($\bm{E} = -\nabla \phi -\frac{\partial \bm{A}}{\partial t}$ and $\bm{B} = \nabla \times \bm{A}$) satisfying Coulomb gauge $\nabla \cdot \bm{A} = 0$. Also, we can separate transverse and longitudinal part of electron momentum $\bm{p} = \bm{p}_\mathrm{t}+\bm{p}_\mathrm{l}$  Then the equations of motion for electron can be written as \cite{cai2006}:
 \begin{equation}
 	\frac{\partial \bm{p}_\mathrm{t}}{\partial t} = \frac{e}{c} \frac{\partial \bm{A}}{\partial t}
 	\label{eq:jxb1}
@@ -202,33 +196,27 @@ Let $\phi$ and $\bm{A}$ be scalar and vector potential ($\bm{E} = \nabla \phi$ a
 	\frac{\partial \bm{p}_\mathrm{l}}{\partial t} = e\nabla \phi - m_{\mathrm{e}}c^2\nabla (\gamma-1)
 	\label{eq:jxb2}
 \end{equation}
-where $\gamma = \sqrt{1+\frac{p^2_\mathrm{osc}}{2m^2_\mathrm{e}c^2}}$ is the relativistic factor for linearly polarized light \cite{absorption2}. The second term of the equation \ref{eq:jxb2} is the relativistic ponderomotive force and we can write the ponderomotive potential $U_\mathrm{p}$ as:
+where $\gamma = \sqrt{1+\frac{a_0^2}{2}}$ is the relativistic factor for linearly polarized light \cite{absorption2}. $a_0$ is the same as defined in equation \ref{eq:vac-heating}, but here is has meaning of a constant normalizing vector field $\bm{A}$. To be more precise $a_0 = \norm{\bm{a}}$ and:
 \begin{equation}
-	U_\mathrm{p} = m_{\mathrm{e}}c^2\nabla (1 -\gamma).
+	\bm{a} = \frac{e\bm{A}}{m_ec^2}.
+\end{equation}
+
+The second term of the equation \ref{eq:jxb2} is the relativistic ponderomotive force and we can write the ponderomotive potential $U_\mathrm{p}$ as:
+\begin{equation}
+	U_\mathrm{p} = (\gamma - 1)m_{\mathrm{e}}c^2.
 	\label{eq:ponderomotive-potential}
 \end{equation}
-After expanding $\gamma$ as a fourier series with frequency $\omega_0$:
-\begin{equation}
-	\gamma(z,t) = \gamma_0(z) + \gamma_1(z)\mathrm{e}^{i\omega_0t} + \gamma_2(z)\mathrm{e}^{i2\omega_0t} + ...
-\end{equation}
-we get $\gamma_1 = 0$ and $\gamma_2 \approx a_1^2/4$, where $a_1$ is defined with:
-\begin{equation}
-	\bm{a}(z,t) = e\bm{A}(z,t)/m_\mathrm{e}c^2 = \hat{\bm{x}}\frac{1}{2}\left[a_1(z)\mathrm{e}^{i\omega_0 t} + ...\right]
-\end{equation}
-where $\hat{\bm{x}}$ is a unit vector in the $x$ direction \cite{cai2006}. 
+There is a force with frequency $2\omega_0$ which will affect the electrons in longitudinal direction. One of the interpretations of this force can sound like this: Twice every laser period, streams of electrons are pushed into the the target \cite{cai2006}. This causes the production of fast electrons.
 
-Thanks to the expansion, it is clear that there is a force with frequency $2\omega_0$ which will affect the electrons in longitudinal direction. One of the interpretations of this force can sound like this: 
-Twice every laser period, streams of electrons are pushed into the the target \cite{cai2006}. This causes energy transfer to the rest of the plasma resulting in the production of fast electrons.
-
-It is important to note, that at higher intensity, the electron density can rise as a consequence of the zero-frequency pondermotive force. The change in density can cause that the $2\omega_0$ resonance is not possible. The density is also dependent on the scale length of the target. For example for exponential density profile, the density decreases with the increase of scale length \cite{cai2006}. This means the $2\omega_0$ resonance is expected to play a greater role for bigger scale lengths. In other words, the initial plasma conditions need to be known to estimate the effects of $\bm{J}\times \bm{B}$ heating.
+It is important to note, that at higher intensity, the electron density can rise as a consequence of the zero-frequency pondermotive force. The change in density can cause the $2\omega_0$ force component to be inefficient for hot electron generation. The density is also related the scale length of the target. For example for exponential density profile, the density decreases with the increase of scale length \cite{cai2006}. This means the $\bm{J}\times \bm{B}$ heating is expected to play a greater role for bigger scale lengths. In other words, the initial plasma conditions need to be known to estimate the effects of $\bm{J}\times \bm{B}$ heating.
 
 One last note regarding $\bm{J}\times \bm{B}$ heating. The relativistic factor $\gamma$ has a different form in a case of circularly polarized laser. That leads to suppressing this kind of electron heating altogether \cite{cai2006}.
 
-\subsection*{Last words on absorption}
-The three mentioned mechanisms are by no means exhaustive when it comes to laser absorption. They are the three most relevant in the context of this work. There are other physical contributing to heating up the plasma especially when the parameters of the experiment change \cite{absorption1}. We will now move on to motivating the thesis in greater detail.
+
+The three mentioned mechanisms are by no means exhaustive when it comes to laser absorption. They are the three most relevant in the context of this work. There are other physical processes contributing to heating up the plasma especially when the parameters of the experiment change \cite{absorption1}. We will now move on to describe the particular motivation of the thesis.
 
 \section{Motivation - X-ray $\mathbf{K}_\alpha$ emission}
-Because hot electrons accelerated by ultra-intense ultra-short laser pulse can carry multi-keV energy, they can penetrate a solid behind the plasma, where by $K$-shell ionization they can generate X-rays \cite{reich2000}. The X-ray is consisting of spectral lines ($\mathrm{K}_\alpha$) and X-ray from Bremsstrahlung. The uniqueness of this method are the high energies of monochromatic photons within a short pulse synchronized with the laser pulse. The source is typically very small \cite{pfeifer2006}.
+Because hot electrons accelerated by ultra-intense ultra-short laser pulse can carry significant (keV-MeV) energy, they can penetrate deeper into the unionized part of the target, where they can generate characteristic X-rays by K-shell ionization \cite{reich2000}. The X-ray spectrum is consisting of spectral lines (e.g. $\mathrm{K}_\alpha$) and continuous part X-ray from Bremsstrahlung. The uniqueness of this method of producing X-rays rests in the monochromatic spectrum of high energy X-ray photons within a short pulse synchronized with the laser pulse. The source is typically very small \cite{pfeifer2006}.
 
 \begin{figure}[h]
 	\centering
@@ -237,23 +225,23 @@ Because hot electrons accelerated by ultra-intense ultra-short laser pulse can c
 	\label{fig:ti-spectrum}
 \end{figure}
 
-Let us now briefly look into the origin $\mathrm{K}_\alpha$-line. In figure \ref{fig:ti-spectrum}, there is a spectrum of titanium for x-ray photon energies and how the $\mathrm{K}_\alpha$ - yield scales with the laser intensity. The generation of the $\mathrm{K}_\alpha$ radiation clearly depends on laser intensity and therefore in some sense also on hot electrons temperature. According to \cite{schwoerer2004}, the yield drops at the laser intensity around $10^{18}\,\mathrm{W.cm}^{-2}$ \textit{"because the interaction time with the atom decreases with higher electron velocity"}. The following rise in the yield is then attributed to the relativistic effect where the electric fields of the fast hot electrons are contracted and therefore have greater effect \cite{schwoerer2004}.
+Let us now briefly look into the origin $\mathrm{K}_\alpha$-line. In figure \ref{fig:ti-spectrum}, there is an energy spectrum of titanium x-ray photons and the $\mathrm{K}_\alpha$ - yield scaling with the laser intensity. The generation of the $\mathrm{K}_\alpha$ radiation clearly depends on laser intensity through the hot electrons temperature. According to \cite{schwoerer2004}, the yield drops at the laser intensity around $10^{18}\,\mathrm{W.cm}^{-2}$ \textit{"because the interaction time with the atom decreases with higher electron velocity"}. The following rise in the yield is then attributed to the relativistic effect where the electric fields of the fast hot electrons are contracted and therefore have greater effect \cite{schwoerer2004}.
 
 The total yield $N$ can be expressed analytically as \cite{reich2000}:
 \begin{equation}
-	N = \int n_\mathrm{hot} f_\mathrm{hot}(E) N_\mathrm{gen}(E) f_\mathrm{em}(E)\mathrm{d}E
+	N_{\mathrm{yield}} = \int n_\mathrm{hot} f_\mathrm{hot}(E) N_\mathrm{gen}(E) f_\mathrm{em}(E)\mathrm{d}E
 	\label{eq:total-yield}
 \end{equation}
 where $N$ is the number of emitted photons, $n_\mathrm{hot}$ is the total number of hot electrons, and $f_\mathrm{hot}(E)$ is their energy distribution, $N_\mathrm{gen}(E)$ is the number of $\mathrm{K}_\alpha$ photons generated by an electron of incidence energy E, and $f_\mathrm{em}(E)$ is the fraction of these photons that escapes from the solid \cite{reich2000}. 
 
-Having a reliable numerical model of $n_\mathrm{hot}$ and $f_\mathrm{hot}(E)$ from equation \ref{eq:total-yield} could allow us to optimize the $\mathrm{K}_\alpha$ yield based on the parameters of the laser and the plasma. Namely, the angle of incidence, the laser intensity and the plasma length scale. The research conducted by Reich et al. \cite{reich2000} could be followed up by examining a wider range of parameters beyond just laser intensity. This is crucial because, as shown by Cui et al. \cite{cui2013}, the temperature function of the electrons has a complex and non-trivial shape. The complexity comes from the complex nature of the physical processes causing the electron heating.
+Having a reliable numerical model for $n_\mathrm{hot}$ and $f_\mathrm{hot}(E)$ from equation \ref{eq:total-yield} based on the parameters of the laser and the plasma could allow us to optimize the $\mathrm{K}_\alpha$ yield. Namely, the angle of incidence, the laser intensity and the plasma length scale are the most important parameters for laser absorption. The research conducted by Reich et al. \cite{reich2000} could be followed up by examining a wider range of parameters beyond just laser intensity. This is crucial because, as shown by Cui et al. \cite{cui2013}, the temperature function of the electrons has a complex and non-trivial shape. The complexity comes from the complex nature of the physical processes causing the electron heating.
 
 In this thesis, we presents results from hundreds of PIC simulations while scanning through the mentioned parameters. Then we try to present and  defend a way of how the hot electron temperature can be modelled and how to make the model more precise. The implications with respect to previous works and to equation \ref{eq:total-yield} are discussed.
 
 \section{PIC simulations}
 As previously mentioned, we are using Particle-In-Cell (PIC) simulations to obtain the data necessary for our model. PIC codes have been under development since the advent of computers in the 1960s, and advancements in computer technology over the past 30 years have enabled us to run simulations on a much larger scale. One significant advantage of simulations is that they allow theoretical predictions to be verified in greater detail than is possible with real plasma experiments \cite{dawson1962}. To illustrate the progress made over the decades, let us mention, that in 1962 Dawson and Buneman simulated the motion of $1000$ plasma particles. Today, we can simulate the motion of more than $10^{10}$ particles \cite{tskhakaya2007}.
 
-We are not developing our own simulation code. Instead, we are using code freely available for academic purposes, specifically the 2D simulation code EPOCH \cite{arber2015}. EPOCH has been widely used in numerous publications within the laser-plasma field and adequately meets our requirements. Below, we will present a brief overview of the key principles of the PIC method, upon which EPOCH is also based.
+We are not developing our own simulation code. Instead, we are using code freely available for academic purposes, specifically the 2D version of simulation code EPOCH \cite{arber2015}. EPOCH has been widely used in numerous publications within the laser-plasma field and adequately meets our requirements. Below, we will present a brief overview of the key principles of the PIC method, upon which EPOCH is also based.
 
 \subsection*{Macro-particles}
 It is not possible to have as many particles in a simulation as in a real plasma, even in very small scales, because of the computational cost. Because of that, the simulations usually work with macro-particles which represent clouds of many real particles. These particles have finite sizes (as opposed to infinitesimal), so that there are no divergent forces in case of collisions. The forces in simulations go to zero for small distances between macro-particles. For large distances, they comply with the Coulombic behaviour. In plasma simulations, it is possible to do this without sacrificing accuracy, because of the collective behaviour of plasma\cite{fonseca2009}.
@@ -261,13 +249,13 @@ It is not possible to have as many particles in a simulation as in a real plasma
 \subsection*{Computational cycle}
 The simulation runs in a cycle. In each step, we solve for electromagnetic fields created by the charged particles. Then we evaluate the equations of motion for the particles, which are influenced by the Lorentz force \cite{birdsall1985}. The laser pulse is included as an external source of electromagnetic radiation at the boundary.
 
-Typically, the finite-difference time-domain method (FDTD) is used for numerically solving Maxwell's equations, which fully describe the electromagnetic field. \textit{Finite-difference} means that the electric field $\bm{E}$ and magnetic field $\bm{B}$ are specified in the points of a grid - usually a \textit{Yee grid}. A comprehensive description of a Yee grid can be found in the original article by Yee \cite{yee1966}. The critical concept of a Yee grid is illustrated in figure \ref{fig:yee-grid}. - the magnetic field components are calculated in the center of the faces of an imaginary cube (cell) while the electric field components are calculated in the center of the edges. The cube represents one cell of the 3-dimensional grid. We can write derivatives of electric field \cite{arber2015}:
+Typically, the finite-difference time-domain method (FDTD) is used for numerically solving Maxwell's equations, which fully describe the electromagnetic field. \textit{Finite-difference} means that the electric field $\bm{E}$ and magnetic field $\bm{B}$ are specified in the points of a grid - usually a \textit{Yee grid}. A comprehensive description of a Yee grid can be found in the original article by Yee \cite{yee1966}. The critical concept of a Yee grid is illustrated in figure \ref{fig:yee-grid}. - the magnetic field components are calculated in the center of the faces of an imaginary cube (cell) while the electric field components are calculated in the center of the edges. The cube represents one cell of the 3-dimensional grid. We can approximate derivatives of electric field with centered finite differences \cite{arber2015}:
 \begin{equation}
 	\label{eq:num-der}
 	\left(\frac{\partial E_y}{\partial x}\right)_{i+\frac{1}{2},j,k} = \frac{E_{y,i+1,j,k}-E_{y,i,j,k}}{\Delta x} 
 \end{equation}
 
-Note, that this numerical derivative in equation \ref{eq:num-der} is second order accurate at the cube point where we calculate $B_{z,i,j,k}$, because the formula is centered. Moreover, because of one of the Maxwell's equations, $\nabla \times \bm{E} = \frac{\partial \bm{B}}{\partial t}$, this derivative is exclusively used to calculate time-derivative of $B_{z,i,j,k}$. A similar relationship can be found when calculating all components of $\bm{B}$ from $\bm{E}$ and vice versa. Therefore, all used numerical derivatives are second order accurate \cite{arber2015}.
+Note, that this approximation is second order accurate at the cube point where we calculate $B_{z,i,j,k}$, because the formula is centered. Moreover, because of one of the Maxwell's equations, $\nabla \times \bm{E} = \frac{\partial \bm{B}}{\partial t}$, this derivative is exclusively used to calculate time-derivative of $B_{z,i,j,k}$. A similar relationship can be found when calculating all components of $\bm{B}$ from $\bm{E}$ and vice versa. Therefore, all used numerical derivatives are second order accurate \cite{arber2015}.
 
 \begin{figure}[t]
 	\centering
@@ -285,7 +273,7 @@ In EPOCH, as in other PIC codes, fields are updated at both the half time-step a
 \end{equation}
 where $\bm{J}$ is the current density and $\Delta t$ is a size of a full time-step \cite{arber2015}.
 
-In the second step, with updated currents, we use the current extrapolated to step $n+1$:
+In the second step, we use the updated currents at $n+1$:
 \begin{equation} 
 	\bm{B}^{n+1} = \bm{B}^{n+1/2} - \frac{\Delta t}{2}\left(\nabla\times\bm{E}^{n+1/2} \right)
 \end{equation}
@@ -293,11 +281,11 @@ In the second step, with updated currents, we use the current extrapolated to st
 	\bm{E}^{n+1} = \bm{E}^{n+1/2} + \frac{\Delta t}{2}\left(c^2 \nabla\times\bm{B}^{n+1} - \frac{\bm{J}^{n+1}}{\epsilon_0}\right)
 \end{equation}
 
-The motion of particles and the resulting currents are consequences of these fields. Generally, the equations of motion are:
+The motion of particles and the resulting currents are consequences of the fields. Generally, the equations of motion are:
 \begin{equation}
 	\frac{\mathrm{d}\bm{x_l}}{\mathrm{d}t} = \bm{v_l} \text{   and   }  \frac{\mathrm{d}\bm{p_l}}{\mathrm{d}t} = \bm{F_l}
 \end{equation}
-where vectors $\bm{x_l}$,  $\bm{v_l}$  and $\bm{p_l}$ represent the position, velocity and momentum of the \textit{l}-th macro-particle. $\bm{F_l}=\bm{F_l}(t,\bm{x_l},\bm{v_l},\bm{E},\bm{B})$ is the force. Fields $\bm{E}$ and $\bm{B}$ are functions of the positions and velocities of the all charged particles \cite{tskhakaya2007}.
+where vectors $\bm{x_l}$,  $\bm{v_l}$  and $\bm{p_l}$ represent the position, velocity and momentum of the \textit{l}-th macro-particle. $\bm{F_l}=\bm{F_l}(t,\bm{x_l},\bm{v_l},\bm{E},\bm{B})$ is the force. Fields $\bm{E}$ and $\bm{B}$ are functions of the positions and time \cite{tskhakaya2007}.
 In this context, the right-hand side of the second equation represents the Lorentz force, and the time-step formula for the momentum is: \cite{arber2015}:
 \begin{equation}
 	\bm{p}^{~n+1}_{l} = \bm{p}^{~n}_l + q_l\Delta t \left[\bm{E}^{n+1/2}\left(\bm{x}_l^{~n+1/2}\right)+\bm{v_l}^{n+1/2}\times \bm{B}^{n+1/2}\left(\bm{x}_l^{~n+1/2}\right) \right] 
@@ -315,7 +303,7 @@ The particle position update is calculated from the velocity, but this is also d
 \end{equation}
 In similar way, we can then calculate $\bm{x}^{~n+1}_l$ and $\bm{x}^{~n+3/2}_l$ \cite{arber2015}, which are needed for calculating the currents.
 
-The currents necessary for updating the fields can be calculated using methods such as the one presented by Esirkepov in \cite{esirkepov2001}. Modern approaches to calculating currents are generally based on solving the continuity equation:
+The currents necessary for updating the fields can be calculated using methods such as the one presented by Esirkepov in \cite{esirkepov2001}. Modern approaches to calculating currents are generally based on solving the discrete form of the continuity equation:
 \begin{equation}
 	\frac{\partial\rho}{\partial t} + \nabla \cdot \bm{J} = 0
 	\label{eq:conti}
@@ -338,4 +326,4 @@ Since macro-particles in the simulation represent numerous real particles, a \te
 
 Any function with a unit integral and compact support can be used as a shape function. An even distribution of particle in volume $\Delta x \times \Delta y \times \Delta z$ is referred to as the \textit{top hat} shape function. Using higher order shape functions are one of the improvements programmers were able to make thanks to more powerful computers. A higher order shape functions are for example triangular shape functions with volume of $2\Delta x \times 2\Delta y \times 2\Delta z$  . The weight is then calculated as a convolution of shape function with the 'top hat' function \cite{arber2015}.
 
-Working with macro-particles instead of individual particles neglects some effects, particularly those effective over distances shorter than $\Delta x$. EPOCH uses a fully relativistic, energy-conserving binary collision model, which favors small-angle scattering to improve simulation behavior with a limited number of particles per cell. For our study involving laser intensities above $10^{10}$, collisions are not necessary. Other effects, such as ionization and quantum phenomena like photon emission and pair production, are often included when relevant, with detailed descriptions available in \cite{arber2015}.
+Working with macro-particles instead of individual particles neglects some effects, particularly those effective over distances shorter than $\Delta x$. EPOCH uses a fully relativistic, energy-conserving binary collision model, which favors small-angle scattering to improve simulation behavior with a limited number of particles per cell. For our study involving laser intensities above $10^{10}$, collisions are not necessary. Other effects, such as ionization and quantum phenomena like photon emission and pair production, are often included when relevant, with detailed descriptions available in~\cite{arber2015}.

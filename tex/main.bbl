@@ -80,11 +80,11 @@
       \list{publisher}{1}{%
         {Institute of Physics Publishing}%
       }
-      \strng{namehash}{388f33a091445c4d41e035790e143da6}
+      \strng{namehash}{2a947cd35556f4810f60cf140133d1fb}
       \strng{fullhash}{2961b237423c30eab7f6d81aaa5a3cf1}
-      \strng{bibnamehash}{388f33a091445c4d41e035790e143da6}
-      \strng{authorbibnamehash}{388f33a091445c4d41e035790e143da6}
-      \strng{authornamehash}{388f33a091445c4d41e035790e143da6}
+      \strng{bibnamehash}{2a947cd35556f4810f60cf140133d1fb}
+      \strng{authorbibnamehash}{2a947cd35556f4810f60cf140133d1fb}
+      \strng{authornamehash}{2a947cd35556f4810f60cf140133d1fb}
       \strng{authorfullhash}{2961b237423c30eab7f6d81aaa5a3cf1}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
@@ -102,6 +102,36 @@
       \verb 10.1088/0741-3335/57/11/113001
       \endverb
       \keyw{laser-plasmas,numerical,particle-in-cell}
+    \endentry
+    \entry{barlett1998}{article}{}
+      \name{author}{1}{}{%
+        {{hash=51fc11adc82c5171e6b03bb04073d8e6}{%
+           family={Bartlett},
+           familyi={B\bibinitperiod},
+           given={Peter\bibnamedelima L},
+           giveni={P\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{51fc11adc82c5171e6b03bb04073d8e6}
+      \strng{fullhash}{51fc11adc82c5171e6b03bb04073d8e6}
+      \strng{bibnamehash}{51fc11adc82c5171e6b03bb04073d8e6}
+      \strng{authorbibnamehash}{51fc11adc82c5171e6b03bb04073d8e6}
+      \strng{authornamehash}{51fc11adc82c5171e6b03bb04073d8e6}
+      \strng{authorfullhash}{51fc11adc82c5171e6b03bb04073d8e6}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Sample complexity results from computational learning theory, when applied to neural network learning for pattern classification problems, suggest that for good generalization performance the number of training examples should grow at least linearly with the number of adjustable parameters in the network. Results in this paper show that if a large neural network is used for a pattern classification problem and the learning algorithm finds a network with small weights that has small squared error on the training patterns, then the generalization performance depends on the size of the weights rather than the number of weights. For example, consider a two-layer feedforward network of sigmoid units, in which the sum of the magnitudes of the weights associated with each unit is bounded by A and the input dimension is n. We show that the misclassification probability is no more than a certain error estimate (that is related to squared error on the training set) plus A 3 (log n)=m (ignoring log A and log m factors), where m is the number of training patterns. This may explain the generalization performance of neural networks, particularly when the number of training examples is considerably smaller than the number of weights. It also supports heuristics (such as weight decay and early stopping) that attempt to keep the weights small during training. The proof techniques appear to be useful for the analysis of other pattern classifiers: when the input domain is a totally bounded metric space, we use the same approach to give upper bounds on misclassification probability for classifiers with decision boundaries that are far from the training examples. Index Terms-Computational learning theory, neural networks , pattern recognition, scale-sensitive dimensions, weight decay.}
+      \field{issue}{2}
+      \field{journaltitle}{IEEE TRANSACTIONS ON INFORMATION THEORY}
+      \field{title}{The Sample Complexity of Pattern Classification with Neural Networks: The Size of the Weights is More Important than the Size of the Network}
+      \field{volume}{44}
+      \field{year}{1998}
+      \field{pages}{525\bibrangedash 536}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/18.661502
+      \endverb
     \endentry
     \entry{beg1997}{article}{}
       \name{author}{10}{}{%
@@ -156,22 +186,21 @@
            given={M.},
            giveni={M\bibinitperiod}}}%
       }
-      \strng{namehash}{ce58e625219298381acd563e73e0ba1f}
+      \strng{namehash}{75a3bac79d2f6da92041c7b06a863bb0}
       \strng{fullhash}{88d81115be9d9819213b5b8110a658ac}
-      \strng{bibnamehash}{ce58e625219298381acd563e73e0ba1f}
-      \strng{authorbibnamehash}{ce58e625219298381acd563e73e0ba1f}
-      \strng{authornamehash}{ce58e625219298381acd563e73e0ba1f}
+      \strng{bibnamehash}{75a3bac79d2f6da92041c7b06a863bb0}
+      \strng{authorbibnamehash}{75a3bac79d2f6da92041c7b06a863bb0}
+      \strng{authornamehash}{75a3bac79d2f6da92041c7b06a863bb0}
       \strng{authorfullhash}{88d81115be9d9819213b5b8110a658ac}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{<p>The interaction of a 1053 nm picosecond laser pulse with a solid target has been studied for focused intensities of up to 1019 W cm−2. The maximum ion energy cutoff Emax (which is related to the hot electron temperature) is in the range 1.0–12.0 MeV and is shown to scale as Emax≈I1/3. The hot electron temperatures were in the range 70–400 keV for intensities up to 5×1018 W cm−2 with an indication of a high absorption of laser energy. Measurements of x-ray/γ-ray bremsstrahlung emission suggest the existence of at least two electron temperatures. Collimation of the plasma flow has been observed by optical probing techniques.</p>}
       \field{issn}{1070-664X}
       \field{issue}{2}
       \field{journaltitle}{Physics of Plasmas}
       \field{month}{2}
-      \field{title}{A study of picosecond laser–solid interactions up to 1019 W cm−2}
+      \field{title}{A study of picosecond laser-solid interactions up to $10^\{19\}$ W $\mathrm\{cm\}^\{-2\}$}
       \field{volume}{4}
       \field{year}{1997}
       \field{pages}{447\bibrangedash 457}
@@ -210,6 +239,51 @@
       \field{isbn}{0070053715}
       \field{title}{Plasma physics via computer simulation}
       \field{year}{1985}
+    \endentry
+    \entry{bishop2006}{book}{}
+      \name{author}{1}{}{%
+        {{hash=9dfd0135a5e80aa6d81cea2c10fb7f73}{%
+           family={Bishop},
+           familyi={B\bibinitperiod},
+           given={Christopher\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=4d62706722004ea4490fdf4124806839}{%
+           family={Jordan},
+           familyi={J\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3a07403d0e72923a2c8f6519d0e8b233}{%
+           family={Kleinberg},
+           familyi={K\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6cc176cec9b972a477a78a329baae9c1}{%
+           family={Scholkopf},
+           familyi={S\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{9dfd0135a5e80aa6d81cea2c10fb7f73}
+      \strng{fullhash}{9dfd0135a5e80aa6d81cea2c10fb7f73}
+      \strng{bibnamehash}{9dfd0135a5e80aa6d81cea2c10fb7f73}
+      \strng{authorbibnamehash}{9dfd0135a5e80aa6d81cea2c10fb7f73}
+      \strng{authornamehash}{9dfd0135a5e80aa6d81cea2c10fb7f73}
+      \strng{authorfullhash}{9dfd0135a5e80aa6d81cea2c10fb7f73}
+      \strng{editorbibnamehash}{93ecdedbd903aedc30d5de6b903706bb}
+      \strng{editornamehash}{b8b3849c19ccca7ad1a8d978f518391a}
+      \strng{editorfullhash}{93ecdedbd903aedc30d5de6b903706bb}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0-387-31073-8}
+      \field{title}{Pattern Recognition and Machine Learning}
+      \field{year}{2006}
     \endentry
     \entry{brunel1987}{article}{}
       \name{author}{1}{}{%
@@ -265,11 +339,11 @@
            given={Chun-yang},
            giveni={C\bibinithyphendelim y\bibinitperiod}}}%
       }
-      \strng{namehash}{7e8062d8cc7a92492e116752988b2936}
+      \strng{namehash}{c8e1d3f5db9d96baa12512d2a2274327}
       \strng{fullhash}{533b588e6ed9fb0b3d90338c87b56dcd}
       \strng{bibnamehash}{533b588e6ed9fb0b3d90338c87b56dcd}
       \strng{authorbibnamehash}{533b588e6ed9fb0b3d90338c87b56dcd}
-      \strng{authornamehash}{7e8062d8cc7a92492e116752988b2936}
+      \strng{authornamehash}{c8e1d3f5db9d96baa12512d2a2274327}
       \strng{authorfullhash}{533b588e6ed9fb0b3d90338c87b56dcd}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
@@ -341,11 +415,11 @@
            given={Jie},
            giveni={J\bibinitperiod}}}%
       }
-      \strng{namehash}{7bbacd5b81cab0ae445f3880140a567c}
+      \strng{namehash}{1919add0e9cfedda3fbe262d179a8143}
       \strng{fullhash}{1b609536cc6956ce31d62870678d0a74}
       \strng{bibnamehash}{1b609536cc6956ce31d62870678d0a74}
       \strng{authorbibnamehash}{1b609536cc6956ce31d62870678d0a74}
-      \strng{authornamehash}{7bbacd5b81cab0ae445f3880140a567c}
+      \strng{authornamehash}{1919add0e9cfedda3fbe262d179a8143}
       \strng{authorfullhash}{1b609536cc6956ce31d62870678d0a74}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
@@ -484,11 +558,11 @@
            given={R.\bibnamedelimi B.},
            giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
       }
-      \strng{namehash}{43fc8515a022d981153756f178bed2cc}
+      \strng{namehash}{b1bca5b613bfc09622859b9e17483bae}
       \strng{fullhash}{1580baa6f3ebe4a9c5c2f3df29e304f4}
       \strng{bibnamehash}{1580baa6f3ebe4a9c5c2f3df29e304f4}
       \strng{authorbibnamehash}{1580baa6f3ebe4a9c5c2f3df29e304f4}
-      \strng{authornamehash}{43fc8515a022d981153756f178bed2cc}
+      \strng{authornamehash}{b1bca5b613bfc09622859b9e17483bae}
       \strng{authorfullhash}{1580baa6f3ebe4a9c5c2f3df29e304f4}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
@@ -501,11 +575,46 @@
       \field{title}{Hot-Electron Temperature and Laser-Light Absorption in Fast Ignition}
       \field{volume}{102}
       \field{year}{2009}
-      \field{pages}{045008}
-      \range{pages}{1}
       \verb{doi}
       \verb 10.1103/PhysRevLett.102.045008
       \endverb
+    \endentry
+    \entry{ingrassia2005}{article}{}
+      \name{author}{2}{}{%
+        {{hash=cb60b12532fb372d49ffafd3b9429103}{%
+           family={Ingrassia},
+           familyi={I\bibinitperiod},
+           given={Salvatore},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ba231d8033e959b150bb35254b861d96}{%
+           family={Morlini},
+           familyi={M\bibinitperiod},
+           given={Isabella},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{4c4ebe91a126caddbadcfd56b4ca0f6f}
+      \strng{fullhash}{4c4ebe91a126caddbadcfd56b4ca0f6f}
+      \strng{bibnamehash}{4c4ebe91a126caddbadcfd56b4ca0f6f}
+      \strng{authorbibnamehash}{4c4ebe91a126caddbadcfd56b4ca0f6f}
+      \strng{authornamehash}{4c4ebe91a126caddbadcfd56b4ca0f6f}
+      \strng{authorfullhash}{4c4ebe91a126caddbadcfd56b4ca0f6f}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Neural network modeling for small datasets can be justified from a theoretical point of view according to some of Bartlett's results showing that the generalization performance of a multilayer perceptron (MLP) depends more on the L1 norm ||c||1 of the weights between the hidden layer and the output layer rather than on the total number of weights. In this article we investigate some geometrical properties of MLPs and drawing on linear projection theory, we propose an equivalent number of degrees of freedom to be used in neural model selection criteria like the Akaike information criterion and the Bayes information criterion and in the unbiased estimation of the error variance. This measure proves to be much smaller than the total number of parameters of the network usually adopted, and it does not depend on the number of input variables. Moreover, this concept is compatible with Bartlett's results and with similar ideas long associated with projection-based models and kernel models. Some numerical studies involving both real and simulated datasets are presented and discussed. © 2005 American Statistical Association and the American Society for Quality.}
+      \field{issue}{3}
+      \field{journaltitle}{Technometrics}
+      \field{month}{8}
+      \field{title}{Neural network modeling for small datasets}
+      \field{volume}{47}
+      \field{year}{2005}
+      \field{pages}{297\bibrangedash 311}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1198/004017005000000058
+      \endverb
+      \keyw{Degrees of freedom,Indirect measure,Neural model,Small dataset}
     \endentry
     \entry{atoms-in-lasers}{book}{}
       \name{author}{3}{}{%
@@ -528,11 +637,11 @@
       \list{publisher}{1}{%
         {Cambridge University Press}%
       }
-      \strng{namehash}{b2672bdbbf2532295edced5cf6d6f570}
+      \strng{namehash}{1304af3b0a8c1d98879072b08f46f719}
       \strng{fullhash}{b2672bdbbf2532295edced5cf6d6f570}
       \strng{bibnamehash}{b2672bdbbf2532295edced5cf6d6f570}
       \strng{authorbibnamehash}{b2672bdbbf2532295edced5cf6d6f570}
-      \strng{authornamehash}{b2672bdbbf2532295edced5cf6d6f570}
+      \strng{authornamehash}{1304af3b0a8c1d98879072b08f46f719}
       \strng{authorfullhash}{b2672bdbbf2532295edced5cf6d6f570}
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
@@ -579,11 +688,11 @@
            given={M.},
            giveni={M\bibinitperiod}}}%
       }
-      \strng{namehash}{2f93a3584c97632a9e20e2b95b8ee181}
+      \strng{namehash}{92a2fbe43d2569562ea724f3b7d09bc5}
       \strng{fullhash}{fc9387cda58efbe3425e732872ce29c1}
       \strng{bibnamehash}{fc9387cda58efbe3425e732872ce29c1}
       \strng{authorbibnamehash}{fc9387cda58efbe3425e732872ce29c1}
-      \strng{authornamehash}{2f93a3584c97632a9e20e2b95b8ee181}
+      \strng{authornamehash}{92a2fbe43d2569562ea724f3b7d09bc5}
       \strng{authorfullhash}{fc9387cda58efbe3425e732872ce29c1}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
@@ -596,8 +705,6 @@
       \field{title}{Electron Temperature Scaling in Laser Interaction with Solids}
       \field{volume}{107}
       \field{year}{2011}
-      \field{pages}{205003}
-      \range{pages}{1}
       \verb{doi}
       \verb 10.1103/PhysRevLett.107.205003
       \endverb
@@ -725,11 +832,11 @@
            given={Warren\bibnamedelima B.},
            giveni={W\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
       }
-      \strng{namehash}{1bd17c15baac6149d2db624949235e5d}
+      \strng{namehash}{cd39f0c865ffd58dcfafb7ae018385ad}
       \strng{fullhash}{66e7d7dad53ee509d45e2d3dafe2cc09}
       \strng{bibnamehash}{66e7d7dad53ee509d45e2d3dafe2cc09}
       \strng{authorbibnamehash}{66e7d7dad53ee509d45e2d3dafe2cc09}
-      \strng{authornamehash}{1bd17c15baac6149d2db624949235e5d}
+      \strng{authornamehash}{cd39f0c865ffd58dcfafb7ae018385ad}
       \strng{authorfullhash}{66e7d7dad53ee509d45e2d3dafe2cc09}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
@@ -742,8 +849,6 @@
       \field{title}{Maximizing MeV x-ray dose in relativistic laser-solid interactions}
       \field{volume}{5}
       \field{year}{2023}
-      \field{pages}{L012044}
-      \range{pages}{1}
       \verb{doi}
       \verb 10.1103/PhysRevResearch.5.L012044
       \endverb
@@ -766,11 +871,11 @@
            given={G},
            giveni={G\bibinitperiod}}}%
       }
-      \strng{namehash}{6863f25f9c237f5daf75fa5746073a7e}
+      \strng{namehash}{1fc6ed38484ea43ad996185c94977927}
       \strng{fullhash}{6863f25f9c237f5daf75fa5746073a7e}
       \strng{bibnamehash}{6863f25f9c237f5daf75fa5746073a7e}
       \strng{authorbibnamehash}{6863f25f9c237f5daf75fa5746073a7e}
-      \strng{authornamehash}{6863f25f9c237f5daf75fa5746073a7e}
+      \strng{authornamehash}{1fc6ed38484ea43ad996185c94977927}
       \strng{authorfullhash}{6863f25f9c237f5daf75fa5746073a7e}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
@@ -787,6 +892,69 @@
       \range{pages}{63}
       \verb{doi}
       \verb 10.1088/0034-4885/69/2/R04
+      \endverb
+    \endentry
+    \entry{rasmussen2004}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=58d90ed7b7348c7a5a9b4a2a8f46df7b}{%
+           family={Rasmussen},
+           familyi={R\bibinitperiod},
+           given={Carl\bibnamedelima Edward},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{58d90ed7b7348c7a5a9b4a2a8f46df7b}
+      \strng{fullhash}{58d90ed7b7348c7a5a9b4a2a8f46df7b}
+      \strng{bibnamehash}{58d90ed7b7348c7a5a9b4a2a8f46df7b}
+      \strng{authorbibnamehash}{58d90ed7b7348c7a5a9b4a2a8f46df7b}
+      \strng{authornamehash}{58d90ed7b7348c7a5a9b4a2a8f46df7b}
+      \strng{authorfullhash}{58d90ed7b7348c7a5a9b4a2a8f46df7b}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Gaussian Processes in Machine Learning}
+      \field{year}{2004}
+      \field{pages}{63\bibrangedash 71}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1007/978-3-540-28650-9_4
+      \endverb
+    \endentry
+    \entry{rasmussen2005}{book}{}
+      \name{author}{2}{}{%
+        {{hash=58d90ed7b7348c7a5a9b4a2a8f46df7b}{%
+           family={Rasmussen},
+           familyi={R\bibinitperiod},
+           given={Carl\bibnamedelima Edward},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=d34fdfcbfcb5412397b946351370db22}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Christopher\bibnamedelimb K.\bibnamedelimi I.},
+           giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The MIT Press}%
+      }
+      \strng{namehash}{f0ccf4a09a3a6a91719405724e3ae5da}
+      \strng{fullhash}{f0ccf4a09a3a6a91719405724e3ae5da}
+      \strng{bibnamehash}{f0ccf4a09a3a6a91719405724e3ae5da}
+      \strng{authorbibnamehash}{f0ccf4a09a3a6a91719405724e3ae5da}
+      \strng{authornamehash}{f0ccf4a09a3a6a91719405724e3ae5da}
+      \strng{authorfullhash}{f0ccf4a09a3a6a91719405724e3ae5da}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780262256834}
+      \field{month}{11}
+      \field{title}{Gaussian Processes for Machine Learning}
+      \field{year}{2005}
+      \verb{doi}
+      \verb 10.7551/mitpress/3206.001.0001
       \endverb
     \endentry
     \entry{reich2000}{article}{}
@@ -812,11 +980,11 @@
            given={E.},
            giveni={E\bibinitperiod}}}%
       }
-      \strng{namehash}{5234b6cc43198b11cc007fdd029c5313}
+      \strng{namehash}{71eaf1b33198747920cebb1e5f20149c}
       \strng{fullhash}{e54e07d148a3b3dbfda64134a919a0d2}
       \strng{bibnamehash}{e54e07d148a3b3dbfda64134a919a0d2}
       \strng{authorbibnamehash}{e54e07d148a3b3dbfda64134a919a0d2}
-      \strng{authornamehash}{5234b6cc43198b11cc007fdd029c5313}
+      \strng{authornamehash}{71eaf1b33198747920cebb1e5f20149c}
       \strng{authorfullhash}{e54e07d148a3b3dbfda64134a919a0d2}
       \field{sortinit}{R}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
@@ -870,7 +1038,7 @@
       \strng{authornamehash}{6ecb271e02d47e6b546f36c9350d7ff8}
       \strng{authorfullhash}{6ecb271e02d47e6b546f36c9350d7ff8}
       \strng{editorbibnamehash}{3cf6841583ee6fc440d6c3daa0a8d459}
-      \strng{editornamehash}{3cf6841583ee6fc440d6c3daa0a8d459}
+      \strng{editornamehash}{70e6881783ee1e1b7016781576b0d41e}
       \strng{editorfullhash}{3cf6841583ee6fc440d6c3daa0a8d459}
       \field{sortinit}{R}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
@@ -950,11 +1118,11 @@
            given={Jie},
            giveni={J\bibinitperiod}}}%
       }
-      \strng{namehash}{20bcbf4940f09df0c89b76a4391d671b}
+      \strng{namehash}{3c0140d41d4d8c37cff5d526091e5a51}
       \strng{fullhash}{04ad9884afad56f55f52b20c9333d577}
-      \strng{bibnamehash}{20bcbf4940f09df0c89b76a4391d671b}
-      \strng{authorbibnamehash}{20bcbf4940f09df0c89b76a4391d671b}
-      \strng{authornamehash}{20bcbf4940f09df0c89b76a4391d671b}
+      \strng{bibnamehash}{3c0140d41d4d8c37cff5d526091e5a51}
+      \strng{authorbibnamehash}{3c0140d41d4d8c37cff5d526091e5a51}
+      \strng{authornamehash}{3c0140d41d4d8c37cff5d526091e5a51}
       \strng{authorfullhash}{04ad9884afad56f55f52b20c9333d577}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
@@ -970,6 +1138,85 @@
       \verb{doi}
       \verb 10.1088/1674-1056/24/1/015201
       \endverb
+    \endentry
+    \entry{smola2004}{article}{}
+      \name{author}{2}{}{%
+        {{hash=fb79b74540aea302c5a1a212a88331b1}{%
+           family={Smola},
+           familyi={S\bibinitperiod},
+           given={Alex\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=ca31cc11ec9370460148c3a9c48fce45}{%
+           family={Schölkopf},
+           familyi={S\bibinitperiod},
+           given={Bernhard},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{a1c29fde1555f961020fa648d63f452d}
+      \strng{fullhash}{a1c29fde1555f961020fa648d63f452d}
+      \strng{bibnamehash}{a1c29fde1555f961020fa648d63f452d}
+      \strng{authorbibnamehash}{a1c29fde1555f961020fa648d63f452d}
+      \strng{authornamehash}{a1c29fde1555f961020fa648d63f452d}
+      \strng{authorfullhash}{a1c29fde1555f961020fa648d63f452d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0960-3174}
+      \field{issue}{3}
+      \field{journaltitle}{Statistics and Computing}
+      \field{month}{8}
+      \field{title}{A tutorial on support vector regression}
+      \field{volume}{14}
+      \field{year}{2004}
+      \field{pages}{199\bibrangedash 222}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1023/B:STCO.0000035301.49549.88
+      \endverb
+    \endentry
+    \entry{srivastava2014}{article}{}
+      \name{author}{4}{}{%
+        {{hash=6a147afa4569ce6cf23c0436e65d8486}{%
+           family={Srivastava},
+           familyi={S\bibinitperiod},
+           given={Nitish},
+           giveni={N\bibinitperiod}}}%
+        {{hash=9a8750ccdb2a4cf14d2655face1ce016}{%
+           family={Hinton},
+           familyi={H\bibinitperiod},
+           given={Geoffrey},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c5e3a676e2ac1164b3afcd539c131fc9}{%
+           family={Krizhevsky},
+           familyi={K\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bd2be300d445e9f6db7808f9533e66cb}{%
+           family={Salakhutdinov},
+           familyi={S\bibinitperiod},
+           given={Ruslan},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{4d6dba595c04c09619c7c1c0038d5b6b}
+      \strng{fullhash}{a4e8289d0cb36166764c7993dfb7ec92}
+      \strng{bibnamehash}{a4e8289d0cb36166764c7993dfb7ec92}
+      \strng{authorbibnamehash}{a4e8289d0cb36166764c7993dfb7ec92}
+      \strng{authornamehash}{4d6dba595c04c09619c7c1c0038d5b6b}
+      \strng{authorfullhash}{a4e8289d0cb36166764c7993dfb7ec92}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Deep neural nets with a large number of parameters are very powerful machine learning systems. However, overfitting is a serious problem in such networks. Large networks are also slow to use, making it difficult to deal with overfitting by combining the predictions of many different large neural nets at test time. Dropout is a technique for addressing this problem. The key idea is to randomly drop units (along with their connections) from the neural network during training. This prevents units from co-adapting too much. During training, dropout samples from an exponential number of different "thinned" networks. At test time, it is easy to approximate the effect of averaging the predictions of all these thinned networks by simply using a single unthinned network that has smaller weights. This significantly reduces overfitting and gives major improvements over other regularization methods. We show that dropout improves the performance of neural networks on supervised learning tasks in vision, speech recognition, document classification and computational biology, obtaining state-of-the-art results on many benchmark data sets.}
+      \field{issue}{1}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{title}{Dropout: A Simple Way to Prevent Neural Networks from Overfitting}
+      \field{volume}{15}
+      \field{year}{2014}
+      \field{pages}{1929\bibrangedash 1958}
+      \range{pages}{30}
+      \keyw{deep learning,model combination,neural networks,regularization}
     \endentry
     \entry{laser-plasma1}{book}{}
       \name{author}{1}{}{%
@@ -1024,11 +1271,11 @@
            given={F.},
            giveni={F\bibinitperiod}}}%
       }
-      \strng{namehash}{68d291074093f1389efe8143150a258c}
+      \strng{namehash}{d56438dc3459422a1818a0bb103041ff}
       \strng{fullhash}{055c2101b2e153869bf34b29a57c6019}
       \strng{bibnamehash}{055c2101b2e153869bf34b29a57c6019}
       \strng{authorbibnamehash}{055c2101b2e153869bf34b29a57c6019}
-      \strng{authornamehash}{68d291074093f1389efe8143150a258c}
+      \strng{authornamehash}{d56438dc3459422a1818a0bb103041ff}
       \strng{authorfullhash}{055c2101b2e153869bf34b29a57c6019}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
@@ -1046,6 +1293,34 @@
       \verb 10.1002/ctpp.200710072
       \endverb
       \keyw{MC simulations,PIC simulations}
+    \endentry
+    \entry{vapnik2000}{book}{}
+      \name{author}{1}{}{%
+        {{hash=9784300f2e702140e22af8c494322778}{%
+           family={Vapnik},
+           familyi={V\bibinitperiod},
+           given={Vladimir\bibnamedelima N.},
+           giveni={V\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer New York}%
+      }
+      \strng{namehash}{9784300f2e702140e22af8c494322778}
+      \strng{fullhash}{9784300f2e702140e22af8c494322778}
+      \strng{bibnamehash}{9784300f2e702140e22af8c494322778}
+      \strng{authorbibnamehash}{9784300f2e702140e22af8c494322778}
+      \strng{authornamehash}{9784300f2e702140e22af8c494322778}
+      \strng{authorfullhash}{9784300f2e702140e22af8c494322778}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-4419-3160-3}
+      \field{title}{The Nature of Statistical Learning Theory}
+      \field{year}{2000}
+      \verb{doi}
+      \verb 10.1007/978-1-4757-3264-1
+      \endverb
     \endentry
     \entry{wang2010}{article}{}
       \name{author}{10}{}{%
@@ -1100,11 +1375,11 @@
            given={Yuan},
            giveni={Y\bibinitperiod}}}%
       }
-      \strng{namehash}{d261e34f44bdd285285695928704def2}
+      \strng{namehash}{d10969ac908ccedbd72a2cfaabc57b28}
       \strng{fullhash}{769b59456a9d7143acade44ee1219e07}
-      \strng{bibnamehash}{d261e34f44bdd285285695928704def2}
-      \strng{authorbibnamehash}{d261e34f44bdd285285695928704def2}
-      \strng{authornamehash}{d261e34f44bdd285285695928704def2}
+      \strng{bibnamehash}{d10969ac908ccedbd72a2cfaabc57b28}
+      \strng{authorbibnamehash}{d10969ac908ccedbd72a2cfaabc57b28}
+      \strng{authornamehash}{d10969ac908ccedbd72a2cfaabc57b28}
       \strng{authorfullhash}{769b59456a9d7143acade44ee1219e07}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
@@ -1215,11 +1490,11 @@
            given={K.},
            giveni={K\bibinitperiod}}}%
       }
-      \strng{namehash}{c6b5d021ad62e9accea6c07a4036172f}
+      \strng{namehash}{9b2b0900ca85fb2ae1374eb400028b6f}
       \strng{fullhash}{360c5aa9102b21f79fce409a824f2990}
-      \strng{bibnamehash}{c6b5d021ad62e9accea6c07a4036172f}
-      \strng{authorbibnamehash}{c6b5d021ad62e9accea6c07a4036172f}
-      \strng{authornamehash}{c6b5d021ad62e9accea6c07a4036172f}
+      \strng{bibnamehash}{9b2b0900ca85fb2ae1374eb400028b6f}
+      \strng{authorbibnamehash}{9b2b0900ca85fb2ae1374eb400028b6f}
+      \strng{authornamehash}{9b2b0900ca85fb2ae1374eb400028b6f}
       \strng{authorfullhash}{360c5aa9102b21f79fce409a824f2990}
       \field{sortinit}{Y}
       \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
@@ -1266,6 +1541,41 @@
       \range{pages}{6}
       \verb{doi}
       \verb 10.1109/TAP.1966.1138693
+      \endverb
+    \endentry
+    \entry{zhang2020}{inbook}{}
+      \name{author}{2}{}{%
+        {{hash=ae021641a8f85fd2607152ab99ed115b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Fan},
+           giveni={F\bibinitperiod}}}%
+        {{hash=1263e2304eab9bfb62e61bfbcd414988}{%
+           family={O'Donnell},
+           familyi={O\bibinitperiod},
+           given={Lauren\bibnamedelima J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{f773536e22a22f584f5d45dee9e7dd49}
+      \strng{fullhash}{f773536e22a22f584f5d45dee9e7dd49}
+      \strng{bibnamehash}{f773536e22a22f584f5d45dee9e7dd49}
+      \strng{authorbibnamehash}{f773536e22a22f584f5d45dee9e7dd49}
+      \strng{authornamehash}{f773536e22a22f584f5d45dee9e7dd49}
+      \strng{authorfullhash}{f773536e22a22f584f5d45dee9e7dd49}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Machine Learning}
+      \field{title}{Support vector regression}
+      \field{year}{2020}
+      \field{pages}{123\bibrangedash 140}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1016/B978-0-12-815739-8.00007-9
       \endverb
     \endentry
   \enddatalist

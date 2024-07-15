@@ -5,7 +5,8 @@
 
 \usepackage[backend=biber,
 			sorting=nty,
-			style=ieee]{biblatex}
+			style=ieee,
+			citestyle=numeric-comp]{biblatex}
 \addbibresource{bibliographyExport.bib}
 
 \usepackage[english]{babel}
@@ -29,7 +30,9 @@
 
 \usepackage{listings}  % balíček vhodný pro ukázky kódu 
 \usepackage{amsmath} % balíček pro pokročilou matematickou sazbu
+\usepackage{amssymb}
 \usepackage{bm}
+\usepackage{mathtools}
 %\usepackage{color} % pro možnost barevného textu
 %\usepackage{fancybox} % umožňuje pokročilé rámečkování
 %\usepackage{index} % nutno použít v případě tvorby rejstříku balíčkem makeindex
@@ -58,13 +61,16 @@
 \newcommand{\boltz}{k_\mathrm{B}}
 \newcommand{\norm}[1]{\lvert #1 \rvert}
 
+\DeclareUnicodeCharacter{2009}{\,}
+\DeclareUnicodeCharacter{2212}{-}
+
 
 %% --- zde jsou makra, tj. "konstanty" - některé musíte změnit! --- %%
 \newcommand{\cvut}{Czech Technical University in~Prague}
 \newcommand{\fjfi}{Faculty of Nuclear Sciences and Physical Engineering}
 \newcommand{\katedra}{Department of Software Engineering}
-\newcommand{\katedraKLFF}{Department of plasma physics and fotonics}
-\newcommand{\program}{Applications of Informatics in Natural science} % změňte, pokud máte jiný stud. program
+\newcommand{\katedraKLFF}{Department of Laser Physics and Photonics}
+\newcommand{\program}{Applications of Informatics in Natural Science} % změňte, pokud máte jiný stud. program
 \newcommand{\spec}{--} % změňte, pokud studijní program má specializaci
 
 \newcommand{\druh}{Master thesis} % nebo "Diplomová práce"
@@ -222,8 +228,8 @@ In Prague on .................... &........................................ \\	%
 \input{introduction.tex}
 \input{chapter1.tex}
 \input{chapter2.tex}
-\input{chapter3.tex}
-\input{chapter4.tex}
+\input{models-theory.tex}
+\input{fitting-algorithm.tex}
 \input{chapter5.tex}
 \input{chapter6.tex}
 \input{conclusion.tex}

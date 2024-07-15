@@ -188,7 +188,7 @@ if __name__ == '__main__':
     
     # Plot the predictions 
     i_grid, l_grid, a_grid = prediction_grid.grid_for_plotting()
-    slices_at = [0, 15, 25, 35, 40, 49]
+    slices_at = [0,10,20,30,40,49]
     for slice_at in slices_at:
-        draw_slice(i_grid, l_grid, a_grid, t_hot_predicted, slice_at=slice_at, axes=["i","l"])
-        draw_slice(i_grid, l_grid, a_grid, ss, slice_at=slice_at, axes=["i","l"])
+        draw_slice(i_grid, l_grid, a_grid, t_hot_predicted, slice_at=slice_at, axes=["l","a"])
+        draw_slice(i_grid, l_grid, a_grid, ss, slice_at=slice_at, axes=["l","a"])

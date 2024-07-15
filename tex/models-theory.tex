@@ -117,15 +117,15 @@ The next step is to update the $\mathcal{GP}$ with the measured data. In other w
 \begin{split}
 	\label{eq:gaussian-condition}
 	f \vert D & \sim\mathcal{GP}(m_D,k_D) \\
-	m_D(\bm{x}) & = m(\bm{x}) + \bm{\Sigma(X,x)}^T \bm{\Sigma}^{-1} (\bm{f}-\bm{m}) \\
-	k_D(\bm{x},\bm{x}^\prime) & = k(\bm{x},\bm{x}^\prime) - \bm{\Sigma(X,x)}^T \bm{\Sigma}^{-1} \bm{\Sigma(X,x^\prime)},
+	m_D(\bm{x}) & = m(\bm{x}) + \bm{\Sigma_*(X,x)}^T \bm{\Sigma}^{-1} (\bm{f}-\bm{m}) \\
+	k_D(\bm{x},\bm{x}^\prime) & = k(\bm{x},\bm{x}^\prime) - \bm{\Sigma_*(X,x)}^T \bm{\Sigma}^{-1} \bm{\Sigma_*(X,x^\prime)},
 \end{split}
 \end{align}
-where $\Sigma(X,x)$ is a vector of covariances between every training case $\bm{X}$ and $x\bm{x}$ \cite{rasmussen2004}. Applying equation \ref{eq:gaussian-condition} to our previous example, we can generate new samples from the posterior distribution of functions. The term \textit{posterior} comes from the Bayesian inference. If we let for example the training dataset consist of five points $D = \left\{(1,2),(3,2),(5,3),(7,4),(9,2)\right\}$, the 5 samples from the updated distribution can be seen in figure \ref{fig:gaussian-samples-posterior}.
+where $\bm{\Sigma_*}(X,x)$ is a vector of covariances between every training case $\bm{X}$ and $x\bm{x}$ \cite{rasmussen2004}. Applying equation \ref{eq:gaussian-condition} to our previous example, we can generate new samples from the posterior distribution of functions. The term \textit{posterior} comes from the Bayesian inference. If we let for example the training dataset consist of five points $D = \left\{(1,2),(3,2),(5,3),(7,4),(9,2)\right\}$, the 5 samples from the updated distribution can be seen in figure \ref{fig:gaussian-samples-posterior}.
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.98\textwidth]{figures/gaussian-samples-post}
-	\caption{5 sample functions from $\mathcal{GP}(m_D,k_D))$. It was sampled at 100 points between $x = 0$ and $x=10$.}
+	\caption{5 sample functions from $\mathcal{GP}(m_D,k_D))$. It was sampled at 100 points between $x = 0$ and $x=10$. The grey area depicts one one standard deviation from the mean.}
 	\label{fig:gaussian-samples-posterior}
 \end{figure}
 
@@ -144,9 +144,11 @@ Apart from RBF kernel $k_{\mathrm{RBF}}(x-x^\prime) =\sigma^2\exp(-\frac{(x-x^\p
 \end{equation}
 where $\nu$ and $l$ are positive paremeters, $r=\norm{\bm{x} -\bm{x^\prime}}$, $\Gamma(\nu)$ is a gamma function and $K_\nu$ is a modified Bessel function. Common choices of $\nu$ are $\frac{1}{2}, \frac{3}{2}$ and $\frac{5}{2}$. For $n \rightarrow \infty$, $k_\mathrm{Matern}(\norm{\bm{x} -\bm{x^\prime}})$ degenerates to $k_{\mathrm{RBF}}(\bm{x} ,\bm{x^\prime})$ \cite{rasmussen2005}.
 
-Gaussian process regression is a non-parametric model, meaning the training data cannot be discarded after the training. The memory complexity of the algorithm is $O(n^2)$ and the time complexity is $O(n^3)$, because of the costly matrix inversion \cite{rasmussen2004}. For small datasets this is manageable by standard computers.
+Gaussian process regression is a non-parametric model, meaning the training data cannot be discarded after the training, because they are needed for the computation of $\bm{\Sigma_*}$. The memory complexity of the algorithm is $O(n^2)$ and the time complexity is $O(n^3)$, because of the costly matrix inversion \cite{rasmussen2004}. For small datasets this is manageable by standard computers.
 
 Apart from that, the tuning of the hyper-parameters such as $\sigma$, the choice of the covariance function or other parameters is usually done using maximum-likelihood methods \cite{rasmussen2004}.
 
 To the contrast of previous two models, which assume nothing about the data, in GP it is helpful to specify the prior mean function. It can be specified parametrically and the parameters can be tuned during hyper-parameter tuning. Having prior mean $m(\bm{x}) = 0$ makes the model more simple but can introduce bias in the predictions.
+
+For us, it is particularly interesting to have the possibility of calculating model uncertainty as can be seen in the \ref{fig:gaussian-samples-posterior}. Of course, it is mainly related to the density of the dataset in the studied domain. Knowing the model uncertainty as function of input parameters can be leveraged for selection of parameters for new simulations with the goal of making the model more precise.
 
