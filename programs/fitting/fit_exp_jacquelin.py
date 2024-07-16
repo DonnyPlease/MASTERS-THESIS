@@ -6,315 +6,163 @@ from scipy.stats import chisquare
 class FitExp():
     """
     This class is handling fitting a sum of multiple exponential functions. 
-    The whole fitting process is based on this paper from Jean Jaquelin.
-    It works quite well with exponential decay and produces the best results 
-    when the additive constant is kept - which is the usual practice in
-    statistic even if we do not have an exact explanation of what the consant
+    The whole fitting process is based on a (document) paper from Jean 
+    Jaquelin. It works quite well with exponential decay and produces the best 
+    results when the additive constant is kept - which is the usual practice in
+    statistics even if we do not have an exact explanation of what the consant
     represents.
     """
     
-    def __init__(self, x, y, exp_count=2, constant=True):
-        """The constructor of FitExp class.
-        
-        ----------
-        parameters:
-        ----------
-        x : array-like - represents the x values of fitted data
-        y : array-like - represents the y values of fitted data
-        exp_count (optional) : int - number of exponential that are fitted 
-        (default - 2)
-        constant (optional) : bool - decides wether the constant is also fitted 
-        or is excluded (default - True) 
-        
-        returns
-        -------
-        An instance of the class FitExp.
-        """
-        self.x = x  # Assign passed array to a member variable.
-        self.y = y  # Assign passed array to a member variable.
-        self.N = len(x)  # Assign length of the data to a member variable.
-        if len(x) != len(y): 
-            print("x and y have to be the same size or expect an exception.")
-        self.exp_count = exp_count  # Assign the number of fitted exponentials 
-                                    # to a member variable.
-        self.constant = constant
-        
-    def _calculate_integrals(self):
-        """(private functino) This function calculates the cumulative 
-        intergrals by applying the trapezoidal formula.
-        The number of integrals is specified when the class is instantiated.
-        
-        ----------
-        parameters
-        ----------
-        none
-        
-        returns
-        -------
-        list of numpy arrays - each numpy array representing a cumulative 
-        intergral and is of size self.N
-        """
-        integrals = []  # Initialize a variable.
-        prev_int = self.y  # Initialize a variable so that the for loop does 
-                           # not need condition for the first iteration.
-        
-        for i in range(self.exp_count):  # For each exponential function 
-                                         # in the sum calculate the cumulative 
-                                         # intergral from the previous 
-                                         # integral.
-            S = np.zeros(self.N)
-            for i in range(1, self.N):
-                a = prev_int[i] + prev_int[i-1]  # "bases" of the trapezoid
-                b = self.x[i]-self.x[i-1]  # "height" of the trapezoid
-                S[i] = S[i-1] + 1/2*a*b  # cumulation
-            integrals.append(S)  # Append to the list.
-            prev_int = S  # Change the variable prev_int so that in the next 
-                          # iteration the integral is caluclated from the last 
-                          # one.
-        return integrals  # Return the list
+    def __init__(self, x, y, exp_count=2, include_constant=False):
+        self.x = x  
+        self.y = y  
+        self.data_size = len(x) 
+        self.check_same_sizes(x, y)
+        self.exponentials_count = exp_count
+        self.include_constant = include_constant
     
-    def _calculate_linearized_vector(self, integrals):
-        """This function is responsible for creating a vector that later plays 
-        the role of the data vector that is fitted using ordinary least squares.
+    def check_same_sizes(self, x, y):
+        if len(x) != len(y):
+            raise ValueError("arrays x and y have to be the same size")
+    
+    def get_cumulative_integrals(self):
+        integrals = [] 
+        previous_integrals = self.y 
         
-        parameters
-        ----------
-        integrals - list of numpy arrays: list of cumulative intergrals
+        # Calculate cumulative (integrals) of y for linearization
+        for i in range(self.exponentials_count):
+            current_integrals = np.zeros(self.data_size)
+            for i in range(1, self.data_size):
+                # trapezoidal approximation of the integral
+                height = previous_integrals[i] + previous_integrals[i-1] 
+                base = self.x[i]-self.x[i-1] 
+                current_integrals[i] = current_integrals[i-1] + 1/2*base*height 
+            integrals.append(current_integrals)  
+            previous_integrals = current_integrals 
+        return integrals
+    
+    def get_linearized_vector(self, integrals):
+        size_of_vector = self.exponentials_count*2 + self.include_constant 
+        vector = np.zeros((size_of_vector, self.data_size))  # initialize vector
         
-        returns
-        -------
-        numpy array  
-        """
-        size_of_vector = self.exp_count*2  # initilize size of vector
-        if self.constant: size_of_vector += 1  # add one to the size if 
-                                               # constant is also fitted
-        vector = np.zeros((size_of_vector, self.N))  # initialize vector
-        
-        # assign integrals to the beginning of the vector
-        for i in range(self.exp_count):
-            vector[i,:] = integrals[self.exp_count-i-1]
+        # assign cumulative integrals to the beginning of the vector
+        for i in range(self.exponentials_count):
+            vector[i,:] = integrals[self.exponentials_count-i-1]
+            
         # append powers of x to the end of the vector
-        for i in range(self.exp_count, size_of_vector):
+        for i in range(self.exponentials_count, size_of_vector):
             vector[i,:] = np.power(self.x, size_of_vector-i-1)
         return vector
     
-    def _get_polynomial_coefs(self, b):
-        """This function creates a list of polynomial coefficients with the 
-        first coefficient being a one so it can be . The length of this list 
-        is dependant on the number of the exponential functions that are being 
-        fitted.
-        
-        parameters
-        ----------
-        b - list of parameters from the integral version of linear regression
-        
-        returns
-        -------
-        list of coefficients of a polynomial
-        """
+    def get_polynomial_coefs(self, b):
         coefs = [1]
-        for i in range(self.exp_count):
-            coefs.append(-b[self.exp_count-i-1])
+        for i in range(self.exponentials_count):
+            coefs.append(-b[self.exponentials_count-i-1])
         return coefs
             
-    def _calculate_vector_of_exponentials(self,roots):
-        """This function calculates a numpy array that represents the vector
-        of exponentials from the paper.
+    def get_vector_of_exponentials(self, parameters):
+        # returns [[exp(b1*x1), exp(b1*x2), ...], [exp(b2*x1), ...], ...] where
+        # parameters = [b1, b2, ...]
+        # if the constant is included, the first element of the vector is 1
+        vector_size = self.exponentials_count + self.include_constant
+        vector = np.zeros((vector_size, self.data_size))
         
-        parameters
-        ----------
-        roots - roots of the polynomial calculated in the previous step of 
-        the regression 
-        
-        returns
-        -------
-        numpy array repressenting 
-        """
-        size = self.exp_count
-        if self.constant: size += 1
-        vector = np.zeros((size, self.N))
-        if self.constant: 
-            vector[0,:] = np.ones(self.N)
-            for i in range(self.exp_count):
-                vector[i+1,:] = np.exp(roots[i]*self.x)
-        else:
-            for i in range(self.exp_count):
-                vector[i,:] = np.exp(roots[i]*self.x)
+        if self.include_constant:
+            vector[0,:] = np.ones(self.data_size)
+            
+        for i in range(self.exponentials_count):
+            j = i + self.include_constant
+            vector[j, :] = np.exp(parameters[i]*self.x)
+            
         return vector
 
-    def _get_params(self, roots, b_2):
-        params = []
-        if self.constant: 
-            params.append(b_2[0])
-            for i in range(self.exp_count):
-                params.append(b_2[i+1])
-                params.append(roots[i])
-            return params
-
-        for i in range(self.exp_count):
-            params.append(b_2[i])
-            params.append(roots[i])
+    def get_params(self, a, b):
+        params = {}
+        if self.include_constant:
+            params['a0'] = a[0]
+        for i in range(self.exponentials_count):
+            params['a'+str(i+1)] = a[i+self.include_constant]
+            params['b'+str(i+1)] = b[i]
         return params
     
-    def show_results(self) -> None:
-        """Print the results of the fit in the console.
-        
-        parameters
-        ----------
-        none
-        
-        returns
-        -------
-        None
-        """
-        print("#"*70)
-        print()
-        print("Fitted function:  ",end="")
-        fun = "f(x) ="
-        if self.constant: 
-            fun += ' a0 + '
-        for i in range(self.exp_count):
-            fun += 'a{}.exp(b{}.x) + '.format(i+1,i+1)
-        print(fun[:-2])
-        print("-"*(18+len(fun)-3))
-        print("Result of the fit gives us the following parameters:")
-        c=0
-        if self.constant: 
-            print('     a0 = {:5f}'.format(self.params[0]))
-            c=1
-        for i in range(self.exp_count):
-            print('     a{} = {:5f}'.format(i+1,self.params[i*2+c]))
-            print('     b{} = {:5f}'.format(i+1, self.params[i*2+1+c]))
-        
-        print("Stats: ")
-        try:
-            chi2 = chisquare(self.y, self.predict())   
-            print("     Chi2 = {:5f}".format(chi2[0]))    
-            print("     Chi2 p_value = {:5f}".format(chi2[1]))
-        except:
-            print("Cannot calculate chi squared") 
-        
-        try:    
-            print("     R-squared = ", metrics.r2_score(self.y,self.predict()))
-        except:
-            print("Cannot calculate R-squared statistic.")
-            
-        y_fit = self.predict()
-        try:
-            res = np.log(self.y+1) - np.log(y_fit+1)
-            print("     Mean of residuals = ", np.mean(res))
-            print("     RMSE = ",np.sqrt(np.mean(np.power(res, 2))))
-        except:
-            print("     Mean of residuals could not be calculated because of the logs")
-            print("     It is possible that the predicted values are negative if the constant is negative")
-        
-        print("#"*50)
-        print("#"*50)
-                
     
     def fit(self, verbose=False):
-        """Function that performs the fit of sum of exponentials as it was 
-        desrcibed in the article of Mr. Jean Jaqcuelin.
+        # 1. LINEARIZATION AND EXPONENT PARAMETER ESTIMATION
+        cumulative_integrals = self.get_cumulative_integrals()
+        F = self.get_linearized_vector(cumulative_integrals)
+        try:
+            b_1 = np.dot(np.linalg.inv(np.matmul(F, np.transpose(F))), 
+                        np.matmul(F, self.y)) 
+        except:
+            raise Exception("Could not calculate the inverse of the matrix 1") 
         
-        parameters
-        ---------------------------
-        verbose - bool (default=False) - if True, there are results 
-                                         printed in the console
+        # 2. ERROR ESTIMATION
+        if self.exponentials_count == 2:
+            std_errors = self.std_error_of_fit_parameters(F, b_1)
+            self.std_errors = self.std_error_of_final_coeffients(b_1[0],b_1[1], 
+                                                                std_errors[0], 
+                                                                std_errors[1])
         
-        returns
-        ---------------------------
-        array of parameters of the exponential function
+        # 3. POLYNOMIAL COEFFICIENTS AND FINAL PARAMETER ESTIMATION
+        polynomial_coefs = self.get_polynomial_coefs(b_1)
+        try: 
+            polynomial_roots = np.roots(polynomial_coefs)
+        except:
+            raise Exception("Could not calculate the roots of the polynomial")
         
-        """
-        integrals = self._calculate_integrals()
-        F = self._calculate_linearized_vector(integrals)
-        b_1 = np.dot(np.linalg.inv(np.matmul(F, np.transpose(F))), 
-                                                    np.matmul(F, self.y))    
+        # If polynomial_roots are complex, the fit is bad
+        if any([np.imag(r) != 0 for r in polynomial_roots]):
+            raise Exception("The roots of the polynomial are complex.")
         
-        self.std_errors = self.std_error_of_fit_parameters(F, b_1)
-        pol_coefs = self._get_polynomial_coefs(b_1)
-        roots = np.roots(pol_coefs)
-        G = self._calculate_vector_of_exponentials(roots)
-        b_2 = np.dot(np.linalg.inv(np.matmul(G, np.transpose(G))),
+        G = self.get_vector_of_exponentials(polynomial_roots)
+        try:
+            b_2 = np.dot(np.linalg.pinv(np.matmul(G, np.transpose(G))),
                                                     np.matmul(G, self.y))
-        self.params = self._get_params(roots, b_2)
+        except:
+            raise Exception("Could not calculate the inverse of the matrix 2")
+        
+        # 4. CREATE A DICT OF PARAMETERS
+        self.params = self.get_params(b_2, polynomial_roots)
         
         if verbose: self.show_results()
-
         return self.params
     
-    def std_error_of_fit_parameters(self, F, b_1):
-        # Calculate Residuals
-        residuals = self.y - np.dot(F.T, b_1)
+    def std_error_of_fit_parameters(self, X, b):
+        residuals = self.y - np.dot(X.T, b)
+        residual_sum_of_squares = np.sum(residuals**2)
 
-        # Compute Residual Sum of Squares (RSS)
-        RSS = np.sum(residuals**2)
-
-        # Estimate Variance of Residuals
         n = len(self.y)
-        k = F.shape[1]  # Number of predictors (columns of F), including intercept
-        variance_residuals = RSS / (n - k - 1)
+        k = X.shape[0]  # Number of predictors (columns of F), including intercept
+        variance_of_residuals = residual_sum_of_squares / (n - k - 1)
 
-        # Compute Variance-Covariance Matrix
-        var_cov_matrix = np.linalg.inv(np.dot(F.T, F)) * variance_residuals
-
-        # Extract Diagonal Elements
+        # Variance-Covariance Matrix
+        var_cov_matrix = np.linalg.inv(np.dot(X, X.T)) * variance_of_residuals
         variances = np.diag(var_cov_matrix)
 
-        # Take Square Roots
         return np.sqrt(variances)
     
-    def std_error_of_final_coeffients(self, std_errors):
-        pass  
+    def std_error_of_final_coeffients(self, A, B, dA, dB):
+        db1 = np.sqrt(dA**2/(B**2+4*A)+dB**2*1/4*(1+B/np.sqrt(B**2+4*A))**2)
+        db2 = np.sqrt(dA**2/(B**2+4*A)+dB**2*1/4*(1-B/np.sqrt(B**2+4*A))**2)
+        return [0, 0, db1, 0, db2]
       
     def predict(self, x=None):
-        """Function that calculates the prediction of the fitted function
-        based on the fitted parameters.
+        if x is None:   # If x is not given, use the x values that were used
+            x = self.x  # to fit the function.
 
-        Args:
-            x (np.array, optional): x values. Defaults to None. If None, the
-            function uses the x values that were used to fit the function.
-
-        Returns:
-            np.array: prediction of the fitted function for the given x values.
-        """
-        if x is None:  # if x is not given, use the x values that were used
-            x = self.x  # to fit the function
-
-        prediction = np.zeros(len(x))  # initialize prediction
+        prediction = np.zeros(len(x)) 
         
         # calculate the prediction
-        if self.constant:
-            prediction += self.params[0]
-            for i in range(self.exp_count):
-                prediction += self.params[i*2+1]*np.exp(self.params[i*2+2]*x)
-        else:
-            for i in range(self.exp_count):
-                prediction += self.params[i*2]*np.exp(self.params[i*2+1]*x)
+        prediction += self.params[0]
+        for i in range(self.exponentials_count):
+            prediction += self.params[i*2+1]*np.exp(self.params[i*2+2]*x)
             
         return prediction
         
     def plot(self, log=False, residuals=False, show=True, save=False, 
              save_name='fit_result.pdf') -> None:
-        """Function to plot the fitted function along with the data.
-
-        parameters
-        ----------
-            log (bool, optional): Logarithmic scale. Defaults to False.
-            residuals (bool, optional): If true, the plot also shows the 
-                residuals. Defaults to False.
-            show (bool, optional): If true, plot is shown during the run of 
-                the program. Defaults to True.
-            save (bool, optional): If true, the plot is saved to the location 
-                given in a keyword parameter 'save_name'. Defaults to False.
-            save_name (string, optional): Name of the file. Defaults to 
-                'fit_result.pdf'.
-            
-        returns
-        -------
-        None
-        """
-        y_fit = self.predict()  # calculate the prediction
+        
+        y_fit = self.predict() 
         res = np.log(self.y+1) - np.log(y_fit+1)  # calculate the residuals TODO: residuals ->> log(residuals)
         
         # create the plot
@@ -356,6 +204,57 @@ class FitExp():
         # close the plot to avoid memory leaks
         plt.close()
 
+    def show_results(self) -> None:
+        """Print the results of the fit in the console.
         
+        parameters
+        ----------
+        none
         
+        returns
+        -------
+        None
+        """
+        print("#"*70)
+        print()
+        print("Fitted function:  ",end="")
+        fun = "f(x) ="
+        if self.include_constant: 
+            fun += ' a0 + '
+        for i in range(self.exponentials_count):
+            fun += 'a{}.exp(b{}.x) + '.format(i+1,i+1)
+        print(fun[:-2])
+        print("-"*(18+len(fun)-3))
+        print("Result of the fit gives us the following parameters:")
+        c=0
+        if self.include_constant: 
+            print('     a0 = {:5f}'.format(self.params[0]))
+            c=1
+        for i in range(self.exponentials_count):
+            print('     a{} = {:5f}'.format(i+1,self.params[i*2+c]))
+            print('     b{} = {:5f}'.format(i+1, self.params[i*2+1+c]))
         
+        print("Stats: ")
+        try:
+            chi2 = chisquare(self.y, self.predict())   
+            print("     Chi2 = {:5f}".format(chi2[0]))    
+            print("     Chi2 p_value = {:5f}".format(chi2[1]))
+        except:
+            print("Cannot calculate chi squared") 
+        
+        try:    
+            print("     R-squared = ", metrics.r2_score(self.y,self.predict()))
+        except:
+            print("Cannot calculate R-squared statistic.")
+            
+        y_fit = self.predict()
+        try:
+            res = np.log(self.y+1) - np.log(y_fit+1)
+            print("     Mean of residuals = ", np.mean(res))
+            print("     RMSE = ",np.sqrt(np.mean(np.power(res, 2))))
+        except:
+            print("     Mean of residuals could not be calculated because of the logs")
+            print("     It is possible that the predicted values are negative if the constant is negative")
+        
+        print("#"*50)
+        print("#"*50)

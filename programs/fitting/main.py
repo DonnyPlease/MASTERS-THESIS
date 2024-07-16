@@ -1,11 +1,25 @@
-import numpy as np
-from matplotlib import pyplot as plt
-from helpful_functions import load_histogram, load_parameters, create_filenames, load_folder_names_from_params_file
-from reduce_historgram import fit
-PREFIX = "old_data/original_histograms/"
+import sys, os
+PATH_TO_PROJECT = 'C:/Users/samue/OneDrive/Dokumenty/FJFI/MASTERS-THESIS/programs/'
+sys.path.append(PATH_TO_PROJECT)
+
+# CONSTANTS
+PATH_TO_HISTOGRAMS = 'C:/Users/samue/OneDrive/Dokumenty/FJFI/MASTERS-THESIS/programs/histograms/data/spectra/'
+
+from histograms.HistogramUtils import load_histograms
+from fitting.FittingUtils import fit_hot_temperature
 
 if __name__ == "__main__":
-    files_names = load_folder_names_from_params_file("old_data/params.txt")
-    target_folder = "dataset/latest_dataset/"
-    fit(files_names, target_folder)
+    # 1. Load all histograms from the folder
+    histograms = load_histograms(PATH_TO_HISTOGRAMS)
+    
+    # 2. For each histogram, perform the algorithm and save the result to the new folder and to the dataset
+    count_failed_fits = 0
+    for histogram in histograms:
+        fit_results = fit_hot_temperature(histogram)
+        if fit_results is None:
+            count_failed_fits += 1
+        # Save the result to the new folder
+        # Save the result to the dataset
+    
+    print("Number of failed fits: " + str(count_failed_fits))
     

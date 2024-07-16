@@ -27,7 +27,7 @@ def _trim_histogram(hist_path, save_path):
 
     # Cut the beginning
     min_index = _find_first_non_zero_index(y)
-    min_index = max(15, min_index)
+    min_index = max(15, min_index+15)
     x = x[min_index:]
     y = y[min_index:]
     
@@ -74,6 +74,21 @@ def trim_all_histogram_in_folder(folder_path, save_folder):
     for folder in os.listdir(folder_path):
         hist_path = folder_path + folder
         trim_histogram(hist_path, save_folder)
+
+def params_from_folder_name(folder_name):
+    params = folder_name.split("_")
+    return {"i": float(params[1]),
+            "l": float(params[2])/100.0, 
+            "a": float(params[3])}
+    
+def load_histograms(folder_path):
+    histograms = []
+    for folder in os.listdir(folder_path):
+        hist_path = folder_path + folder
+        bins, counts = load_histogram(hist_path)
+        histograms.append((bins, counts, params_from_folder_name(folder)))
+    return histograms
+
 
 if __name__ == "__main__":
     # test
