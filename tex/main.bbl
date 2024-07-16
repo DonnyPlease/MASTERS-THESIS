@@ -19,6 +19,33 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{acton1990}{book}{}
+      \name{author}{1}{}{%
+        {{hash=32c695c7e4ad33dfb157a4d0202596fd}{%
+           family={Acton},
+           familyi={A\bibinitperiod},
+           given={Forman\bibnamedelima S.},
+           giveni={F\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Mathematical Association of America}%
+      }
+      \strng{namehash}{32c695c7e4ad33dfb157a4d0202596fd}
+      \strng{fullhash}{32c695c7e4ad33dfb157a4d0202596fd}
+      \strng{bibnamehash}{32c695c7e4ad33dfb157a4d0202596fd}
+      \strng{authorbibnamehash}{32c695c7e4ad33dfb157a4d0202596fd}
+      \strng{authornamehash}{32c695c7e4ad33dfb157a4d0202596fd}
+      \strng{authorfullhash}{32c695c7e4ad33dfb157a4d0202596fd}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0-88385-450-3}
+      \field{title}{Numerical Methods That Work}
+      \field{year}{1990}
+      \field{pages}{245\bibrangedash 257}
+      \range{pages}{13}
+    \endentry
     \entry{arber2015}{article}{}
       \name{author}{11}{}{%
         {{hash=5d59bc87f9df037ad01a8771d21cae6a}{%
@@ -579,6 +606,76 @@
       \verb 10.1103/PhysRevLett.102.045008
       \endverb
     \endentry
+    \entry{hokanson2013}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=df8eb24fe983fc4d28f8262120b14bf3}{%
+           family={Hokanson},
+           familyi={H\bibinitperiod},
+           given={Jeffrey\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{df8eb24fe983fc4d28f8262120b14bf3}
+      \strng{fullhash}{df8eb24fe983fc4d28f8262120b14bf3}
+      \strng{bibnamehash}{df8eb24fe983fc4d28f8262120b14bf3}
+      \strng{authorbibnamehash}{df8eb24fe983fc4d28f8262120b14bf3}
+      \strng{authornamehash}{df8eb24fe983fc4d28f8262120b14bf3}
+      \strng{authorfullhash}{df8eb24fe983fc4d28f8262120b14bf3}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{8}
+      \field{title}{Numerically Stable and Statistically Efficient Algorithms for Large Scale Exponential Fitting}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://hdl.handle.net/1911/102224
+      \endverb
+      \verb{url}
+      \verb https://hdl.handle.net/1911/102224
+      \endverb
+    \endentry
+    \entry{holmstrom2002}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4566e5f9f4d72df9f64386f8cb5d1f3c}{%
+           family={Holmström},
+           familyi={H\bibinitperiod},
+           given={Kenneth},
+           giveni={K\bibinitperiod}}}%
+        {{hash=17302b9bea918e982b0ee760c5bbda7c}{%
+           family={Petersson},
+           familyi={P\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{af31ae289fbb33bdba266e0c696ffc6f}
+      \strng{fullhash}{af31ae289fbb33bdba266e0c696ffc6f}
+      \strng{bibnamehash}{af31ae289fbb33bdba266e0c696ffc6f}
+      \strng{authorbibnamehash}{af31ae289fbb33bdba266e0c696ffc6f}
+      \strng{authornamehash}{af31ae289fbb33bdba266e0c696ffc6f}
+      \strng{authorfullhash}{af31ae289fbb33bdba266e0c696ffc6f}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Exponential sum models are used frequently: in heat diusion, diusion of chemical compounds, time series in medicine, economics, physical sciences and technology. Thus it is important to ®nd good methods for the estimation of parameters in exponential sums. In this paper we review and discuss results from the last forty years of research. There are many dierent ways of estimating parameters in exponential sums and model a ®t criterion, which gives a valid result from the ®t. We ®nd that a good choice is a weighted two-norm objective function, with weights based on the maximum likelihood (ML) criterion. If the number of exponential terms is unknown, statistical methods based on an information criterion or cross-validation can be used to determine the optimal number. It is suitable to use hybrid Gauss±Newton (GN) and quasi-Newton algorithms to ®nd the unknown parameters in the constrained weighted nonlinear least-squares (NLLS) problem formulated using an maximal likelihood (ML) objective function. The problem is highly ill conditioned and it is crucial to ®nd good starting values for the parameters. To ®nd the initial parameter values, a modi®ed Prony method or a method based upon rewriting partial sums as geometrical sums is proposed. Ó: S 0 0 9 6-3 0 0 3 (0 0) 0 0 1 3 8-7}
+      \field{journaltitle}{Applied Mathematics and Computation}
+      \field{month}{2}
+      \field{title}{A review of the parameter estimation problem of fitting positive exponential sums to empirical data}
+      \field{volume}{126}
+      \field{year}{2002}
+      \field{pages}{31\bibrangedash 61}
+      \range{pages}{31}
+      \verb{doi}
+      \verb 10.1016/S0096-3003(00)00138-7
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/S0096-3003(00)00138-7
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/S0096-3003(00)00138-7
+      \endverb
+      \keyw{Compartment models,Exponential sums,Nonlinear least squares,Nonlinear parameter estimation,Pisarenko's method,Prony's method}
+    \endentry
     \entry{ingrassia2005}{article}{}
       \name{author}{2}{}{%
         {{hash=cb60b12532fb372d49ffafd3b9429103}{%
@@ -615,6 +712,35 @@
       \verb 10.1198/004017005000000058
       \endverb
       \keyw{Degrees of freedom,Indirect measure,Neural model,Small dataset}
+    \endentry
+    \entry{jacquelin2014}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=3b2928ae84bf9a1b46fc4902e9e4c45f}{%
+           family={Jacquelin},
+           familyi={J\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{3b2928ae84bf9a1b46fc4902e9e4c45f}
+      \strng{fullhash}{3b2928ae84bf9a1b46fc4902e9e4c45f}
+      \strng{bibnamehash}{3b2928ae84bf9a1b46fc4902e9e4c45f}
+      \strng{authorbibnamehash}{3b2928ae84bf9a1b46fc4902e9e4c45f}
+      \strng{authornamehash}{3b2928ae84bf9a1b46fc4902e9e4c45f}
+      \strng{authorfullhash}{3b2928ae84bf9a1b46fc4902e9e4c45f}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Le but principal de la présente publication est d'attirer l'attention sur une approche peu usitée pour la résolution de certains problèmes de régression non-linéaire. La méthode est basée sur un principe de linéarisation par équation différentielle et/ou intégrale, dont l'exposé constitue la partie essentielle de ce papier. Le processus de calcul se distingue fondamentalement des méthodes habituellement utilisées par le fait que la procédure n'est pas récursive et ne comporte donc pas de boucle d'ittération. Afin de donner un apperçu plus concret, des exemples de régression non-linéaires sont traités avec des applications numériques détaillées : régressions sur fonctions puissance, exponentielle, logarithme, ainsi que des fonctions usuelles en statistiques : densité de probabilité de Gauss, distribution de Weibull. Abstract : The main aim of this paper is to draw attention to a method rarely used to solve some regression problems. In many cases, a differential and/or integral equation allows to turn a difficult problem of non-linear regression into a simple linear regression, which is the key part of the presentation. The computation process is fundamentally different from the usual ones, since it isn't recursive. So, it doesn't requires an iterative loop. In order to give a more concrete view, some exemple of non linear regressions are treated with detailed numerical examples : functions power, exponential, logarithm and some functions currently used in statistics : Gaussian Function, Weibull distribution. 2}
+      \field{title}{REGRESSIONS et EQUATIONS INTEGRALES}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://www.scribd.com/doc/14674814/Regressions-et-equations-integrales
+      \endverb
+      \verb{url}
+      \verb https://www.scribd.com/doc/14674814/Regressions-et-equations-integrales
+      \endverb
+      \keyw{()}
     \endentry
     \entry{atoms-in-lasers}{book}{}
       \name{author}{3}{}{%
@@ -738,6 +864,53 @@
       \verb 10.1201/9781003003243
       \endverb
     \endentry
+    \entry{lecca2021}{article}{}
+      \name{author}{4}{}{%
+        {{hash=9b62402c6916dae0c361a1860a7e60ef}{%
+           family={Lecca},
+           familyi={L\bibinitperiod},
+           given={Paola},
+           giveni={P\bibinitperiod}}}%
+        {{hash=8d8bcb226744e8c0e6c5c9d0d4104402}{%
+           family={Lecca},
+           familyi={L\bibinitperiod},
+           given={Michela},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f41fbc49c2fd8a96280f4e46a87823bd}{%
+           family={Maestri},
+           familyi={M\bibinitperiod},
+           given={Cecilia\bibnamedelima Ada},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=97f29ef6b77dfc96079cd8e2fff0587a}{%
+           family={Scarpa},
+           familyi={S\bibinitperiod},
+           given={Marina},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{09d58d41adbd8e35c0415713d9d09c35}
+      \strng{fullhash}{62177d4bafa4a83ef47a6cd7cec598b4}
+      \strng{bibnamehash}{62177d4bafa4a83ef47a6cd7cec598b4}
+      \strng{authorbibnamehash}{62177d4bafa4a83ef47a6cd7cec598b4}
+      \strng{authornamehash}{09d58d41adbd8e35c0415713d9d09c35}
+      \strng{authorfullhash}{62177d4bafa4a83ef47a6cd7cec598b4}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{<p>Biexponential time‐series models commonly find use in biophysics, biochemistry and pharmacokinetics. Indeed, reactions that are described by biexponential functions are typical for many biological processes. The kinetics of these reactions are modelled by transcendental irrational equations interconnecting the reagent concentrations, time and rate constants. The biexponential is apparently a case of nonlinear regression, and as such, very often the estimate of its parameters is obtained with methods and software tools performing nonlinear fits. The first problem that the user encounters when using these techniques consists in having to provide the software with a not too inaccurate estimate of the intervals within which the parameters can vary. Providing arbitrary initial guesses on the parameter ranges to the nonlinear fit procedure causes its nonconvergence. The second problem is the need to obtain an estimate of the parameters with an error interval due to the propagation of the experimental error that affects the measurements of the dependent variable. In this study, we propose an extension of a well‐established mathematical method based on linearization techniques of integral equations for the efficient and unsupervised estimation of the parameters of a biexponential function. Our extension consists in the integration of a model of error propagation from the measurements of the dependent variable to the parameter estimates. There are three main innovative contributions of this work: (1) having made the unsupervised regression method available in experimental practical applications; (2) having provided methods for error propagation in complex operations, such as integration, matrix inversion and multiplication; (3) the calibration of the biexponential dynamics of (i) water desorption of a small ligand from a surface where two types of binding sites are present and (ii) of the decrease of a determinant of viability of organs sustaining ischaemic injury before transplantation.</p>}
+      \field{issn}{0170-4214}
+      \field{issue}{13}
+      \field{journaltitle}{Mathematical Methods in the Applied Sciences}
+      \field{month}{9}
+      \field{title}{Biexponential fitting for noisy data with error propagation}
+      \field{volume}{44}
+      \field{year}{2021}
+      \field{pages}{10154\bibrangedash 10171}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1002/mma.7396
+      \endverb
+    \endentry
     \entry{laser-plasma5}{book}{}
       \name{author}{1}{}{%
         {{hash=fd78e52d16df1b23a1fd4fc254689868}{%
@@ -853,6 +1026,42 @@
       \verb 10.1103/PhysRevResearch.5.L012044
       \endverb
     \endentry
+    \entry{mokhomo2021}{article}{}
+      \name{author}{2}{}{%
+        {{hash=17986e95ded3a8dbc6690689bb8897a1}{%
+           family={Mokhomo},
+           familyi={M\bibinitperiod},
+           given={Molise},
+           giveni={M\bibinitperiod}}}%
+        {{hash=023abeb46bf55842c44c7304b6dc2863}{%
+           family={Matjelo},
+           familyi={M\bibinitperiod},
+           given={Naleli\bibnamedelima Jubert},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{7770f713c0e1eacc473925118600114d}
+      \strng{fullhash}{7770f713c0e1eacc473925118600114d}
+      \strng{bibnamehash}{7770f713c0e1eacc473925118600114d}
+      \strng{authorbibnamehash}{7770f713c0e1eacc473925118600114d}
+      \strng{authornamehash}{7770f713c0e1eacc473925118600114d}
+      \strng{authorfullhash}{7770f713c0e1eacc473925118600114d}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, we present the problem of fitting a sum of exponentials (growth or decay) to some data using linear regression. We start by transforming the problem from the commonly adopted nonlinear regression formulation and present it as a linear regression problem using differential formulation. This allows the problem to be solved in closed form. We demonstrate here by fitting a dataset to a two-component sum of exponentials and show its performance in both noisy and noise-free datasets. The method is shown to be sensitive to noise and this due to the noise amplification inherent in any differential formulation.}
+      \field{issn}{2395-0072}
+      \field{journaltitle}{International Research Journal of Engineering and Technology}
+      \field{title}{Fitting Sum Of Exponentials Model Using Differential Linear Regression}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb www.irjet.net
+      \endverb
+      \verb{url}
+      \verb www.irjet.net
+      \endverb
+      \keyw{Exponential Decay,Exponential Growth,Model Fitting,Noise Amplification,Parameter Estimation,Regression}
+    \endentry
     \entry{pfeifer2006}{article}{}
       \name{author}{3}{}{%
         {{hash=ca36de992cf52d36224491785b421435}{%
@@ -893,6 +1102,68 @@
       \verb{doi}
       \verb 10.1088/0034-4885/69/2/R04
       \endverb
+    \endentry
+    \entry{potts2010}{article}{}
+      \name{author}{2}{}{%
+        {{hash=96f72e99526ae44c79a2800ab25a59ae}{%
+           family={Potts},
+           familyi={P\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5324ea2357a99b7507563098e05b3c2b}{%
+           family={Tasche},
+           familyi={T\bibinitperiod},
+           given={Manfred},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f93bc79e567b530670f10b4f9d0cd3ab}
+      \strng{fullhash}{f93bc79e567b530670f10b4f9d0cd3ab}
+      \strng{bibnamehash}{f93bc79e567b530670f10b4f9d0cd3ab}
+      \strng{authorbibnamehash}{f93bc79e567b530670f10b4f9d0cd3ab}
+      \strng{authornamehash}{f93bc79e567b530670f10b4f9d0cd3ab}
+      \strng{authorfullhash}{f93bc79e567b530670f10b4f9d0cd3ab}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The recovery of signal parameters from noisy sampled data is a fundamental problem in digital signal processing. In this paper, we consider the following spectral analysis problem: Let f be a real-valued sum of complex exponentials. Determine all parameters of f, i.e., all different frequencies, all coefficients, and the number of exponentials from finitely many equispaced sampled data of f. This is a nonlinear inverse problem. In this paper, we present new results on an approximate Prony method (APM) which is based on [1]. In contrast to [1], we apply matrix perturbation theory such that we can describe the properties and the numerical behavior of the APM in detail. The number of sampled data acts as regularization parameter. The first part of APM estimates the frequencies and the second part solves an overdetermined linear Vandermonde-type system in a stable way. We compare the first part of APM also with the known ESPRIT method. The second part is related to the nonequispaced fast Fourier transform (NFFT). Numerical experiments show the performance of our method. © 2009 Elsevier B.V. All rights reserved.}
+      \field{issue}{5}
+      \field{journaltitle}{Signal Processing}
+      \field{month}{5}
+      \field{title}{Parameter estimation for exponential sums by approximate Prony method}
+      \field{volume}{90}
+      \field{year}{2010}
+      \field{pages}{1631\bibrangedash 1642}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.sigpro.2009.11.012
+      \endverb
+      \keyw{Approximate Prony method,Digital signal processing,ESPRIT method,Exponential sum,Matrix perturbation theory,Nonequispaced fast Fourier transform,Parameter estimation,Perturbed Hankel matrix,Spectral analysis problem,Vandermonde-type matrix}
+    \endentry
+    \entry{prony1795}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a41a8f8431ce439de7472a1c4896c941}{%
+           family={Prony},
+           familyi={P\bibinitperiod},
+           given={G\bibnamedelima R\bibnamedelima B},
+           giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{a41a8f8431ce439de7472a1c4896c941}
+      \strng{fullhash}{a41a8f8431ce439de7472a1c4896c941}
+      \strng{bibnamehash}{a41a8f8431ce439de7472a1c4896c941}
+      \strng{authorbibnamehash}{a41a8f8431ce439de7472a1c4896c941}
+      \strng{authornamehash}{a41a8f8431ce439de7472a1c4896c941}
+      \strng{authorfullhash}{a41a8f8431ce439de7472a1c4896c941}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal de l’Ecole Polytechnique (Paris)}
+      \field{title}{Essai exp´erimental et analytique sur les lois de la dilatabilit´e de fluides ´elastiques et sur celles de la force expansion de la vapeur de l’alcool, `a diff´erentes temp´eratures.}
+      \field{volume}{1}
+      \field{year}{1795}
+      \field{pages}{24\bibrangedash 76}
+      \range{pages}{53}
     \endentry
     \entry{rasmussen2004}{inbook}{}
       \name{author}{1}{}{%
@@ -1248,6 +1519,37 @@
       \verb http://www.springer.com/series/15614
       \endverb
     \endentry
+    \entry{gpy}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=a4704fd35f0308287f2937ba3eccf5fe}{%
+           family={The},
+           familyi={T\bibinitperiod}}}%
+        {{hash=e6f5d9e8f5fb5ac840b56da796ee35e9}{%
+           family={GPY},
+           familyi={G\bibinitperiod}}}%
+        {{hash=02684cc6b6ea1811a064f475a5fd1d18}{%
+           family={Authors},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ba7df603b001072496befe35a2f6e43d}
+      \strng{fullhash}{7d0565cbc4019943af35c8c5d567c050}
+      \strng{bibnamehash}{7d0565cbc4019943af35c8c5d567c050}
+      \strng{authorbibnamehash}{7d0565cbc4019943af35c8c5d567c050}
+      \strng{authornamehash}{ba7df603b001072496befe35a2f6e43d}
+      \strng{authorfullhash}{7d0565cbc4019943af35c8c5d567c050}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{\{GPy\}: A Gaussian process framework in python}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb http://github.com/SheffieldML/GPy
+      \endverb
+      \verb{url}
+      \verb http://github.com/SheffieldML/GPy
+      \endverb
+    \endentry
     \entry{tskhakaya2007}{article}{}
       \name{author}{4}{}{%
         {{hash=5871b396d9d2bb497cc30d3761dbdc90}{%
@@ -1432,6 +1734,41 @@
       \verb 10.1109/3.641310
       \endverb
     \endentry
+    \entry{wiscombe1977}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ae0c087f3a5123677b0dc7be276c3844}{%
+           family={Wiscombe},
+           familyi={W\bibinitperiod},
+           given={W\bibnamedelima J},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=d0c41705ef12181f576ab91eb3ce5cc6}{%
+           family={Evans},
+           familyi={E\bibinitperiod},
+           given={J\bibnamedelima W},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{c6b593f3e148f764cef84ccbea27fd5a}
+      \strng{fullhash}{c6b593f3e148f764cef84ccbea27fd5a}
+      \strng{bibnamehash}{c6b593f3e148f764cef84ccbea27fd5a}
+      \strng{authorbibnamehash}{c6b593f3e148f764cef84ccbea27fd5a}
+      \strng{authornamehash}{c6b593f3e148f764cef84ccbea27fd5a}
+      \strng{authorfullhash}{c6b593f3e148f764cef84ccbea27fd5a}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Fitting transmission functions with exponential sums is the basis for a widely used approximation for calculating spectrally integrated radiative fluxes in planetary atmospheres , especially when both line absorption and scattering are important. The error in this method depends crucially on the accuracy of the fits, but unfortunately exponential-sum fitting is a classical ill-conditioned problem of numerical analysis. Previous techniques devised for exponential-sum fitting are often unsatisfactory in this application. We present a new method which sidesteps the ill conditioning, guarantees convergence to the unique best least-squares fit, gives positive coefficients, and produces fits orders of magnitude more accurate than any which have so far been published. The method is demonstrated to be capable of recovering an exponential sum, given data sampled from that sum and rounded to as few as two decimal places. Sample fits are given for the Goody and Malkmus random band models and the Yamamoto Ha0 solar absorption data in order to illustrate the high accuracy of the method. The effect on the fits of errors in the transmission data is examined in some depth.}
+      \field{issue}{4}
+      \field{journaltitle}{JOURNAL OF COMPUTATIONAL PHYSICS}
+      \field{title}{Exponential-Sum Fitting of Radiative Transmission Functions}
+      \field{volume}{24}
+      \field{year}{1977}
+      \field{pages}{416\bibrangedash 444}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1016/0021-9991(77)90031-6
+      \endverb
+    \endentry
     \entry{ultra-laser}{article}{}
       \name{author}{11}{}{%
         {{hash=28b8f0a36e6e29fdd0b6a700461738b5}{%
@@ -1579,15 +1916,8 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{acton}
   \missing{cite-the-constants}
-  \missing{fitexp-summary}
-  \missing{fitexp-summary2}
-  \missing{fitexp-trans}
-  \missing{jacquelin}
   \missing{lin-reg}
-  \missing{prony}
-  \missing{prony2}
 \endrefsection
 \endinput
 

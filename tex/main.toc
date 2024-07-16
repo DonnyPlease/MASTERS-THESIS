@@ -1,0 +1,25 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{Introduction}{8}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Plasma}{9}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Temperature of plasma}{10}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Ionization}{11}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Absorption of ultra-short, ultra-intense lasers}{13}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Motivation - X-ray $\mathbf {K}_\alpha $ emission}{16}{section.1.4}%
+\contentsline {section}{\numberline {1.5}PIC simulations}{17}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Temperature fitting}{21}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Boltzmann vs. Maxwellian distribution}{22}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Exponential-sum fitting}{23}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Surrogate hot electron temperature models}{29}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Regression methods}{29}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Support vector regression}{30}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Neural networks}{31}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Gaussian Processes}{33}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Dataset}{36}{chapter.4}%
+\contentsline {section}{\numberline {4.1}EPOCH Simulations}{36}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Temperature fitting}{37}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Hot electron temperature modelling}{38}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Comparison to contemporary data}{39}{chapter.6}%
+\contentsline {chapter}{Conclusion}{40}{chapter*.15}%
+\contentsline {chapter}{Bibliography}{41}{chapter*.15}%
+\contentsline {chapter}{Attachments}{45}{chapter*.16}%
+\contentsline {chapter}{\numberline {A}EPOCH input file}{45}{appendix.A}%

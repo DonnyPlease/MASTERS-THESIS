@@ -1,0 +1,157 @@
+\footnotesize{
+\chapter{EPOCH input file}
+\label{att:input-deck}
+\begin{verbatim}
+	begin:constant
+	konstanta1 = 1e19
+	konstanta2 = 2.0
+	konstanta3 = 60
+	
+	las_lambda    = 0.8 * micron
+	ll            = las_lambda
+	las_intensity_focus_w_cm2 = konstanta1
+	a0            = ll / micron * sqrt(las_intensity_focus_w_cm2/1.37e18)
+	gamma0        = sqrt(1.0+a0^2)
+	pulse_length  = 30.0 * femto
+	spot_size     = 3.2 * micron
+	cpwl          = 30
+	simtime       = 800.0 * femto
+	theta         = konstanta3 / 180.0 * pi
+	ct            = cos(theta)
+	st            = sin(theta)
+	n_el_over_nc  = 3.0*gamma0
+	min_density   = 0.01
+	preplasma_length = konstanta2 * micron
+	foil_thickness = 4.0 * micron
+	profile_thickness = - loge(min_density) * preplasma_length
+	boundary_thickness = 1.0 * micron
+	x1 = 60 * micron - foil_thickness - 
+	    profile_thickness - boundary_thickness
+	x2 = x1 + profile_thickness
+	x3 = x2 + foil_thickness
+	xfocus        = x2
+	yc            = - xfocus * tan(theta) * 0.5
+	sigma_to_fwhm = 2.0 * sqrt(loge(2.0))
+	w0            = spot_size / sigma_to_fwhm
+	zR            = pi * w0^2 / ll
+	lfocus        = xfocus / ct
+	lfzr          = lfocus / zR
+	wl            = w0 * sqrt(1.0+lfzr^2)
+	intensity_fac2d = 1.0 / sqrt(1.0+lfzr^2) * ct
+	las_omega     = 2.0 * pi* 299792458.0 / ll
+	las_time      = 2.0 * pi / las_omega
+	wt            = pulse_length / sigma_to_fwhm
+	n_crit        = critical(las_omega)
+	n_el          = n_el_over_nc * n_crit
+	y_full        = 54.0 * micron
+	end:constant
+	
+	begin:control
+	x_min = 0.0 * micron
+	x_max = 60.0 * micron
+	y_min = -55.0 * micron
+	y_max = 55.0 * micron 
+	nx = (x_max-x_min) / ll * cpwl
+	ny = (y_max-y_min) / ll * cpwl
+	t_end = simtime
+	particle_tstart = x1 / ct / 299792458.0
+	dt_multiplier = 0.97
+	dlb_threshold = 0.5
+	use_random_seed = T
+	stdout_frequency = 10
+	smooth_currents = T
+	field_order = 2
+	end:control
+	
+	begin:boundaries
+	cpml_thickness = 6
+	cpml_kappa_max = 20
+	cpml_a_max = 0.15
+	cpml_sigma_max = 0.7
+	bc_x_min = cpml_laser
+	bc_x_max_field = cpml_outflow
+	bc_y_min_field = periodic
+	bc_y_max_field = periodic
+	bc_x_min_particle = heat_bath
+	bc_x_max_particle = heat_bath
+	bc_y_min_particle = heat_bath
+	bc_y_max_particle = heat_bath
+	end:boundaries
+	
+	begin:laser
+	boundary = x_min
+	intensity_w_cm2 = las_intensity_focus_w_cm2 * intensity_fac2d
+	lambda = ll
+	t_profile = gauss(time, pulse_length, wt)
+	t_end = 3.0 * pulse_length
+	phase = -2.0*pi*(y-yc)*st/ll+((pi/ll)*(((y-yc)*ct)^2))/
+	    (lfocus*(1.0+(1.0/lfzr)^2))-atan((y-yc)*st/zR+lfzr)
+	profile = gauss((y-yc)*ct,0.0,wl)
+	end:laser
+	
+	begin:species
+	name = electron
+	charge = -1.0
+	mass = 1.0
+	dump = T
+	npart_per_cell = 30 
+	density = if((x gt x1) and (x lt x2) and (abs(y) lt y_full),
+	    n_el*exp((x-x2)/preplasma_length), 0.0)
+	density = if((x gt x2) and (x lt x3) and (abs(y) lt y_full), n_el,
+	    density(electron))
+	temp_ev = 100.0
+	identify:electron
+	end:species
+	
+	begin:species
+	name = proton
+	charge = 1.0
+	mass = 1836.0
+	dump = T
+	npart_per_cell = 30 
+	density = density(electron)
+	temp_ev = 100.0
+	end:species
+	
+	begin:probe
+	name = electron_back_probe
+	point = (x3-2.0*micron, 0.0)
+	normal = (1.0, 0.0)
+	ek_min = 1.602e-16
+	ek_max = -1.0
+	include_species:electron
+	dumpmask = always
+	end:probe
+	
+	#begin:output
+	#  dt_snapshot = 10.0*femto
+	#  name = fields
+	#  file_prefix = f
+	#  restartable = F
+	#  grid = always + single
+	#  ex = always + single
+	#  ey = always + single
+	#  bz = always + single
+	#end:output
+	
+	#begin:output
+	#  dt_snapshot = 10.0*femto
+	#  name = plasma
+	#  file_prefix = n
+	#  restartable = F
+	#  grid = always
+	#  number_density = always + single
+	#  poynt_flux = always + single
+	#  absorption = always
+	#  total_energy_sum = always
+	#end:output
+	
+	begin:output
+	dt_snapshot = 700.0*femto
+	name = prob
+	file_prefix = ppr
+	restartable = F
+	particle_probes = always
+	end:output
+\end{verbatim}
+}

@@ -1,10 +1,11 @@
 \chapter{Temperature fitting}
-The results of the EPOCH simulations provide weighted momenta of electrons $\bm{p}_\mathrm{e}$, where the weight represents the number of electrons with that momentum. They are not histograms yet, because more than one macro-particle can be assigned with the same value of $\bm{p}_\mathrm{e}$. The energies of electrons can then be calculated from $\bm{p}$ using the relativistic formula:
+\label{ch:temp-fitting-theory}
+The results of the EPOCH simulations provide weighted momenta for a subset electrons $\bm{p}_\mathrm{e}$, where the weight represents the number of electrons with that momentum. They are not histograms yet, because more than one macro-particle can have the same value of $\bm{p}_\mathrm{e}$. The energies of electrons can then be calculated from $\bm{p}$ using the relativistic formula:
 \begin{equation}
 	\label{eq:rel-energy}
-	E_\mathrm{e} = m_0\cdot c^2\left(\sqrt{1+\left(\frac{p}{m_0\cdot c}\right)^2} -1\right)\mathrm{,}
+	E_\mathrm{e} = m_\mathrm{e}\cdot c^2\left(\sqrt{1+\left(\frac{p}{m_\mathrm{e}\cdot c}\right)^2} -1\right)\mathrm{,}
 \end{equation}
-where $p=\sqrt{\bm{p}\cdot\bm{p}}$ is the size of $\bm{p}$, $m_0 =  9.109 \times 10^{-31} \, \mathrm{kg}$ is the electron rest-mass and $c=3\times 10^{8} \, \mathrm{m . s}^{-1}$ is the speed of light \cite{cite-the-constants}.
+where $p=\sqrt{\bm{p}\cdot\bm{p}}$ is the size of $\bm{p}$, $m_\mathrm{e} =  9.109 \times 10^{-31} \, \mathrm{kg}$ is the electron rest-mass and $c=3\times 10^{8} \, \mathrm{m . s}^{-1}$ is the speed of light \cite{cite-the-constants}.
 
 \begin{figure}[h]
 	\centering
@@ -12,9 +13,9 @@ where $p=\sqrt{\bm{p}\cdot\bm{p}}$ is the size of $\bm{p}$, $m_0 =  9.109 \times
 	\caption{An example of electron energy distribution of 2D EPOCH simulation with intensity of laser $I=10^{19}\,\mathrm{W.cm}^{-2}$, characteristic scale of the exponential preplasma profile $L=0.1\,\mathrm{\mu m}$ and angle of incidence with respect to target normal direction $\alpha = 10$°.}
 	\label{fig:example-histogram}
 \end{figure}
-After using equation \ref{eq:rel-energy} to calculate energy, it is multiplied by the weight. One can then easily create the histogram from electron energies and their counts. An example of such histogram can be seen in the figure \ref{fig:example-histogram}. There are several things that need to be discussed.
+One can easily create the histogram from electron energies and their counts. An example of such histogram can be seen in the figure \ref{fig:example-histogram}. There are several things that need to be discussed.
 
-Firstly, it is important to note that the $y$-axis is presented on a logarithmic scale to enhance readability. The extensive range of electron energies necessitates the use of relativistic formula. However, around the energies $E_k \approx 1900 \, \mathrm{keV}$ and more, the histogram exhibits irregularities - specifically, there are empty bins and several bins contain identical electron counts. These anomalies are attributed to the EPOCH weighting process. Consequently, this portion of the spectrum is rendered questionable. This issue will be further addressed in the section dedicated to temperature fitting.
+Firstly, it is important to note that the $y$-axis is presented on a logarithmic scale to enhance readability. The extensive range of electron energies necessitates the use of relativistic formula. However, around the energies $E_k \approx 1900 \, \mathrm{keV}$ and more, the histogram exhibits irregularities - specifically, there are empty bins and several bins contain identical electron counts. These anomalies are attributed to the resolution of the simulation. Consequently, this portion of the spectrum is rendered questionable. This issue will be further addressed in the section dedicated to temperature fitting.
 
 Last but not least, note the apparent exponential relationship between $N_i$ and $E_k$ in the energy spectrum between $E_k \approx 500 \, \mathrm{keV}$ and $E_k \approx 1500 \, \mathrm{keV}$:
 \begin{equation}
@@ -30,7 +31,7 @@ First of all, in section \ref{sec:temperature-intro}, where we introduced temper
 
 The equations for the Maxwellian $f_\mathrm{M}(E)$ and Boltzmann $f_\mathrm{B}(E)$ distributions can be after few simplifications regarding units defined as:
 \begin{equation}
-	f_\mathrm{M}(E)\mathrm{d}E = \frac{1}{(ET)^{3/2}}\exp\left(-\frac{E}{T}\right)\mathrm{d}E
+	f_\mathrm{M}(E)\mathrm{d}E = \frac{\sqrt{E}}{(T)^{3/2}}\exp\left(-\frac{E}{T}\right)\mathrm{d}E
 \end{equation}
 and
 \begin{equation}
@@ -38,33 +39,33 @@ and
 \end{equation}
 By ignoring that both are defined by the differential, taking logarithm of both $f_\mathrm{M}(E)$ and $f_\mathrm{B}(E)$ we get:
 \begin{equation}
-	\bar{f_\mathrm{M}}(E) = \log\left(f_\mathrm{M}(E)\right) = \log\left(\frac{1}{(ET)^{3/2}}\right)+\left(-\frac{E}{T}\right)
+	\bar{f_\mathrm{M}}(E) = \ln\left(f_\mathrm{M}(E)\right) = \ln\left(\frac{\sqrt{E}}{(T)^{3/2}}\right)+\left(-\frac{E}{T}\right)
 \end{equation}
 and
 \begin{equation}
-	\bar{f_\mathrm{B}}(E) = \log\left(f_\mathrm{B}(E)\right) = \log\left(\frac{1}{T}\right)+\left(-\frac{E}{T}\right).
+	\bar{f_\mathrm{B}}(E) = \ln\left(f_\mathrm{B}(E)\right) = \ln\left(\frac{1}{T}\right)+\left(-\frac{E}{T}\right).
 \end{equation}
 These two equations describe the the distributions in a logarithmic scale. The first derivatives are then:
 \begin{equation}
 	\label{eq:slope-maxwell-log}
-	\frac{\mathrm{d}\bar{f_\mathrm{M}}}{dE} =-\frac{3}{2}\frac{(ET)^{3/2}}{(ET)^{5/2}}-\frac{1}{T} = -\frac{3}{2}\frac{1}{ET}-\frac{1}{T} = -\frac{1}{T}\left(1+\frac{3}{2E}\right)
+	\frac{\mathrm{d}\bar{f_\mathrm{M}}}{dE} =-\frac{1}{2}\frac{T^{3/2}}{\sqrt{E}}\frac{1}{T^{3/2}\sqrt{E}}-\frac{1}{T} = -\frac{1}{2E}-\frac{1}{T}
 \end{equation}
 and
 \begin{equation}
 	\label{eq:slope-boltzmann-log}
 	\frac{\bar{f_\mathrm{B}}}{dE} = -\frac{1}{T}.
 \end{equation}
-The equations \ref{eq:slope-maxwell-log} and \ref{eq:slope-boltzmann-log} suggest that in the logarithmic scale the slopes of these distributions differ by $-\frac{3}{2}\frac{1}{ET}$, which decreases with increasing $E$. In other words, the fit of $T$ can be replaced by fitting slope $s = -1/T$ of the histogram after logarithmic transformation. For large energies, the slopes of both discussed distributions are approximately equal. The formula for Maxwellian distribution changes when working with momentum in 2 dimensions, but it can easily be shown that the conclusion is not affected.
+The equations \ref{eq:slope-maxwell-log} and \ref{eq:slope-boltzmann-log} suggest that in the logarithmic scale the slopes of these distributions differ by $-\frac{1}{2E}$, which decreases with increasing $E$. In other words, the fit of $T$ can be replaced by fitting slope $s = -1/T$ of the histogram after logarithmic transformation. For large energies, the slopes of both discussed distributions are approximately equal. 
 
-What is more, the assumption of Boltzmann distribution allows us to fit not only the temperature, but also $N_0$, which is the total number of electrons in that distribution of hot electrons. If we keep the form of the distribution as in equation \ref{eq:exp-distr}, the total energy absorbed by the group of hot electrons $E_{\mathrm{tothot}}$ with temperature $T_\mathrm{hot}$ can be calculated as:
+Moreover, the assumption of Boltzmann distribution allows us to fit not only the temperature, but also $N_0$, which is the total number of electrons in that distribution of hot electrons. If we keep the form of the distribution as in equation \ref{eq:exp-distr}, the total energy absorbed by the group of hot electrons $E_{\mathrm{tothot}}$ with temperature $T_\mathrm{hot}$ can be calculated as:
 \begin{equation}
-	E_{\mathrm{tothot}} = N_0\cdot T_\mathrm{hot}^2.
+	E_{\mathrm{tothot}} = N_0\cdot T_\mathrm{hot}.
 \end{equation}
 
 
 \section{Exponential-sum fitting}
 \label{sec:exp-fit}
-Exponential-sum fitting has been a recognized challenge for many years. Forman S. Acton, a professor at Princeton University, addressed this issue in his 1970 book Numerical Methods That Work. Among various topics, he included an essay titled "What Not to Compute," wherein he described the fitting of sums of exponential functions as "extremely ill-conditioned"~\cite{acton}. Despite the inherent difficulty of this problem, this thesis endeavors to determine electron temperatures, necessitating the development of an effective solution to this challenging computational task. 
+Exponential-sum fitting has been a recognized challenge for many years. Forman S. Acton, a professor at Princeton University, addressed this issue in his 1970 book Numerical Methods That Work. Among various topics, he included an essay titled "What Not to Compute," wherein he described the fitting of sums of exponential functions as "extremely ill-conditioned"~\cite{acton1990}. Despite the inherent difficulty of this problem, this thesis endeavors to determine electron temperatures, necessitating the development of an effective solution to this challenging computational task. 
 
 The task is to find the parameters $m, a_0, a_1,..., a_m, b_1,...b_m$ so that the function
 
@@ -82,13 +83,13 @@ where $w_i$ are the weights.
 
 Modern programming libraries provide access to well-known and generally efficient methods, such as non-linear least squares. However, due to the previously mentioned ill-conditioning, these methods do not yield satisfactory results in this context. The convergence of these methods is highly dependent on the quality of the initial guess, which poses a significant challenge. To date, significant efforts have been made to develop reliable methods for solving this problem. 
 
-Notably, Prony's method \cite{prony} and its variations, as discussed in sources such as \cite{prony2}, have been proposed. It was originally intended for signal approximation - specifically, the determination of complex parameters in exponential functions, similar to Fourier transformation.
+Notably, Prony's method \cite{prony1795} and its variations, as discussed in sources such as \cite{potts2010}, have been proposed. It was originally intended for signal approximation - specifically, the determination of complex parameters in exponential functions, similar to Fourier transformation.
 
-Another, much simpler method is known as \textit{successive subtraction}~\cite{fitexp-trans}. This method is frequently employed for exponential decays (negative parameters $b_i$), which closely resemble our problem of exponential distributions. The core concept involves fitting the end of the decay with a single exponential function, subtracting this result from the data, and iteratively identifying all exponential components. This simplicity makes it a promising candidate for our problem, especially since our primary interest lies in determining the temperature of the hottest electrons—the tail. However, automating this method can be challenging, as it is not straightforward to select an interval that can be fitted as a tail in each iteration. What is more, the tail of our histograms are not reliable as was discussed with regard of the example histogram in figure \ref{fig:example-histogram}.
+Another, much simpler method is known as \textit{successive subtraction}~\cite{wiscombe1977}. This method is frequently employed for exponential decays (negative parameters $b_i$), which closely resemble our problem of exponential distributions. The core concept involves fitting the end of the decay with a single exponential function, subtracting this result from the data, and iteratively identifying all exponential components. This simplicity makes it a promising candidate for our problem, especially since our primary interest lies in determining the temperature of the hottest electrons—the tail. However, automating this method can be challenging, as it is not straightforward to select an interval that can be fitted as a tail in each iteration. What is more, the tail of our histograms are not reliable as was discussed with regard of the example histogram in figure \ref{fig:example-histogram}.
 
-Another method worth considering is presented in \cite{fitexp-trans}. This method, called exponential sum fitting of transmissions (ESFT), was developed for fitting radiative transmission functions in the context of atmospheric research. ESFT too is an iterative method and might serve as an interesting alternative for future works.
+Another method worth considering is presented in \cite{wiscombe1977}. This method, called exponential sum fitting of transmissions (ESFT), was developed for fitting radiative transmission functions in the context of atmospheric research. ESFT too is an iterative method and might serve as an interesting alternative for future works.
 
-We only mentioned a few methods. A summary with a deeper explanation of these and other methods can be found in \cite{fitexp-trans}, \cite{fitexp-summary} or in \cite{fitexp-summary2}.
+We only mentioned a few methods. A summary with a deeper explanation of these and other methods can be found in \cite{wiscombe1977}, \cite{holmstrom2002} or in \cite{hokanson2013}.
 
 If the goal is to fit only one of the exponentials, such as the parameters of the hot electrons distribution, the standard approach involves manually selecting the "correct" segment of the distribution and fitting it with a single exponential function. For instance, in \cite{cui2013}, where researchers study a problem similar to ours, they appear to use this technique to determine the temperature of hot electrons. The term "correct" is somewhat vague because it can be subjective and we do not have any metric that would quantify how well the segment was chosen. We can only work with the metrics describing the fit itself.
 
@@ -98,7 +99,7 @@ That being said, we still attempted to automate the fitting. The method we used 
 
 \subsection*{The 'Jacquelin' method}
 \label{sec:jaquelin}
-We will call the method we chose \textit{Jacquelin method}, because we will be referencing an article by J.Jacquelin who developed it for his own purpose \cite{jacquelin}. This method is explicit and non-iterative which is its main advantage. The original derivation presents a universal strategy how to explicitly approximate any function that is a solution to some integral or differential equation. Let us start with derivation of the numerical algorithm for a function:
+We will call the method we chose \textit{Jacquelin method}, because we will be referencing an article by J.Jacquelin who developed it for his own purpose \cite{jacquelin2014}. This method is explicit and non-iterative which is its main advantage. The original derivation presents a universal strategy how to explicitly approximate any function that is a solution to some integral or differential equation. Let us start with derivation of the numerical algorithm for a function:
 
 \begin{equation}
 	\label{eq:orig-eq}
@@ -254,7 +255,7 @@ One can see that we get a very similar equation as \ref{eq:lin-reg}, that can be
 	\end{pmatrix}
 \end{equation}
 
-In \cite{jacquelin}, only the case without the constant $a_0$ is presented, but as we have shown the derivation of the generalized version with constant is not difficult. An extension of Jacquelin method for more than two exponential terms is also not very complicated. Note that adding one term adds two parameters, which leads to matrix of size $7\times7$. However, it always leads to solving for the roots of the polynomial created by the first $N$ elements of the vector $\boldsymbol{b}$, where $N$ is the number of exponential terms. In case of two exponential terms, equations \ref{eq:roots} solve for the roots of the polynomial:
+In \cite{jacquelin2014}, only the case without the constant $a_0$ is presented, but as we have shown the derivation of the generalized version with constant is not difficult. An extension of Jacquelin method for more than two exponential terms is also not very complicated. Note that adding one term adds two parameters, which leads to matrix of size $7\times7$. However, it always leads to solving for the roots of the polynomial created by the first $N$ elements of the vector $\boldsymbol{b}$, where $N$ is the number of exponential terms. In case of two exponential terms, equations \ref{eq:roots} solve for the roots of the polynomial:
 \begin{equation}
 	b^2-Bb-A=0
 \end{equation}
@@ -263,5 +264,9 @@ In case of three, we would need to calculate $SSS(x)$ from $SS(x)$. There would 
 	b^3-Cb^2-Bb-A=0.
 \end{equation}
 
+It is necessary to note, that this algorithm is prone numerical defects coming from the fact that there is a cumulative error related to the calculation of the partial sums. For that reason the resulting that one of matrices can be singular or the polynomial can have imaginary roots.
 
+In \cite{mokhomo2021}, Mokhomo et al. did numerical experiments where they have shown that similar method (derived from differential instead of integral equations) can be used for fitting, but does not yield precise estimation results even for noiseless data. Nevertheless, it is an explicit algorithm for approximation of parameters which then can be used as initial guess for more advanced iterative techniques.
+
+When it comes to uncertainty of the coefficients, there are two possibilities. First, it is possible to propagate the experimental error from $y_i$ all the way to the final coefficients. The derivation can be found in \cite{lecca2021}. However, we do not have the standard error of the histogram bins. The second option is to take the formula for linear regression calculate the error estimation from that.
 

@@ -174,4 +174,3 @@ def fit(files_names, target_folder = ""):
 if __name__ == "__main__":
     print("This is reduce_histogram.py file.")
         
-            

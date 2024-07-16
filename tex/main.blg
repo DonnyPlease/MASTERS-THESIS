@@ -1,25 +1,18 @@
 [0] Config.pm:306> INFO - This is Biber 2.18
 [0] Config.pm:309> INFO - Logfile is 'main.blg'
-[146] biber-MSWIN64:340> INFO - === 
-[190] Biber.pm:418> INFO - Reading 'main.bcf'
-[349] Biber.pm:978> INFO - Found 46 citekeys in bib section 0
-[368] Biber.pm:4401> INFO - Processing section 0
-[384] Biber.pm:4592> INFO - Looking for bibtex file 'bibliographyExport.bib' for section 0
-[453] bibtex.pm:1713> INFO - LaTeX decoding ...
-[538] bibtex.pm:1518> INFO - Found BibTeX data source 'bibliographyExport.bib'
-[854] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[854] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[854] Biber.pm:4221> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[854] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
-[901] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[930] bbl.pm:757> INFO - Output to main.bbl
-[930] Biber.pm:130> WARN - I didn't find a database entry for 'cite-the-constants' (section 0)
-[930] Biber.pm:130> WARN - I didn't find a database entry for 'acton' (section 0)
-[930] Biber.pm:130> WARN - I didn't find a database entry for 'prony' (section 0)
-[930] Biber.pm:130> WARN - I didn't find a database entry for 'prony2' (section 0)
-[930] Biber.pm:130> WARN - I didn't find a database entry for 'fitexp-trans' (section 0)
-[930] Biber.pm:130> WARN - I didn't find a database entry for 'fitexp-summary' (section 0)
-[930] Biber.pm:130> WARN - I didn't find a database entry for 'fitexp-summary2' (section 0)
-[930] Biber.pm:130> WARN - I didn't find a database entry for 'jacquelin' (section 0)
-[930] Biber.pm:130> WARN - I didn't find a database entry for 'lin-reg' (section 0)
-[931] Biber.pm:132> INFO - WARNINGS: 9
+[143] biber-MSWIN64:340> INFO - === 
+[195] Biber.pm:418> INFO - Reading 'main.bcf'
+[367] Biber.pm:978> INFO - Found 49 citekeys in bib section 0
+[385] Biber.pm:4401> INFO - Processing section 0
+[402] Biber.pm:4592> INFO - Looking for bibtex file 'bibliographyExport.bib' for section 0
+[475] bibtex.pm:1713> INFO - LaTeX decoding ...
+[651] bibtex.pm:1518> INFO - Found BibTeX data source 'bibliographyExport.bib'
+[1040] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1040] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1040] Biber.pm:4221> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[1040] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[1101] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1140] bbl.pm:757> INFO - Output to main.bbl
+[1140] Biber.pm:130> WARN - I didn't find a database entry for 'cite-the-constants' (section 0)
+[1140] Biber.pm:130> WARN - I didn't find a database entry for 'lin-reg' (section 0)
+[1140] Biber.pm:132> INFO - WARNINGS: 2

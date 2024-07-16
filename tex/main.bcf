@@ -2432,50 +2432,96 @@
     <bcf:citekey order="75" intorder="1">arber2015</bcf:citekey>
     <bcf:citekey order="76" intorder="1">arber2015</bcf:citekey>
     <bcf:citekey order="77" intorder="1">cite-the-constants</bcf:citekey>
-    <bcf:citekey order="78" intorder="1">acton</bcf:citekey>
-    <bcf:citekey order="79" intorder="1">prony</bcf:citekey>
-    <bcf:citekey order="80" intorder="1">prony2</bcf:citekey>
-    <bcf:citekey order="81" intorder="1">fitexp-trans</bcf:citekey>
-    <bcf:citekey order="82" intorder="1">fitexp-trans</bcf:citekey>
-    <bcf:citekey order="83" intorder="1">fitexp-trans</bcf:citekey>
-    <bcf:citekey order="84" intorder="1">fitexp-summary</bcf:citekey>
-    <bcf:citekey order="85" intorder="1">fitexp-summary2</bcf:citekey>
+    <bcf:citekey order="78" intorder="1">acton1990</bcf:citekey>
+    <bcf:citekey order="79" intorder="1">prony1795</bcf:citekey>
+    <bcf:citekey order="80" intorder="1">potts2010</bcf:citekey>
+    <bcf:citekey order="81" intorder="1">wiscombe1977</bcf:citekey>
+    <bcf:citekey order="82" intorder="1">wiscombe1977</bcf:citekey>
+    <bcf:citekey order="83" intorder="1">wiscombe1977</bcf:citekey>
+    <bcf:citekey order="84" intorder="1">holmstrom2002</bcf:citekey>
+    <bcf:citekey order="85" intorder="1">hokanson2013</bcf:citekey>
     <bcf:citekey order="86" intorder="1">cui2013</bcf:citekey>
-    <bcf:citekey order="87" intorder="1">jacquelin</bcf:citekey>
+    <bcf:citekey order="87" intorder="1">jacquelin2014</bcf:citekey>
     <bcf:citekey order="88" intorder="1">lin-reg</bcf:citekey>
-    <bcf:citekey order="89" intorder="1">jacquelin</bcf:citekey>
-    <bcf:citekey order="90" intorder="1">kluge2011</bcf:citekey>
-    <bcf:citekey order="90" intorder="2">cui2013</bcf:citekey>
-    <bcf:citekey order="90" intorder="3">miller2023</bcf:citekey>
-    <bcf:citekey order="90" intorder="4">haines2009</bcf:citekey>
-    <bcf:citekey order="90" intorder="5">beg1997</bcf:citekey>
-    <bcf:citekey order="91" intorder="1">cui2013</bcf:citekey>
-    <bcf:citekey order="92" intorder="1">miller2023</bcf:citekey>
-    <bcf:citekey order="93" intorder="1">bishop2006</bcf:citekey>
-    <bcf:citekey order="94" intorder="1">bishop2006</bcf:citekey>
+    <bcf:citekey order="89" intorder="1">jacquelin2014</bcf:citekey>
+    <bcf:citekey order="90" intorder="1">mokhomo2021</bcf:citekey>
+    <bcf:citekey order="91" intorder="1">lecca2021</bcf:citekey>
+    <bcf:citekey order="92" intorder="1">kluge2011</bcf:citekey>
+    <bcf:citekey order="92" intorder="2">cui2013</bcf:citekey>
+    <bcf:citekey order="92" intorder="3">miller2023</bcf:citekey>
+    <bcf:citekey order="92" intorder="4">haines2009</bcf:citekey>
+    <bcf:citekey order="92" intorder="5">beg1997</bcf:citekey>
+    <bcf:citekey order="93" intorder="1">cui2013</bcf:citekey>
+    <bcf:citekey order="94" intorder="1">miller2023</bcf:citekey>
     <bcf:citekey order="95" intorder="1">bishop2006</bcf:citekey>
     <bcf:citekey order="96" intorder="1">bishop2006</bcf:citekey>
-    <bcf:citekey order="97" intorder="1">zhang2020</bcf:citekey>
-    <bcf:citekey order="98" intorder="1">zhang2020</bcf:citekey>
-    <bcf:citekey order="99" intorder="1">smola2004</bcf:citekey>
-    <bcf:citekey order="100" intorder="1">smola2004</bcf:citekey>
+    <bcf:citekey order="97" intorder="1">bishop2006</bcf:citekey>
+    <bcf:citekey order="98" intorder="1">bishop2006</bcf:citekey>
+    <bcf:citekey order="99" intorder="1">zhang2020</bcf:citekey>
+    <bcf:citekey order="100" intorder="1">zhang2020</bcf:citekey>
     <bcf:citekey order="101" intorder="1">smola2004</bcf:citekey>
-    <bcf:citekey order="102" intorder="1">zhang2020</bcf:citekey>
+    <bcf:citekey order="102" intorder="1">smola2004</bcf:citekey>
     <bcf:citekey order="103" intorder="1">smola2004</bcf:citekey>
     <bcf:citekey order="104" intorder="1">zhang2020</bcf:citekey>
-    <bcf:citekey order="105" intorder="1">vapnik2000</bcf:citekey>
-    <bcf:citekey order="106" intorder="1">bishop2006</bcf:citekey>
-    <bcf:citekey order="107" intorder="1">bishop2006</bcf:citekey>
+    <bcf:citekey order="105" intorder="1">smola2004</bcf:citekey>
+    <bcf:citekey order="106" intorder="1">zhang2020</bcf:citekey>
+    <bcf:citekey order="107" intorder="1">vapnik2000</bcf:citekey>
     <bcf:citekey order="108" intorder="1">bishop2006</bcf:citekey>
     <bcf:citekey order="109" intorder="1">bishop2006</bcf:citekey>
-    <bcf:citekey order="109" intorder="2">srivastava2014</bcf:citekey>
-    <bcf:citekey order="110" intorder="1">barlett1998</bcf:citekey>
-    <bcf:citekey order="110" intorder="2">ingrassia2005</bcf:citekey>
-    <bcf:citekey order="111" intorder="1">rasmussen2004</bcf:citekey>
-    <bcf:citekey order="112" intorder="1">rasmussen2004</bcf:citekey>
+    <bcf:citekey order="110" intorder="1">bishop2006</bcf:citekey>
+    <bcf:citekey order="111" intorder="1">bishop2006</bcf:citekey>
+    <bcf:citekey order="111" intorder="2">srivastava2014</bcf:citekey>
+    <bcf:citekey order="112" intorder="1">barlett1998</bcf:citekey>
+    <bcf:citekey order="112" intorder="2">ingrassia2005</bcf:citekey>
     <bcf:citekey order="113" intorder="1">rasmussen2004</bcf:citekey>
     <bcf:citekey order="114" intorder="1">rasmussen2004</bcf:citekey>
-    <bcf:citekey order="115" intorder="1">rasmussen2005</bcf:citekey>
+    <bcf:citekey order="115" intorder="1">rasmussen2004</bcf:citekey>
     <bcf:citekey order="116" intorder="1">rasmussen2005</bcf:citekey>
-    <bcf:citekey order="117" intorder="1">rasmussen2004</bcf:citekey>
+    <bcf:citekey order="117" intorder="1">rasmussen2005</bcf:citekey>
     <bcf:citekey order="118" intorder="1">rasmussen2004</bcf:citekey>
+    <bcf:citekey order="119" intorder="1">rasmussen2004</bcf:citekey>
+    <bcf:citekey order="120" intorder="1">gpy</bcf:citekey>
+    <bcf:citekey order="121" intorder="1">cui2013</bcf:citekey>
+    <bcf:citekey order="122" intorder="1">cui2013</bcf:citekey>
+    <bcf:citekey order="123" intorder="1">arber2015</bcf:citekey>
+  </bcf:section>
+  <!-- SORTING TEMPLATES -->
+  <bcf:sortingtemplate name="nty">
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">presort</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="2" final="1">
+      <bcf:sortitem order="1">sortkey</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="3">
+      <bcf:sortitem order="1">sortname</bcf:sortitem>
+      <bcf:sortitem order="2">author</bcf:sortitem>
+      <bcf:sortitem order="3">editor</bcf:sortitem>
+      <bcf:sortitem order="4">translator</bcf:sortitem>
+      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="6">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="4">
+      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="2">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="5">
+      <bcf:sortitem order="1">sortyear</bcf:sortitem>
+      <bcf:sortitem order="2">year</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="6">
+      <bcf:sortitem order="1">volume</bcf:sortitem>
+      <bcf:sortitem literal="1" order="2">0</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sortingtemplate>
+  <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="nty/global//global/global"
+                type="entry"
+                sortingtemplatename="nty"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+</bcf:controlfile>

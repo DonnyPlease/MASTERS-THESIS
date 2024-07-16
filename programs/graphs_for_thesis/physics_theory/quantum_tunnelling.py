@@ -12,17 +12,10 @@ def potential(x, E_field):
     V_field = e * E_field * x  # Potential energy due to electric field
     return V_hydrogen + V_field
 
-# X-axis values (positive distance from nucleus)
-x = np.linspace(0.01 * a0, 25 * a0, 1000)
-
-# Calculate potential values
-V = potential(x, E_field)
-
-# Ground state energy of hydrogen atom (in eV)
-E_ground = -13.6  # eV
-
-# Convert potential to eV for plotting
-V_eV = V / e
+x = np.linspace(0.01 * a0, 25 * a0, 1000)  # X-axis values (positive distance from nucleus)
+V = potential(x, E_field)  # Calculate potential values
+E_ground = -13.6  # Ground state energy of hydrogen atom (in eV)
+V_eV = V / e  # Convert potential to eV for plotting
 
 # Plotting
 plt.figure(figsize=(10, 6))
@@ -32,10 +25,6 @@ plt.axvline(0, color='black', linewidth=0.5, linestyle='--')
 
 # Highlighting the potential well
 plt.fill_between(x / a0, V_eV, -15, where=(V_eV>=-15), color='red', alpha=0.2)
-
-# Highlight the ground state energy level as new tick on y axis
-
-
 
 # plt.axhline(E_ground, color='green', linewidth=1.5, linestyle='--', label=f'Ground state energy = {E_ground} eV')
 
