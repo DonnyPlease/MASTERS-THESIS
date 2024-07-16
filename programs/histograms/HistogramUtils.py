@@ -17,14 +17,19 @@ def load_histogram(name):
 def _find_first_zero_index(y):
     return np.where(y == 0)[0][0]
 
+def _find_first_non_zero_index(y):
+    return np.where(y != 0)[0][0]
+
 def _trim_histogram(hist_path, save_path):
     bins, counts = load_histogram(hist_path)
     x = np.array([(bins[i]+bins[i+1])/2 for i in range(len(bins)-1)])
     y = np.array(counts)
 
     # Cut the beginning
-    x = x[15:]
-    y = y[15:]
+    min_index = _find_first_non_zero_index(y)
+    min_index = max(15, min_index)
+    x = x[min_index:]
+    y = y[min_index:]
     
     # Cut the end
     max_index = _find_first_zero_index(y)
@@ -40,7 +45,12 @@ def _trim_histogram(hist_path, save_path):
 def trim_histogram(hist_path, save_folder):
     hist_name = hist_path.split("/")[-1]
     save_path = save_folder + hist_name
+    try:
+        os.mkdir(save_path)
+    except:
+        print("Folder " + save_path + " already exists.")
     x, y = _trim_histogram(hist_path, save_path)
+    return x, y
 
 def _plot_histogram(x,y):
     plt.figure(figsize=(10, 6))
@@ -66,6 +76,5 @@ def trim_all_histogram_in_folder(folder_path, save_folder):
         trim_histogram(hist_path, save_folder)
 
 if __name__ == "__main__":
-    #test
-    pass  
-    
+    # test
+    pass

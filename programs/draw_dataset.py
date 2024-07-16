@@ -76,6 +76,37 @@ def draw(X,Y,Z, axes=["l","a"], scatterPoints=None):
     plt.yticks(y_ticks,y_ticks)
     plt.show()
 
+def plot_as_lines(data, show=False, save=False):
+    slice_at = data["slice_at"]
+    x_ticks = data["x_ticks"]["data"]
+    x_ticks_scale = data["x_ticks"]["scale"]
+    data_to_plot = data["data"]
+    
+    plt.figure()
+    colors = ['b','g','r','c','m','y','k']
+    for i,line in enumerate(data_to_plot):
+        x = line["x"]
+        y = line["y"]
+        print(x)
+        print(y)
+        print("\n")
+        # dotted line
+        plt.plot(x,y,label=line["label"],linestyle='dashed',c=colors[i],linewidth=1)
+        # then scatter points
+        plt.scatter(x,y,s=10,marker='o',c=colors[i],zorder=10)
+    
+    plt.xlabel(data["x_label"])
+    plt.ylabel(data["y_label"])
+    plt.xscale(x_ticks_scale)
+    plt.xticks(x_ticks,x_ticks)
+    plt.grid(True, zorder=0)
+    plt.legend()
+    if show:
+        plt.show()
+    if save:
+        plt.savefig(data["save_name"])
+
+
 def draw_dataset(data, what=T_HOT, show=False, save=False, add_data_points=False):
     for intensity in ["1e17", "1e18", "1e19"]:
         # Extract the data points
@@ -129,5 +160,34 @@ def draw_dataset(data, what=T_HOT, show=False, save=False, add_data_points=False
 if __name__ == "__main__": 
     dataset, _ = DatasetUtils.load_datasets_to_dicts('dataset')
     data = DatasetUtils.dataset_to_dict(dataset)
-    draw_dataset(data, T_HOT_STDEV, show=False, save=True, add_data_points=True)
+    # draw_dataset(data, T_HOT_STDEV, show=False, save=True, add_data_points=True)
     
+    data17 = data["1e17"]
+    data18 = data["1e18"]
+    data19 = data["1e19"]
+    
+    # Divide data17 into lists by angle
+    angles = set([item[1] for item in data17])
+    angles = sorted(list(angles))
+    data17_by_angle = []
+    for angle in angles:
+        items = [item for item in data17 if item[1] == angle]
+        items = sorted(items, key=lambda x: x[0])
+        y = [float(item[2]) for item in items]
+        x = [float(item[0]) for item in items]
+        data_line = {"x": x, "y": y, "label": r'$\alpha = $' + str(angle) + '°'}
+        data17_by_angle.append(data_line)
+     
+    data_to_plot = {
+        "slice_at": 0,
+        "x_ticks": {
+            "data": [0.01,0.02,0.05,0.1,0.2,0.5,1,2,5],
+            "scale": "log",
+        },
+        "data": data17_by_angle[6:],
+        "x_label": r"$L$ [μm]",
+        "y_label": r"$T_{\mathrm{hot}}$ [keV]",
+        "save_name": "dataset/t_hot_l_17.png"
+    }
+        
+    plot_as_lines(data_to_plot, show=False, save=True)

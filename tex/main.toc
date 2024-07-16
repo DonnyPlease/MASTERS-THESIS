@@ -17,9 +17,9 @@
 \contentsline {chapter}{\numberline {4}Dataset}{36}{chapter.4}%
 \contentsline {section}{\numberline {4.1}EPOCH Simulations}{36}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Temperature fitting}{37}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Hot electron temperature modelling}{38}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Comparison to contemporary data}{39}{chapter.6}%
-\contentsline {chapter}{Conclusion}{40}{chapter*.15}%
-\contentsline {chapter}{Bibliography}{41}{chapter*.15}%
-\contentsline {chapter}{Attachments}{45}{chapter*.16}%
-\contentsline {chapter}{\numberline {A}EPOCH input file}{45}{appendix.A}%
+\contentsline {chapter}{\numberline {5}Hot electron temperature modelling}{39}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Comparison to contemporary data}{40}{chapter.6}%
+\contentsline {chapter}{Conclusion}{41}{chapter*.15}%
+\contentsline {chapter}{Bibliography}{42}{chapter*.15}%
+\contentsline {chapter}{Attachments}{46}{chapter*.16}%
+\contentsline {chapter}{\numberline {A}EPOCH input file}{46}{appendix.A}%
