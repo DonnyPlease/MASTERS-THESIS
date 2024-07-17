@@ -17,11 +17,14 @@ The EPOCH simulation was run in following setting:
 The simulations have been performed on the Q3 node of the Quantum Hyperion cluster at FNSPE. The input file that used to start the EPOCH simulation can be seen in appendix \ref{att:input-deck}.
 
 \section{Temperature fitting}
-The results of the simulations are transformed into histograms as it was described in chapter \ref{ch:temp-fitting-theory}. We fixed the histogram size to 1000 bins with their width scaling with the maximum electron energy.
+The results of the simulations are transformed into histograms as it was described in chapter \ref{ch:temp-fitting-theory}. We fixed the histogram size to 1000 bins with their width scaling with the maximum electron energy. In several following pages, we will describe a strategy we used to find the temperature from all energy histograms. The effectiveness of this strategy varies for different histograms, because it depends on multiple properties.
 
-Before fitting the data, it is essential to prepare it appropriately. In practice, this involves removing a few bins in the beginning of the electron energy spectrum. The lower energy bins can be removed, because they do not contribute to hot electrons temperature very much. Also, they can contain error, as the low energy electrons need more time to reach the virtual detector and the simulation can end before that happens. Thirdly, we made an approximation by considering Boltzmann distribution which does not work for small energies very well. Cutting the beginning is therefore justified. 
+To get the best possible hot electron temperature fit, three things are important. First, because of the imperfections of the histogram related to the beginning and the end of the energy spectrum, it is helpful to narrow down the fitted region. Secondly, it is still necessary to perform a good fit automatically ideally without many issues. Last but not least, the strategy has to take into account that the energy range and temperatures can for different histograms from the same dataset vary by several orders.
 
-We also cut the end of the spectrum for reasons discussed in chapter \ref{ch:temp-fitting-theory}. We cut it in a place where there is a first empty bin. These cut-offs ensure that the analysis focuses on the relevant and meaningful parts of the spectrum.
+\subsection*{Fitting strategy}
+Before fitting the data, it is essential to prepare it appropriately. In practice, this involves removing a few bins in the beginning of the electron energy spectrum. The lower energy bins can be removed, because they do not contribute to hot electrons temperature very much. Also, they can contain error, as the low energy electrons need more time to reach the virtual detector and the simulation can end before that happens. This is usually the case for histograms from simulations with lower laser intensity. Thirdly, we made an approximation by considering Boltzmann distribution which does not work for small energies very well. Cutting the beginning is therefore justified. 
+
+We also cut the end of the spectrum for reasons discussed in chapter \ref{ch:temp-fitting-theory}. We cut it in a place where there is a first empty bin. The reason is that it is not practical to work with empty bins in the logarithmically transformed version of the histogram. In special cases, it would be possible to work histograms cut with less strict approach. These cut-offs ensure that the analysis focuses on the relevant and meaningful parts of the spectrum.
 
 
 \begin{figure}[h]
@@ -31,10 +34,18 @@ We also cut the end of the spectrum for reasons discussed in chapter \ref{ch:tem
 	\label{fig:trimmed-hist}
 \end{figure}
 
-The result of the cut-off of histogram \ref{fig:example-histogram} can be seen in figure \ref{fig:trimmed-hist}. Note that the the data seem to have non-symmetrical noise in the portion of the spectrum with the highest energies. That is caused mostly by the logarithmic scale which can skew and seemingly magnify the noise for lower electron counts. 
+The result of the cut-off of histogram \ref{fig:example-histogram} can be seen in figure \ref{fig:trimmed-hist}. Notice that the data show non-symmetrical noise in the part of the spectrum with the highest energies. This can be attributed to the logarithmic scale which can skew and seemingly magnify the noise for lower electron counts. 
 
-For the purpose of the fitting it is suitable to approximate the histogram data as points with $x$ values equal to the centre of corresponding histogram bin and $y$ value equal to count.
+For the purpose of the fitting, it is suitable to approximate the histogram data as points with $x$ values equal to the centre of the corresponding histogram bin and $y$ value equal to count.
 
-The Jacquelin method was implemented in programming language python as a class with number of exponential terms as a parameter. However, the lack of the numerical stability for more exponential term discussed at the end of chapter \ref{ch:temp-fitting-theory} usually causes issues for more than three terms.
+The Jacquelin method was implemented in programming language python as a class with number of exponential terms as a parameter. However, the lack of the numerical stability for more exponential terms usually causes issues for more than three terms because of reasons discussed at the end of chapter \ref{ch:temp-fitting-theory}.
 
-As we said multiple times before, apart from the hot electron distribution, the other present distributions are not important to us. It is reasonable to claim that the quality of fit is improved, if the fitted part is as small as possible but still containing the section where hot electrons dominate.
+As we said multiple times before, apart from the hot electron distribution, the other present distributions are not important to us. It is reasonable to claim, that the quality of fit is improved, if the fitted part is as small as possible but still containing the section where hot electrons dominate.
+
+That being said, the next step aim to cut (or rather ignore) the beginning histogram once again, but now in more sophisticated way. We found out that the vast majority of the histograms can be fit by the three-exponential Jacquelin method. Even though some do not have three distributions present, the fit does not fail and gives us valuable information.
+
+The basic idea of this step can be seen in figure \ref{fig:3exp-fit-cut-example}. We fit the histogram using the three-exponential Jacquelin method. There is one exponential most dominant for small energies. Corresponding electron distribution temperature is the lowest of all three distributions. We identify the energy $E_{\mathrm{crit}}$ at which the terms are equal using equation:
+\begin{equation}
+	E_{\mathrm{crit}} = \frac{\ln{\left(a_1/a_2\right)}}{b_2-b_1}
+\end{equation}
+and use this $E_{\mathrm{crit}}$ as threshold for the cut-off.

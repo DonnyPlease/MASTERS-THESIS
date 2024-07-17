@@ -79,14 +79,15 @@ def params_from_folder_name(folder_name):
     params = folder_name.split("_")
     return {"i": float(params[1]),
             "l": float(params[2])/100.0, 
-            "a": float(params[3])}
+            "a": float(params[3]),
+            "filename": folder_name}
     
 def load_histograms(folder_path):
     histograms = []
     for folder in os.listdir(folder_path):
         hist_path = folder_path + folder
         bins, counts = load_histogram(hist_path)
-        histograms.append((bins, counts, params_from_folder_name(folder)))
+        histograms.append((bins, counts, params_from_folder_name(folder), folder))
     return histograms
 
 

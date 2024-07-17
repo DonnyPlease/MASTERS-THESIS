@@ -144,8 +144,8 @@ class FitExp():
     def std_error_of_final_coeffients(self, A, B, dA, dB):
         db1 = np.sqrt(dA**2/(B**2+4*A)+dB**2*1/4*(1+B/np.sqrt(B**2+4*A))**2)
         db2 = np.sqrt(dA**2/(B**2+4*A)+dB**2*1/4*(1-B/np.sqrt(B**2+4*A))**2)
-        return [0, 0, db1, 0, db2]
-      
+        return db1, db2 
+    
     def predict(self, x=None):
         if x is None:   # If x is not given, use the x values that were used
             x = self.x  # to fit the function.
