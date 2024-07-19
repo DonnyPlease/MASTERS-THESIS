@@ -98,11 +98,11 @@ class FitExp():
         
         # 2. ERROR ESTIMATION
         if self.exponentials_count == 2:
-            std_errors = self.std_error_of_fit_parameters(F, b_1)
-            self.std_errors = self.std_error_of_final_coeffients(b_1[0],b_1[1], 
-                                                                std_errors[0], 
-                                                                std_errors[1])
-        
+            dA, dB, *_ = self.std_error_of_fit_parameters(F, b_1)
+            self.std_errors = self.std_error_of_b_coeffients_2exp(b_1[0],b_1[1], dA, dB)
+        else:
+            self.std_errors = None
+            
         # 3. POLYNOMIAL COEFFICIENTS AND FINAL PARAMETER ESTIMATION
         polynomial_coefs = self.get_polynomial_coefs(b_1)
         try: 
@@ -118,6 +118,11 @@ class FitExp():
         try:
             b_2 = np.dot(np.linalg.pinv(np.matmul(G, np.transpose(G))),
                                                     np.matmul(G, self.y))
+            # calculate the standard error of the final parameters from the linear regression
+            if self.exponentials_count == 2:
+                errors = self.std_error_of_lsq_parameters(G, self.y, b_2)
+                self.std_errors = [errors[0], self.std_errors[0], errors[1], self.std_errors[1]]
+            
         except:
             raise Exception("Could not calculate the inverse of the matrix 2")
         
@@ -141,10 +146,32 @@ class FitExp():
 
         return np.sqrt(variances)
     
+    def std_error_of_lsq_parameters(self, X, y, b):
+        residuals = y - np.dot(X.T, b)
+        residual_sum_of_squares = np.sum(residuals**2)
+
+        n = len(y)
+        k = X.shape[0]
+        variance_of_residuals = residual_sum_of_squares / (n - k)
+        
+        var_cov_matrix = np.linalg.inv(np.dot(X, X.T)) * variance_of_residuals
+        variances = np.diag(var_cov_matrix)
+        
+        return np.sqrt(variances)
+        
     def std_error_of_final_coeffients(self, A, B, dA, dB):
-        db1 = np.sqrt(dA**2/(B**2+4*A)+dB**2*1/4*(1+B/np.sqrt(B**2+4*A))**2)
-        db2 = np.sqrt(dA**2/(B**2+4*A)+dB**2*1/4*(1-B/np.sqrt(B**2+4*A))**2)
+        # comes from error propagation
+        D = B**2 + 4*A
+        db1 = np.sqrt(dA**2/D + dB**2*(1/4)*(1+B/np.sqrt(D))**2)
+        db2 = np.sqrt(dA**2/D + dB**2*(1/4)*(1-B/np.sqrt(D))**2)
         return db1, db2 
+    
+    def std_error_of_b_coeffients_2exp(self, A, B, dA, dB):
+        # comes from error propagation
+        D = B**2 + 4*A
+        db1 = np.sqrt(dA**2/D + dB**2*(1/4)*(1+B/np.sqrt(D))**2)
+        db2 = np.sqrt(dA**2/D + dB**2*(1/4)*(1-B/np.sqrt(D))**2)
+        return db1, db2
     
     def predict(self, x=None):
         if x is None:   # If x is not given, use the x values that were used

@@ -150,7 +150,7 @@ def draw_dataset(data, what=T_HOT, show=False, save=False, add_data_points=False
         #     plot_maximum_absorption_curve()
         
         if save: 
-            name = "dataset/I_" + intensity + "t_hot.png" if what == T_HOT else "dataset/I_" + intensity + "t_hot_stdev.png"
+            name = "dataset/I_" + intensity + "t_hot.pdf" if what == T_HOT else "dataset/I_" + intensity + "t_hot_stdev.png"
             plt.savefig(name)
             
         if add_data_points:
@@ -160,7 +160,7 @@ def draw_dataset(data, what=T_HOT, show=False, save=False, add_data_points=False
 if __name__ == "__main__": 
     dataset, _ = DatasetUtils.load_datasets_to_dicts('dataset')
     data = DatasetUtils.dataset_to_dict(dataset)
-    # draw_dataset(data, T_HOT_STDEV, show=False, save=True, add_data_points=True)
+    draw_dataset(data, T_HOT, show=False, save=True, add_data_points=False)
     
     data17 = data["1e17"]
     data18 = data["1e18"]

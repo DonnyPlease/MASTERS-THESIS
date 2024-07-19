@@ -45,7 +45,7 @@ def draw_integrals(file_name, target_folder, energy_cut):
         z = [item[2] for item in data[current]] # integral
         
         # Define the grid for interpolation
-        num_points = 20
+        num_points = 10
 
         # Define the grid
         x_grid = np.logspace(np.log10(np.min(x)), np.log10(np.max(x)), num_points)
@@ -56,16 +56,16 @@ def draw_integrals(file_name, target_folder, energy_cut):
         Z = griddata((x, y), z, (X, Y), method='linear')
 
         plt.figure(figsize=(8, 6))
-        plt.pcolormesh(X, Y, Z, cmap='viridis')
+        plt.pcolormesh(X, Y, Z, cmap="inferno")
         plt.colorbar(label='Total Energy [eV]')
         plt.xscale('log')
-        plt.xlabel('l [nm]')
-        plt.ylabel('aplha [deg]')
+        plt.xlabel(r'$l$ [nm]')
+        plt.ylabel(r'$\alpha$ '+'[°]')
         plt.title("I = " + current)
         # plt.show()
         
         # plt.scatter(x,y,c='black',s=10,marker='o')
-        plt.savefig(target_folder + "I_" + current + "_cut_{}.png".format(energy_cut))
+        plt.savefig(target_folder + "I_" + current + "_cut_{}.pdf".format(energy_cut))
         
 if __name__ == "__main__":
     ### Test the function integrate_histogram

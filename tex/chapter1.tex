@@ -1,4 +1,5 @@
 \chapter{Plasma}
+\label{ch:plasma-theory}
 A plasma is a quasi-neutral gas of charged and neutral particles which exhibits collective behaviour \cite{plasma-intro3}. In simple terms, quasi-neutrality means that the density of electrons $n_e$ and density of positively charged ions $n_i$ locally satisfy:
 \begin{equation}
 	n_e \simeq Zn_i
@@ -49,7 +50,7 @@ Because of this relation between $E_{av}$ and $T$, it is customary in plasma phy
 \end{equation} 
 The electrons and the ions can have different temperature \cite{plasma-intro3}. Moreover, there can be multiple groups of electrons with different distributions, but we will describe this more deeply in one of the later sections.
 
-\subsection*{Critical density}
+\section{Critical density}
 Now consider a high frequency electric field $\bm{E} = \bm{E(x)}\exp\left(-i\omega t\right)$. The frequency $\omega$ is assumed to be greater than electron plasma frequency $\omega_{\mathrm{pe}}$ defined as $\omega_{\mathrm{pe}}^2=4\pi e^2 n_\mathrm{e}/m_\mathrm{e}$ with $n_\mathrm{e}=Zn_{i}$ being electron density and $m_\mathrm{e}$ electron mass. Maxwell equations plus equation of motion of electron fluid give us:
 \begin{equation}
 	\nabla \times \bm{B} = -\frac{i\omega}{c}\epsilon\bm{E},
@@ -88,7 +89,16 @@ The examples of plasmas of different densities and temperatures found in the rea
 	\label{tab:den-temp}
 \end{table}
 
+\section{Ultra-intense short pulse laser plasma interactions}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/laser-plasma-interaction}
+	\caption{An illustration of the interaction of ultra intense laser with plasma.}
+	\label{fig:laser-plasma-interaction}
+\end{figure}
+In this thesis, the interaction of ultra intense laser with solid plasma is studied. An illustration of such scenario is shown in figure \ref{fig:laser-plasma-interaction}. The most important physical processes of this experiment are ionization, laser absorption and X-ray emission. All of these will be discussed in the next sections in greater detail.
 
+\newpage
 \section{Ionization}
 Any substance can become plasma with the sufficient increase of its temperature. The threshold can vary, but usually can be found in the order of 1 eV, because any neutral atom binds the outer electron with a binding energy in order of 1 eV \cite{laser-plasma1}. 
 

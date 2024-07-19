@@ -259,7 +259,7 @@ In \cite{jacquelin2014}, only the case without the constant $a_0$ is presented, 
 \begin{equation}
 	b^2-Bb-A=0
 \end{equation}
-In case of three, we would need to calculate $SSS(x)$ from $SS(x)$. There would also be a term $x^3$. If we set $\boldsymbol{X}$ as $\left[SSS(x),SS(x),S(x),x^3,x^2,x^1,1\right]$, we would solve for the roots of:
+In case of three exponential terms, we would need to calculate $SSS(x)$ from $SS(x)$. There would also be a term $x^3$. If we set $\boldsymbol{X}$ as $\left[SSS(x),SS(x),S(x),x^3,x^2,x^1,1\right]$, we would solve for the roots of:
 \begin{equation}
 	b^3-Cb^2-Bb-A=0.
 \end{equation}
@@ -268,5 +268,18 @@ It is necessary to note, that this algorithm is prone numerical defects coming f
 
 In \cite{mokhomo2021}, Mokhomo et al. did numerical experiments where they have shown that similar method (derived from differential instead of integral equations) can be used for fitting, but does not yield precise estimation results even for noiseless data. Nevertheless, it is an explicit algorithm for approximation of parameters which then can be used as initial guess for more advanced iterative techniques.
 
-When it comes to uncertainty of the coefficients, there are two possibilities. First, it is possible to propagate the experimental error from $y_i$ all the way to the final coefficients. The derivation can be found in \cite{lecca2021}. However, we do not have the standard error of the histogram bins. The second option is to take the formula for linear regression calculate the error estimation from that.
+When it comes to uncertainty of the coefficients, there are two possibilities. First, it is possible to propagate the experimental error from $y_i$ all the way to the final coefficients. The derivation can be found in \cite{lecca2021}. However, we do not have the standard error of the histogram bins. The second option is just to take the formula for linear regression and calculate the error estimation from that.
+
+In that case, we calculate estimates $\Delta A$ and $\Delta B$ as standard deviations for $A$ and $B$. Then, using the propagation formula for the quadratic roots we get:
+\begin{equation}
+	\label{eq:b-coef-error1}
+	\Delta b_1 = \sqrt{\frac{\Delta A^2}{(B^2 + 4A)} + \frac{\Delta B^2}{4} \left(1 + \frac{B}{\sqrt{B^2 + 4A}}\right)^2}
+\end{equation}
+and
+\begin{equation}
+	\label{eq:b-coef-error2}
+	\Delta b_2 = \sqrt{\frac{\Delta A^2}{(B^2 + 4A)} + \frac{\Delta B^2}{4} \left(1 - \frac{B}{\sqrt{B^2 + 4A}}\right)^2},
+\end{equation}
+where $\Delta b_1$ and $\Delta b_2$ are the estimates of standard deviations for $b_1$ and $b_2$.
+The standard deviations of $a_0$, $a_1$ and $a_2$ are calculated directly from the second linear regression.
 

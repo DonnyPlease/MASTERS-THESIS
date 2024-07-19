@@ -90,7 +90,7 @@ class Svr():
 if __name__ == '__main__':
     # OPTIONS
     int_factor = 1
-    ACTION = TEST
+    ACTION = TRAIN
     
     # Load the data
     x, y = DatasetUtils.load_data_for_regression(DATASET_FOLDER)
@@ -125,4 +125,4 @@ if __name__ == '__main__':
     i_grid, l_grid, a_grid = prediction_grid.grid_for_plotting()
     slices_at = [0, 15, 25, 35, 40, 49]
     for slice_at in slices_at:
-        draw_slice(i_grid, l_grid, a_grid, t_hot_predicted, slice_at=slice_at, axes=["i","a"])
+        draw_slice(i_grid, l_grid, a_grid, t_hot_predicted, slice_at=slice_at, axes=["l","a"])

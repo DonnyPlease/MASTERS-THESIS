@@ -124,7 +124,7 @@ class DatasetUtils():
                 f.write(value.to_text())
     
     def dataset_to_dict(dataset):
-        data = {"1e19": [], "1e18": [], "1e17": []}
+        data = {"1e19": [], "1e18": [], "1e17": [], "5e17": [], "5e18": []}
         for key, item in dataset.items():
             i, l, alpha = key
             l = float(l)
