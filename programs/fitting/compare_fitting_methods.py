@@ -28,7 +28,7 @@ if __name__ == "__main__":
             continue
         t_hots = {"3exp": fit["3exp"]["t_hot"] if fit["3exp"] is not None else None,
                   "2exp": fit["2exp"]["t_hot"] if fit["2exp"] is not None else None,
-                  "nlsq": fit["nlsq"]["t_hot"] if fit["nlsq"] is not None else None,
+                  "2nlsq": fit["2nlsq"]["t_hot"] if fit["2nlsq"] is not None else None,
                   "true_t_hot": fit["true_params"]["t_hot"] if fit["true_params"] is not None else None
         }
         t_hot_array.append(t_hots)
@@ -40,20 +40,61 @@ if __name__ == "__main__":
         t_hot = t_hots["true_t_hot"]
         t_hots["3exp"] = -(t_hot - t_hots["3exp"])/t_hot if t_hots["3exp"] is not None else None
         t_hots["2exp"] = -(t_hot - t_hots["2exp"])/t_hot if t_hots["2exp"] is not None else None
-        t_hots["nlsq"] = -(t_hot - t_hots["nlsq"])/t_hot if t_hots["nlsq"] is not None else None
+        t_hots["2nlsq"] = -(t_hot - t_hots["2nlsq"])/t_hot if t_hots["2nlsq"] is not None else None
      
     # 4. Sort the t_hot_array by the true_t_hot
     t_hot_array = sorted(t_hot_array, key=lambda x: x["true_t_hot"])
     
-    means = {"3exp": np.mean([t_hots["3exp"] for t_hots in t_hot_array if t_hots["3exp"] is not None]),
-             "2exp": np.mean([t_hots["2exp"] for t_hots in t_hot_array if t_hots["2exp"] is not None]),
-             "nlsq": np.mean([t_hots["nlsq"] for t_hots in t_hot_array if t_hots["nlsq"] is not None])
+    means = {"3exp": np.mean([t_hots["3exp"]*t_hots["true_t_hot"] for t_hots in t_hot_array if t_hots["3exp"] is not None]),
+             "2exp": np.mean([t_hots["2exp"]*t_hots["true_t_hot"] for t_hots in t_hot_array if t_hots["2exp"] is not None]),
+             "2nlsq": np.mean([t_hots["2nlsq"]*t_hots["true_t_hot"] for t_hots in t_hot_array if t_hots["2nlsq"] is not None])
     }
     
     mses = {"3exp": np.mean([t_hots["3exp"]**2 for t_hots in t_hot_array if t_hots["3exp"] is not None]),
             "2exp": np.mean([t_hots["2exp"]**2 for t_hots in t_hot_array if t_hots["2exp"] is not None]),
-            "nlsq": np.mean([t_hots["nlsq"]**2 for t_hots in t_hot_array if t_hots["nlsq"] is not None])
+            "2nlsq": np.mean([t_hots["2nlsq"]**2 for t_hots in t_hot_array if t_hots["2nlsq"] is not None])
     }
+    
+    mse_is_right = 0
+    for fit in fit_results:
+        if "true_params" not in fit:
+            continue
+        if fit["2nlsq"] is not None:
+            nlsq_error = abs(fit["2nlsq"]["t_hot"] - fit["true_params"]["t_hot"])
+        else:
+            continue
+        
+        if fit["2exp"] is not None:
+            exp_error = abs(fit["2exp"]["t_hot"] - fit["true_params"]["t_hot"])
+            
+        if (nlsq_error < exp_error) == (fit["2nlsq"]["mswe"] < fit["2exp"]["mswe"]):
+            mse_is_right += 1
+        
+    print('TOTAL NUMBER OF FITS: ', len(fit_results))
+
+    print("MSWE is right: {}/{}".format(mse_is_right, len([f for f in fit_results if f["2nlsq"] is not None])))
+    
+    
+    mse_is_right = 0
+    for fit in fit_results:
+        if "true_params" not in fit:
+            continue
+        if fit["2nlsq"] is not None:
+            nlsq_error = abs(fit["2nlsq"]["t_hot"] - fit["true_params"]["t_hot"])
+        else:
+            continue
+        
+        if fit["2exp"] is not None:
+            exp_error = abs(fit["2exp"]["t_hot"] - fit["true_params"]["t_hot"])
+            
+        if (nlsq_error < exp_error) == (fit["2nlsq"]["mse"] < fit["2exp"]["mse"]):
+            mse_is_right += 1
+        
+    print('TOTAL NUMBER OF FITS: ', len(fit_results))
+
+    print("MSE is right: {}/{}".format(mse_is_right, len([f for f in fit_results if f["2nlsq"] is not None])))
+    
+        
     print ("Means: ", means)
     print("MSEs: ", mses)
     
@@ -64,8 +105,8 @@ if __name__ == "__main__":
     true_t_hots = [t_hots["true_t_hot"] for t_hots in t_hot_array]
     # ax.scatter(x, [t_hots["3exp"] for t_hots in t_hot_array], label="3exp")
     ax.scatter(true_t_hots, [t_hots["2exp"] for t_hots in t_hot_array], label="2-exp. Jacquelin", s=5, zorder=3)
-    ax.scatter(true_t_hots, [t_hots["nlsq"] for t_hots in t_hot_array], label="Non-linear least squares", s=5, zorder=4)
-    ax.set_xlabel("Simulation index")
+    ax.scatter(true_t_hots, [t_hots["2nlsq"] for t_hots in t_hot_array], label="Non-linear least squares", s=5, zorder=4)
+    ax.set_xlabel(r"$T_\mathrm{hot,manual}$ [keV]")
     ax.set_ylabel("Relative error")
     ax.grid(zorder=0)
     ax.legend()
@@ -77,6 +118,6 @@ if __name__ == "__main__":
     plt.show() 
     
     fig, ax = plt.subplots()
-    ax.hist([t_hots["nlsq"] for t_hots in t_hot_array if t_hots["nlsq"] is not None], bins=30, label="2-exp")
+    ax.hist([t_hots["2nlsq"] for t_hots in t_hot_array if t_hots["2nlsq"] is not None], bins=30, label="2nlsq")
     plt.show() 
         

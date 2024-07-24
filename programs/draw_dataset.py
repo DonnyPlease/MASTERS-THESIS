@@ -83,7 +83,7 @@ def plot_as_lines(data, show=False, save=False):
     data_to_plot = data["data"]
     
     plt.figure()
-    colors = ['b','g','r','c','m','y','k']
+    colors = ['b','g','r','c','m','y','k','orange']
     for i,line in enumerate(data_to_plot):
         x = line["x"]
         y = line["y"]
@@ -171,7 +171,7 @@ if __name__ == "__main__":
     angles = sorted(list(angles))
     data17_by_angle = []
     for angle in angles:
-        items = [item for item in data17 if item[1] == angle]
+        items = [item for item in data19 if item[1] == angle]
         items = sorted(items, key=lambda x: x[0])
         y = [float(item[2]) for item in items]
         x = [float(item[0]) for item in items]
@@ -184,10 +184,10 @@ if __name__ == "__main__":
             "data": [0.01,0.02,0.05,0.1,0.2,0.5,1,2,5],
             "scale": "log",
         },
-        "data": data17_by_angle[6:],
+        "data": [data17_by_angle[0]]+data17_by_angle[6:],
         "x_label": r"$L$ [μm]",
         "y_label": r"$T_{\mathrm{hot}}$ [keV]",
-        "save_name": "dataset/t_hot_l_17.png"
+        "save_name": "dataset/t_hot_l_19.pdf"
     }
         
     plot_as_lines(data_to_plot, show=False, save=True)

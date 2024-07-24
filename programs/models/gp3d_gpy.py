@@ -15,11 +15,11 @@ sys.path.append(PATH_TO_PROJECT)
 from dataset.Dataset import DatasetUtils
 from draw_dataset import draw, draw_slice
 from transformer import Transformer, transform
-from prediction_grid import PredictionGrid
+from models.prediction_grid import PredictionGrid
 
 # Define paths and constants
 DATASET_FOLDER = 'dataset'
-PATH_TO_MODEL = PATH_TO_PROJECT + 'models/models/gp3dgpy_model.pkl'
+PATH_TO_MODEL = PATH_TO_PROJECT + 'models/models/gp_model.pkl'
 TRAIN, TEST = 0, 1
 
 def rmse(y_true, y_pred):
@@ -90,14 +90,12 @@ class Gp3dGpy():
         return
     
     def save(self, path):
-        joblib.dump(self.model, path)
-        print("GP3d Model saved")
+        joblib.dump(self, path)
         return
     
-    def load(self, path):
-        self.model = joblib.load(path)
-        print("GP3d Model loaded")
-        return
+    @staticmethod
+    def load(path):
+        return joblib.load(path)
     
     def optimize_using_crosval(self, X, y, C_range=None, l_range=None):
         params = {'C': np.logspace(-6, 4, 10) if C_range is None else C_range, 
@@ -137,6 +135,10 @@ class Gp3dGpy():
 
         return params['C'][best_R2_C], params['l'][best_R2_l]    
     
+    def set_transformer(self, transformer):
+        self.transformer = transformer
+        return
+    
     def score(self, x, y):
         # predict the values
         y_pred, _ = self.model.predict(x)
@@ -167,9 +169,10 @@ if __name__ == '__main__':
     gp = Gp3dGpy()
     if ACTION == TRAIN:
         gp.train(X_train, y_train)
+        gp.set_transformer(transformer)
         gp.save(PATH_TO_MODEL)
     elif ACTION == TEST:
-        gp.load(PATH_TO_MODEL)
+        gp = gp.load(PATH_TO_MODEL)
     
     # Test scores
     gp_r2, gp_rmse = gp.score(X_test, y_test)

@@ -1,1 +1,20 @@
 \chapter{Hot electron temperature modelling}
+In this chapter, we will present models of the hot electron absorption trained on the dataset discussed in the previous chapter. The models will be compared and we will also discuss how well the best model represents the behaviour of $T_{\mathrm{hot}}$ compared to other studies.
+
+We do not implement the models ourselves, but rather we use optimized open-source libraries that offer rich possibilities of configuration. Moreover, we will later present a program with UI developed for the both visual and qualitative analysis of the models.
+
+\section{SVR model}
+For training the SVR model we used \textit{scikit-learn} library in Python. We selected RBF kernel. The hyper-parameters are $\gamma$, $\epsilon$ and $C$ and the tuning was done using a grid-search.
+
+\section{Neural Network model}
+The neural network model was trained with the PyTorch library in Python.
+
+\section{Gaussian process regression model}
+Last but no least, the GP regression was performed using GPy library in Python.
+
+\section{Comparison of models}
+For the comparison of the models presented in the sections above, we will use a specialized tool developed for this thesis. The main goal of the tool is to be able to evaluate the current state of the model, identify its weak points and decide where (in the parameter space) should the dataset be extended. 
+
+\section{Comparison to contemporary data}
+\label{ch:comparison}
+In this section, the GP model is compared to the 

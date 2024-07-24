@@ -1,0 +1,1612 @@
+DEBUG:__main__:Model gp3dgpy_model.pkl added
+DEBUG:__main__:Model gp3d_model.pkl added
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp3dgpy not loaded
+DEBUG:__main__:Model gp3dgpy not loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x00000223DE783C20>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Model gp3d not loaded
+DEBUG:__main__:Folder C:/Users/samue/OneDrive/Dokumenty/FJFI/MASTERS-THESIS/programs/models/models chosen
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model  not loaded
+DEBUG:__main__:Model gp3dgpy not loaded
+DEBUG:__main__:Model gp3dgpy not loaded
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:__main__:Model svr loaded
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:__main__:Prediction done
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x0000017F9FCFE600> <matplotlib.colors.Normalize object at 0x0000017F9FCFE600>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000017F9FCFC320>
+DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x0000017F9FCFE600> <matplotlib.colors.Normalize object at 0x0000017F9FCFE600>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000017F9FCFC320>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000017F9FCFE5A0>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Model svr loaded
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x0000017F9BDC52B0> <matplotlib.colors.Normalize object at 0x0000017F9BDC52B0>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000017FA5C005C0>
+DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x0000017F9BDC52B0> <matplotlib.colors.Normalize object at 0x0000017F9BDC52B0>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000017FA5C005C0>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000017FA5C3E3C0>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x0000017FA5CF4FB0> <matplotlib.colors.Normalize object at 0x0000017FA5CF4FB0>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000017FA5D60C50>
+DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x0000017FA5CF4FB0> <matplotlib.colors.Normalize object at 0x0000017FA5CF4FB0>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000017FA5D60C50>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000017FA5CF1F70>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x0000017FA5CCC830> <matplotlib.colors.Normalize object at 0x0000017FA5CCC830>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000017FA5D7B1D0>
+DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x0000017FA5CCC830> <matplotlib.colors.Normalize object at 0x0000017FA5CCC830>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000017FA5D7B1D0>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000017F9FD3D340>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x0000017FA5DCBE00> <matplotlib.colors.Normalize object at 0x0000017FA5DCBE00>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000017FA5D9AD50>
+DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x0000017FA5DCBE00> <matplotlib.colors.Normalize object at 0x0000017FA5DCBE00>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000017FA5D9AD50>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000017FA5D9BD10>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Model svr loaded
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x0000017FA5CF2D50> <matplotlib.colors.Normalize object at 0x0000017FA5CF2D50>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000017F9FCAB3B0>
+DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x0000017FA5CF2D50> <matplotlib.colors.Normalize object at 0x0000017FA5CF2D50>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000017F9FCAB3B0>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000017FA5CA3410>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E7A5DC8D10>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:l_max: 4.99
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E7A9CF2A20>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:l_max: 5.0
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E7AFDA2960>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:__main__:Model svr loaded
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000024F6DBA5700>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x00000170E18A4800>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x00000170E5832ED0>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000014DB8FE9AF0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:l_min: 0.02
+DEBUG:root:l_min: 0.03
+DEBUG:root:l_min: 0.04
+DEBUG:root:l_min: 0.05
+DEBUG:root:l_min: 0.060000000000000005
+DEBUG:root:l_min: 0.07
+DEBUG:root:l_min: 0.08
+DEBUG:root:l_min: 0.09
+DEBUG:root:l_min: 0.09999999999999999
+DEBUG:root:l_min: 0.10999999999999999
+DEBUG:root:l_min: 0.11999999999999998
+DEBUG:root:l_min: 0.12999999999999998
+DEBUG:root:l_min: 0.13999999999999999
+DEBUG:root:l_min: 0.15
+DEBUG:root:l_min: 0.16
+DEBUG:root:l_min: 0.17
+DEBUG:root:l_min: 0.18000000000000002
+DEBUG:root:l_min: 0.19000000000000003
+DEBUG:root:l_min: 0.20000000000000004
+DEBUG:root:l_min: 0.21000000000000005
+DEBUG:root:l_min: 0.22000000000000006
+DEBUG:root:l_min: 0.23000000000000007
+DEBUG:root:l_min: 0.24000000000000007
+DEBUG:root:l_min: 0.25000000000000006
+DEBUG:root:l_min: 0.26000000000000006
+DEBUG:root:l_min: 0.2700000000000001
+DEBUG:root:l_min: 0.2800000000000001
+DEBUG:root:l_min: 0.2900000000000001
+DEBUG:root:l_min: 0.3000000000000001
+DEBUG:root:l_min: 0.3100000000000001
+DEBUG:root:l_min: 0.3200000000000001
+DEBUG:root:l_min: 0.3300000000000001
+DEBUG:root:l_min: 0.34000000000000014
+DEBUG:root:l_min: 0.35000000000000014
+DEBUG:root:l_min: 0.36000000000000015
+DEBUG:root:l_min: 0.37000000000000016
+DEBUG:root:l_min: 0.38000000000000017
+DEBUG:root:l_min: 0.3900000000000002
+DEBUG:root:l_min: 0.4000000000000002
+DEBUG:root:a_min: 1
+DEBUG:root:a_min: 2
+DEBUG:root:a_min: 3
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000014DB908A210>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000014DBF011070>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:l_max: 4.99
+DEBUG:root:l_max: 4.98
+DEBUG:root:l_max: 4.970000000000001
+DEBUG:root:l_max: 4.960000000000001
+DEBUG:root:l_max: 4.950000000000001
+DEBUG:root:l_max: 4.940000000000001
+DEBUG:root:l_max: 4.9300000000000015
+DEBUG:root:l_max: 4.920000000000002
+DEBUG:root:l_max: 4.910000000000002
+DEBUG:root:l_max: 4.900000000000002
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000014DBF0C09B0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:l_max: 4.890000000000002
+DEBUG:root:l_max: 4.880000000000003
+DEBUG:root:l_max: 4.870000000000003
+DEBUG:root:l_max: 4.860000000000003
+DEBUG:root:l_max: 4.850000000000003
+DEBUG:root:l_max: 4.840000000000003
+DEBUG:root:l_max: 4.830000000000004
+DEBUG:root:l_max: 4.820000000000004
+DEBUG:root:l_max: 4.810000000000004
+DEBUG:root:l_max: 4.800000000000004
+DEBUG:root:l_max: 4.7900000000000045
+DEBUG:root:l_max: 0.79
+DEBUG:root:l_max: 2.79
+DEBUG:root:l_max: 2.7800000000000002
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000014DBF0F4380>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:a_min: 4
+DEBUG:root:a_min: 5
+DEBUG:root:a_min: 4
+DEBUG:root:a_min: 3
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000014DBF09B260>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:a_min: 4
+DEBUG:root:a_min: 5
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000014DBF06B4A0>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000026A5A026C00>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:l_max: 4.99
+DEBUG:root:l_max: 4.98
+DEBUG:root:l_max: 4.970000000000001
+DEBUG:root:l_max: 4.960000000000001
+DEBUG:root:l_max: 4.950000000000001
+DEBUG:root:l_max: 4.940000000000001
+DEBUG:root:l_max: 4.9300000000000015
+DEBUG:root:l_max: 4.920000000000002
+DEBUG:root:l_max: 4.910000000000002
+DEBUG:root:l_max: 4.900000000000002
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000026A6364A7B0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:l_max: 4.910000000000002
+DEBUG:root:l_max: 4.920000000000002
+DEBUG:root:a_min: 1
+DEBUG:root:a_min: 2
+DEBUG:root:a_min: 3
+DEBUG:root:a_min: 4
+DEBUG:root:a_min: 5
+DEBUG:root:a_min: 6
+DEBUG:root:a_min: 7
+DEBUG:root:a_min: 8
+DEBUG:root:a_min: 9
+DEBUG:root:a_min: 10
+DEBUG:root:a_min: 11
+DEBUG:root:a_min: 12
+DEBUG:root:a_min: 13
+DEBUG:root:a_min: 14
+DEBUG:root:a_min: 15
+DEBUG:root:a_min: 16
+DEBUG:root:a_min: 17
+DEBUG:root:a_min: 18
+DEBUG:root:a_min: 19
+DEBUG:root:a_min: 20
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000026A636E3BC0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:a_max: 59
+DEBUG:root:a_max: 58
+DEBUG:root:a_max: 57
+DEBUG:root:a_max: 56
+DEBUG:root:a_max: 55
+DEBUG:root:a_max: 54
+DEBUG:root:a_max: 53
+DEBUG:root:a_max: 52
+DEBUG:root:a_max: 51
+DEBUG:root:a_max: 50
+DEBUG:root:a_max: 49
+DEBUG:root:a_max: 48
+DEBUG:root:a_max: 47
+DEBUG:root:a_max: 46
+DEBUG:root:a_max: 45
+DEBUG:root:a_max: 44
+DEBUG:root:a_max: 43
+DEBUG:root:a_max: 42
+DEBUG:root:a_max: 41
+DEBUG:root:a_max: 40
+DEBUG:root:a_max: 39
+DEBUG:root:a_max: 38
+DEBUG:root:a_max: 37
+DEBUG:root:a_max: 36
+DEBUG:root:a_max: 35
+DEBUG:root:a_max: 34
+DEBUG:root:a_max: 33
+DEBUG:root:a_max: 32
+DEBUG:root:a_max: 31
+DEBUG:root:a_max: 30
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000026A640587A0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:l_count: 49
+DEBUG:root:l_count: 48
+DEBUG:root:l_count: 47
+DEBUG:root:l_count: 46
+DEBUG:root:l_count: 45
+DEBUG:root:l_count: 44
+DEBUG:root:l_count: 43
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000026A638136B0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_count: 2
+DEBUG:root:i_count: 1
+DEBUG:root:l_count: 44
+DEBUG:root:l_count: 45
+DEBUG:root:l_count: 46
+DEBUG:root:l_count: 47
+DEBUG:root:l_count: 48
+DEBUG:root:l_count: 49
+DEBUG:root:l_count: 50
+DEBUG:root:l_count: 49
+DEBUG:root:l_count: 48
+DEBUG:root:l_count: 1
+DEBUG:root:l_count: 10
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000026A6375B0E0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:l_count: 5
+DEBUG:root:l_count: 50
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000026A5DF6A8D0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:fix_i: False
+DEBUG:root:fix_l: True
+DEBUG:root:fix_l: False
+DEBUG:root:fix_a: True
+DEBUG:root:fix_a: False
+DEBUG:root:fix_i: True
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:root:i_min: 17.1
+DEBUG:root:i_min: 17.200000000000003
+DEBUG:root:i_min: 17.300000000000004
+DEBUG:root:i_max: 17.1
+DEBUG:root:i_max: 17.200000000000003
+DEBUG:root:i_max: 17.300000000000004
+DEBUG:root:i_max: 17.400000000000006
+DEBUG:root:i_max: 17.500000000000007
+DEBUG:root:i_max: 17.60000000000001
+DEBUG:root:i_max: 17.70000000000001
+DEBUG:root:i_max: 17.80000000000001
+DEBUG:root:i_max: 17.900000000000013
+DEBUG:root:i_max: 18.000000000000014
+DEBUG:root:i_max: 18.100000000000016
+DEBUG:root:i_max: 18.200000000000017
+DEBUG:root:i_max: 18.30000000000002
+DEBUG:root:i_max: 18.40000000000002
+DEBUG:root:i_min: 17.400000000000006
+DEBUG:root:i_min: 17.500000000000007
+DEBUG:root:i_min: 17.60000000000001
+DEBUG:root:i_min: 17.70000000000001
+DEBUG:root:i_min: 17.80000000000001
+DEBUG:root:i_min: 17.900000000000013
+DEBUG:root:i_min: 18.000000000000014
+DEBUG:__main__:Prediction done
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:root:i_max: 17.1
+DEBUG:root:i_max: 17.200000000000003
+DEBUG:root:i_max: 17.300000000000004
+DEBUG:root:i_max: 17.400000000000006
+DEBUG:root:i_max: 17.500000000000007
+DEBUG:root:i_max: 17.60000000000001
+DEBUG:root:i_max: 17.70000000000001
+DEBUG:root:i_max: 17.80000000000001
+DEBUG:root:i_max: 17.900000000000013
+DEBUG:root:i_max: 18.000000000000014
+DEBUG:root:i_max: 18.100000000000016
+DEBUG:root:i_min: 17.1
+DEBUG:root:i_min: 17.200000000000003
+DEBUG:root:i_min: 17.300000000000004
+DEBUG:root:i_min: 17.400000000000006
+DEBUG:root:i_min: 17.500000000000007
+DEBUG:root:i_min: 17.60000000000001
+DEBUG:root:i_min: 17.70000000000001
+DEBUG:root:i_min: 17.80000000000001
+DEBUG:root:i_min: 17.900000000000013
+DEBUG:root:i_min: 18.000000000000014
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001A95A742CC0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_min: 18.100000000000016
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001A9645808C0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_min: 18.200000000000017
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001A964668FE0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_min: 18.30000000000002
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001A96479B9E0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_min: 18.40000000000002
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001A9647093A0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_min: 18.50000000000002
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001A964798350>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_min: 18.600000000000023
+DEBUG:root:i_min: 18.700000000000024
+DEBUG:root:i_min: 18.800000000000026
+DEBUG:root:i_min: 18.900000000000027
+DEBUG:root:i_min: 19.0
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001A95E6E8CE0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_min: 18.9
+DEBUG:root:i_min: 18.799999999999997
+DEBUG:root:i_min: 18.699999999999996
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001A95E66E0C0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_min: 18.799999999999997
+DEBUG:root:i_min: 18.9
+DEBUG:root:i_min: 19.0
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001A96477F0B0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:fix_i: False
+DEBUG:root:l_count: 1
+DEBUG:root:fix_l: True
+DEBUG:root:fix_l: False
+DEBUG:root:fix_i: True
+DEBUG:root:fix_i: False
+DEBUG:root:fix_l: True
+DEBUG:root:fix_l: False
+DEBUG:root:a_count: 1
+DEBUG:root:fix_a: True
+DEBUG:root:fix_a: False
+DEBUG:root:fix_l: True
+DEBUG:root:fix_l: False
+DEBUG:root:fix_i: True
+DEBUG:root:i_count: 2
+DEBUG:root:i_count: 3
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000023CC48919A0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:fix_i: False
+DEBUG:root:l_count: 1
+DEBUG:root:fix_l: True
+DEBUG:root:i_count: 2
+DEBUG:root:i_count: 3
+DEBUG:root:i_count: 4
+DEBUG:root:i_count: 5
+DEBUG:root:i_count: 6
+DEBUG:root:i_count: 7
+DEBUG:root:i_count: 8
+DEBUG:root:i_count: 9
+DEBUG:root:i_count: 10
+DEBUG:__main__:Prediction done
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:root:i_max: 17.1
+DEBUG:root:i_max: 17.200000000000003
+DEBUG:root:i_max: 17.300000000000004
+DEBUG:root:i_max: 17.400000000000006
+DEBUG:root:i_max: 17.500000000000007
+DEBUG:root:i_max: 17.60000000000001
+DEBUG:root:i_max: 17.70000000000001
+DEBUG:root:i_max: 17.80000000000001
+DEBUG:root:i_max: 17.900000000000013
+DEBUG:root:i_max: 18.000000000000014
+DEBUG:root:i_max: 18.100000000000016
+DEBUG:root:i_max: 18.200000000000017
+DEBUG:root:i_max: 18.30000000000002
+DEBUG:root:i_max: 18.40000000000002
+DEBUG:root:i_max: 18.50000000000002
+DEBUG:root:i_max: 18.600000000000023
+DEBUG:root:i_max: 18.700000000000024
+DEBUG:root:i_max: 18.800000000000026
+DEBUG:root:i_max: 18.900000000000027
+DEBUG:root:i_max: 19.0
+DEBUG:root:fix_i: False
+DEBUG:root:l_count: 1
+DEBUG:root:fix_l: True
+DEBUG:root:i_count: 2
+DEBUG:root:i_count: 3
+DEBUG:root:i_count: 4
+DEBUG:root:i_count: 5
+DEBUG:root:i_count: 6
+DEBUG:__main__:Prediction done
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:root:i_max: 17.1
+DEBUG:root:i_max: 17.200000000000003
+DEBUG:root:i_max: 17.300000000000004
+DEBUG:root:i_max: 17.400000000000006
+DEBUG:root:i_max: 17.500000000000007
+DEBUG:root:i_max: 17.60000000000001
+DEBUG:root:i_max: 17.70000000000001
+DEBUG:root:i_max: 17.80000000000001
+DEBUG:root:i_max: 17.900000000000013
+DEBUG:root:i_max: 18.000000000000014
+DEBUG:root:i_max: 18.100000000000016
+DEBUG:root:i_max: 18.200000000000017
+DEBUG:root:i_max: 18.30000000000002
+DEBUG:root:i_max: 18.40000000000002
+DEBUG:root:fix_i: False
+DEBUG:root:a_count: 1
+DEBUG:root:fix_a: True
+DEBUG:root:i_count: 2
+DEBUG:root:i_count: 3
+DEBUG:root:i_count: 4
+DEBUG:root:i_count: 5
+DEBUG:root:i_count: 6
+DEBUG:root:i_count: 7
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000021463B93590>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_max: 18.50000000000002
+DEBUG:root:i_max: 18.600000000000023
+DEBUG:root:i_max: 18.700000000000024
+DEBUG:root:i_max: 18.800000000000026
+DEBUG:root:i_max: 18.900000000000027
+DEBUG:root:i_max: 19.0
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000002146DB00320>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:a_min: 1
+DEBUG:root:a_min: 2
+DEBUG:root:a_min: 3
+DEBUG:root:a_min: 4
+DEBUG:root:a_min: 5
+DEBUG:root:a_min: 6
+DEBUG:root:a_min: 7
+DEBUG:root:a_min: 8
+DEBUG:root:a_min: 9
+DEBUG:root:a_min: 10
+DEBUG:root:i_count: 8
+DEBUG:root:i_count: 9
+DEBUG:root:i_count: 10
+DEBUG:root:i_count: 11
+DEBUG:root:i_count: 12
+DEBUG:root:i_count: 13
+DEBUG:root:i_count: 14
+DEBUG:root:l_count: 49
+DEBUG:root:l_count: 48
+DEBUG:root:l_count: 47
+DEBUG:root:l_count: 46
+DEBUG:root:l_count: 45
+DEBUG:root:i_count: 13
+DEBUG:root:i_count: 14
+DEBUG:root:i_count: 5
+DEBUG:root:i_count: 50
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000002146D9CC4D0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:a_min: 11
+DEBUG:root:a_min: 12
+DEBUG:root:a_min: 13
+DEBUG:root:a_min: 14
+DEBUG:root:a_min: 15
+DEBUG:root:a_min: 16
+DEBUG:root:a_min: 17
+DEBUG:root:a_min: 18
+DEBUG:root:a_min: 19
+DEBUG:root:a_min: 20
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000021467ABA7B0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:a_min: 21
+DEBUG:root:a_min: 22
+DEBUG:root:a_min: 23
+DEBUG:root:a_min: 24
+DEBUG:root:a_min: 25
+DEBUG:root:a_min: 26
+DEBUG:root:a_min: 27
+DEBUG:root:a_min: 28
+DEBUG:root:a_min: 29
+DEBUG:root:a_min: 30
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000021467B01A00>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:a_min: 31
+DEBUG:root:a_min: 32
+DEBUG:root:a_min: 33
+DEBUG:root:a_min: 34
+DEBUG:root:a_min: 35
+DEBUG:root:a_min: 36
+DEBUG:root:a_min: 37
+DEBUG:root:a_min: 38
+DEBUG:root:a_min: 39
+DEBUG:root:a_min: 40
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000002146DBA9820>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Model svr loaded
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000002146DB01CA0>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000002146DBED1F0>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Model svr loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000002146DB954F0>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Model svr loaded
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000021467B5CE90>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:fix_a: False
+DEBUG:root:l_count: 1
+DEBUG:root:fix_l: True
+DEBUG:root:l_min: 0.02
+DEBUG:root:l_min: 0.03
+DEBUG:root:l_min: 0.04
+DEBUG:root:l_min: 0.05
+DEBUG:root:l_min: 0.060000000000000005
+DEBUG:root:l_min: 0.07
+DEBUG:root:l_min: 0.060000000000000005
+DEBUG:root:l_min: 0.07
+DEBUG:root:l_min: 0.08
+DEBUG:root:l_min: 0.09
+DEBUG:root:l_min: 0.09999999999999999
+DEBUG:root:l_min: 0.10999999999999999
+DEBUG:root:l_min: 0.11999999999999998
+DEBUG:root:l_min: 0.10999999999999999
+DEBUG:root:l_min: 0.11999999999999998
+DEBUG:root:l_min: 0.12999999999999998
+DEBUG:root:l_min: 0.13999999999999999
+DEBUG:root:l_min: 0.15
+DEBUG:root:l_min: 0.16
+DEBUG:root:l_min: 0.17
+DEBUG:root:l_min: 0.18000000000000002
+DEBUG:root:l_min: 0.19000000000000003
+DEBUG:root:l_min: 0.20000000000000004
+DEBUG:root:l_min: 0.19000000000000003
+DEBUG:root:l_min: 0.20000000000000004
+DEBUG:root:l_min: 0.21000000000000005
+DEBUG:root:l_min: 0.22000000000000006
+DEBUG:root:l_min: 0.23000000000000007
+DEBUG:root:l_min: 0.24000000000000007
+DEBUG:root:l_min: 0.25000000000000006
+DEBUG:root:l_min: 0.26000000000000006
+DEBUG:root:l_min: 0.2700000000000001
+DEBUG:root:l_min: 0.2800000000000001
+DEBUG:root:l_min: 0.2900000000000001
+DEBUG:root:l_min: 0.3000000000000001
+DEBUG:root:l_min: 0.3100000000000001
+DEBUG:root:l_min: 0.3200000000000001
+DEBUG:root:l_min: 0.3300000000000001
+DEBUG:root:l_min: 0.34000000000000014
+DEBUG:root:l_min: 0.35000000000000014
+DEBUG:root:l_min: 0.36000000000000015
+DEBUG:root:l_min: 0.37000000000000016
+DEBUG:root:l_min: 0.38000000000000017
+DEBUG:root:l_min: 0.3900000000000002
+DEBUG:root:l_min: 0.4000000000000002
+DEBUG:root:l_min: 0.4100000000000002
+DEBUG:root:l_min: 0.4200000000000002
+DEBUG:root:l_min: 0.4300000000000002
+DEBUG:root:l_min: 0.4400000000000002
+DEBUG:root:l_min: 0.45000000000000023
+DEBUG:root:l_min: 0.46000000000000024
+DEBUG:root:l_min: 0.47000000000000025
+DEBUG:root:l_min: 0.48000000000000026
+DEBUG:root:l_min: 0.49000000000000027
+DEBUG:root:l_min: 0.5000000000000002
+DEBUG:root:a_count: 2
+DEBUG:root:a_count: 3
+DEBUG:root:a_count: 4
+DEBUG:root:a_count: 5
+DEBUG:root:a_count: 6
+DEBUG:root:a_count: 7
+DEBUG:root:a_count: 8
+DEBUG:root:a_count: 9
+DEBUG:root:a_count: 10
+DEBUG:root:a_count: 9
+DEBUG:root:a_count: 10
+DEBUG:root:a_count: 11
+DEBUG:root:a_count: 12
+DEBUG:root:a_count: 13
+DEBUG:root:a_count: 14
+DEBUG:root:a_count: 15
+DEBUG:root:a_count: 16
+DEBUG:root:a_count: 17
+DEBUG:root:a_count: 18
+DEBUG:root:a_count: 19
+DEBUG:root:a_count: 20
+DEBUG:__main__:Prediction done
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:root:fix_i: False
+DEBUG:root:l_count: 1
+DEBUG:root:fix_l: True
+DEBUG:root:i_count: 2
+DEBUG:root:i_count: 3
+DEBUG:root:i_count: 4
+DEBUG:root:i_count: 5
+DEBUG:root:i_count: 6
+DEBUG:root:i_count: 7
+DEBUG:root:i_count: 8
+DEBUG:root:i_max: 17.1
+DEBUG:root:i_max: 17.200000000000003
+DEBUG:root:i_max: 17.300000000000004
+DEBUG:root:i_max: 17.400000000000006
+DEBUG:root:i_max: 17.500000000000007
+DEBUG:root:i_max: 17.60000000000001
+DEBUG:root:i_max: 17.70000000000001
+DEBUG:root:i_max: 17.80000000000001
+DEBUG:root:i_max: 17.900000000000013
+DEBUG:root:i_max: 18.000000000000014
+DEBUG:root:i_max: 18.100000000000016
+DEBUG:root:i_max: 18.000000000000014
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.pyplot:Loaded backend qtagg version 6.7.0.
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:root:i_max: 17.1
+DEBUG:root:i_max: 17.200000000000003
+DEBUG:root:i_max: 17.300000000000004
+DEBUG:root:i_max: 17.400000000000006
+DEBUG:root:i_max: 17.500000000000007
+DEBUG:root:i_max: 17.60000000000001
+DEBUG:root:i_max: 17.70000000000001
+DEBUG:root:fix_i: False
+DEBUG:root:l_count: 1
+DEBUG:root:fix_l: True
+DEBUG:root:i_count: 2
+DEBUG:root:i_count: 3
+DEBUG:root:i_count: 4
+DEBUG:root:i_count: 5
+DEBUG:root:i_count: 6
+DEBUG:root:i_count: 7
+DEBUG:root:i_count: 8
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.pyplot:Loaded backend qtagg version 6.7.0.
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:__main__:Prediction done
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000018F16E37290>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000018F1CD83950>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000029B6600E8A0>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.pyplot:Loaded backend qtagg version 6.7.0.
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000022009AAAA80>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:fix_i: False
+DEBUG:root:a_count: 1
+DEBUG:root:fix_a: True
+DEBUG:__main__:Prediction done
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:root:fix_i: False
+DEBUG:root:a_count: 1
+DEBUG:root:fix_a: True
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.pyplot:Loaded backend qtagg version 6.7.0.
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000022303D0A4B0>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E89BD94830>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:fix_i: False
+DEBUG:root:a_count: 1
+DEBUG:root:fix_a: True
+DEBUG:root:i_count: 2
+DEBUG:root:i_count: 3
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A1483A10>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A1EC00E0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_count: 4
+DEBUG:root:i_count: 5
+DEBUG:root:i_count: 6
+DEBUG:root:i_count: 7
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A15E2FF0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_max: 17.1
+DEBUG:root:i_max: 17.200000000000003
+DEBUG:root:i_max: 17.300000000000004
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A1581310>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_max: 17.200000000000003
+DEBUG:root:i_max: 17.300000000000004
+DEBUG:root:i_max: 17.400000000000006
+DEBUG:root:i_max: 17.500000000000007
+DEBUG:root:i_max: 17.60000000000001
+DEBUG:root:i_max: 17.70000000000001
+DEBUG:root:i_max: 17.80000000000001
+DEBUG:root:i_max: 17.900000000000013
+DEBUG:root:i_max: 18.000000000000014
+DEBUG:root:i_max: 18.100000000000016
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E89BD45CA0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:fix_a: False
+DEBUG:root:l_count: 1
+DEBUG:root:fix_l: True
+DEBUG:root:a_count: 2
+DEBUG:root:a_count: 3
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A1ED0AA0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:a_max: 59
+DEBUG:root:a_count: 4
+DEBUG:root:a_count: 5
+DEBUG:root:a_count: 6
+DEBUG:root:a_count: 7
+DEBUG:root:a_count: 8
+DEBUG:root:a_count: 9
+DEBUG:root:a_count: 10
+DEBUG:root:a_count: 11
+DEBUG:root:a_count: 12
+DEBUG:root:a_count: 13
+DEBUG:root:a_count: 14
+DEBUG:root:a_count: 15
+DEBUG:root:a_count: 16
+DEBUG:root:a_count: 17
+DEBUG:root:a_count: 18
+DEBUG:root:a_count: 19
+DEBUG:root:a_count: 20
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A15E1070>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_max: 18.200000000000017
+DEBUG:root:i_max: 18.30000000000002
+DEBUG:root:i_max: 18.40000000000002
+DEBUG:root:i_max: 18.50000000000002
+DEBUG:root:i_max: 18.600000000000023
+DEBUG:root:i_max: 18.700000000000024
+DEBUG:root:i_max: 18.800000000000026
+DEBUG:root:i_max: 18.900000000000027
+DEBUG:root:i_max: 19.0
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E895CB0F80>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_count: 8
+DEBUG:root:i_count: 9
+DEBUG:root:i_count: 10
+DEBUG:root:i_count: 11
+DEBUG:root:i_count: 12
+DEBUG:root:i_count: 13
+DEBUG:root:i_count: 14
+DEBUG:root:i_count: 15
+DEBUG:root:i_count: 16
+DEBUG:root:i_count: 17
+DEBUG:root:i_count: 18
+DEBUG:root:i_count: 19
+DEBUG:root:i_count: 20
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A14B8E60>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:l_min: 0.02
+DEBUG:root:l_min: 0.01
+DEBUG:root:l_min: 0.02
+DEBUG:root:l_min: 0.03
+DEBUG:root:l_min: 0.04
+DEBUG:root:a_max: 58
+DEBUG:root:a_max: 0
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A1ED1BE0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:a_max: 1
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A15D9730>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:a_count: 19
+DEBUG:root:a_count: 18
+DEBUG:root:a_count: 17
+DEBUG:root:a_count: 16
+DEBUG:root:a_count: 15
+DEBUG:root:a_count: 14
+DEBUG:root:a_count: 13
+DEBUG:root:a_count: 12
+DEBUG:root:a_count: 11
+DEBUG:root:a_count: 10
+DEBUG:root:a_count: 9
+DEBUG:root:a_count: 8
+DEBUG:root:a_count: 7
+DEBUG:root:a_count: 6
+DEBUG:root:a_count: 5
+DEBUG:root:a_count: 4
+DEBUG:root:a_count: 3
+DEBUG:root:a_count: 2
+DEBUG:root:a_count: 1
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E897E5D370>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:a_count: 2
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A1EBA2D0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_count: 19
+DEBUG:root:i_count: 18
+DEBUG:root:i_count: 17
+DEBUG:root:i_count: 16
+DEBUG:root:i_count: 15
+DEBUG:root:i_count: 14
+DEBUG:root:i_count: 13
+DEBUG:root:i_count: 12
+DEBUG:root:i_count: 11
+DEBUG:root:i_count: 10
+DEBUG:root:i_count: 9
+DEBUG:root:i_count: 8
+DEBUG:root:i_count: 7
+DEBUG:root:i_count: 6
+DEBUG:root:i_count: 5
+DEBUG:root:i_count: 4
+DEBUG:root:i_count: 3
+DEBUG:root:i_count: 2
+DEBUG:root:i_count: 1
+DEBUG:root:i_count: 2
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E89BE2FE30>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_count: 3
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A162D400>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:a_count: 3
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E89BD38320>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_count: 4
+DEBUG:root:i_count: 5
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A15D8440>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_count: 6
+DEBUG:root:i_count: 7
+DEBUG:root:i_count: 8
+DEBUG:root:i_count: 9
+DEBUG:root:i_count: 10
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E897E5EA80>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_count: 9
+DEBUG:root:i_count: 8
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A14B95B0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_count: 7
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E89BD45A60>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_count: 6
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A1F05940>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_count: 5
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A15E3080>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_count: 6
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A1F97290>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:a_count: 4
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E89BE069C0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:a_count: 5
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A162CAA0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:a_count: 6
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E89BDA60F0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:fix_l: False
+DEBUG:root:i_count: 1
+DEBUG:root:fix_i: True
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A1F17920>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:fix_i: False
+DEBUG:root:fix_l: True
+DEBUG:root:fix_l: False
+DEBUG:root:fix_i: True
+DEBUG:root:l_count: 10
+DEBUG:root:a_count: 46
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A1EDB200>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A1F14380>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A14B8890>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:a_max: 2
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A162E6C0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:a_max: 3
+DEBUG:root:a_max: 4
+DEBUG:root:a_max: 5
+DEBUG:root:a_max: 6
+DEBUG:root:a_max: 1
+DEBUG:root:a_max: 6
+DEBUG:root:a_max: 60
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8978CD4F0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:fix_i: False
+DEBUG:root:l_count: 1
+DEBUG:root:fix_l: True
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A15D8DA0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_count: 2
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E89BE07D10>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_count: 3
+DEBUG:root:i_count: 4
+DEBUG:root:i_count: 5
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A1FD3E30>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:a_count: 45
+DEBUG:root:a_count: 44
+DEBUG:root:a_count: 43
+DEBUG:root:a_count: 42
+DEBUG:root:a_count: 41
+DEBUG:root:a_count: 40
+DEBUG:root:a_count: 39
+DEBUG:root:a_count: 38
+DEBUG:root:a_count: 37
+DEBUG:root:a_count: 36
+DEBUG:root:a_count: 35
+DEBUG:root:a_count: 34
+DEBUG:root:a_count: 33
+DEBUG:root:i_max: 18.9
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A154BF80>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_max: 19.0
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A1483140>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_max: 18.9
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A15E05F0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:a_count: 32
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E89BE2D100>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_min: 17.1
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E89BD5DC10>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_min: 17.200000000000003
+DEBUG:root:i_min: 17.1
+DEBUG:root:i_min: 17.0
+DEBUG:root:i_count: 6
+DEBUG:root:i_count: 7
+DEBUG:root:i_count: 8
+DEBUG:root:i_count: 9
+DEBUG:root:i_count: 10
+DEBUG:root:i_count: 11
+DEBUG:root:i_count: 12
+DEBUG:root:i_count: 13
+DEBUG:root:i_count: 14
+DEBUG:root:i_count: 15
+DEBUG:root:i_count: 16
+DEBUG:root:i_count: 17
+DEBUG:root:i_count: 18
+DEBUG:root:i_count: 19
+DEBUG:root:i_count: 20
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E89BE05FA0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_max: 19.0
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E89BD38AD0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:l_min: 0.05
+DEBUG:root:l_min: 0.060000000000000005
+DEBUG:root:l_min: 0.07
+DEBUG:root:l_min: 0.08
+DEBUG:root:l_min: 0.09
+DEBUG:root:l_min: 0.09999999999999999
+DEBUG:root:l_min: 0.10999999999999999
+DEBUG:root:l_min: 0.11999999999999998
+DEBUG:root:l_min: 0.12999999999999998
+DEBUG:root:l_min: 0.13999999999999999
+DEBUG:root:l_min: 0.15
+DEBUG:root:l_min: 0.16
+DEBUG:root:l_min: 0.17
+DEBUG:root:l_min: 0.18000000000000002
+DEBUG:root:l_min: 0.19000000000000003
+DEBUG:root:l_min: 0.20000000000000004
+DEBUG:root:l_min: 0.21000000000000005
+DEBUG:root:l_min: 0.22000000000000006
+DEBUG:root:l_min: 0.23000000000000007
+DEBUG:root:l_min: 0.24000000000000007
+DEBUG:root:l_min: 0.25000000000000006
+DEBUG:root:l_min: 0.26000000000000006
+DEBUG:root:l_min: 0.2700000000000001
+DEBUG:root:l_min: 0.2800000000000001
+DEBUG:root:l_min: 0.2900000000000001
+DEBUG:root:l_min: 0.3000000000000001
+DEBUG:root:l_min: 0.3100000000000001
+DEBUG:root:l_min: 0.3200000000000001
+DEBUG:root:l_min: 0.3300000000000001
+DEBUG:root:l_min: 0.34000000000000014
+DEBUG:root:l_min: 0.35000000000000014
+DEBUG:root:l_min: 0.36000000000000015
+DEBUG:root:l_min: 0.37000000000000016
+DEBUG:root:l_min: 0.38000000000000017
+DEBUG:root:l_min: 0.3900000000000002
+DEBUG:root:l_min: 0.4000000000000002
+DEBUG:root:l_min: 0.4100000000000002
+DEBUG:root:l_min: 0.4200000000000002
+DEBUG:root:l_min: 0.4300000000000002
+DEBUG:root:l_min: 0.4400000000000002
+DEBUG:root:l_min: 0.45000000000000023
+DEBUG:root:l_min: 0.46000000000000024
+DEBUG:root:l_min: 0.47000000000000025
+DEBUG:root:l_min: 0.48000000000000026
+DEBUG:root:l_min: 0.49000000000000027
+DEBUG:root:l_min: 0.5000000000000002
+DEBUG:root:l_min: 0.5100000000000002
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A1583860>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:l_min: 0.5000000000000002
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001E8A1F80740>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:root:fix_i: False
+DEBUG:root:a_count: 1
+DEBUG:root:fix_a: True
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:root:NN: False, GP: True, SVR: True
+DEBUG:root:NN: True, GP: True, SVR: True
+DEBUG:root:NN: True, GP: False, SVR: True
+DEBUG:root:NN: False, GP: True, SVR: True
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000002961792EFF0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_max: 17.1
+DEBUG:root:i_max: 17.200000000000003
+DEBUG:root:i_max: 17.300000000000004
+DEBUG:root:i_max: 17.400000000000006
+DEBUG:root:i_min: 17.1
+DEBUG:root:i_min: 17.200000000000003
+DEBUG:root:i_min: 17.300000000000004
+DEBUG:root:i_min: 17.400000000000006
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x00000296187A89B0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_min: 17.500000000000007
+DEBUG:root:i_min: 17.60000000000001
+DEBUG:root:i_min: 17.70000000000001
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000029618895790>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_min: 17.80000000000001
+DEBUG:root:i_min: 17.900000000000013
+DEBUG:root:i_min: 18.000000000000014
+DEBUG:root:i_min: 17.900000000000013
+DEBUG:root:i_min: 18.000000000000014
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x00000296189B4740>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_min: 18.100000000000016
+DEBUG:root:i_min: 18.200000000000017
+DEBUG:root:i_min: 18.30000000000002
+DEBUG:root:i_min: 18.40000000000002
+DEBUG:root:i_min: 18.50000000000002
+DEBUG:root:i_min: 18.600000000000023
+DEBUG:root:i_min: 18.50000000000002
+DEBUG:root:i_min: 18.600000000000023
+DEBUG:root:i_min: 18.700000000000024
+DEBUG:root:i_min: 18.800000000000026
+DEBUG:root:i_min: 18.900000000000027
+DEBUG:root:i_min: 19.0
+DEBUG:root:i_min: 18.9
+DEBUG:root:i_min: 19.0
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000002961899C410>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:__main__:Model svr loaded
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001F4CBD75280>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_max: 17.1
+DEBUG:root:i_max: 17.200000000000003
+DEBUG:root:i_max: 17.300000000000004
+DEBUG:root:i_max: 17.400000000000006
+DEBUG:root:i_max: 17.500000000000007
+DEBUG:root:i_max: 17.60000000000001
+DEBUG:root:i_max: 17.70000000000001
+DEBUG:root:i_max: 17.80000000000001
+DEBUG:root:i_max: 17.900000000000013
+DEBUG:root:i_max: 18.000000000000014
+DEBUG:root:i_max: 18.100000000000016
+DEBUG:root:i_max: 18.200000000000017
+DEBUG:root:i_max: 18.30000000000002
+DEBUG:root:i_max: 18.40000000000002
+DEBUG:root:i_max: 18.50000000000002
+DEBUG:root:i_max: 18.600000000000023
+DEBUG:root:i_max: 18.700000000000024
+DEBUG:root:i_max: 18.800000000000026
+DEBUG:root:i_max: 18.900000000000027
+DEBUG:root:i_max: 19.0
+DEBUG:root:fix_i: False
+DEBUG:root:l_count: 1
+DEBUG:root:fix_l: True
+DEBUG:root:i_count: 2
+DEBUG:root:i_count: 3
+DEBUG:root:i_count: 4
+DEBUG:root:i_count: 5
+DEBUG:root:i_count: 6
+DEBUG:root:i_count: 7
+DEBUG:root:i_count: 8
+DEBUG:root:i_count: 9
+DEBUG:root:i_count: 10
+DEBUG:root:i_count: 5
+DEBUG:root:i_count: 50
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001F4D18EBD70>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:l_min: 0.02
+DEBUG:root:l_min: 0.03
+DEBUG:root:l_min: 0.04
+DEBUG:root:l_min: 0.05
+DEBUG:root:l_min: 0.060000000000000005
+DEBUG:root:l_min: 0.07
+DEBUG:root:l_min: 0.08
+DEBUG:root:l_min: 0.09
+DEBUG:root:l_min: 0.09999999999999999
+DEBUG:root:l_min: 0.10999999999999999
+DEBUG:root:l_min: 0.11999999999999998
+DEBUG:root:l_min: 0.12999999999999998
+DEBUG:root:l_min: 0.13999999999999999
+DEBUG:root:l_min: 0.15
+DEBUG:root:l_min: 0.16
+DEBUG:root:l_min: 0.17
+DEBUG:root:l_min: 0.18000000000000002
+DEBUG:root:l_min: 0.19000000000000003
+DEBUG:root:l_min: 0.20000000000000004
+DEBUG:root:l_min: 0.21000000000000005
+DEBUG:root:l_min: 0.22000000000000006
+DEBUG:root:l_min: 0.23000000000000007
+DEBUG:root:l_min: 0.24000000000000007
+DEBUG:root:l_min: 0.25000000000000006
+DEBUG:root:l_min: 0.26000000000000006
+DEBUG:root:l_min: 0.2700000000000001
+DEBUG:root:l_min: 0.2800000000000001
+DEBUG:root:l_min: 0.2900000000000001
+DEBUG:root:l_min: 0.3000000000000001
+DEBUG:root:l_min: 0.3100000000000001
+DEBUG:root:l_min: 0.3200000000000001
+DEBUG:root:l_min: 0.3300000000000001
+DEBUG:root:l_min: 0.34000000000000014
+DEBUG:root:l_min: 0.35000000000000014
+DEBUG:root:l_min: 0.36000000000000015
+DEBUG:root:l_min: 0.37000000000000016
+DEBUG:root:l_min: 0.38000000000000017
+DEBUG:root:l_min: 0.3900000000000002
+DEBUG:root:l_min: 0.4000000000000002
+DEBUG:root:l_min: 0.4100000000000002
+DEBUG:root:l_min: 0.4200000000000002
+DEBUG:root:l_min: 0.4300000000000002
+DEBUG:root:l_min: 0.4400000000000002
+DEBUG:root:l_min: 0.45000000000000023
+DEBUG:root:l_min: 0.46000000000000024
+DEBUG:root:l_min: 0.47000000000000025
+DEBUG:root:l_min: 0.48000000000000026
+DEBUG:root:l_min: 0.49000000000000027
+DEBUG:root:l_min: 0.5000000000000002
+DEBUG:root:l_min: 0.5100000000000002
+DEBUG:root:l_min: 0.5200000000000002
+DEBUG:root:l_min: 0.5300000000000002
+DEBUG:root:l_min: 0.5400000000000003
+DEBUG:root:l_min: 0.5500000000000003
+DEBUG:root:l_min: 2.0
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001F4D19C97C0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:fix_l: False
+DEBUG:root:a_count: 1
+DEBUG:root:fix_a: True
+DEBUG:root:l_count: 5
+DEBUG:root:l_count: 50
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001F4D1A42990>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:l_min: 0.01
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001F4CBDD0EC0>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x000001966B585670>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x00000186F25956D0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_min: 17.1
+DEBUG:root:i_min: 17.200000000000003
+DEBUG:root:i_min: 17.300000000000004
+DEBUG:root:i_min: 17.400000000000006
+DEBUG:root:i_min: 17.500000000000007
+DEBUG:root:i_min: 17.60000000000001
+DEBUG:root:i_min: 17.70000000000001
+DEBUG:root:i_min: 17.80000000000001
+DEBUG:root:i_min: 17.900000000000013
+DEBUG:root:i_min: 18.000000000000014
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x00000186F9EEFEC0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_min: 18.100000000000016
+DEBUG:root:i_min: 18.200000000000017
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x00000186FC136720>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_min: 18.30000000000002
+DEBUG:root:i_min: 18.40000000000002
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x00000186FC1DD820>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_min: 18.50000000000002
+DEBUG:root:i_min: 18.600000000000023
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x00000186F9EEF290>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_min: 18.700000000000024
+DEBUG:root:i_min: 18.800000000000026
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x00000186F6541D60>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_min: 18.900000000000027
+DEBUG:root:i_min: 19.0
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x00000186FC1DE900>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_min: 18.9
+DEBUG:root:i_min: 18.799999999999997
+DEBUG:root:i_min: 18.699999999999996
+DEBUG:root:i_min: 18.599999999999994
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x00000186F9E702F0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_min: 18.699999999999996
+DEBUG:root:i_min: 18.799999999999997
+DEBUG:root:i_min: 18.9
+DEBUG:root:i_min: 19.0
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x00000186F6513FB0>
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:root:NN: True, GP: True, SVR: False
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:root:NN: True, GP: True, SVR: False
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model  not loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:root:NN: True, GP: True, SVR: True
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model  not loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:root:NN: True, GP: True, SVR: False
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model  not loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000021C13DFCB00>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:i_min: 17.1
+DEBUG:root:i_min: 17.200000000000003
+DEBUG:root:i_min: 17.300000000000004
+DEBUG:root:i_min: 17.400000000000006
+DEBUG:root:i_min: 17.500000000000007
+DEBUG:root:i_min: 17.60000000000001
+DEBUG:root:i_min: 17.70000000000001
+DEBUG:root:i_min: 17.80000000000001
+DEBUG:root:i_min: 17.900000000000013
+DEBUG:root:i_min: 18.000000000000014
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000021C1AC6DAC0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:l_min: 0.02
+DEBUG:root:l_min: 0.03
+DEBUG:root:l_min: 0.04
+DEBUG:root:l_min: 0.05
+DEBUG:root:l_min: 0.060000000000000005
+DEBUG:root:l_min: 0.07
+DEBUG:root:l_min: 0.08
+DEBUG:root:l_min: 0.09
+DEBUG:root:l_min: 0.09999999999999999
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000021C13E216D0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:l_min: 0.10999999999999999
+DEBUG:root:l_min: 0.11999999999999998
+DEBUG:root:l_min: 0.12999999999999998
+DEBUG:root:l_min: 0.13999999999999999
+DEBUG:root:l_min: 0.15
+DEBUG:root:l_min: 0.16
+DEBUG:root:l_min: 0.17
+DEBUG:root:l_min: 0.18000000000000002
+DEBUG:root:l_min: 0.19000000000000003
+DEBUG:root:l_min: 0.20000000000000004
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000021C13DB6B70>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:l_min: 0.21000000000000005
+DEBUG:root:l_min: 0.22000000000000006
+DEBUG:root:l_min: 0.23000000000000007
+DEBUG:root:l_min: 0.24000000000000007
+DEBUG:root:l_min: 0.25000000000000006
+DEBUG:root:l_min: 0.26000000000000006
+DEBUG:root:l_min: 0.2700000000000001
+DEBUG:root:l_min: 0.2800000000000001
+DEBUG:root:l_min: 0.2900000000000001
+DEBUG:root:l_min: 0.3000000000000001
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000021C13DA81D0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:l_min: 0.3100000000000001
+DEBUG:root:l_min: 0.3200000000000001
+DEBUG:root:l_min: 0.3300000000000001
+DEBUG:root:l_min: 0.34000000000000014
+DEBUG:root:l_min: 0.35000000000000014
+DEBUG:root:l_min: 0.36000000000000015
+DEBUG:root:l_min: 0.37000000000000016
+DEBUG:root:l_min: 0.38000000000000017
+DEBUG:root:l_min: 0.3900000000000002
+DEBUG:root:l_min: 0.4000000000000002
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000021C1ACEC1D0>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:l_min: 0.4100000000000002
+DEBUG:root:l_min: 0.4200000000000002
+DEBUG:root:l_min: 0.4300000000000002
+DEBUG:root:l_min: 0.4400000000000002
+DEBUG:root:l_min: 0.45000000000000023
+DEBUG:root:l_min: 0.46000000000000024
+DEBUG:root:l_min: 0.47000000000000025
+DEBUG:root:l_min: 0.48000000000000026
+DEBUG:root:l_min: 0.49000000000000027
+DEBUG:root:l_min: 0.5000000000000002
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000021C13E90530>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:l_min: 0.5
+DEBUG:root:l_min: 1.5
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000021C1AE3A930>
+DEBUG:__main__:Prediction drawn
+DEBUG:root:l_min: 1.49
+DEBUG:root:l_min: 1.48
+DEBUG:root:l_min: 1.47
+DEBUG:root:l_min: 1.46
+DEBUG:root:l_min: 1.45
+DEBUG:root:l_min: 1.44
+DEBUG:root:l_min: 1.43
+DEBUG:root:l_min: 1.42
+DEBUG:root:l_min: 1.41
+DEBUG:root:l_min: 1.4
+DEBUG:root:l_min: 1.39
+DEBUG:root:l_min: 1.38
+DEBUG:root:l_min: 1.3699999999999999
+DEBUG:root:l_min: 1.3599999999999999
+DEBUG:root:l_min: 1.3499999999999999
+DEBUG:root:l_min: 1.3399999999999999
+DEBUG:root:l_min: 1.3299999999999998
+DEBUG:root:l_min: 1.3199999999999998
+DEBUG:root:l_min: 1.3099999999999998
+DEBUG:root:l_min: 1.2999999999999998
+DEBUG:root:l_min: 1.2899999999999998
+DEBUG:root:l_min: 1.2799999999999998

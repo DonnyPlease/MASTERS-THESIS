@@ -85,9 +85,7 @@ class FitExp():
             params['b'+str(i+1)] = b[i]
         return params
     
-    
-    def fit(self, verbose=False):
-        # 1. LINEARIZATION AND EXPONENT PARAMETER ESTIMATION
+    def _linearize_and_estimate_parameters(self):
         cumulative_integrals = self.get_cumulative_integrals()
         F = self.get_linearized_vector(cumulative_integrals)
         try:
@@ -95,41 +93,68 @@ class FitExp():
                         np.matmul(F, self.y)) 
         except:
             raise Exception("Could not calculate the inverse of the matrix 1") 
-        
-        # 2. ERROR ESTIMATION
+        return F, b_1
+    
+    def _estimate_errors(self, F, b_1):
         if self.exponentials_count == 2:
             dA, dB, *_ = self.std_error_of_fit_parameters(F, b_1)
             self.std_errors = self.std_error_of_b_coeffients_2exp(b_1[0],b_1[1], dA, dB)
         else:
             self.std_errors = None
-            
-        # 3. POLYNOMIAL COEFFICIENTS AND FINAL PARAMETER ESTIMATION
+    
+    def _polynomial_roots(self, b_1):
         polynomial_coefs = self.get_polynomial_coefs(b_1)
-        try: 
+        try:
             polynomial_roots = np.roots(polynomial_coefs)
         except:
-            raise Exception("Could not calculate the roots of the polynomial")
-        
+            raise Exception("Could not calculate the roots of the polynomial") 
         # If polynomial_roots are complex, the fit is bad
         if any([np.imag(r) != 0 for r in polynomial_roots]):
             raise Exception("The roots of the polynomial are complex.")
         
+        return polynomial_roots
+    
+    def _second_estimate_parameters(self, polynomial_roots):
         G = self.get_vector_of_exponentials(polynomial_roots)
         try:
             b_2 = np.dot(np.linalg.pinv(np.matmul(G, np.transpose(G))),
                                                     np.matmul(G, self.y))
-            # calculate the standard error of the final parameters from the linear regression
-            if self.exponentials_count == 2:
-                errors = self.std_error_of_lsq_parameters(G, self.y, b_2)
-                self.std_errors = [errors[0], self.std_errors[0], errors[1], self.std_errors[1]]
-            
         except:
             raise Exception("Could not calculate the inverse of the matrix 2")
+        return G, b_2
+    
+    def _second_estimate_errors(self, G, b_2):
+        if self.exponentials_count == 2:
+            errors = self.std_error_of_lsq_parameters(G, self.y, b_2)
+            if self.include_constant:
+                self.std_errors = [errors[0], errors[1], self.std_errors[0], errors[2], self.std_errors[1]]
+                return
+            self.std_errors = [errors[0], self.std_errors[0], errors[1], self.std_errors[1]]
         
-        # 4. CREATE A DICT OF PARAMETERS
+    
+    def fit(self, verbose=False):
+        # 1. LINEARIZATION AND EXPONENT PARAMETER ESTIMATION
+        F, b_1 = self._linearize_and_estimate_parameters() 
+        
+        # 2. ERROR ESTIMATION
+        self._estimate_errors(F, b_1)
+            
+        # 3. POLYNOMIAL COEFFICIENTS
+        polynomial_roots = self._polynomial_roots(b_1)
+        
+        # 4. FINAL ESTIMATION OF PARAMETERS
+        G,b_2 = self._second_estimate_parameters(polynomial_roots)
+                              
+        # 5. STANDARD ERROR OF FINAL COEFFICIENTS
+        self._second_estimate_errors(G, b_2)
+        
+        # 6. CREATE A DICT OF PARAMETERS
         self.params = self.get_params(b_2, polynomial_roots)
         
-        if verbose: self.show_results()
+        # 7. SHOW THE RESULTS (OPTIONAL)
+        if verbose: 
+            self.show_results()
+        
         return self.params
     
     def std_error_of_fit_parameters(self, X, b):

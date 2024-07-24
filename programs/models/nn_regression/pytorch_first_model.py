@@ -111,7 +111,7 @@ if __name__ == "__main__":
     print(f"Root Mean Squared Error on Test Data: {np.sqrt(loss.item()):.4f}")
     
     # save the model
-    torch.save(model, 'model.pth')
+    torch.save(model, 'nn_model.pth')
     joblib.dump(model.transformer, 'scaler.pkl')
     
     

@@ -1,28 +1,32 @@
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{Introduction}{8}{chapter*.2}%
-\contentsline {chapter}{\numberline {1}Plasma}{9}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Temperature of plasma}{10}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Critical density}{10}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Ultra-intense short pulse laser plasma interactions}{11}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Ionization}{12}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Absorption of ultra-short, ultra-intense lasers}{14}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Motivation - X-ray $\mathbf {K}_\alpha $ emission}{17}{section.1.6}%
-\contentsline {section}{\numberline {1.7}PIC simulations}{18}{section.1.7}%
-\contentsline {chapter}{\numberline {2}Temperature fitting}{22}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Boltzmann vs. Maxwellian distribution}{23}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Exponential-sum fitting}{24}{section.2.2}%
-\contentsline {chapter}{\numberline {3}Surrogate hot electron temperature models}{30}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Regression methods}{30}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Support vector regression}{31}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Neural networks}{32}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Gaussian Processes}{34}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Dataset}{37}{chapter.4}%
-\contentsline {section}{\numberline {4.1}EPOCH Simulations}{37}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Temperature fitting}{38}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Full dataset}{42}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Hot electron temperature modelling}{45}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Comparison to contemporary data}{46}{chapter.6}%
-\contentsline {chapter}{Conclusion}{47}{chapter*.29}%
-\contentsline {chapter}{Bibliography}{48}{chapter*.29}%
-\contentsline {chapter}{Attachments}{52}{chapter*.30}%
-\contentsline {chapter}{\numberline {A}EPOCH input file}{52}{appendix.A}%
+\contentsline {chapter}{Introduction}{9}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Plasma}{10}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Temperature of plasma}{11}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Critical density}{11}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Ultra-intense short pulse laser plasma interactions}{12}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Ionization}{13}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Absorption of ultra-short, ultra-intense lasers}{15}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Motivation - X-ray $\mathbf {K}_\alpha $ emission}{18}{section.1.6}%
+\contentsline {section}{\numberline {1.7}PIC simulations}{19}{section.1.7}%
+\contentsline {chapter}{\numberline {2}Temperature fitting}{23}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Boltzmann vs. Maxwellian distribution}{24}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Exponential-sum fitting}{25}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Surrogate hot electron temperature models}{31}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Regression methods}{31}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Support vector regression}{32}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Neural networks}{33}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Gaussian Processes}{35}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Dataset}{38}{chapter.4}%
+\contentsline {section}{\numberline {4.1}EPOCH Simulations}{38}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Temperature fitting}{39}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Full dataset}{46}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Hot electron temperature modelling}{50}{chapter.5}%
+\contentsline {section}{\numberline {5.1}SVR model}{50}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Neural Network model}{50}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Gaussian process regression model}{50}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Comparison of models}{51}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Comparison to contemporary data}{51}{section.5.5}%
+\contentsline {chapter}{Conclusion}{52}{chapter*.33}%
+\contentsline {chapter}{Bibliography}{53}{chapter*.33}%
+\contentsline {chapter}{Attachments}{57}{chapter*.34}%
+\contentsline {chapter}{\numberline {A}EPOCH input file}{57}{appendix.A}%

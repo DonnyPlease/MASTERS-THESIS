@@ -11,10 +11,14 @@ PATH_TO_HISTOGRAMS = 'C:/Users/samue/OneDrive/Dokumenty/FJFI/MASTERS-THESIS/prog
 FOLDER_SAVE_3EXP = "histograms/"+FOLDER_NAME+"/fitting_results/3exp_plots/"
 FOLDER_SAVE_2EXP = "histograms/"+FOLDER_NAME+"/fitting_results/2exp_plots/"
 FOLDER_SAVE_NLSQ = "histograms/"+FOLDER_NAME+"/fitting_results/nlsq_plots/"
+FOLDER_SAVE_1NLSQ = "histograms/"+FOLDER_NAME+"/fitting_results/1nlsq_plots/"
 FOLDER_SAVE_RESULTS = "histograms/"+FOLDER_NAME+"/fitting_results/fit_params/"
 
 from histograms.HistogramUtils import load_histograms
 from fitting.FittingUtils import fit_hot_temperature, plot_fit, reverse_normalize, print_fit_results, save_fit_results
+
+FIT_SEQUNECE = ["3exp", "3cut", "2exp", "2nlsq"]
+# FIT_SEQUNECE_2 = ["3exp", "3cut", "2exp", "2nlsq", "2cut", "1exp"]
 
 if __name__ == "__main__":
     # 1. Load all histograms from the folder
@@ -29,17 +33,18 @@ if __name__ == "__main__":
         histogram = (histogram[0], histogram[1]/max_hist, histogram[2])
         
         # 2. FIT THE HISTOGRAM
-        fit_results = fit_hot_temperature(histogram)
+        fit_results = fit_hot_temperature(histogram, fit_sequence=FIT_SEQUNECE)
         
         # 3. REVERSE THE NORMALIZATION
         histogram, fit_results = reverse_normalize(histogram, fit_results, max_hist)
         fit_results["histogram"] = histogram[2]
         print_fit_results(fit_results)
         save_fit_results(fit_results, FOLDER_SAVE_RESULTS)
-        # 3. PLOT THE FITS
+        # # 3. PLOT THE FITS
         plot_fit(histogram, fit_results, fit_type="3exp", save_path=FOLDER_SAVE_3EXP)
         plot_fit(histogram, fit_results, fit_type="2exp", save_path=FOLDER_SAVE_2EXP)
-        plot_fit(histogram, fit_results, fit_type="nlsq", save_path=FOLDER_SAVE_NLSQ)
+        plot_fit(histogram, fit_results, fit_type="2nlsq", save_path=FOLDER_SAVE_NLSQ)
+        # plot_fit(histogram, fit_results, fit_type="1nlsq", save_path=FOLDER_SAVE_1NLSQ)
         
         # 4. SAVE THE FIT RESULTS TO DATASET
         
