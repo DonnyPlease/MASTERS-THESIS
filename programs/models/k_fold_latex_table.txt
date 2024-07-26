@@ -1,0 +1,19 @@
+\begin{table}[h]
+\centering
+\begin{tabular}{ c c c c c c c }
+\hline
+\  & $SVR_\mathrm{rmse}$& $SVR_\mathrm{r2}$ & $NN_\mathrm{rmse}$   & $NN_\mathrm{r2}$ & $GP_\mathrm{rmse}$ & $GP_\mathrm{r2}$ \\ 
+Fold 1 & 35.13 & 0.96 & 30.97 & 0.97 & 27.55 & 0.98 \\ 
+Fold 2 & 47.61 & 0.93 & 40.82 & 0.95 & 37.28 & 0.96 \\ 
+Fold 3 & 33.18 & 0.98 & 31.51 & 0.98 & 23.94 & 0.99 \\ 
+Fold 4 & 79.91 & 0.90 & 43.35 & 0.97 & 40.80 & 0.97 \\ 
+Fold 5 & 36.95 & 0.97 & 30.09 & 0.98 & 31.05 & 0.98 \\ 
+Fold 6 & 69.68 & 0.90 & 43.04 & 0.96 & 37.00 & 0.97 \\ 
+Fold 7 & 41.01 & 0.95 & 37.71 & 0.96 & 33.78 & 0.97 \\ 
+Fold 8 & 60.28 & 0.94 & 41.18 & 0.97 & 38.96 & 0.97 \\ 
+Mean & 50.47 & & 37.33 & & 33.80 & \\ 
+\botomrule
+\end{tabular}
+\caption{Cross-validation of SVR, NN and GP models.} 
+ \label{tab:cross-val} 
+\end{table}

@@ -76,9 +76,8 @@ class Gp3dGpy():
             return y_mean, np.sqrt(y_var.flatten())
         return y_mean
     
-    def residuals(self, x, y):
-        y_pred = self.predict(x)
-        return y - y_pred
+    def residuals(self, y_true, y_pred):
+        return y_pred - y_true
     
     def mean_residual(self, x, y):
         return np.mean(self.residuals(x, y))
@@ -139,31 +138,35 @@ class Gp3dGpy():
         self.transformer = transformer
         return
     
-    def score(self, x, y):
-        # predict the values
-        y_pred, _ = self.model.predict(x)
-        
+    def scores(self, y_true, y_pred):
         # caclulate the R2 score as 1 - SS_res / SS_tot
         y_pred = y_pred.flatten()
-        ss_res = np.sum((y - y_pred) ** 2)
-        mean_y = np.mean(y)
-        ss_tot = np.sum((y - mean_y) ** 2)
+        ss_res = np.sum((y_true - y_pred) ** 2)
+        mean_y = np.mean(y_true)
+        ss_tot = np.sum((y_true - mean_y) ** 2)
         r2 = 1 - (ss_res / ss_tot)
         
         # calculate the RMSE score
-        rmse_score = rmse(y, y_pred)
+        rmse_score = rmse(y_true, y_pred)
         return r2, rmse_score
+    
+    def mean_residuals(self, y_true, y_pred):
+        return np.mean(y_true - y_pred)
+    
+    def get_params(self):
+        return list(self.model.param_array)
 
 if __name__ == '__main__':
     # OPTIONS 
-    ACTION = TEST
+    ACTION = TRAIN
     int_factor = 1 
     
     x, y = DatasetUtils.load_data_for_regression(DATASET_FOLDER)
     x, y = np.array(x), np.array(y)[:,0]    # Only the first output column - T_HOT, the second is T_HOT_STDEV
     X, y, transformer = transform(x, y, factor_i=int_factor)
     
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=41)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.01, random_state=40)
+    X_train, X_test, y_train, y_test = X, X, y, y
     
     # Train or load the model 
     gp = Gp3dGpy()
@@ -174,16 +177,17 @@ if __name__ == '__main__':
     elif ACTION == TEST:
         gp = gp.load(PATH_TO_MODEL)
     
+    y_pred = gp.predict(X_test)
     # Test scores
-    gp_r2, gp_rmse = gp.score(X_test, y_test)
+    gp_r2, gp_rmse = gp.scores(y_test, y_pred)
     print(f"GP \t\t R2: {gp_r2:.2f} \t RMSE: {gp_rmse:.2f}")
     
     # Residual analysis
-    gp_mean_of_residuals = gp.mean_residual(X_test, y_test)
+    gp_mean_of_residuals = gp.mean_residual(y_test, y_pred)
     print("GP residuals mean: ", gp_mean_of_residuals)
     
     # Predict
-    prediction_grid = PredictionGrid(transformer=transformer, factor_i=int_factor)
+    prediction_grid = PredictionGrid(transformer=transformer, factor_i=int_factor, count_i=51)
     grid = prediction_grid.grid_for_prediction()
     t_hot_predicted, ss = gp.predict(grid, return_std=True)
     t_hot_predicted = t_hot_predicted.reshape(prediction_grid.X.shape)
@@ -191,7 +195,7 @@ if __name__ == '__main__':
     
     # Plot the predictions 
     i_grid, l_grid, a_grid = prediction_grid.grid_for_plotting()
-    slices_at = [0,10,20,30,40,49]
+    slices_at = [0,25,50]
     for slice_at in slices_at:
         draw_slice(i_grid, l_grid, a_grid, t_hot_predicted, slice_at=slice_at, axes=["l","a"])
         draw_slice(i_grid, l_grid, a_grid, ss, slice_at=slice_at, axes=["l","a"])

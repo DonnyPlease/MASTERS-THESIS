@@ -375,6 +375,16 @@
            </widget>
           </item>
           <item>
+           <widget class="QPushButton" name="drawVarianceButton">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="text">
+             <string>Draw standard error</string>
+            </property>
+           </widget>
+          </item>
+          <item>
            <spacer name="verticalSpacer">
             <property name="orientation">
              <enum>Qt::Vertical</enum>

@@ -55,7 +55,7 @@ def draw_slice(i_values, l_values, a_values, values_to_plot, slice_at=0, axes=["
 def draw(X,Y,Z, axes=["l","a"], scatterPoints=None):
     plt.figure(figsize=(8, 6))
     plt.pcolormesh(X, Y, Z, cmap='inferno', shading='auto')
-    plt.colorbar(label=r'$T_{hot}$ [keV]',format="%.3f")
+    plt.colorbar(label=r'$T_{hot}$ [keV]')
     
     if scatterPoints is not None:
         plt.scatter(scatterPoints[0],scatterPoints[1],c='white',s=3,marker='o')

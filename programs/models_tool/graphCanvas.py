@@ -31,7 +31,7 @@ class GraphCanvas(FigureCanvas):
             
         self.axes.cla()
         c = self.axes.pcolormesh(X, Y, Z, cmap='inferno', shading='auto')
-        self.colorbar = self.fig.colorbar(c, label=r'$T_{hot}$ [keV]',format="%.3f", ax=self.axes)
+        self.colorbar = self.fig.colorbar(c, label=r'$T_{hot}$ [keV]', ax=self.axes)
         
         self._set_x_axis(axes[0])
         self._set_y_axis(axes[1])

@@ -1,4 +1,5 @@
 \chapter{Surrogate hot electron temperature models}
+\label{ch:models-theory}
 In this chapter, we will talk about the models suitable for hot electron temperature modelling. It was already explained in the first chapter that there are many physical processes contributing to the absorption of laser. As a consequence, there is a non-linear relationship between the initial parameters and the hot electron temperature. It would be very difficult to propose an analytical model where the temperature is explicitly dependant on all the initial parameters. There have been works studying how the temperature scales with respect to intensity \cite{kluge2011,cui2013,miller2023,haines2009,beg1997}, angle \cite{cui2013} or length scale and even pulse durations \cite{miller2023}, but none of them models the dependency on all parameters at once. Needless to say, these works are valuable and they will be discussed with respect to predictions of our final model in chapter \ref{ch:comparison}.
 
 Given the complexity and multi-dimensionality of our dataset, few machine learning regression methods offer a promising alternative to analytical models. We will now discuss general principle of regression and several particular regression methods as well as their suitability for this thesis.
@@ -93,6 +94,7 @@ Gradient descent alone can find local minimum of the error function for the trai
 When training complex non-linear relationship on small datasets (up to 1000 samples), it can be the case that the complexity cannot be captured by network with less weights than the number of training points. This is called \textit{over-parametrization}. However, it is sometimes still valid to train such network, because the effective number of degrees of freedom can be lowered by regularization \cite{barlett1998,ingrassia2005}. Tuning over-parametrized NNs is more difficult, but seeing its predictions side by side with other models can give us a better insight into the properties of our data.
 
 \section{Gaussian Processes}
+\label{sec:gp-theory}
 Another viable regression method is Gaussian Process regression. Its approach is completely different compared to both previous methods. Following paragraphs are explaining the basics of Gaussian Processes.
 
 Gaussian Process (GP) can be understood as an extension of multivariate Gaussian distribution over vectors to distribution over functions. Informally, we replace $\mathcal{N}(\bm{\mu},\bm{\Sigma})$, where $\bm{\mu}$ is mean and $\bm{\Sigma}$ is the covariance matrix, with Gaussian Process $\mathcal{GP}(m(\bm{x}),k(\bm{x},\bm{x}^\prime))$, where $m(\bm{x})$ is mean function and $k(\bm{x},\bm{x}^\prime)$ is covariance function. $m(\bm{x})$  and $k(\bm{x},\bm{x}^\prime)$ fully specify a Gaussian process. For every input $\bm{x}$ there is now a random variable $f(\bm{x})$ for which we can write \cite{rasmussen2004}:
@@ -140,9 +142,10 @@ where $\delta_{xx^\prime} = 1$ for $x=x^\prime$ and $\delta_{xx^\prime} = 0$ for
 
 Apart from RBF kernel $k_{\mathrm{RBF}}(x-x^\prime) =\sigma^2\exp(-\frac{(x-x^\prime)^2}{2l})$ another common choice are kernels from the Matern class \cite{rasmussen2005}:
 \begin{equation}
-	k_\mathrm{Matern}(r) = \frac{2^{1-\nu}}{\gamma(\nu)}\left(\frac{\sqrt{2\nu}r}{l}\right)^\nu K_\nu\left(\frac{\sqrt{2\nu}r}{l}\right),
+	\label{eq:mattern-kernel}
+	k_\mathrm{Matern}(r) = \sigma_k^2\frac{2^{1-\nu}}{\Gamma(\nu)}\left(\frac{\sqrt{2\nu}r}{l}\right)^\nu K_\nu\left(\frac{\sqrt{2\nu}r}{l}\right),
 \end{equation}
-where $\nu$ and $l$ are positive paremeters, $r=\norm{\bm{x} -\bm{x^\prime}}$, $\Gamma(\nu)$ is a gamma function and $K_\nu$ is a modified Bessel function. Common choices of $\nu$ are $\frac{1}{2}, \frac{3}{2}$ and $\frac{5}{2}$. For $n \rightarrow \infty$, $k_\mathrm{Matern}(\norm{\bm{x} -\bm{x^\prime}})$ degenerates to $k_{\mathrm{RBF}}(\bm{x} ,\bm{x^\prime})$ \cite{rasmussen2005}.
+where $\sigma_k$ $\nu$ and $l$ are positive paremeters, $r=\norm{\bm{x} -\bm{x^\prime}}$, $\Gamma(\nu)$ is a gamma function and $K_\nu$ is a modified Bessel function. Common choices of $\nu$ are $\frac{1}{2}, \frac{3}{2}$ and $\frac{5}{2}$. For $n \rightarrow \infty$, $k_\mathrm{Matern}(\norm{\bm{x} -\bm{x^\prime}})$ degenerates to $k_{\mathrm{RBF}}(\bm{x} ,\bm{x^\prime})$ \cite{rasmussen2005}.
 
 Gaussian process regression is a non-parametric model, meaning the training data cannot be discarded after the training, because they are needed for the computation of $\bm{\Sigma_*}$. The memory complexity of the algorithm is $O(n^2)$ and the time complexity is $O(n^3)$, because of the costly matrix inversion needed for computation of the posterior distribution \cite{rasmussen2004}. For small datasets, however, this is manageable by standard computers.
 

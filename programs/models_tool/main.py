@@ -20,6 +20,7 @@ from graphCanvas import GraphCanvas
 from models.prediction_grid import PredictionGrid
 
 from sklearn.svm import SVR
+from models.pytorch_first_model import NNModel, Model
 from models.svr import Svr
 from models.gp3d_gpy import Gp3dGpy as GP
 from models.gp3d_gpy import Gp3dGpy
@@ -48,6 +49,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.comboBoxSelectModel.currentIndexChanged.connect(self.load_selected_model)
         
         self.drawPredictionButton.clicked.connect(self.draw_prediction_button_clicked)
+        self.drawVarianceButton.clicked.connect(self.draw_variance_button_clicked)
         
         self.selected_model = None
         self.Models = []
@@ -103,13 +105,18 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         
     def load_selected_model(self):
         model_name = self.comboBoxSelectModel.currentText()
+        self.drawVarianceButton.setEnabled(False)
         if model_name == "svr":
             model = Svr()
         elif model_name == "gp":
             model = GP()
+        elif model_name == "nn":
+            model = NNModel()
         try:
             self.selected_model = model.load(self.folder_with_models+"/"+model_name+"_model.pkl")
             logger.debug(f"Model {model_name} loaded")
+            if model_name == "gp":
+                self.drawVarianceButton.setEnabled(True)
         except:
             logger.debug(f"Model {model_name} not loaded")
             
@@ -122,13 +129,24 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         
         logger.debug("Prediction drawn")
         
+    def draw_variance(self):
+        if self.selected_model is None:
+            logger.debug("No model selected")
+            return
+        i_grid, l_grid, a_grid = self.prediction_grid.custom_grid_for_plotting(self.graph_settings)
+        self.graph_canvas.draw_slice(i_grid, l_grid, a_grid, self.prediction_variance, axes=self.graph_settings.get_axes())
+        
     def predict(self):
         if self.selected_model is None:
             logger.debug("No model selected - cannot predict")
             return
         prediction_grid = PredictionGrid(transformer=self.selected_model.transformer)
         x_pred = prediction_grid.custom_grid_for_prediction(self.graph_settings)
-        prediction = self.selected_model.predict(x_pred)
+        if isinstance(self.selected_model, GP):
+            prediction, prediction_variance = self.selected_model.predict(x_pred, return_std=True)
+            self.prediction_variance = prediction_variance.reshape((prediction_grid.X.shape))
+        else:
+            prediction = self.selected_model.predict(x_pred)
         self.prediction = prediction.reshape((prediction_grid.X.shape))
         self.prediction_grid = prediction_grid
         logger.debug("Prediction done")
@@ -137,6 +155,10 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def draw_prediction_button_clicked(self):
         self.predict()
         self.draw_prediction()
+        
+    def draw_variance_button_clicked(self):
+        self.predict()
+        self.draw_variance()
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)

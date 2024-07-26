@@ -36,14 +36,15 @@ class Svr():
     
     def train(self, x, y, C_range=None, gamma_range=None):
         param_grid = {
-            'C': [0.01, 0.1, 1, 10, 100, 1000],
-            'epsilon': [0.01, 0.02, 0.1, 0.2, 0.5, 1],
-            'gamma': [0.01, 0.1, 1.0, 10, 100, 1000, 10000]  # Adjust gamma for smoothness
+            'C': [10, 100, 1000, 5000],
+            'epsilon': [0.0002,0.001, 0.005,0.01,0.05],
+            'gamma': [1.0, 10, 100]  # Adjust gamma for smoothness
         }
         grid_search = GridSearchCV(SVR(epsilon=0.001, kernel="rbf"), param_grid, cv=7, scoring='neg_root_mean_squared_error', verbose=1)
         grid_search.fit(x, y)
         self.model = grid_search.best_estimator_
         print("Best parameters: ", grid_search.best_params_)
+        self.best_params = grid_search.best_params_
         return
     
     def set_params(self, C, gamma):
@@ -63,8 +64,20 @@ class Svr():
     def residuals(self, x, y):
         return y - self.model.predict(x)
     
-    def mean_residual(self, x, y):
-        return np.mean(self.residuals(x, y))
+    def scores(self, y_true, y_pred):
+        # caclulate the R2 score as 1 - SS_res / SS_tot
+        y_pred = y_pred.flatten()
+        ss_res = np.sum((y_true - y_pred) ** 2)
+        mean_y = np.mean(y_true)
+        ss_tot = np.sum((y_true - mean_y) ** 2)
+        r2 = 1 - (ss_res / ss_tot)
+        
+        # calculate the RMSE score
+        rmse_score = rmse(y_true, y_pred)
+        return r2, rmse_score
+    
+    def mean_residuals(self, y_true, y_pred):
+        return np.mean(y_true - y_pred)
     
     def plot_histogram_of_residuals(self, x, y):
         residuals = self.residuals(x, y)
@@ -87,7 +100,10 @@ class Svr():
        
     def set_transformer(self, transformer):
         self.transformer = transformer
-        return  
+        return
+    
+    def get_params(self):
+        return self.best_params
      
 if __name__ == '__main__':
     # OPTIONS
@@ -99,7 +115,7 @@ if __name__ == '__main__':
     x, y = np.array(x), np.array(y)[:,0]    # Only the first output column - T_HOT, the second is T_HOT_STDEV
     X, y, transformer = transform(x, y, factor_i=int_factor)
     
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=41)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=40)
    
     # Train or load the model 
     svr = Svr()
@@ -119,13 +135,13 @@ if __name__ == '__main__':
     print("SVR residuals mean: ", svr_mean_of_residuals)
         
     # Predict
-    prediction_grid = PredictionGrid(transformer=transformer, factor_i=int_factor)
+    prediction_grid = PredictionGrid(transformer=transformer, factor_i=int_factor,count_i=51)
     grid = prediction_grid.grid_for_prediction()
     t_hot_predicted = svr.predict(grid)
     t_hot_predicted = t_hot_predicted.reshape(prediction_grid.X.shape)
     
     # Plot the predictions 
     i_grid, l_grid, a_grid = prediction_grid.grid_for_plotting()
-    slices_at = [0, 15, 25, 35, 40, 49]
+    slices_at = [0, 25, 50]
     for slice_at in slices_at:
         draw_slice(i_grid, l_grid, a_grid, t_hot_predicted, slice_at=slice_at, axes=["l","a"])

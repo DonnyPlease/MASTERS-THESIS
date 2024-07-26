@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 from draw_dataset import draw
 
-from pytorch_first_model import Model
+from models.models.pytorch_first_model import Model
 
 if __name__ == "__main__":
     # load model
