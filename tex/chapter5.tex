@@ -10,7 +10,7 @@ In the actual implementation, the classes which represent all three models follo
 For each model, we will now provide a brief introduction regarding the implementation. Then we compare the performance of these models using 8-fold cross-validation. In the end, we also compare the models by visual inspection of the prediction graphs sampled on for the same parameters as in the presentation of the dataset.
 
 \section{Models}
-
+\label{sec:temp-models}
 
 For training the SVR model we used \textit{SVR} class from Python \textit{scikit-learn} library. For kernel we selected the RBF kernel. There are multiple hyper-parameters to be optimized - $\epsilon$ and $C$ from SVR itself and $\gamma$ from the RBF kernel which is here defined as $\mathrm{RBF}(\bm{x},\bm{x^\prime}) = \mathrm{exp}(\gamma \norm{\bm{x}-\bm{x^\prime}})$. During the cross-validation, where we calculate \textit{RMSE} and $R^2$ on test set for each fold, the hyper-parameters are selected via grid-search using an additional cross-validation on the training set.
 
@@ -81,6 +81,7 @@ Generally, it is possible to claim that the over-parametrized model can be smoot
 
 
 \subsection*{Gaussian process regression model}
+
 \begin{figure}[ht]
 	\centering
 	\begin{subfigure}{0.49\textwidth}
@@ -166,6 +167,7 @@ The application is implemented in Python in \textit{PyQt6} framework with the ad
 After choosing a model, the user can choose, which axis he wants to \textit{fix} and at which value. Before, we were always fixing the intensity to three values and sampled $L$ and $\alpha$. Then, the user chooses the ranges (\textit{min}, \textit{max}) of the remaining two axes alongside with the density of the sample (\textit{count}). Prediction of the same configuration as before but for NN model is shown in the figure \ref{fig:graph-tool2}. In both examples, notice the smooth transition between the intensities. Remember that there are almost no training point off the three intensities, so the predicted temperatures could not be very accurate.
 
 Drawing of the error is currently supported only for the GP model. By clicking the \textit{Draw standard error} button the prediction standard error is drawn. The screenshot with standard error can be seen in figure \ref{fig:graph-tool3}.
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.85 \textwidth]{figures/graph_tool3}
@@ -175,16 +177,53 @@ Drawing of the error is currently supported only for the GP model. By clicking t
 
 After previous discussion, it shouldn't surprise us that the uncertainty is larger for intensities that are not a power of 10. Similar error pattern is visible when $L$ is the fixed axis, instead of $\alpha$.
 
-\section{Strategy for choosing the next simulations}
 
 
-\section{Comparison to contemporary data}
+\section{Comparison to other temperature scaling}
 \label{ch:comparison}
 In this last section, the models are compared to a few of the previous works which studied the scaling of hot electron temperature.
 
-First, the comparison will be done with respect to work of Cui et al. \cite{cui2013}, where they model scaling of hot electron temperature with intensity using:
+First, the comparison will be done with respect to work of \textit{Cui et al.}\cite{cui2013}, where they model scaling of hot electron temperature with intensity as: 
 \begin{equation}
-	content...
+	\label{eq:cui-scale}
+	T_{\mathrm{hot}} = \left(\frac{I\lambda^2}{10^{18} \, W \, \mathrm{cm}^{-2} \, \mathrm{\mu m}^2}\right)^{1/3} \times 1.01 \, \mathrm{MeV},
 \end{equation}
+which, as they have shown, approximately holds for the optimized scale length and angle of resonance absorption ($\lambda = 1$ and $\alpha = 21.6$) given by \ref{eq:res-opt}.
 
+The GP model trained by us gives predictions that can be seen in the figure \ref{fig:cui-compare-1}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.95 \textwidth]{figures/cui_compare1}
+	\caption{The predictions of GP model for optimized resonance absorption $\lambda = 1$ and $\alpha = 21.6 \degree$. The equation of the fit as well as the fitted parameters is shown in the legend. The red area depicts the 95\% confidence interval of the predictions.}
+	\label{fig:cui-compare-1}
+\end{figure}
+
+After fitting the predictions of the GP model with a function $T_{\mathrm{hot}}= aI^b$, we get the estimates $a=0.00012\pm0.00008 \, \mathrm{keV}$ and $b=0.349\pm0.017$. The fitted curve is a straight line in the graph because of the choice of scales.
+
+For numerical comparison, the coefficient $a$ has to be scaled with $a^* = a\times 10^6$ because of the unit conversion used bu Cui et al.. This gives us $a^* = 120 keV$ which is still roughly 10 times larger than the constant $1.01\, \mathrm{MeV}$ from equation \ref{eq:cui-scale}. The difference is probably caused by the fact that in \cite{cui2013}, they used hot electron temperatures from the time of interaction. As they show themselves, the temperature drops quite rapidly with time, which would explain why our temperatures are lower.
+Other than that, the exponent estimate  $b=0.349\pm0.017$ is within one standard error in a agreement with scaling $T_\mathrm{hot} \sim I^{1/3}$.	
+
+If the angle of incidence is not satisfying the condition \ref{eq:res-opt}, the relationship seems to become more complicated. In \cite{cui2013}, they looked for power coefficient for $T_\mathrm{hot} \approx I^{b}$ at $\lambda = 1$ and $\alpha = 45\degree$ and estimated it as $b=0.64$. They used two datapoints $I = 10^{17} \, W \, \mathrm{cm}^{-2}$ and $I = 10^{19} \, W \, \mathrm{cm}^{-2}$ and for these two points we get similar estimate $b$. However, if we sample the space more densely, our model predicts non-trivial relationship which cannot be easily fitted with simple power function. The predictions  together with function $T_\mathrm{hot} \sim I^{0.64}$ can be seen in figure \ref{fig:cui-compare-2}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.95 \textwidth]{figures/cui_compare2}
+	\caption{The predictions of GP model for $\lambda = 1$ and $\alpha = 45\degree$. The red area once again shows the 95\% confidence interval of the predictions.}
+	\label{fig:cui-compare-2}
+\end{figure}
+
+One can note that the predictions for the intensity $I = 10^{18} \, \mathrm{W} \, \mathrm{cm}^{-2}$ do not match the power rule $T_\mathrm{hot} \sim I^{0.64}$. Keep in mind, that the model was mostly trained for three intensities in majority of the grid with few exceptions. It might be interesting that the shape of the predictions in the figure \ref{fig:cui-compare-2} much resemble to other graph (figure 2) from \cite{cui2013}, which depicts \textit{absorption rate} instead of the temperature. 
+
+\section{Strategy for choosing the next simulations}
+
+This section is dedicated to the last unresolved issue of this thesis. We need a strategy for expanding the dataset with the goal of improving the model accuracy. The inherent capability of GP models to provide not only predictions but also an estimate of the uncertainty associated with those predictions makes them well-suited for this task.
+
+The first step in this strategy is to examine the GP model's uncertainty estimates to identify regions with high predictive uncertainty. These regions are typically visualized using standard error plots. Areas with larger uncertainties are prime candidates for further exploration, as additional data from these regions can significantly reduce the overall uncertainty of the model. By focusing on these high-uncertainty regions, we can ensure that resources are used efficiently, targeting the most informative parts of the parameter space.
+
+Once high-uncertainty regions have been identified, the next step is to select specific input parameters within these regions for new simulations. Naturally, resulting data is used to update the GP model. This iterative process is repeated, gradually refining the model and reducing uncertainty across the parameter space.
+
+One of the major strengths of this strategy is its efficient use of resources. By focusing on areas of high uncertainty, we ensure that each new experiment or simulation provides high information gain. Additionally, the GP model's uncertainty estimates are dynamic, allowing for real-time adjustments in the exploration strategy as new data becomes available. 
+
+However, there are also some weaknesses to this strategy. The effectiveness of the approach heavily depends on the initial GP model's ability to reasonably approximate the underlying data distribution. If the initial model is poorly constructed, the uncertainty estimates may be misleading. Additionally, if the original model was constructed using grid-selected parameters, it is likely that the uncertainties will be highest in points from which the training inputs are furthest.
 

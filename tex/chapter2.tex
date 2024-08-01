@@ -1,11 +1,11 @@
 \chapter{Temperature fitting}
 \label{ch:temp-fitting-theory}
-The results of the EPOCH simulations provide weighted momenta for a subset electrons $\bm{p}_\mathrm{e}$, where the weight represents the number of electrons with that momentum. They are not histograms yet, because more than one macro-particle can have the same value of $\bm{p}_\mathrm{e}$. The energies of electrons can then be calculated from $\bm{p}$ using the relativistic formula:
+The results of the EPOCH simulations provide weighted momenta for a subset electrons $\bm{p}_\mathrm{e}$, where the weight represents the number of electrons with that momentum. They are not histograms yet, because more than one macro-particle can have the same value of $\bm{p}_\mathrm{e}$. The energies of electrons can then be calculated from $\bm{p_\mathrm{e}}$ using the relativistic formula:
 \begin{equation}
 	\label{eq:rel-energy}
-	E_\mathrm{e} = m_\mathrm{e}\cdot c^2\left(\sqrt{1+\left(\frac{p}{m_\mathrm{e}\cdot c}\right)^2} -1\right)\mathrm{,}
+	E_\mathrm{e} = m_\mathrm{e}\cdot c^2\left(\sqrt{1+\left(\frac{p_\mathrm{e}}{m_\mathrm{e}\cdot c}\right)^2} -1\right)\mathrm{,}
 \end{equation}
-where $p=\sqrt{\bm{p}\cdot\bm{p}}$ is the size of $\bm{p}$, $m_\mathrm{e} =  9.109 \times 10^{-31} \, \mathrm{kg}$ is the electron rest-mass and $c=3\times 10^{8} \, \mathrm{m . s}^{-1}$ is the speed of light \cite{cite-the-constants}.
+where $p_\mathrm{e}=\sqrt{\bm{p}_\mathrm{e}\cdot\bm{p}_\mathrm{e}}$ is the size of $\bm{p}_\mathrm{e}$, $m_\mathrm{e} =  9.109 \times 10^{-31} \, \mathrm{kg}$ is the electron rest-mass and $c=3\times 10^{8} \, \mathrm{m . s}^{-1}$ is the speed of light \cite{mohr2016}.
 
 \begin{figure}[h]
 	\centering
@@ -55,7 +55,7 @@ and
 	\label{eq:slope-boltzmann-log}
 	\frac{\bar{f_\mathrm{B}}}{dE} = -\frac{1}{T}.
 \end{equation}
-The equations \ref{eq:slope-maxwell-log} and \ref{eq:slope-boltzmann-log} suggest that in the logarithmic scale the slopes of these distributions differ by $-\frac{1}{2E}$, which decreases with increasing $E$. In other words, the fit of $T$ can be replaced by fitting slope $s = -1/T$ of the histogram after logarithmic transformation. For large energies, the slopes of both discussed distributions are approximately equal. 
+The equations \ref{eq:slope-maxwell-log} and \ref{eq:slope-boltzmann-log} suggest that, in the logarithmic scale, the slopes of these distributions differ by $-\frac{1}{2E}$, which decreases with increasing $E$. In other words, the fit of $T$ can be replaced by fitting slope $s = -1/T$ of the histogram after logarithmic transformation. For large energies, the slopes of both discussed distributions are approximately equal. 
 
 Moreover, the assumption of Boltzmann distribution allows us to fit not only the temperature, but also $N_0$, which is the total number of electrons in that distribution of hot electrons. If we keep the form of the distribution as in equation \ref{eq:exp-distr}, the total energy absorbed by the group of hot electrons $E_{\mathrm{tothot}}$ with temperature $T_\mathrm{hot}$ can be calculated as:
 \begin{equation}
@@ -85,7 +85,7 @@ Modern programming libraries provide access to well-known and generally efficien
 
 Notably, Prony's method \cite{prony1795} and its variations, as discussed in sources such as \cite{potts2010}, have been proposed. It was originally intended for signal approximation - specifically, the determination of complex parameters in exponential functions, similar to Fourier transformation.
 
-Another, much simpler method is known as \textit{successive subtraction}~\cite{wiscombe1977}. This method is frequently employed for exponential decays (negative parameters $b_i$), which closely resemble our problem of exponential distributions. The core concept involves fitting the end of the decay with a single exponential function, subtracting this result from the data, and iteratively identifying all exponential components. This simplicity makes it a promising candidate for our problem, especially since our primary interest lies in determining the temperature of the hottest electrons—the tail. However, automating this method can be challenging, as it is not straightforward to select an interval that can be fitted as a tail in each iteration. What is more, the tail of our histograms are not reliable as was discussed with regard of the example histogram in figure \ref{fig:example-histogram}.
+Another, much simpler method is known as \textit{successive subtraction}~\cite{wiscombe1977}. This method is frequently employed for exponential decays (negative parameters $b_i$), which closely resemble our problem of exponential distributions. The core concept involves fitting the end of the decay with a single exponential function, subtracting this result from the data, and iteratively identifying all exponential components. This simplicity makes it a promising candidate for our problem, especially since our primary interest lies in determining the temperature of the hottest electrons—the tail. However, automating this method can be challenging, as it is not straightforward to select an interval that can be fitted as a tail in each iteration. Moreover, the tail of our histograms are not reliable as was discussed with regard of the example histogram in figure \ref{fig:example-histogram}.
 
 Another method worth considering is presented in \cite{wiscombe1977}. This method, called exponential sum fitting of transmissions (ESFT), was developed for fitting radiative transmission functions in the context of atmospheric research. ESFT too is an iterative method and might serve as an interesting alternative for future works.
 
@@ -134,6 +134,7 @@ By comparing coefficients before the exponential terms $\mathrm{e}^{b_1 x}$ and 
 \end{align}
 From that it is possible to see that $b_1$ and $b_2$ are roots of the quadratic equation:
 \begin{equation}
+	\label{eq:quadratic}
 	b^2 - bB - A = 0.
 \end{equation}
 $b_1$ and $b_2$ are then:
@@ -157,9 +158,9 @@ where $\boldsymbol{y}$ is vector:
 		\vdots \\
 		y_n  
 	\end{pmatrix}
-\end{equation}
+\end{equation} 	
 
-after we set $S_k=S(x_k)$ and $SS_k=SS(x_k)$ we can write:
+Denoting $S_k=S(x_k)$ and $SS_k=SS(x_k)$ we can write:
 \begin{equation}
 	\boldsymbol{X} =
 	\begin{pmatrix}
@@ -179,10 +180,10 @@ and
 		C \\
 		D \\
 		E  
-	\end{pmatrix}
+	\end{pmatrix}.
 \end{equation}
 
-and we can use the well-known least squares method to calculate the parameters $A,...,E$. We sort the data so that if $i<j$, then $x_i<x_j$ for $\forall i,j \in \{1,..,n\}$. The integrals are computed numerically as:
+We can use the well-known least squares method to calculate the parameters $A,...,E$. We sort the data so that if $i<j$, then $x_i<x_j$ for $\forall i,j \in \{1,..,n\}$. The integrals are computed numerically as:
 \begin{equation}
 	S_i = \left\{
 	\begin{array}{ll}
@@ -255,22 +256,18 @@ One can see that we get a very similar equation as \ref{eq:lin-reg}, that can be
 	\end{pmatrix}
 \end{equation}
 
-In \cite{jacquelin2014}, only the case without the constant $a_0$ is presented, but as we have shown the derivation of the generalized version with constant is not difficult. An extension of Jacquelin method for more than two exponential terms is also not very complicated. Note that adding one term adds two parameters, which leads to matrix of size $7\times7$. However, it always leads to solving for the roots of the polynomial created by the first $N$ elements of the vector $\boldsymbol{b}$, where $N$ is the number of exponential terms. In case of two exponential terms, equations \ref{eq:roots} solve for the roots of the polynomial:
-\begin{equation}
-	b^2-Bb-A=0
-\end{equation}
-In case of three exponential terms, we would need to calculate $SSS(x)$ from $SS(x)$. There would also be a term $x^3$. If we set $\boldsymbol{X}$ as $\left[SSS(x),SS(x),S(x),x^3,x^2,x^1,1\right]$, we would solve for the roots of:
+In \cite{jacquelin2014}, only the case without the constant $a_0$ is presented, but as we have shown the derivation of the generalized version with constant is not difficult. An extension of Jacquelin method for more than two exponential terms is also not very complicated. Note that adding one term adds two parameters, which leads to matrix of size $7\times7$. However, it always leads to solving for the roots of the polynomial created by the first $N$ elements of the vector $\boldsymbol{b}$, where $N$ is the number of exponential terms. In case of two exponential terms, equations \ref{eq:roots} solve for the roots of the polynomial of Equation \ref{eq:quadratic}. In case of three exponential terms, we would need to calculate $SSS(x)$ from $SS(x)$. There would also be a term $x^3$. If we set $\boldsymbol{X}$ as $\left[SSS(x),SS(x),S(x),x^3,x^2,x^1,1\right]$, we would solve for the roots of:
 \begin{equation}
 	b^3-Cb^2-Bb-A=0.
 \end{equation}
 
-It is necessary to note, that this algorithm is prone numerical defects coming from the fact that there is a cumulative error related to the calculation of the partial sums. For that reason the resulting that one of matrices can be singular or the polynomial can have imaginary roots.
+It is necessary to note, that this algorithm is prone to numerical defects coming from the fact that there is a cumulative error related to the calculation of the partial sums. For that reason the resulting matrices can be singular or the polynomial can have imaginary roots.
 
 In \cite{mokhomo2021}, Mokhomo et al. did numerical experiments where they have shown that similar method (derived from differential instead of integral equations) can be used for fitting, but does not yield precise estimation results even for noiseless data. Nevertheless, it is an explicit algorithm for approximation of parameters which then can be used as initial guess for more advanced iterative techniques.
 
-When it comes to uncertainty of the coefficients, there are two possibilities. First, it is possible to propagate the experimental error from $y_i$ all the way to the final coefficients. The derivation can be found in \cite{lecca2021}. However, we do not have the standard error of the histogram bins. The second option is to take the formula for linear regression and calculate the error estimation from that.
+When it comes to uncertainty of the coefficients, there are two possibilities. First, it is possible to propagate the experimental error from $y_i$ all the way to the final coefficients. The derivation can be found in \cite{lecca2021}. However, we do not have the standard error of the histogram bins. In principle, this can be obtained by repeating the simulation with the same input parameters but with a different seed for the random number generator which provides initial velocities for particles based on Maxwellian distribution. 
 
-In that case, we calculate estimates $\Delta A$ and $\Delta B$ as standard deviations for $A$ and $B$. Then, using the error propagation formula for the quadratic roots we get:
+The second option is to take the formula for linear regression and calculate the error estimation directly from that from that. In that case, we calculate estimates $\Delta A$ and $\Delta B$ as standard deviations for $A$ and $B$. Then, using the error propagation formula for the quadratic roots we get:
 \begin{equation}
 	\label{eq:b-coef-error1}
 	\Delta b_1 = \sqrt{\frac{\Delta A^2}{(B^2 + 4A)} + \frac{\Delta B^2}{4} \left(1 + \frac{B}{\sqrt{B^2 + 4A}}\right)^2}
@@ -283,5 +280,6 @@ and
 where $\Delta b_1$ and $\Delta b_2$ are the estimates of standard deviations for $b_1$ and $b_2$.
 The standard deviations of $a_0$, $a_1$ and $a_2$ are calculated directly from the second linear regression.
 
+We will not follow same approach for more exponential terms, but it could be done.
 
 

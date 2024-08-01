@@ -1,8 +1,8 @@
 \chapter{Plasma}
 \label{ch:plasma-theory}
-A plasma is a quasi-neutral gas of charged and neutral particles which exhibits collective behaviour \cite{plasma-intro3}. In simple terms, quasi-neutrality means that the density of electrons $n_e$ and density of positively charged ions $n_i$ locally satisfy:
+A plasma is a quasi-neutral gas of charged and neutral particles which exhibits collective behaviour \cite{plasma-intro3}. In simple terms, quasi-neutrality means that the density of electrons $n_\mathrm{e}$ and density of positively charged ions $n_\mathrm{i}$ locally satisfy:
 \begin{equation}
-	n_e \simeq Zn_i
+	n_\mathrm{e} \simeq Zn_\mathrm{i}
 \end{equation}
 \noindent where $Ze$ is the charge of one positively charged ion and $e$ is elementary charge \cite{plasma-intro}. 
 
@@ -24,7 +24,7 @@ After calculating the 0th and 1st moment of Vlasov equation (averaging through $
 \noindent where $p_j$ is isotropic pressure and in case of negligible heat flow also the adiabatic state equation:
 \begin{equation}
 	\label{eq:energy}
-	p_jn_j^{-\gamma} = \mathrm{const.}.
+	p_jn_j^{-\gamma} = \mathrm{const.},
 \end{equation}
 \noindent where $\gamma = \left(2+N\right)/N$ and $N$ is the number of degrees of freedom. Equations \ref{eq:continuity}, \ref{eq:momentum} and \ref{eq:energy} together with the Maxwell equations are often referred to as \textit{two-fluid model of plasma} and describe wide range of plasma (collective) behaviour such as plasma waves or Debye shielding \cite{laser-plasma4}.
 
@@ -36,11 +36,11 @@ In a gas in the thermal equilibrium, particles velocities are given by Maxwellia
 \begin{equation}
 	f(\bm{v}) = n\left(\frac{m}{2\pi \boltz}\right)^{3/2}\exp\left(-\frac{\frac{1}{2}m v^2}{\boltz T}\right)
 \end{equation} 
-\noindent where $v = \norm{\bm{v}}$ is magnitude of velocity, $m$ is mass. $\boltz$ is the Boltzmann constant and $T$ is temperature. The average kinetic energy $E_{av}$ is then \cite{plasma-intro3}:
+\noindent where $v = \norm{\bm{v}}$ is magnitude of velocity, $m$ is mass. $\boltz$ is the Boltzmann constant and $T$ is temperature. The average kinetic energy $E_{\mathrm{av}}$ is then \cite{plasma-intro3}:
 \begin{equation}
-	E_{av}=\frac{3}{2}\boltz T
+	E_{\mathrm{av}}=\frac{3}{2}\boltz T
 \end{equation}
-Because of this relation between $E_{av}$ and $T$, it is customary in plasma physics to express the temperature in the same units as energy. If $\boltz T = 1 \, \mathrm{eV} = 1.6 \times 10^{-19}\, \mathrm{J}$, then \cite{plasma-intro3}:
+Because of this relation between $E_{\mathrm{av}}$ and $T$, it is customary in plasma physics to express the temperature in the same units as energy. If $\boltz T = 1 \, \mathrm{eV} = 1.6 \times 10^{-19}\, \mathrm{J}$, then \cite{plasma-intro3}:
 \begin{equation}
 	T = \frac{1.6 \times 10^{-19}}{1.38\times 10^{-23}}=11600
 \end{equation}
@@ -51,13 +51,13 @@ Because of this relation between $E_{av}$ and $T$, it is customary in plasma phy
 The electrons and the ions can have different temperature \cite{plasma-intro3}. Moreover, there can be multiple groups of electrons with different distributions, but we will describe this more deeply in one of the later sections.
 
 \section{Critical density}
-Now consider a high frequency electric field $\bm{E} = \bm{E(x)}\exp\left(-i\omega t\right)$. The frequency $\omega$ is assumed to be greater than electron plasma frequency $\omega_{\mathrm{pe}}$ defined as $\omega_{\mathrm{pe}}^2=4\pi e^2 n_\mathrm{e}/m_\mathrm{e}$ with $n_\mathrm{e}=Zn_{i}$ being electron density and $m_\mathrm{e}$ electron mass. Maxwell equations plus equation of motion of electron fluid give us:
+Now consider a high frequency electric field $\bm{E} = \bm{E(x)}\exp\left(-i\omega t\right)$. The frequency $\omega$ is assumed to be greater than electron plasma frequency $\omega_{\mathrm{pe}}$ defined as $\omega_{\mathrm{pe}}^2=4\pi e^2 n_\mathrm{e}/m_\mathrm{e}$ with $n_\mathrm{e}=Zn_{\mathrm{i}}$ being electron density and $m_\mathrm{e}$ electron mass. Maxwell equations plus the equation of motion of electron fluid give us:
 \begin{equation}
 	\nabla \times \bm{B} = -\frac{i\omega}{c}\epsilon\bm{E},
 \end{equation}
 where $\epsilon = 1 - \omega_{\mathrm{pe}}^2/\omega^2$ defines the dielectric function of the plasma \cite{laser-plasma4}. After further derivation using the other Maxwell equations and vector identities we can get:
 \begin{equation}
-	\nabla^2 \bm{B} + \frac{\omega^2}{c^2}\epsilon\bm{B} + \frac{1}{\epsilon}\nabla\epsilon \times \left(\nabla \times \bm{B}\right) = 0
+	\nabla^2 \bm{E} + \frac{\omega^2}{c^2}\epsilon\bm{E} + \nabla\left(\frac{1}{\epsilon}\nabla \cdot \left(\epsilon\bm{E}\right)\right) = 0
 \end{equation}
 Assuming space dependency described by $\exp\left(i\bm{k}\cdot\bm{x}\right)$, the dispersion relation is then:
 \begin{equation}
@@ -73,6 +73,7 @@ The examples of plasmas of different densities and temperatures found in the rea
 
 \begin{table}[hb]
 	\centering
+	\caption{Densities and temperatures of various plasma types \cite{plasma-intro}.}
 	\begin{tabular}{lcc}
 		\textbf{Type}		& \textbf{Electron density}			 			 	& \textbf{Electron temperature} \\ 
 		& $n_\mathrm{e}$ $\left[\mathrm{(cm)}^{-3}\right]$  &  $T_\mathrm{e}$ $\left[\mathrm{eV}\right]$ \\ \hline
@@ -84,8 +85,6 @@ The examples of plasmas of different densities and temperatures found in the rea
 		Ionosphere		    & $10^6$            	& $1.0$         		\\
 		Interstellar medium & $1$               	& $10^{-2}$         	\\ \hline
 	\end{tabular}
-	\caption{Densities and temperatures of various plasma types \cite{plasma-intro}.}
-	
 	\label{tab:den-temp}
 \end{table}
 
@@ -96,9 +95,12 @@ The examples of plasmas of different densities and temperatures found in the rea
 	\caption{An illustration of the interaction of ultra intense laser with plasma.}
 	\label{fig:laser-plasma-interaction}
 \end{figure}
-In this thesis, the interaction of ultra intense laser with solid plasma is studied. An illustration of such scenario is shown in figure \ref{fig:laser-plasma-interaction}. The most important physical processes of this experiment are ionization, laser absorption and X-ray emission. All of these will be discussed in the next sections in greater detail.
+In this thesis, we study the interaction of an ultra-intense, ultra-short laser pulse with solid plasma. An illustration of this scenario is shown in Figure \ref{fig:laser-plasma-interaction}. To put it simply, the most relevant physical process can be divided into three distinct parts.
 
-\newpage
+In a real-world experiment, the first effect observed when the laser pulse strikes the target surface is ionization. This process frees electrons, which then facilitate the heating of the target and electrons are accelerated to high velocities. These high-energy electrons penetrate the remaining solid, unionized target, and, under the right conditions, X-ray photons are emitted.
+
+The following sections provide a detailed explanation of these processes. The last section of this chapter provides an introduction to particle-in-cell simulations which are used in this thesis to obtain data for electron temperature modelling.
+
 \section{Ionization}
 Any substance can become plasma with the sufficient increase of its temperature. The threshold can vary, but usually can be found in the order of 1 eV, because any neutral atom binds the outer electron with a binding energy in order of 1 eV \cite{laser-plasma1}. 
 
@@ -128,7 +130,7 @@ The tunnelling effect is as well a consequence of the external electric field. T
 \begin{equation}
 	V_F = V_H(r) + eE_{\mathrm{ext}}(r)
 \end{equation}
-Let $E_{\mathrm{ext}}(r) = -10^{10}r\,\mathrm{V/m}$. The final potential $V_\mathrm{F}$ together with highlighted region of tunneling can be seen in figure \ref{fig:tunnelling}. 
+Let $E_{\mathrm{ext}}(r) = -10^{10}r\,\mathrm{V/m}$. The final potential $V_\mathrm{F}$ together with highlighted region of tunnelling can be seen in Figure \ref{fig:tunnelling}. 
 
 \begin{figure}[h]
 	\centering
@@ -139,7 +141,7 @@ Let $E_{\mathrm{ext}}(r) = -10^{10}r\,\mathrm{V/m}$. The final potential $V_\mat
 
 The stronger is the external field, the shorter is the tunnelling distance for the electron to escape and the the higher is the probability that this can happen. The field can even be so strong that the potential barrier will have its peak below the ground state energy. In that case, the electron is instantly considered to be free \cite{laser-plasma1}. 
 
-It is possible to estimate, which mechanism is more dominant cause of ionization by calculating so called \textit{Keldysh parameter} $\gamma_\mathrm{K} = \frac{\omega_0}{\omega_t}$, where $\omega_0$ is the frequency of the laser and $\omega_t = \frac{eE_{\mathrm{ext}}}{\sqrt{2mE_\mathrm{i}}}$, where $E_\mathrm{i}$ represents the energy the electron needs to receive to be ionized \cite{laser-plasma1}.
+It is possible to estimate, which mechanism is more dominant cause of ionization by calculating so called \textit{Keldysh parameter} $\gamma_\mathrm{K} = \frac{\omega_0}{\omega_t}$, where $\omega_0$ is the frequency of the laser and $\omega_t = \frac{eE_{\mathrm{ext}}}{\sqrt{2m_{\mathrm{e}}E_\mathrm{i}}}$, where $E_\mathrm{i}$ represents the energy the electron needs to receive to be ionized \cite{laser-plasma1}.
 
 The ionization processes can be explored in greater depth, but the fundamental concepts have already been adequately outlined. Henceforth, we will assume the plasma being targeted by the laser is fully ionized and will focus on how it can absorb additional energy from the laser.
 
@@ -162,6 +164,7 @@ where $\epsilon$ is plasma dielectric function, $L_n$ is the density length scal
 
 The angle of optimum resonance absorption for exponential density profile $\theta_{opt}$ can then be estimated as a function of $L$:
 \begin{equation}
+	\label{eq:res-opt}
 	\theta_{opt}\left(L\right) = \arcsin\left(0.68(2\pi L)\right)
 \end{equation}
 where $L$ is normalized to the laser wavelength \cite{absorption1}.
@@ -323,16 +326,7 @@ where $\rho$ is the charge density and $\bm{J}$ is the electric current. This ca
 	\frac{\rho^{n+1}_{i+1/2,j+1/2,k+1/2}-\rho^{n}_{i+1/2,j+1/2,k+1/2}}{\Delta t} + \frac{J^{n+1/2}_{x,i+1,j+1/2,k+1/2}-J^{n+1/2}_{x,i,j+1/2,k+1/2}}{\Delta x} + \dots = 0.
 \end{equation}
 
-The charge density is calculated using \textit{form-factors} of macro-particles:
-
-\begin{equation}
-	\rho_{i,j,k} = \sum_{l}Q_l S_{i,j,k}(x_l,y_l,z_l)
-\end{equation}
-where $Q_l$ is the charge and $S_{i,j,k}(x_l,y_l,z_l)$ is the form-factor. During macro-particle motion, the total charge should remain constant, necessitating that the form-factors satisfy the condition :
-\begin{equation}
-	\sum_{i,j,k}S_{i,j,k}(x_l,y_l,z_l) = 1
-\end{equation}
-Since macro-particles in the simulation represent numerous real particles, a \textit{weight} is assigned to each macro-particle. Although the exact particle distribution within a macro-particle is unknown, a representative function, known as a \textit{shape function}, is chosen.\cite{arber2015}. 
+Since macro-particles in the simulation represent numerous real particles, a \textit{weight} is assigned to each macro-particle. Although the exact particle distribution within a macro-particle is unknown, a representative function, known as a \textit{shape function}, is chosen \cite{arber2015}. 
 
 Any function with a unit integral and compact support can be used as a shape function. An even distribution of particle in volume $\Delta x \times \Delta y \times \Delta z$ is referred to as the \textit{top hat} shape function. Using higher order shape functions are one of the improvements programmers were able to make thanks to more powerful computers. A higher order shape functions are for example triangular shape functions with volume of $2\Delta x \times 2\Delta y \times 2\Delta z$  . The weight is then calculated as a convolution of shape function with the 'top hat' function \cite{arber2015}.
 

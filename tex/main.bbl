@@ -1026,6 +1026,48 @@
       \verb 10.1103/PhysRevResearch.5.L012044
       \endverb
     \endentry
+    \entry{mohr2016}{article}{}
+      \name{author}{3}{}{%
+        {{hash=70ffad8a9850472813ebca8d8d1f2f69}{%
+           family={Mohr},
+           familyi={M\bibinitperiod},
+           given={Peter\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=2f44e26ac0465165a8ac1a25c397cced}{%
+           family={Newell},
+           familyi={N\bibinitperiod},
+           given={David\bibnamedelima B.},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=77904d9affa7a41f527d077427b5e034}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Barry\bibnamedelima N.},
+           giveni={B\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{e2daa6da605b82b46a96e8d5030ed98b}
+      \strng{fullhash}{ad1b77e5d8495aaf81f85fc517805493}
+      \strng{bibnamehash}{ad1b77e5d8495aaf81f85fc517805493}
+      \strng{authorbibnamehash}{ad1b77e5d8495aaf81f85fc517805493}
+      \strng{authornamehash}{e2daa6da605b82b46a96e8d5030ed98b}
+      \strng{authorfullhash}{ad1b77e5d8495aaf81f85fc517805493}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper gives the 2014 self-consistent set of values of the constants and conversion factors of physics and chemistry recommended by the Committee on Data for Science and Technology (CODATA). These values are based on a least-squares adjustment that takes into account all data available up to 31 December 2014. Details of the data selection and methodology of the adjustment are described. The recommended values may also be found at physics.nist.gov/constants.}
+      \field{issue}{3}
+      \field{journaltitle}{Reviews of Modern Physics}
+      \field{month}{9}
+      \field{title}{CODATA recommended values of the fundamental physical constants: 2014}
+      \field{volume}{88}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.1103/RevModPhys.88.035009
+      \endverb
+    \endentry
     \entry{mokhomo2021}{article}{}
       \name{author}{2}{}{%
         {{hash=17986e95ded3a8dbc6690689bb8897a1}{%
@@ -1916,7 +1958,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{cite-the-constants}
   \missing{lin-reg}
 \endrefsection
 \endinput

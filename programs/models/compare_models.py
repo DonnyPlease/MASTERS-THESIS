@@ -12,11 +12,11 @@ import json
 from dataset.Dataset import DatasetUtils
 from draw_dataset import draw, draw_slice
 from transformer import Transformer, transform
-from prediction_grid import PredictionGrid
+from models.prediction_grid import PredictionGrid
 
-from gp3d_gpy import Gp3dGpy
-from pytorch_first_model import NNModel, Model
-from svr import Svr
+from models.gp3d_gpy import Gp3dGpy
+from models.pytorch_first_model import NNModel, Model
+from models.svr import Svr
 
 TRAIN, TEST = 0, 1
 
