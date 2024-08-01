@@ -1,4 +1,6 @@
 \chapter{Hot electron temperature modelling}
+\label{ch:models-impl}
+
 In this chapter, we will present models of the hot electron absorption trained on the dataset discussed in the previous chapter. The models will be compared and we will also discuss how well the best model represents the behaviour of $T_{\mathrm{hot}}$ compared to other studies. We will also present a simple graphing UI tool which allows to load any supported model and plot the predictions in any axis.
 
 We do not implement the models ourselves, but rather we use optimized open-source libraries that offer rich possibilities of configuration. We will compare the models with each other using mostly \textit{RMSE} metric and $R^2$ statistic. We do not claim that all three models are exhaustingly optimized. We also do not claim that the model we label as best is the only correct solution. The goal of this chapter is to show, how the models work in practice, what are their strengths an weaknesses in this application and what can maybe done in the future to improve them.
@@ -21,6 +23,7 @@ Gaussian processes regression was done using \textit{GPRegression} from \textit{
 \subsection*{K-Fold crossvalidation of the models}
 \begin{table}[h]
 	\centering
+	\caption{Cross-validation of SVR, NN and GP models.} 
 	\begin{tabular}{ c c c c c c c }
 		\toprule
 		\  & $SVR_\mathrm{rmse}$& $SVR_\mathrm{r2}$ & $NN_\mathrm{rmse}$   & $NN_\mathrm{r2}$ & $GP_\mathrm{rmse}$ & $GP_\mathrm{r2}$ \\ 
@@ -37,7 +40,6 @@ Gaussian processes regression was done using \textit{GPRegression} from \textit{
 		Mean & 50.47 & & 37.33 & & 33.80 & \\ 
 		\bottomrule
 	\end{tabular}
-	\caption{Cross-validation of SVR, NN and GP models.} 
 	\label{tab:cross-val} 
 \end{table}
 
@@ -225,5 +227,54 @@ Once high-uncertainty regions have been identified, the next step is to select s
 
 One of the major strengths of this strategy is its efficient use of resources. By focusing on areas of high uncertainty, we ensure that each new experiment or simulation provides high information gain. Additionally, the GP model's uncertainty estimates are dynamic, allowing for real-time adjustments in the exploration strategy as new data becomes available. 
 
-However, there are also some weaknesses to this strategy. The effectiveness of the approach heavily depends on the initial GP model's ability to reasonably approximate the underlying data distribution. If the initial model is poorly constructed, the uncertainty estimates may be misleading. Additionally, if the original model was constructed using grid-selected parameters, it is likely that the uncertainties will be highest in points from which the training inputs are furthest.
+However, there are also some weaknesses to this strategy. The effectiveness of the approach heavily depends on the initial GP model's ability to reasonably approximate the underlying data distribution. If the initial model is poorly constructed, the uncertainty estimates may be misleading. Additionally, if the original model was constructed using parameters selected from grid, it is likely that the uncertainties will be highest in points from which the training inputs are furthest.
 
+When comparing Figure \ref{fig:graph-tool3} to Figure \ref{fig:gp-pred-ss}, one can see that the uncertainties are much larger for the stripes of unexplored intensities. We performed six simulations with parameters selected from the region of high uncertainties to demonstrate how this strategy works in practice. Results of these simulations can be seen in the table \ref{tab:new-simulations}.
+
+\begin{table}[h]
+	\centering
+	\caption{Parameters of new simulations.}
+	\begin{tabular}{c c c c c}
+		\toprule
+	     $I \, \left[W \mathrm{cm}^{-2}\right]$ & $L \, \mathrm{[\mu m]}$ & $\alpha \, \mathrm{[\degree]}$  & $T_\mathrm{hot} \, [\mathrm{keV}] $ &  $\Delta T_\mathrm{hot} \, [\mathrm{keV}]$ \\ 
+		\midrule
+		$5\times 10^{17}$ & 0.01 &0 &3.03 &0.11  \\
+		$5\times 10^{17}$ & 1.00 &0 &80.55 & 15.89 \\
+		$5\times 10^{17}$ & 5.00 &0 &212.01 & 15.64 \\
+		$5\times 10^{18}$ & 0.01 &0 &85.86 & 1.87 \\
+		$5\times 10^{18}$ & 1.00 &0 &416.01 & 3.78 \\
+		$5\times 10^{18}$ & 5.00 &0 &393.06 & 5.28 \\
+		\bottomrule
+	\end{tabular}
+	\label{tab:new-simulations}
+\end{table}
+
+Whether adding new data points improved the model cannot be known using the same K-fold method as we used when choosing the best model. Imagine we added points in regions with the biggest data density. The model describes these regions well even without the new information and therefore the mean test error across the fold would likely be smaller. 
+
+In principle, our strategy does the opposite. It prefers the regions with lower data density because the uncertainty is dependant on how far the neighbouring points are (in the transformed parameter space). If we perform the same k-fold with the expanded dataset as in the beginning of this chapter, the models generally produce \textit{bigger} values of mean RMSE than before. This does not mean that a smaller dataset is better than a bigger one. It probably means that the initial dataset was either small or was not chosen optimally, which only motivates us more to explore these regions. It is possible that once the dataset is dense enough everywhere, the mean RMSE from the K-fold starts to decrease with new data.
+
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{figures/improved-model}
+		\caption{Temperature predictions.}
+		\label{fig:gp-improved-pred}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{figures/improved-model-ss}
+		\caption{Uncertainty (standard error estimate).}
+		\label{fig:gp-improved-ss}
+	\end{subfigure}
+	\caption{Predictinos of the GP model for $\alpha = 0$ trained with the expanded dataset.}
+	\label{fig:gp-improved}
+\end{figure}
+
+In Figure \ref{fig:gp-improved} one can see the predictions of the updated GP model. The predictions have slightly changed compared to Figures \ref{fig:graph-tool2} and \ref{fig:graph-tool3}. Both predictions and the uncertainties are lower where the new data is. The fact that the temperatures were for some parameters overestimated might have contributed to bigger values of RMSE in the K-fold. We would need much more new simulations to reduce the uncertainty globally but let us have two final remarks to the dataset expansion.
+
+This strategy is very similar to the intuitive approach where we add point to regions with few points. However, neither this nor our strategy is including the information about the shape of the predictions. If the number of new simulations is small, one should select the regions that are particularly interesting to him after examining the predictions visually. The idea is, that where the temperature is changing more steeply, the smoothening might not be as useful as elsewhere. The error introduced by too strict smoothening can be reduced by new data in steep regions.
+
+Let us not forget, that all of the models we used are regression models and they can sometimes treat the maximum values of dataset to be outliers. This can also be compensated for example with improving the dataset density in regions with highest predictions.

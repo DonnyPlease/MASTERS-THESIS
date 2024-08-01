@@ -46,7 +46,7 @@ class Options:
  
 def k_fold_for_all_models(x, y):
     x, y, transformer = transform(x, y)
-    kf = KFold(n_splits=8, shuffle=True, random_state=40)
+    kf = KFold(n_splits=8, shuffle=True, random_state=41)
     kf.get_n_splits(x)
     stats = {}
     for model_name in MODELS_NAMES:

@@ -37,9 +37,9 @@ The appropriate selection of the feature mapping $\bm{\phi}$ enables one to effe
 Support vector regression (SVR) is powerful regression technique capable of modelling non-linear relationship without any previous assumption about the model. From its formulation it is directly set up to balance complexity and prediction error~\cite{zhang2020}. In several following paragraphs, we will present the most important principles of SVR.
 
 \subsection*{Linear $\epsilon$-SVR model}
-Assuming simple linear model we can simplify equation \ref{eq:gen-linear-model} to $y = \bm{\bar{w}}^T\bm{x} + w_0$ where $\bm{\bar{w}} = (w_1,..,w_d)$. In $\epsilon$-SVR, there are constraints put on the predictions in such way that the prediction $ \bm{\bar{w}}^T\bm{x_i} + w_0$ cannot be further from $y_i$ than $\epsilon$. We also want the \textit{tube} defined by $\epsilon$ to be as \textit{flat} possible, which can be done by minimizing $\frac{1}{2} \bm{w}^T\bm{w}$~\cite{zhang2020}.
+Assuming simple linear model we can simplify equation \ref{eq:gen-linear-model} to $y = \bm{\bar{w}}^T\bm{x} + w_0$ where $\bm{\bar{w}} = (w_1,..,w_d)$. In $\epsilon$-SVR, there are constraints put on the predictions in such way that the prediction $ \bm{\bar{w}}^T\bm{x_i} + w_0$ cannot be further from $y_i$ than $\epsilon$. We can imagine that there is a \textit{tube} with radius $2\epsilon$ around the training points. We also want the \textit{tube} defined by $\epsilon$ to be as \textit{flat} possible, which can be expressed as minimizing $\frac{1}{2} \bm{w}^T\bm{w}$~\cite{zhang2020}.
 
-In reality, having rigid boundary at distance $\epsilon$ from $y_i$ is not practical because of outliers. It is therefore natural to introduce two $slack$ variables $\xi_i$ and $\xi_i^*$, which are used to widen the tube at the points of observation. The optimization problem can be formulated as \cite{smola2004}:
+In reality, having rigid boundary at distance $\epsilon$ from $y_i$ is not practical because of outliers. It is therefore natural to introduce two $slack$ variables $\xi_i$ and $\xi_i^*$, which are used to widen the tube at the points of observation. The optimization problem can be formulated as:
 \begin{align}
 	\label{eq:svr1}
 	\mathrm{minimize}\qquad & \frac{1}{2}\bm{w}^T\bm{w} + C\sum_{i=1}^{n}\left(\xi_i+\xi_i^*\right)  \\
@@ -52,16 +52,23 @@ In reality, having rigid boundary at distance $\epsilon$ from $y_i$ is not pract
 	\end{dcases}
 \end{align}
 
+where $C>0$ is a hyper-parameter determining the trade-off between the flatness of $f$ and the amount up to which deviations larger than
+$\epsilon$ are tolerated \cite{smola2004}.
+
 \subsection*{Kernel SVR}
-By so-called \textit{kernel trick} - transforming features $\bm{x}_i$ to a higher-dimensional kernel space $\mathcal{F}$, we can leave the assumption that the relationship between $\bm{x}$ and $y$ is linear. Let us note the mapping $\phi(\cdot): \mathcal{X} \rightarrow \mathcal{F}$. $\bm{x}_i$ in \ref{eq:svr1} and \ref{eq:svr2} is replaced by $\phi(\bm{x})$. Moreover, the new optimization problem can be written in dual form \cite{smola2004}:
+We can leave the assumption that the relationship between $\bm{x}$ and $y$ is linear. We do this by so-called \textit{kernel trick} - transforming features $\bm{x}_i$ to a higher-dimensional kernel space $\mathcal{F}$. Let us note the mapping $\phi(\cdot): \mathcal{X} \rightarrow \mathcal{F}$. $\bm{x}_i$ in \ref{eq:svr2} is replaced by $\phi(\bm{x})$. Moreover, the new optimization problem can be written in dual form \cite{smola2004}:
 \begin{equation}
-	\mathrm{max}_{\alpha_i,\alpha_i^*} \; -\frac{1}{2}\sum_{i,j}^{n}\left(\alpha_i - \alpha_i^*\right)\left(\alpha_j - \alpha_j^*\right)k(\bm{x}_i,\bm{x}_j) -\epsilon\sum_{i}^{n}\left(\alpha_i + \alpha_i^*\right) + \sum_{i}^{n}y_i\left(\alpha_i - \alpha_i^*\right)
+	\mathrm{max}_{\alpha_i,\alpha_i^*} \, \left\{ -\frac{1}{2}\sum_{i,j}^{n}\left(\alpha_i - \alpha_i^*\right)\left(\alpha_j - \alpha_j^*\right)k(\bm{x}_i,\bm{x}_j) -\epsilon\sum_{i}^{n}\left(\alpha_i + \alpha_i^*\right) + \sum_{i}^{n}y_i\left(\alpha_i - \alpha_i^*\right) \right\}
 \end{equation}
 \begin{equation}
-	\mathrm{subject}\,\mathrm{to}\quad  \sum_{i}^{n}\left(\alpha_i - \alpha_i^*\right) \,\mathrm{and}\, \alpha_i, \alpha_i \in \left[0,C\right]
+	\mathrm{subject}\,\mathrm{to}\quad  \sum_{i}^{n}\left(\alpha_i - \alpha_i^*\right) = 0 \,\mathrm{and}\, \alpha_i, \alpha_i^* \in \left[0,C\right]
 \end{equation}
-where $k(\bm{x}_i,\bm{x}_j) = \phi(\bm{x}_i)\phi(\bm{x}_j)$ is the kernel function. There are multiple conditions which the kernel function must satisfy and they can be found in \cite{smola2004}. Popular kernels include linear, polynomial, radial basis function and others \cite{zhang2020}.
-Note that $\bm{w}$ is no longer explicitly present. Another important fact is that in this case, the flatness is important in the new space $\mathcal{F}$ and not the original input space $\mathcal{X}$ \cite{smola2004}.
+where $k(\bm{x}_i,\bm{x}_j) = \phi(\bm{x}_i)\phi(\bm{x}_j)$ is the kernel function and $\alpha_i$ and $\alpha_i^*$ are parameters of the model in the dual problem. $\alpha_i$ and $\alpha_i^*$ are defined by \cite{smola2004}:
+\begin{equation}
+	\bm{w} = \sum_{i=1}^n(\alpha_i - \alpha_i^*) \phi(\bm{x_i}).
+\end{equation}
+There are multiple conditions which the kernel function must satisfy and they can be found in \cite{smola2004}. Popular kernels include linear, polynomial, radial basis function and others \cite{zhang2020}.
+Note that $\bm{w}$ is no longer explicitly present. Another important fact is that the flatness is now relevant in the new space $\mathcal{F}$ and not the original input space $\mathcal{X}$ \cite{smola2004}.
 
 To determine the hyper-parameters $\epsilon$ and $C$ (or other parameters associated with the kernel itself), it is customary to perform a \textit{cross-validation} where we randomly divide the dataset to two parts - training set and test set - and evaluate the predictive performance only on the latter which is not used during the optimization \cite{zhang2020}.
 
@@ -72,7 +79,7 @@ The simplest neural network is probably the  Multilayer Perceptron (MLP). A MLP 
 
 1. \textbf{Input Layer:} Let the input vector be $\bm{x}$.
 
-2. \textbf{Hidden Layers:} Consider a single hidden layer with $m$ neurons. The output of the $j$-th neuron in the hidden layer, denoted as $h_j$, is given by:
+2. \textbf{Hidden Layers:} Consider a \textit{single} hidden layer with $m$ neurons. The output of the $j$-th neuron in the hidden layer, denoted as $h_j$, is given by:
 \begin{equation}
 	h_j = \sigma\left( \sum_{i=1}^{n} w_{ij}^{(1)} x_i + b_j^{(1)} \right)
 \end{equation}
@@ -84,10 +91,10 @@ where $w_{ij}^{(1)}$ is the weight connecting the $i$-th input to the $j$-th hid
 \end{equation}
 where $w_{jl}^{(2)}$ is the weight connecting the $j$-th hidden neuron to the $l$-th output neuron, $b_l^{(2)}$ is the bias term for the $l$-th output neuron, and $\phi$ is the activation function for the output layer (for regression $\phi$ is the identity) \cite{bishop2006}.
 
-Note that for each layer weights are well represented as matrix. Number of hidden layers and the number of neurons has to be chosen. However, even with only two layers with linear outputs, any continuous function on a compact domain can be approximated to arbitrary precision if the total number of neurons is large enough~\cite{bishop2006}.
+Note that for each layer weights are well represented as matrix. Number of hidden layers and the number of neurons has to be chosen. However, even with only two layers with correct non-linear activation functions, any continuous function on a compact domain can be approximated to arbitrary precision if the total number of neurons is large enough~\cite{bishop2006}.
 
 \subsection*{Training the MLP}
-The training of neural network includes usually calculating gradients of the loss function with respect to the weights, propagating the gradients back through the network and updating the weights - also knows as \textit{gradient descent}. It is usually the case that if the loss and the activations are differentiable functions (w.r. to the weights), because their derivative is needed for the error back-propagation \cite{bishop2006}.
+The training of neural network includes usually calculating gradients of the loss function with respect to the weights, propagating the gradients back through the network and updating the weights - also known as \textit{gradient descent}. It is usually the case that if the loss and the activations are differentiable functions (w.r. to the weights), because their derivative is needed for the error back-propagation \cite{bishop2006}.
 
 Gradient descent alone can find local minimum of the error function for the training data but it says nothing about the ability to recognize patterns. There are multiple \textit{regularization} strategies that help neural network generalize but in contrast to SVR they have to be fine-tuned. Common ones are early stopping (not letting the weights to come to the local minimum completely), weight decay (e.g. using $SSE_{\mathrm{reg}}$), batch normalization (the gradients are averaged for multiple training points), or dropout (in each learning process iteration we exclude few neurons from the network) \cite{bishop2006,srivastava2014}.
 
@@ -123,22 +130,24 @@ The next step is to update the $\mathcal{GP}$ with the measured data. In other w
 	k_D(\bm{x},\bm{x}^\prime) & = k(\bm{x},\bm{x}^\prime) - \bm{\Sigma_*(X,x)}^T \bm{\Sigma}^{-1} \bm{\Sigma_*(X,x^\prime)},
 \end{split}
 \end{align}
-where $\bm{\Sigma_*}(X,x)$ is a vector of covariances between every training case $\bm{X}$ and $\bm{x}$. Applying equation \ref{eq:gaussian-condition} to our previous example, we can generate new samples from the posterior distribution of functions. The term \textit{posterior} comes from the Bayesian inference. If we let for example the training dataset consist of five points $D = \left\{(1,2),(3,2),(5,3),(7,4),(9,2)\right\}$, the 5 samples from the updated distribution can be seen in figure \ref{fig:gaussian-samples-posterior}.
+where $\bm{\Sigma_*}(X,x)$ is a vector of covariances between every training case $\bm{X}$ and $\bm{x}$. Applying equation \ref{eq:gaussian-condition} to our previous example, we can generate new samples from the posterior distribution of functions. The term \textit{posterior} comes from the Bayesian inference. If we let for example the training dataset consist of five points $D = \left\{(1,2),(3,2),(5,3),(7,4),(9,2)\right\}$, the 5 samples from the updated distribution can be seen in Figure \ref{fig:gaussian-samples-posterior}.
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.98\textwidth]{figures/gaussian-samples-post}
-	\caption{5 sample functions from $\mathcal{GP}(m_D,k_D))$. It was sampled at 100 points between $x = 0$ and $x=10$. The grey area depicts one one standard deviation from the mean.}
+	\caption{5 sample functions from $\mathcal{GP}(m_D,k_D))$. It was sampled at 100 points between $x = 0$ and $x=10$. The grey area depicts one standard deviation from the mean.}
 	\label{fig:gaussian-samples-posterior}
 \end{figure}
 
-One can see that the figure \ref{fig:gaussian-samples-posterior} has sample sample functions that go through the points in $D$. This is because we set $D$ as the condition. A less strict condition would be to set a non-zero noise to the dataset. This allows the samples not to go strictly through all points in the dataset. Mathematically speaking, adding noise is represented by adding a diagonal matrix to the covariance matrix or even more general~\cite{rasmussen2004}:
+One can see that Figure \ref{fig:gaussian-samples-posterior} has sample functions that go through the points in $D$. This is because we set $D$ as the condition. A less strict condition would be to set a non-zero noise to the dataset. This allows the samples not to go strictly through all points in the dataset. Mathematically speaking, adding noise is represented by adding a diagonal matrix to the covariance matrix or even more general~\cite{rasmussen2004}:
 \begin{equation}
 	\begin{split}
-		y = f + \epsilon,& \quad  \quad \epsilon \sim \mathcal{N}(0, \sigma_n^2) \\
-		f \sim \mathcal{GP}(m(\bm{x}),k(\bm{x},\bm{x}^\prime)), & \quad  \quad y \sim \mathcal{GP}(m(\bm{x}),k(\bm{x},\bm{x}^\prime)+\delta_{xx^\prime}\sigma_n^2),
+		y = f + \epsilon,& \quad  \quad \epsilon \sim \mathcal{N}(0, \sigma^2) \\
+		f \sim \mathcal{GP}(m(\bm{x}),k(\bm{x},\bm{x}^\prime)), & \quad  \quad y \sim \mathcal{GP}(m(\bm{x}),k(\bm{x},\bm{x}^\prime)+\delta_{xx^\prime}\sigma^2),
 	\end{split}
 \end{equation}
-where $\delta_{xx^\prime} = 1$ for $x=x^\prime$ and $\delta_{xx^\prime} = 0$ for $x\neq x^\prime$.
+where $\delta_{xx^\prime} = 1$ for $x=x^\prime$ and $\delta_{xx^\prime} = 0$ for $x\neq x^\prime$. In general, $\sigma$ can be different for each training point.
+
+The understanding of the training principle might be easier if one sees how we created Figure \ref{fig:gaussian-samples-posterior}. The Python code used to generate this graph can be seen in Appendix \ref{att:gp-post-graph}.
 
 Apart from RBF kernel $k_{\mathrm{RBF}}(x-x^\prime) =\sigma^2\exp(-\frac{(x-x^\prime)^2}{2l})$ another common choice are kernels from the Matern class \cite{rasmussen2005}:
 \begin{equation}
@@ -151,7 +160,7 @@ Gaussian process regression is a non-parametric model, meaning the training data
 
 Apart from that, the tuning of the hyper-parameters such as $\sigma$, the choice of the covariance function or other parameters is usually done using maximum-likelihood methods \cite{rasmussen2004}.
 
-To the contrast of previous two models, which assume nothing about the data, in GP it is helpful to specify the prior mean function. It can be specified parametrically and the parameters can be tuned during hyper-parameter tuning. Having prior mean $m(\bm{x}) = 0$ makes the model more simple but can introduce bias in the predictions if it is not handled. Common technique of dealing with this, implemented for example in the GPy library, is to normalize $y$ values so that they have zero mean \cite{gpy}. The transformation is reversed when the model returns non-biased predictions even if prior mean functions was zero.
+To the contrast of previous two models, which assume nothing about the data, in GP it is helpful to specify the prior mean function. It can be specified parametrically and the parameters can be tuned during hyper-parameter tuning. Having prior mean $m(\bm{x}) = 0$ makes the model more simple but can introduce bias in the predictions if it is not handled. Common technique of dealing with this, implemented for example in the GPy library, is to normalize $y$ values so that they actually have zero mean before \cite{gpy}. 
 
-For us, it is particularly interesting to have the possibility of calculating the uncertainty of the prediction as can be seen in the figure \ref{fig:gaussian-samples-posterior}. Of course, it is mainly related to the density of the dataset in the studied domain. However, knowing the model uncertainty as function of input parameters can be leveraged for selection of parameters for new simulations with the goal of making the model more precise by expanding the training data.
+For us, it is particularly interesting to have the possibility of calculating the uncertainty of the prediction as can be seen in Figure \ref{fig:gaussian-samples-posterior}. Of course, it is mainly related to the density of the dataset in the studied domain. However, knowing the model uncertainty as function of input parameters can be leveraged for selection of parameters for new simulations with the goal of making the model more precise by expanding the training data. We will come back to this in Chapter \ref{ch:models-impl}.
 

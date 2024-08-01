@@ -1,3 +1,20 @@
 \chapter*{Conclusion}
 \addcontentsline{toc}{chapter}{Conclusion}
+This thesis developed a comprehensive approach to modeling laser absorption in plasma, aimed at optimizing the production of $\mathrm{K}_\mathrm{\alpha}$ X-ray pulses from very small sources, with pulse durations similar to that of the laser (30 fs).
+
+We gathered data for the model by running around 400 particle-in-cell simulations. Initially, we introduced a method for automatically processing these results using a multi-step algorithm to fit sums of exponential distributions. Creating a reliable method for fitting many energy spectra without supervision presents some challenges. We discussed the limitations of our approach, highlighting that finding a metric to describe the quality of the hot electron temperature estimate is not straightforward. This is due to the difficulty in identifying the portion of the electron energy spectrum dominated by hot electrons. We concluded that for larger datasets like ours, further improvements to our method would be beneficial.
+
+The dataset for the model comprised three input parameters from the simulations: laser intensity, the scale length of the exponential preplasma profile, and the angle of incidence. The output was the hot electron temperature. To ensure the dataset's reliability, each simulation result was inspected and fitted separately using a specialized tool developed for this purpose. This dataset can be used in the future to compare automated fitting methods.
+
+We then presented, tuned, and trained three different models: Support Vector Regression (SVR), Neural Network (NN), and Gaussian Process (GP) regression. Comparing these models using RMSE and $R^2$ metrics, we concluded that GP regression offers the best generalization. NN did not perform much worse in the test and with bigger dataset, it is probably still a valid option. Additionally, we developed a tool for visual analysis of the models, essential due to the complexity of visualizing predictions with 3-dimensional input and 1-dimensional output. The tool features a simple framework that can be easily extended to support other models.
+
+The GP model not only estimates the hot electron temperature but also provides an estimate of the standard error. This uncertainty is valuable for expanding the dataset. We presented a strategy that leverages the standard error estimates, revealing that the initial dataset might not have been optimally selected, as adding more points increased the mean training error. 
+
+The original dataset was not selected in an equidistant manner, which is difficult to define in this context. During the training process, the inputs were transformed using hyper-parameters. We opted for a cubic transformation, but fine-tuning these hyper-parameters and appropriately expanding the dataset could enhance the model.
+
+Finally, we compared our model to previous works. While few studies provide exact analytical models of hot electron temperature scaling, we validated the power law $T_\mathrm{hot} \sim I^{1/3}$ for the optimized angle of resonance absorption, as investigated by Cui et al. \cite{cui2013}. We also found that deviating from that angle alters the relationship between $I$ and $T_\mathrm{hot}$, with the power law no longer holding true. Our model indicates a more complex relationship, especially since relativistic effects become significant at intensities above $I = 10^{18} , W , \mathrm{cm}^{-2}$.
+
+In summary, we demonstrated that the complex physical processes of laser absorption in dense plasma can be simplified into a surrogate model using Gaussian Processes. Significantly expanding the dataset is feasible and would enhance model accuracy, assuming improvements in fitting the hot electron temperature can be achieved.
+
+
 
