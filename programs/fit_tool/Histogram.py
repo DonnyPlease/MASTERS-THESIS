@@ -26,7 +26,7 @@ class Histogram():
     
     def set_parameters_from_folder_name(self):
         name = self.folder_name.split('/')[-1]
-        self.I = int(name[7:9])
+        self.I = name[5:9]
         self.L = int(name[10])+int(name[11:13])/100
         self.alpha = int(name.split('_')[-1])
         self.print_params()

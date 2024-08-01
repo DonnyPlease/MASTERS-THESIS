@@ -93,7 +93,7 @@ class MplCanvas(FigureCanvas):
         
         a *= 1e10
         custom_fit_result = DatasetRecord()
-        custom_fit_result.I = "1e"+str(self.histogram.I)
+        custom_fit_result.I = str(self.histogram.I)
         custom_fit_result.L = str(self.histogram.L)
         custom_fit_result.alpha = str(self.histogram.alpha)
         custom_fit_result.t_hot = f"{-1/b:.2f}"

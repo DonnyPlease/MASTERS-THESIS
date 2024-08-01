@@ -180,7 +180,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         if len(self.autofit_dataset.keys()) == 0: return
         hist = self.mpl_canvas.histogram
         if hist is None: return
-        I = '1e' + str(hist.I)
+        I = str(hist.I)
         L = "{:.2f}".format(hist.L)
         alpha = str(hist.alpha)
         key = (I,L,alpha)
