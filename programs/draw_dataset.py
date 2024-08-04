@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 
 T_HOT, T_HOT_STDEV = 0, 1
 
-I_AXIS_NAME = r'$I$ [W/cm$^2$]'
-L_AXIS_NAME = r'$L$ [μm]'
+I_AXIS_NAME = r'$I [\mathrm{W/cm}^2$]'
+L_AXIS_NAME = r'$L [\mathrm{\mu m}]$'
 A_AXIS_NAME =  r'$\alpha$ [°]'
 
 AXIS_NAME = {
@@ -20,6 +20,18 @@ TICKS = {
     "l": [0.01,0.02,0.05,0.1,0.2,0.5,1,2,5],
     "a": [0,10,20,30,40,50,60]
 }
+
+# Configure Matplotlib to use LaTeX for rendering text
+from matplotlib import rc
+rc('font', family='serif', serif='Computer Modern')
+rc('text', usetex=True)
+rc('font', size=18)          # controls default text sizes
+rc('axes', titlesize=20)     # fontsize of the axes title
+rc('axes', labelsize=16)     # fontsize of the x and y labels
+rc('xtick', labelsize=16)    # fontsize of the tick labels
+rc('ytick', labelsize=16)    # fontsize of the tick labels
+rc('legend', fontsize=16)    # legend fontsize
+rc('figure', titlesize=20)   # fontsize of the figure title
 
 
 def plot_maximum_absorption_curve():
@@ -137,17 +149,17 @@ def draw_dataset(data, what=T_HOT, show=False, save=False, add_data_points=False
 
         plt.figure(figsize=(8, 6))
         plt.pcolormesh(X, Y, Z, cmap='inferno', shading='auto')
-        plt.colorbar(label=r'$T_{hot}$ [keV]')
+        plt.colorbar(label=r'$T_\mathrm{hot}$ [keV]')
         plt.xscale('log')
-        plt.xlabel(r'$L$ [μm]')
+        plt.xlabel(r'$L [\mathrm{\mu m}]$')
         plt.ylabel(r'$\alpha$ [°]')
         ticks=[0.01,0.02,0.05,0.1,0.2,0.5,1,2,5]
         plt.xticks(ticks,ticks)
         if show: 
             plt.show()
         
-        # if intensity == "1e17":
-        #     plot_maximum_absorption_curve()
+        if intensity == "1e17":
+            plot_maximum_absorption_curve()
         
         if save: 
             name = "dataset/I_" + intensity + "t_hot.pdf" if what == T_HOT else "dataset/I_" + intensity + "t_hot_stdev.png"
@@ -171,11 +183,11 @@ if __name__ == "__main__":
     angles = sorted(list(angles))
     data17_by_angle = []
     for angle in angles:
-        items = [item for item in data19 if item[1] == angle]
+        items = [item for item in data17 if item[1] == angle]
         items = sorted(items, key=lambda x: x[0])
         y = [float(item[2]) for item in items]
         x = [float(item[0]) for item in items]
-        data_line = {"x": x, "y": y, "label": r'$\alpha = $' + str(angle) + '°'}
+        data_line = {"x": x, "y": y, "label": r'$\alpha = \,$' + f"{angle:.0f}" + '°'}
         data17_by_angle.append(data_line)
      
     data_to_plot = {
@@ -185,9 +197,57 @@ if __name__ == "__main__":
             "scale": "log",
         },
         "data": [data17_by_angle[0]]+data17_by_angle[6:],
-        "x_label": r"$L$ [μm]",
+        "x_label": r'$L [\mathrm{\mu m}]$',
+        "y_label": r"$T_{\mathrm{hot}}$ [keV]",
+        "save_name": "dataset/t_hot_l_17.pdf"
+    }
+        
+    plot_as_lines(data_to_plot, show=False, save=True)
+    data17_by_angle = []
+    
+    for angle in angles:
+        items = [item for item in data18 if item[1] == angle]
+        items = sorted(items, key=lambda x: x[0])
+        y = [float(item[2]) for item in items]
+        x = [float(item[0]) for item in items]
+        data_line = {"x": x, "y": y, "label": r'$\alpha = \,$' + f"{angle:.0f}" + '°'}
+        data17_by_angle.append(data_line)
+     
+    data_to_plot = {
+        "slice_at": 0,
+        "x_ticks": {
+            "data": [0.01,0.02,0.05,0.1,0.2,0.5,1,2,5],
+            "scale": "log",
+        },
+        "data": [data17_by_angle[0]]+data17_by_angle[6:],
+        "x_label": r'$L [\mathrm{\mu m}]$',
+        "y_label": r"$T_{\mathrm{hot}}$ [keV]",
+        "save_name": "dataset/t_hot_l_18.pdf"
+    }
+        
+    plot_as_lines(data_to_plot, show=False, save=True) 
+    data17_by_angle = []
+    
+    for angle in angles:
+        items = [item for item in data19 if item[1] == angle]
+        items = sorted(items, key=lambda x: x[0])
+        y = [float(item[2]) for item in items]
+        x = [float(item[0]) for item in items]
+        data_line = {"x": x, "y": y, "label": r'$\alpha = \,$' + f"{angle:.0f}" + '°'}
+        data17_by_angle.append(data_line)
+     
+    data_to_plot = {
+        "slice_at": 0,
+        "x_ticks": {
+            "data": [0.01,0.02,0.05,0.1,0.2,0.5,1,2,5],
+            "scale": "log",
+        },
+        "data": [data17_by_angle[0]]+data17_by_angle[6:],
+        "x_label": r'$L [\mathrm{\mu m}]$',
         "y_label": r"$T_{\mathrm{hot}}$ [keV]",
         "save_name": "dataset/t_hot_l_19.pdf"
     }
         
-    plot_as_lines(data_to_plot, show=False, save=True)
+    plot_as_lines(data_to_plot, show=False, save=True) 
+    
+     

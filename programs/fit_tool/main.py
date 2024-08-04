@@ -12,7 +12,7 @@ from Histogram import Histogram
 from MainWindow import Ui_MainWindow
 from MplCanvas import MplCanvas
 from Dataset import DatasetUtils, DatasetRecord
-               
+
 
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self, *args, obj=None, **kwargs):

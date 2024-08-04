@@ -36,7 +36,7 @@ In a gas in the thermal equilibrium, particles velocities are given by Maxwellia
 \begin{equation}
 	f(\bm{v}) = n\left(\frac{m}{2\pi \boltz}\right)^{3/2}\exp\left(-\frac{\frac{1}{2}m v^2}{\boltz T}\right)
 \end{equation} 
-\noindent where $v = \norm{\bm{v}}$ is magnitude of velocity, $m$ is mass. $\boltz$ is the Boltzmann constant and $T$ is temperature. The average kinetic energy $E_{\mathrm{av}}$ is then \cite{plasma-intro3}:
+\noindent where $v = \norm{\bm{v}}$ is magnitude of velocity, $m$ is mass of each particle, $\boltz$ is the Boltzmann constant and $T$ is temperature. The average kinetic energy $E_{\mathrm{av}}$ is then \cite{plasma-intro3}:
 \begin{equation}
 	E_{\mathrm{av}}=\frac{3}{2}\boltz T
 \end{equation}
@@ -48,14 +48,14 @@ Because of this relation between $E_{\mathrm{av}}$ and $T$, it is customary in p
 \begin{equation}
 	1 \mathrm{eV} = 11600\,\mathrm{K}
 \end{equation} 
-The electrons and the ions can have different temperature \cite{plasma-intro3}. Moreover, there can be multiple groups of electrons with different distributions, but we will describe this more deeply in one of the later sections.
+The electrons and the ions can have different temperature \cite{plasma-intro3}. Moreover, there can be multiple groups of electrons with different distributions, because there are various processes that cause the heating of plasma. We will describe this more deeply in one of the later sections.
 
 \section{Critical density}
 Now consider a high frequency electric field $\bm{E} = \bm{E(x)}\exp\left(-i\omega t\right)$. The frequency $\omega$ is assumed to be greater than electron plasma frequency $\omega_{\mathrm{pe}}$ defined as $\omega_{\mathrm{pe}}^2=4\pi e^2 n_\mathrm{e}/m_\mathrm{e}$ with $n_\mathrm{e}=Zn_{\mathrm{i}}$ being electron density and $m_\mathrm{e}$ electron mass. Maxwell equations plus the equation of motion of electron fluid give us:
 \begin{equation}
 	\nabla \times \bm{B} = -\frac{i\omega}{c}\epsilon\bm{E},
 \end{equation}
-where $\epsilon = 1 - \omega_{\mathrm{pe}}^2/\omega^2$ defines the dielectric function of the plasma \cite{laser-plasma4}. After further derivation using the other Maxwell equations and vector identities we can get:
+where $\epsilon = 1 - \omega_{\mathrm{pe}}^2/\omega^2$ defines the dielectric function of the plasma \cite{laser-plasma4}. After further derivation using the other Maxwell equations and vector identities we can get wave equation for electric field in an anisotropic medium:
 \begin{equation}
 	\nabla^2 \bm{E} + \frac{\omega^2}{c^2}\epsilon\bm{E} + \nabla\left(\frac{1}{\epsilon}\nabla \cdot \left(\epsilon\bm{E}\right)\right) = 0
 \end{equation}
@@ -63,7 +63,7 @@ Assuming space dependency described by $\exp\left(i\bm{k}\cdot\bm{x}\right)$, th
 \begin{equation}
 	\omega^2 = \omega_{\mathrm{pe}}^2 + k^2c^2.
 \end{equation}
-It is possible to show, that $k$ becomes imaginary for $\omega < \omega_{\mathrm{pe}}$. This can be interpreted the following way: electrons screen the field of a light wave if $\omega < \omega_{\mathrm{pe}}$. Because of that, $\omega_{\mathrm{pe}}=\omega$ defines the maximum plasma density to which a light wave can penetrate - \textit{critical density}:
+It is possible to show, that $k$ becomes imaginary for $\omega < \omega_{\mathrm{pe}}$. This can be interpreted the following way: if $\omega < \omega_{\mathrm{pe}}$, electrons screen the field of a light wave . Because of that, $\omega_{\mathrm{pe}}=\omega$ defines the maximum plasma density to which a light wave can penetrate - \textit{critical density}:
 \begin{equation}
 	n_{\mathrm{cr}} = \frac{\omega^2 m_\mathrm{e}}{4 \pi e^2} = 1.1 \times 10^{21} / \lambda_\mu^2 \, \mathrm{cm}^{-3}, 
 \end{equation}
@@ -95,9 +95,9 @@ The examples of plasmas of different densities and temperatures found in the rea
 	\caption{An illustration of the interaction of ultra intense laser with plasma.}
 	\label{fig:laser-plasma-interaction}
 \end{figure}
-In this thesis, we study the interaction of an ultra-intense, ultra-short laser pulse with solid plasma. An illustration of this scenario is shown in Figure \ref{fig:laser-plasma-interaction}. To put it simply, the most relevant physical process can be divided into three distinct parts.
+As we said, we study the interaction of an ultra-intense, ultra-short laser pulse with solid plasma. An illustration of this scenario is shown in Figure \ref{fig:laser-plasma-interaction}. To put it simply, the most relevant physical process can be divided into three distinct parts.
 
-In a real-world experiment, the first effect observed when the laser pulse strikes the target surface is ionization. This process frees electrons, which then facilitate the heating of the target and electrons are accelerated to high velocities. These high-energy electrons penetrate the remaining solid, unionized target, and, under the right conditions, X-ray photons are emitted.
+In a real-world experiment, the first effect observed when the laser pulse strikes the target surface is ionization. This process frees electrons from atom potential wells. Such electron are then accelerated to high velocities by various mechanism and they can penetrate the remaining solid, unionized target. Under the right conditions, X-ray photons are emitted.
 
 The following sections provide a detailed explanation of these processes. The last section of this chapter provides an introduction to particle-in-cell simulations which are used in this thesis to obtain data for electron temperature modelling.
 
@@ -120,13 +120,12 @@ The electric field for hydrogen $E_{\mathrm{H}}$ is then:
 \end{equation}
 \noindent The corresponding so called \textit{atomic intensity} for hydrogen $I_{\mathrm{H}}$ is \cite{plasma-intro}:
 \begin{equation}
-	I_{\mathrm{H}} = \frac{E_{\mathrm{H}}^2}{8\pi} \simeq 3.51 \times 10^{16} \, \mathrm{W.cm}^{-2}
+	I_{\mathrm{H}} = \frac{E_{\mathrm{H}}^2}{8\pi} \simeq 3.51 \times 10^{16} \, \mathrm{W.cm}^{-2}.
 \end{equation}
-\noindent where c is the speed of light in vacuum.
 
 It is reasonable to think that to ionize the hydrogen atom one needs $I_\mathrm{L}>I_{\mathrm{H}}$, where $I_{\mathrm{L}}$ is the intensity of the laser. In reality, the ionization occurs already for smaller laser intensities due to so called \textit{multiphoton absorption} \cite{plasma-intro} and \textit{quantum tunnelling} \cite{laser-plasma1}. The first one can occur, because the electron can climb the virtual energy states one after another and it can get hit by next photon before it falls back to lower energy state \cite{laser-plasma1}. The calculation of these transitions is non-trivial, because one has to solve time-dependant Schroedinger equation. The reader can find deeper analysis in \cite{atoms-in-lasers}.
 
-The tunnelling effect is as well a consequence of the external electric field. The superposition of the electric field which binds the electron to the atom and the strong electric field of the laser results in conditions that allow the electron escape the potential well even if the electron energy is not higher than the threshold energy for instant ionization. Let $V_H(r)= -\frac{C}{r}$ Coulomb potential of hydrogen nucleus, where in CGS unit $C = e^2$. The superposition with strong external field gives us:
+The tunnelling effect is as well a consequence of the external electric field. The superposition of the electric field which binds the electron to the atom and the strong electric field of the laser results in conditions that allow the electron escape the potential well even if the electron energy is not higher than the threshold energy for instant ionization. Let $V_H(r)= -\frac{C}{r}$ be Coulomb potential of hydrogen nucleus, where in CGS unit $C = e^2$. The superposition with strong external field gives us:
 \begin{equation}
 	V_F = V_H(r) + eE_{\mathrm{ext}}(r)
 \end{equation}
@@ -139,18 +138,18 @@ Let $E_{\mathrm{ext}}(r) = -10^{10}r\,\mathrm{V/m}$. The final potential $V_\mat
 	\label{fig:tunnelling}
 \end{figure}
 
-The stronger is the external field, the shorter is the tunnelling distance for the electron to escape and the the higher is the probability that this can happen. The field can even be so strong that the potential barrier will have its peak below the ground state energy. In that case, the electron is instantly considered to be free \cite{laser-plasma1}. 
+The stronger is the external field, the shorter is the tunnelling distance for the electron to escape and the the higher is the probability that this happens. The field can even be so strong that the potential barrier will have its peak below the ground state energy. In that case, the electron is instantly considered to be free \cite{laser-plasma1}. 
 
 It is possible to estimate, which mechanism is more dominant cause of ionization by calculating so called \textit{Keldysh parameter} $\gamma_\mathrm{K} = \frac{\omega_0}{\omega_t}$, where $\omega_0$ is the frequency of the laser and $\omega_t = \frac{eE_{\mathrm{ext}}}{\sqrt{2m_{\mathrm{e}}E_\mathrm{i}}}$, where $E_\mathrm{i}$ represents the energy the electron needs to receive to be ionized \cite{laser-plasma1}.
 
 The ionization processes can be explored in greater depth, but the fundamental concepts have already been adequately outlined. Henceforth, we will assume the plasma being targeted by the laser is fully ionized and will focus on how it can absorb additional energy from the laser.
 
 \section{Absorption of ultra-short, ultra-intense lasers}
-Modern lasers can generate pulses with durations of only few femtoseconds and extremely high intensities (up to 
-$10^{22}\,\mathrm{W.cm}^{-2}$) \cite{absorption2,ultra-laser}. The interaction of such pulses with dense plasma produces hot electrons \cite{laser-plasma5}. There are several processes of energy transfer from the laser's electromagnetic field to the electrons. Let us examine the most significant of these processes.
+Modern lasers can generate pulses with durations of just few femtoseconds and extremely high intensities (up to 
+$10^{22}\,\mathrm{W.cm}^{-2}$) \cite{absorption2,ultra-laser}. The interaction of such pulses with dense plasma produces hot electrons \cite{laser-plasma5}. There are several processes of energy transfer from the laser's electromagnetic field to the electrons. Let us examine three processes that are the most significant.
 
 \subsection*{Collisional absorption}
-The principles of collisional absorption are similar to those of collisional ionization. In this process, an electron oscillates due to the influence of the laser field and transfers part of its kinetic energy to other ions through collisions. However, since the frequency of ion-electron collisions scales as $\nu_{ie} \propto E^{-3/2}$, this absorption mechanism is primarily significant for laser intensities below $10^{15}\,\mathrm{W.cm}^{-2}$ \cite{absorption1}. Given that this thesis focuses on intensities above this threshold, further discussion on collisional absorption is unnecessary.
+The principles of collisional absorption are similar to those of collisional ionization. In this process, an electron oscillates due to the influence of the laser field and transfers part of its kinetic energy to other ions through collisions. However, since the frequency of ion-electron collisions scales as $\nu_\mathrm{ie} \propto E^{-3/2}$, this absorption mechanism is primarily significant for laser intensities below $10^{15}\,\mathrm{W.cm}^{-2}$ \cite{absorption1}. Given that this thesis focuses on intensities above this threshold, further discussion on collisional absorption is unnecessary.
 
 \subsection*{Resonance absorption}
 The first non-collisional absorption process we will describe is the \textit{resonance absorption}. This phenomenon can occur during the propagation of a p-polarized light wave through a density gradient. By p-polarized, we refer to a wave that is linearly polarized with its polarization vector lying in the plane of incidence. The complete analytical description is difficult, but after few simplifications it is possible to obtain reasonable idea of the principle \cite{laser-plasma6}. 
@@ -160,7 +159,7 @@ Laser light will reach density $n_t = n_{\mathrm{cr}}\cos^2\theta$ (from Snell's
 	\label{eq:resonance}
 	\frac{E_d}{\epsilon} = \frac{E_L}{\sqrt{2\pi\omega_0 L_n/c}}\phi\left(\tau\right)
 \end{equation}
-where $\epsilon$ is plasma dielectric function, $L_n$ is the density length scale and the parameter $\tau= \left(\omega_0 L_n/c\right)^{1/3}\sin\theta$ and $\phi\left(\tau\right) \propto \exp\left(-2\tau^3/3\right)$ \cite{absorption2,laser-plasma6}.
+where $\epsilon$ is plasma dielectric function, $L_n$ is the density length scale and $\phi\left(\tau\right) \propto \exp\left(-2\tau^3/3\right)$ where $\tau= \left(\omega_0 L_n/c\right)^{1/3}\sin\theta$ \cite{absorption2,laser-plasma6}.
 
 The angle of optimum resonance absorption for exponential density profile $\theta_{opt}$ can then be estimated as a function of $L$:
 \begin{equation}
@@ -209,12 +208,12 @@ Let $\phi$ and $\bm{A}$ be scalar and vector potential ($\bm{E} = -\nabla \phi -
 	\frac{\partial \bm{p}_\mathrm{l}}{\partial t} = e\nabla \phi - m_{\mathrm{e}}c^2\nabla (\gamma-1)
 	\label{eq:jxb2}
 \end{equation}
-where $\gamma = \sqrt{1+\frac{a_0^2}{2}}$ is the relativistic factor for linearly polarized light \cite{absorption2}. $a_0$ is the same as defined in equation \ref{eq:vac-heating}, but here is has meaning of a constant normalizing vector field $\bm{A}$. To be more precise $a_0 = \norm{\bm{a}}$ and:
+where $\gamma = \sqrt{1+\frac{a_0^2}{2}}$ is the relativistic factor for linearly polarized light \cite{absorption2}. $a_0$ is the same as defined in equation \ref{eq:vac-heating}, but here it has the meaning of a constant which is normalizing the vector field $\bm{A}$. To be more precise $a_0 = \norm{\bm{a}}$ and:
 \begin{equation}
 	\bm{a} = \frac{e\bm{A}}{m_ec^2}.
 \end{equation}
 
-The second term of the equation \ref{eq:jxb2} is the relativistic ponderomotive force and we can write the ponderomotive potential $U_\mathrm{p}$ as:
+The second term of the equation \ref{eq:jxb2} is the relativistic \textit{ponderomotive force} and we can write the ponderomotive potential $U_\mathrm{p}$ as:
 \begin{equation}
 	U_\mathrm{p} = (\gamma - 1)m_{\mathrm{e}}c^2.
 	\label{eq:ponderomotive-potential}
@@ -226,7 +225,7 @@ It is important to note, that at higher intensity, the electron density can rise
 One last note regarding $\bm{J}\times \bm{B}$ heating. The relativistic factor $\gamma$ has a different form in a case of circularly polarized laser. That leads to suppressing this kind of electron heating altogether \cite{cai2006}.
 
 
-The three mentioned mechanisms are by no means exhaustive when it comes to laser absorption. They are the three most relevant in the context of this work. There are other physical processes contributing to heating up the plasma especially when the parameters of the experiment change \cite{absorption1}. We will now move on to describe the particular motivation of the thesis.
+The three mentioned mechanisms are by no means exhaustive when it comes to laser absorption. They are the three most relevant in the context of this work. There are other physical processes contributing to heating up the plasma especially when the parameters of the experiment change \cite{absorption1}. We will now move on to describe the motivation of the thesis.
 
 \section{Motivation - X-ray $\mathbf{K}_\alpha$ emission}
 Because hot electrons accelerated by ultra-intense ultra-short laser pulse can carry significant (keV-MeV) energy, they can penetrate deeper into the unionized part of the target, where they can generate characteristic X-rays by K-shell ionization \cite{reich2000}. The X-ray spectrum is consisting of spectral lines (e.g. $\mathrm{K}_\alpha$) and continuous part X-ray from Bremsstrahlung. The uniqueness of this method of producing X-rays rests in the monochromatic spectrum of high energy X-ray photons within a short pulse synchronized with the laser pulse. The source is typically very small \cite{pfeifer2006}.
@@ -234,11 +233,11 @@ Because hot electrons accelerated by ultra-intense ultra-short laser pulse can c
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.95\textwidth]{figures/spectrum-ti}
-	\caption{\textit{Left:} The spectrum of laser generated $\mathrm{K}_\alpha$ and $\mathrm{K}_\beta$ radiation of titanium. \textit{Right:} The scaling of $\mathrm{K}_\alpha$ - yield in relation to laser intensity. \cite{schwoerer2004}}
+	\caption{\textit{Left:} The spectrum of laser generated $\mathrm{K}_\alpha$ and $\mathrm{K}_\beta$ radiation of titanium. \textit{Right:} The scaling of $\mathrm{K}_\alpha$ - yield in relation to laser intensity \cite{schwoerer2004}.}
 	\label{fig:ti-spectrum}
 \end{figure}
 
-Let us now briefly look into the origin $\mathrm{K}_\alpha$-line. In figure \ref{fig:ti-spectrum}, there is an energy spectrum of titanium x-ray photons and the $\mathrm{K}_\alpha$ - yield scaling with the laser intensity. The generation of the $\mathrm{K}_\alpha$ radiation clearly depends on laser intensity through the hot electrons temperature. According to \cite{schwoerer2004}, the yield drops at the laser intensity around $10^{18}\,\mathrm{W.cm}^{-2}$ \textit{"because the interaction time with the atom decreases with higher electron velocity"}. The following rise in the yield is then attributed to the relativistic effect where the electric fields of the fast hot electrons are contracted and therefore have greater effect \cite{schwoerer2004}.
+Let us now briefly look into the origin $\mathrm{K}_\alpha$ spectral line. In Figure \ref{fig:ti-spectrum}, there is an energy spectrum of titanium x-ray photons and the $\mathrm{K}_\alpha$ - yield scaling with the laser intensity. The generation of the $\mathrm{K}_\alpha$ radiation clearly depends on laser intensity through the hot electrons temperature. According to \cite{schwoerer2004}, the yield drops at the laser intensity around $10^{18}\,\mathrm{W.cm}^{-2}$ \textit{"because the interaction time with the atom decreases with higher electron velocity"}. The following rise in the yield is then attributed to the relativistic effect where the electric fields of the fast hot electrons are contracted and therefore have greater effect \cite{schwoerer2004}.
 
 The total yield $N$ can be expressed analytically as \cite{reich2000}:
 \begin{equation}
@@ -247,9 +246,7 @@ The total yield $N$ can be expressed analytically as \cite{reich2000}:
 \end{equation}
 where $N$ is the number of emitted photons, $n_\mathrm{hot}$ is the total number of hot electrons, and $f_\mathrm{hot}(E)$ is their energy distribution, $N_\mathrm{gen}(E)$ is the number of $\mathrm{K}_\alpha$ photons generated by an electron of incidence energy E, and $f_\mathrm{em}(E)$ is the fraction of these photons that escapes from the solid \cite{reich2000}. 
 
-Having a reliable numerical model for $n_\mathrm{hot}$ and $f_\mathrm{hot}(E)$ from equation \ref{eq:total-yield} based on the parameters of the laser and the plasma could allow us to optimize the $\mathrm{K}_\alpha$ yield. Namely, the angle of incidence, the laser intensity and the plasma length scale are the most important parameters for laser absorption. The research conducted by Reich et al. \cite{reich2000} could be followed up by examining a wider range of parameters beyond just laser intensity. This is crucial because, as shown by Cui et al. \cite{cui2013}, the temperature function of the electrons has a complex and non-trivial shape. The complexity comes from the complex nature of the physical processes causing the electron heating.
-
-In this thesis, we presents results from hundreds of PIC simulations while scanning through the mentioned parameters. Then we try to present and  defend a way of how the hot electron temperature can be modelled and how to make the model more precise. The implications with respect to previous works and to equation \ref{eq:total-yield} are discussed.
+Having a reliable numerical model for $n_\mathrm{hot}$ and $f_\mathrm{hot}(E)$ from equation \ref{eq:total-yield} based on the parameters of the laser and the plasma could allow us to optimize the $\mathrm{K}_\alpha$ yield. Namely, the angle of incidence, the laser intensity and the plasma length scale are the most important parameters for laser absorption. The research conducted by Reich et al. \cite{reich2000} could be followed up by examining a wider range of parameters beyond just laser intensity. This is crucial because, as shown by Cui et al. \cite{cui2013}, the temperature function of the electrons has a complex and non-trivial shape. The~complexity comes from the complex nature of the physical processes causing the~electron heating.
 
 \section{PIC simulations}
 As previously mentioned, we are using Particle-In-Cell (PIC) simulations to obtain the data necessary for our model. PIC codes have been under development since the advent of computers in the 1960s, and advancements in computer technology over the past 30 years have enabled us to run simulations on a much larger scale. One significant advantage of simulations is that they allow theoretical predictions to be verified in greater detail than is possible with real plasma experiments \cite{dawson1962}. To illustrate the progress made over the decades, let us mention, that in 1962 Dawson and Buneman simulated the motion of $1000$ plasma particles. Today, we can simulate the motion of more than $10^{10}$ particles \cite{tskhakaya2007}.

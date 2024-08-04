@@ -10,6 +10,19 @@ from scipy.optimize import curve_fit
 from fit_exp_jacquelin import FitExp
 from dataset.Dataset import DatasetUtils
 
+
+# Configure Matplotlib to use LaTeX for rendering text
+from matplotlib import rc
+rc('font', family='serif', serif='Computer Modern')
+rc('text', usetex=True)
+rc('font', size=14)          # controls default text sizes
+rc('axes', titlesize=16)     # fontsize of the axes title
+rc('axes', labelsize=12)     # fontsize of the x and y labels
+rc('xtick', labelsize=12)    # fontsize of the tick labels
+rc('ytick', labelsize=12)    # fontsize of the tick labels
+rc('legend', fontsize=12)    # legend fontsize
+rc('figure', titlesize=16)   # fontsize of the figure title
+
 def reverse_normalize(histogram, fits_results, max_hist):
     histogram = (histogram[0], histogram[1]*max_hist, histogram[2])
     for key in fits_results:
@@ -143,32 +156,21 @@ def find_new_start_index(histogram, start, end, params):
     if params is None:
         return 0
     a1, a2, a3, b1, b2, b3 = params["a1"], params["a2"], params["a3"], params["b1"], params["b2"], params["b3"]
-    if b1>0 or b2>0 or b3>0:
+    if b1 > 0 or b2 > 0 or b3 > 0:
         print("One of the exponents is positive. Might cause problems.")
-    # find two smallest exponents and corresponting amplitudes
-    if a1 > a2 and a2 > a3:
-        a1, a2, a3 = a1, a2, a3
-        b1, b2, b3 = b1, b2, b3
-    elif a1 > a3 and a3 > a2:
-        a1, a2, a3 = a1, a3, a2
-        b1, b2, b3 = b1, b3, b2
-    elif a2 > a1 and a1 > a3:
-        a1, a2, a3 = a2, a1, a3
-        b1, b2, b3 = b2, b1, b3
-    elif a2 > a3 and a3 > a1:
-        a1, a2, a3 = a2, a3, a1
-        b1, b2, b3 = b2, b3, b1
-    elif a3 > a1 and a1 > a2:
-        a1, a2, a3 = a3, a1, a2
-        b1, b2, b3 = b3, b1, b2
-    elif a3 > a2 and a2 > a1:
-        a1, a2, a3 = a3, a2, a1
-        b1, b2, b3 = b3, b2, b1
-        
-    critical_energy = np.log(a1/a2)/(b2-b1)
+
+    # Pair the a and b values together and sort them based on a in descending order
+    pairs = sorted(zip([a1, a2, a3], [b1, b2, b3]), key=lambda x: x[0], reverse=True)
+    (a1, b1), (a2, b2), (a3, b3) = pairs
+
+    # Update the params dictionary with the sorted values
+    params["a1"], params["a2"], params["a3"] = a1, a2, a3
+    params["b1"], params["b2"], params["b3"] = b1, b2, b3
+
+    critical_energy = np.log(10 * a1 / a2) / (b2 - b1)
     params["critical_energy"] = critical_energy
-    start_index = np.argmax(hist[0]>critical_energy)  # index of the first bigger x value than critical energy
-    return start_index + 25
+    start_index = np.argmax(hist[0] > critical_energy)  # index of the first bigger x value than critical energy
+    return start_index + 10
 
 def find_new_start_index2(histogram, start, end, params):
     hist = cut_histogram(histogram, start, end)
@@ -220,21 +222,38 @@ def _plot_fit_3exp(histogram, fit_params, save_path):
     plt.clf()
     y_fit = exp3(histogram[0], fit_params["a1"], fit_params["b1"], fit_params["a2"], fit_params["b2"], fit_params["a3"], fit_params["b3"], fit_params["a0"] if "a0" in fit_params else 0)
     plt.scatter(histogram[0], histogram[1], c="black", s=10, label="Simulation data", zorder = 4)
-    label = r"$N = a_0 + a_1\mathrm{e}^{b_1 E} + a_2\mathrm{e}^{b_2 E}+ a_3\mathrm{e}^{b_3 E}$"
+    label = r"$N = a_1\mathrm{e}^{b_1 E} + a_2\mathrm{e}^{b_2 E}+ a_3\mathrm{e}^{b_3 E}$"
     plt.plot(histogram[0], y_fit, c='red', label=label, zorder=6)
-    plt.axvline(fit_params["critical_energy"], color='blue', linestyle='--', label=r"E$_\mathrm{crit}$"+" = {:.2f} keV".format(fit_params["critical_energy"]), zorder=8)
+    
+    
+    base, exponent = "{:.2e}".format(fit_params["n_hot"]).split("e")
+    base = float(base)
+    exponent = int(exponent)
+    
+    base_stdev, exponent_stdev = "{:.2e}".format(fit_params["n_hot_stdev"]).split("e")
+    base_stdev = float(base_stdev)
+    exponent_stdev = int(exponent_stdev)
+    
+    label_n = "\n" + r"$N_\mathrm{hot} =\,$" +r"${0}\cdot10^{{{1}}}$".format(base,exponent)
+    label_t = "\n" +r"$T_\mathrm{0} =\,$"+ "{:.2f} ".format(fit_params["t_hot"]) + " keV" 
+        
+    plt.plot(histogram[0], fit_params["n_hot"]*np.exp(-1/fit_params["t_hot"]*histogram[0]), c='orange', linestyle='--', label=r"$N = N_\mathrm{0}\mathrm{e}^{-E/T_{\mathrm{hot}}}$" + label_t + label_n, zorder=7)
+    
+    # plt.axvline(fit_params["critical_energy"], color='blue', linestyle='--', label=r"E$_\mathrm{crit}$"+" = {:.2f} keV".format(fit_params["critical_energy"]), zorder=8)
     plt.yscale("log")
-    plt.xlabel("E [keV]")
-    plt.ylabel("N")
+    plt.xlabel(r"$E [\mathrm{keV}]$")
+    plt.ylabel(r"$N$")
     plt.grid(True, zorder=0)
-    _add_t_hot_to_legend(fit_params["t_hot"], fit_params["t_hot_stdev"])
-    plt.savefig(PATH_TO_PROJECT+save_path+histogram[2]["filename"]+".png")
+    # _add_t_hot_to_legend(fit_params["t_hot"], None)
+    plt.legend()
+    plt.savefig(PATH_TO_PROJECT+save_path+histogram[2]["filename"]+".pdf")
     
 def _plot_fit_2exp(histogram, fit_params, save_path):
     plt.clf()
     y_fit = exp2(histogram[0], fit_params["a1"], fit_params["b1"], fit_params["a2"], fit_params["b2"], fit_params["a0"] if "a0" in fit_params else 0)
     plt.scatter(histogram[0], histogram[1], c="black", s=10, label="Simulation data", zorder=4)
     plt.plot(histogram[0], y_fit, c='red', label=r"$N = a_0 + a_1\mathrm{e}^{b_1 E} + a_2\mathrm{e}^{b_2 E}$", zorder=5)
+    plt.plot(histogram[0], fit_params["n_hot"]*np.exp(-1/fit_params["t_hot"]*histogram[0]), c='orange', linestyle='--', label=r"$N = N_\mathrm{hot}\mathrm{e}^{-E/T_{\mathrm{hot}}}$", zorder=7)
     if "critical_energy" in fit_params:
         plt.axvline(fit_params["critical_energy"], color='blue', linestyle='--', label=r"E$_\mathrm{crit}$"+" = {:.2f} keV".format(fit_params["critical_energy"]), zorder=8)
     plt.yscale("log")
@@ -253,6 +272,9 @@ def _plot_fit_nlsq(histogram, fit_params, save_path):
     plt.scatter(histogram[0], histogram[1], c="black", s=10, label="Simulation data",zorder=4)
     label = r"$N = a_0 + a_1\mathrm{e}^{b_1 E} + a_2\mathrm{e}^{b_2 E}$"
     plt.plot(histogram[0], y_fit, c='red', label=label, zorder=6)
+    
+    
+    plt.plot(histogram[0], fit_params["n_hot"]*np.exp(-1/fit_params["t_hot"]*histogram[0]), c='orange', linestyle='--', label=r"$N = N_\mathrm{hot}\mathrm{e}^{-E/T_{\mathrm{hot}}}$", zorder=7)
     plt.yscale("log")
     plt.xlabel("E [keV]")
     plt.ylabel("N")
@@ -437,6 +459,14 @@ def _do_fit_action(histogram, action, final_params, start, end):
         if fit_results is not None:
             final_params["2nlsq"]["start_index"], final_params["2nlsq"]["end_index"] = int(start), int(end)
         
+    elif action == "2exp_without_bias":
+        fit_results, start, end = _try_fit(histogram, start, end, _fit_using_two_exponentials)
+        final_params["2exp"] = fit_results
+        if fit_results is not None:
+            final_params["2exp"]["start_index"], final_params["2exp"]["end_index"] = int(start), int(end)
+            final_params["2exp"]["a1_stdev"], final_params["2exp"]["b1_stdev"],final_params["2exp"]["a2_stdev"],final_params["2exp"]["b2_stdev"] = parameter_stdev(histogram, final_params, start, end, "2exp_without_bias")
+            final_params["2exp"]["t_hot"], final_params["2exp"]["n_hot"], final_params["2exp"]["t_hot_stdev"], final_params["2exp"]["n_hot_stdev"] = get_t_hot_and_n_hot(fit_results, True)
+        
     elif action == "1nlsq":
         if final_params["2exp"]["a1"] < final_params["2exp"]["a2"]:
             init_a = final_params["2exp"]["a1"]
@@ -463,7 +493,7 @@ def _do_fit_action(histogram, action, final_params, start, end):
 
 def fit_hot_temperature(histogram, fit_sequence):
     final_params = {"3exp": None, "2exp": None, "2nlsq": None, "1nlsq": None}
-    start, end = 0, len(histogram[0])-1
+    start, end = 0, len(histogram[0])-100
     
     for action in fit_sequence:
         start, end = _do_fit_action(histogram, action, final_params, start, end)
@@ -471,7 +501,7 @@ def fit_hot_temperature(histogram, fit_sequence):
     #final_params =  old_main(histogram)
     
     final_params = load_results_from_final_dataset(histogram, final_params)
-    calculate_mses(histogram, final_params)    
+    # calculate_mses(histogram, final_params)    
     
     return final_params 
 

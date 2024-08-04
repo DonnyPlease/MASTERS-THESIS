@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.14)  2 AUG 2024 01:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.14)  4 AUG 2024 04:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -841,6 +841,13 @@ Package biblatex Info: ... file 'main.bbl' found.
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
+(biblatex)                gibbon2005
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
 (biblatex)                lin-reg
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
@@ -1031,7 +1038,7 @@ Chapter 1.
 [10
 
 ] [11]
-<figures/laser-plasma-interaction.png, id=308, 1018.55531pt x 682.80093pt>
+<figures/laser-plasma-interaction.png, id=307, 1018.55531pt x 682.80093pt>
 File: figures/laser-plasma-interaction.png Graphic file (type png)
 <use figures/laser-plasma-interaction.png>
 Package pdftex.def Info: figures/laser-plasma-interaction.png  used on input li
@@ -1042,54 +1049,69 @@ ne 94.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [12] [13 <./figures/laser-plasma-interaction.png>]
-<figures/tunnelling.png, id=339, 722.7pt x 433.62pt>
-File: figures/tunnelling.png Graphic file (type png)
-<use figures/tunnelling.png>
-Package pdftex.def Info: figures/tunnelling.png  used on input line 137.
+<figures/tunnelling.pdf, id=336, 722.7pt x 433.62pt>
+File: figures/tunnelling.pdf Graphic file (type pdf)
+<use figures/tunnelling.pdf>
+Package pdftex.def Info: figures/tunnelling.pdf  used on input line 136.
 (pdftex.def)             Requested size: 341.43436pt x 204.86006pt.
- [14 <./figures/tunnelling.png>] [15] [16] [17]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14] [15 <./figures/tunnelling.pdf>] [16] [17]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 231.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 231.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\alpha' on input line 231.
+(hyperref)                removing `math shift' on input line 230.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 231.
+(hyperref)                removing `subscript' on input line 230.
 
-<figures/spectrum-ti.png, id=419, 658.71094pt x 260.47313pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\alpha' on input line 230.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 230.
+
+<figures/spectrum-ti.png, id=444, 658.71094pt x 260.47313pt>
 File: figures/spectrum-ti.png Graphic file (type png)
 <use figures/spectrum-ti.png>
-Package pdftex.def Info: figures/spectrum-ti.png  used on input line 236.
+Package pdftex.def Info: figures/spectrum-ti.png  used on input line 235.
 (pdftex.def)             Requested size: 405.45045pt x 160.33112pt.
 [18 <./figures/spectrum-ti.png>] [19]
-<figures/yee-grid.png, id=459, 853.1875pt x 491.8375pt>
+<figures/yee-grid.png, id=484, 853.1875pt x 491.8375pt>
 File: figures/yee-grid.png Graphic file (type png)
 <use figures/yee-grid.png>
-Package pdftex.def Info: figures/yee-grid.png  used on input line 275.
+Package pdftex.def Info: figures/yee-grid.png  used on input line 272.
 (pdftex.def)             Requested size: 256.0774pt x 147.61992pt.
  [20] [21 <./figures/yee-grid.png>])
 (chapter2.tex [22]
 Chapter 2.
-<figures/example-histogram.pdf, id=506, 462.52798pt x 346.89601pt>
+<figures/example-histogram.pdf, id=530, 462.52798pt x 346.89601pt>
 File: figures/example-histogram.pdf Graphic file (type pdf)
 <use figures/example-histogram.pdf>
 Package pdftex.def Info: figures/example-histogram.pdf  used on input line 12.
-(pdftex.def)             Requested size: 298.75262pt x 224.07703pt.
+(pdftex.def)             Requested size: 384.10959pt x 288.09828pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [23
 
- <./figures/example-histogram.pdf>] [24] [25] [26] [27]
+] [24 <./figures/example-histogram.pdf>] [25] [26]
 
-LaTeX Warning: Citation 'lin-reg' on page 28 undefined on input line 205.
+LaTeX Warning: Reference `ch:dataset' on page 27 undefined on input line 102.
 
-[28] [29]) (models-theory.tex [30]
+[27] [28]
+
+LaTeX Warning: Citation 'lin-reg' on page 29 undefined on input line 208.
+
+[29]
+
+LaTeX Warning: Reference `ch:dataset' on page 30 undefined on input line 279.
+
+) (models-theory.tex [30]
 Chapter 3.
 [31
 
@@ -1099,118 +1121,179 @@ Overfull \hbox (3.39935pt too wide) detected at line 62
  []
 
 [33] [34]
-<figures/gaussian-samples.png, id=711, 613.5723pt x 302.0886pt>
-File: figures/gaussian-samples.png Graphic file (type png)
-<use figures/gaussian-samples.png>
-Package pdftex.def Info: figures/gaussian-samples.png  used on input line 117.
-(pdftex.def)             Requested size: 418.25368pt x 205.92456pt.
+<figures/gaussian-samples.pdf, id=733, 591.8913pt x 312.2064pt>
+File: figures/gaussian-samples.pdf Graphic file (type pdf)
+<use figures/gaussian-samples.pdf>
+Package pdftex.def Info: figures/gaussian-samples.pdf  used on input line 116.
+(pdftex.def)             Requested size: 418.25368pt x 220.62004pt.
  [35]
-<figures/gaussian-samples-post.png, id=727, 758.835pt x 346.896pt>
-File: figures/gaussian-samples-post.png Graphic file (type png)
-<use figures/gaussian-samples-post.png>
-Package pdftex.def Info: figures/gaussian-samples-post.png  used on input line 
-136.
-(pdftex.def)             Requested size: 418.25368pt x 191.20625pt.
- [36 <./figures/gaussian-samples.png>] [37 <./figures/gaussian-samples-post.png
->]) (fitting-algorithm-theory.tex [38]
+<figures/gaussian-samples-post.pdf, id=749, 704.6325pt x 362.07271pt>
+File: figures/gaussian-samples-post.pdf Graphic file (type pdf)
+<use figures/gaussian-samples-post.pdf>
+Package pdftex.def Info: figures/gaussian-samples-post.pdf  used on input line 
+135.
+(pdftex.def)             Requested size: 418.25368pt x 214.91936pt.
+ [36 <./figures/gaussian-samples.pdf>] [37 <./figures/gaussian-samples-post.pdf
+>]) (alternative-chapter4.tex [38]
 Chapter 4.
 [39
 
 ]
-<figures/trimmed-hist.png, id=772, 722.7pt x 433.62pt>
-File: figures/trimmed-hist.png Graphic file (type png)
-<use figures/trimmed-hist.png>
-Package pdftex.def Info: figures/trimmed-hist.png  used on input line 33.
-(pdftex.def)             Requested size: 384.10959pt x 230.46591pt.
+<figures/untrimmed-hist.pdf, id=804, 722.7pt x 433.62pt>
+File: figures/untrimmed-hist.pdf Graphic file (type pdf)
+<use figures/untrimmed-hist.pdf>
+Package pdftex.def Info: figures/untrimmed-hist.pdf  used on input line 36.
+(pdftex.def)             Requested size: 209.1301pt x 125.4753pt.
+
+Underfull \hbox (badness 1173) in paragraph at lines 37--37
+\IL2/cmr/m/n/10.95 tained with sim-u-la-tion pa-ram-e-ters $\OML/cmm/m/it/10.95
+ I \OT1/cmr/m/n/10.95 =
+ []
+
+<figures/trimmed-hist.pdf, id=805, 722.7pt x 433.62pt>
+File: figures/trimmed-hist.pdf Graphic file (type pdf)
+<use figures/trimmed-hist.pdf>
+Package pdftex.def Info: figures/trimmed-hist.pdf  used on input line 43.
+(pdftex.def)             Requested size: 209.1301pt x 125.4753pt.
+
+Underfull \hbox (badness 2564) in paragraph at lines 44--44
+[]\IL2/cmr/m/n/10.95 (b) |An ex-am-ple of cut his-togram ob-
+ []
+
+
+Underfull \hbox (badness 1173) in paragraph at lines 44--44
+\IL2/cmr/m/n/10.95 tained with sim-u-la-tion pa-ram-e-ters $\OML/cmm/m/it/10.95
+ I \OT1/cmr/m/n/10.95 =
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[40] [41 <./figures/trimmed-hist.png>]
-<figures/hist_1e19_060_30_3exp.pdf, id=791, 462.52798pt x 346.89601pt>
-File: figures/hist_1e19_060_30_3exp.pdf Graphic file (type pdf)
-<use figures/hist_1e19_060_30_3exp.pdf>
-Package pdftex.def Info: figures/hist_1e19_060_30_3exp.pdf  used on input line 
-60.
-(pdftex.def)             Requested size: 384.10959pt x 288.09828pt.
- [42 <./figures/hist_1e19_060_30_3exp.pdf>]
-<figures/hist_1e19_060_30_2exp.pdf, id=843, 462.52798pt x 346.89601pt>
-File: figures/hist_1e19_060_30_2exp.pdf Graphic file (type pdf)
-<use figures/hist_1e19_060_30_2exp.pdf>
-Package pdftex.def Info: figures/hist_1e19_060_30_2exp.pdf  used on input line 
-78.
-(pdftex.def)             Requested size: 384.10959pt x 288.09828pt.
-<figures/hist_1e19_060_30_nlsq.pdf, id=846, 462.52798pt x 346.89601pt>
-File: figures/hist_1e19_060_30_nlsq.pdf Graphic file (type pdf)
-<use figures/hist_1e19_060_30_nlsq.pdf>
-Package pdftex.def Info: figures/hist_1e19_060_30_nlsq.pdf  used on input line 
-88.
-(pdftex.def)             Requested size: 384.10959pt x 288.09828pt.
- [43 <./figures/hist_1e19_060_30_2exp.pdf>] [44 <./figures/hist_1e19_060_30_nls
-q.pdf>]
-<figures/hist_1e19_060_30_manual.png, id=953, 560.8453pt x 368.87813pt>
-File: figures/hist_1e19_060_30_manual.png Graphic file (type png)
-<use figures/hist_1e19_060_30_manual.png>
-Package pdftex.def Info: figures/hist_1e19_060_30_manual.png  used on input lin
-e 103.
-(pdftex.def)             Requested size: 384.10959pt x 252.63495pt.
- [45 <./figures/hist_1e19_060_30_manual.png>]
-<figures/relative-error.pdf, id=963, 630.9171pt x 346.89601pt>
-File: figures/relative-error.pdf Graphic file (type pdf)
-<use figures/relative-error.pdf>
-Package pdftex.def Info: figures/relative-error.pdf  used on input line 136.
-(pdftex.def)             Requested size: 418.25368pt x 229.96835pt.
- [46 <./figures/relative-error.pdf>]
-<figures/I_1e17t_hot.pdf, id=1019, 578.16pt x 433.62pt>
+[40]
+<figures/3exp-ex1.pdf, id=815, 462.52798pt x 346.89601pt>
+File: figures/3exp-ex1.pdf Graphic file (type pdf)
+<use figures/3exp-ex1.pdf>
+Package pdftex.def Info: figures/3exp-ex1.pdf  used on input line 65.
+(pdftex.def)             Requested size: 209.1301pt x 156.8481pt.
+<figures/3exp-ex2.pdf, id=816, 462.52798pt x 346.89601pt>
+File: figures/3exp-ex2.pdf Graphic file (type pdf)
+<use figures/3exp-ex2.pdf>
+Package pdftex.def Info: figures/3exp-ex2.pdf  used on input line 72.
+(pdftex.def)             Requested size: 209.1301pt x 156.8481pt.
+ [41 <./figures/untrimmed-hist.pdf> <./figures/trimmed-hist.pdf>]
+<figures/3exp-ex-bad.pdf, id=854, 462.52798pt x 346.89601pt>
+File: figures/3exp-ex-bad.pdf Graphic file (type pdf)
+<use figures/3exp-ex-bad.pdf>
+Package pdftex.def Info: figures/3exp-ex-bad.pdf  used on input line 94.
+(pdftex.def)             Requested size: 341.43436pt x 256.0903pt.
+ [42 <./figures/3exp-ex1.pdf> <./figures/3exp-ex2.pdf>]
+<figures/scan-ex1.pdf, id=916, 462.52798pt x 346.89601pt>
+File: figures/scan-ex1.pdf Graphic file (type pdf)
+<use figures/scan-ex1.pdf>
+Package pdftex.def Info: figures/scan-ex1.pdf  used on input line 124.
+(pdftex.def)             Requested size: 209.1301pt x 156.8481pt.
+<figures/scan-ex2.pdf, id=917, 462.52798pt x 346.89601pt>
+File: figures/scan-ex2.pdf Graphic file (type pdf)
+<use figures/scan-ex2.pdf>
+Package pdftex.def Info: figures/scan-ex2.pdf  used on input line 131.
+(pdftex.def)             Requested size: 209.1301pt x 156.8481pt.
+ [43 <./figures/3exp-ex-bad.pdf>]
+<figures/hist_1e17_100_30_manual.png, id=953, 414.04688pt x 285.31593pt>
+File: figures/hist_1e17_100_30_manual.png Graphic file (type png)
+<use figures/hist_1e17_100_30_manual.png>
+Package pdftex.def Info: figures/hist_1e17_100_30_manual.png  used on input lin
+e 151.
+(pdftex.def)             Requested size: 209.1301pt x 144.1117pt.
+<figures/hist_1e19_500_60_manual.png, id=954, 409.53pt x 280.04625pt>
+File: figures/hist_1e19_500_60_manual.png Graphic file (type png)
+<use figures/hist_1e19_500_60_manual.png>
+Package pdftex.def Info: figures/hist_1e19_500_60_manual.png  used on input lin
+e 158.
+(pdftex.def)             Requested size: 209.1301pt x 143.0097pt.
+
+[44 <./figures/scan-ex1.pdf> <./figures/scan-ex2.pdf>]
+Overfull \hbox (1.65283pt too wide) in paragraph at lines 189--190
+[]\IL2/cmr/m/n/12 From the ta-ble, it is ev-i-dent the Scan-ning method is bet-
+ter than the three-exponential
+ []
+
+[45 <./figures/hist_1e17_100_30_manual.png> <./figures/hist_1e19_500_60_manual.
+png>]
+<figures/relative-error2.pdf, id=1002, 791.35652pt x 364.2408pt>
+File: figures/relative-error2.pdf Graphic file (type pdf)
+<use figures/relative-error2.pdf>
+Package pdftex.def Info: figures/relative-error2.pdf  used on input line 195.
+(pdftex.def)             Requested size: 418.25368pt x 192.51315pt.
+<figures/3exp-residuals.pdf, id=1004, 462.52798pt x 346.89601pt>
+File: figures/3exp-residuals.pdf Graphic file (type pdf)
+<use figures/3exp-residuals.pdf>
+Package pdftex.def Info: figures/3exp-residuals.pdf  used on input line 206.
+(pdftex.def)             Requested size: 209.1301pt x 156.8481pt.
+<figures/scan-residuals.pdf, id=1005, 462.52798pt x 346.89601pt>
+File: figures/scan-residuals.pdf Graphic file (type pdf)
+<use figures/scan-residuals.pdf>
+Package pdftex.def Info: figures/scan-residuals.pdf  used on input line 213.
+(pdftex.def)             Requested size: 209.1301pt x 156.8481pt.
+ [46 <./figures/relative-error2.pdf> <./figures/3exp-residuals.pdf> <./figures/
+scan-residuals.pdf>]
+<figures/I_1e17t_hot.pdf, id=1051, 578.16pt x 433.62pt>
 File: figures/I_1e17t_hot.pdf Graphic file (type pdf)
 <use figures/I_1e17t_hot.pdf>
-Package pdftex.def Info: figures/I_1e17t_hot.pdf  used on input line 159.
+Package pdftex.def Info: figures/I_1e17t_hot.pdf  used on input line 231.
 (pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/I_1e18t_hot.pdf, id=1020, 578.16pt x 433.62pt>
+<figures/I_1e18t_hot.pdf, id=1052, 578.16pt x 433.62pt>
 File: figures/I_1e18t_hot.pdf Graphic file (type pdf)
 <use figures/I_1e18t_hot.pdf>
-Package pdftex.def Info: figures/I_1e18t_hot.pdf  used on input line 166.
+Package pdftex.def Info: figures/I_1e18t_hot.pdf  used on input line 238.
 (pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/I_1e19t_hot.pdf, id=1021, 578.16pt x 433.62pt>
+<figures/I_1e19t_hot.pdf, id=1053, 578.16pt x 433.62pt>
 File: figures/I_1e19t_hot.pdf Graphic file (type pdf)
 <use figures/I_1e19t_hot.pdf>
-Package pdftex.def Info: figures/I_1e19t_hot.pdf  used on input line 172.
+Package pdftex.def Info: figures/I_1e19t_hot.pdf  used on input line 244.
 (pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
- [47]
-<figures/I_1e17_cut_10.pdf, id=1030, 578.16pt x 433.62pt>
+ [47 <./figures/I_1e17t_hot.pdf> <./figures/I_1e18t_hot.pdf> <./figures/I_1e19t
+_hot.pdf>]
+<figures/optimal-res-absorption.pdf, id=1110, 578.16pt x 433.62pt>
+File: figures/optimal-res-absorption.pdf Graphic file (type pdf)
+<use figures/optimal-res-absorption.pdf>
+Package pdftex.def Info: figures/optimal-res-absorption.pdf  used on input line
+ 264.
+(pdftex.def)             Requested size: 256.0774pt x 192.05714pt.
+ [48 <./figures/optimal-res-absorption.pdf>]
+<figures/I_1e17_cut_10.pdf, id=1134, 578.16pt x 433.62pt>
 File: figures/I_1e17_cut_10.pdf Graphic file (type pdf)
 <use figures/I_1e17_cut_10.pdf>
-Package pdftex.def Info: figures/I_1e17_cut_10.pdf  used on input line 196.
+Package pdftex.def Info: figures/I_1e17_cut_10.pdf  used on input line 279.
 (pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/I_1e18_cut_10.pdf, id=1031, 578.16pt x 433.62pt>
+<figures/I_1e18_cut_10.pdf, id=1135, 578.16pt x 433.62pt>
 File: figures/I_1e18_cut_10.pdf Graphic file (type pdf)
 <use figures/I_1e18_cut_10.pdf>
-Package pdftex.def Info: figures/I_1e18_cut_10.pdf  used on input line 203.
+Package pdftex.def Info: figures/I_1e18_cut_10.pdf  used on input line 286.
 (pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/I_1e19_cut_10.pdf, id=1032, 578.16pt x 433.62pt>
+<figures/I_1e19_cut_10.pdf, id=1136, 578.16pt x 433.62pt>
 File: figures/I_1e19_cut_10.pdf Graphic file (type pdf)
 <use figures/I_1e19_cut_10.pdf>
-Package pdftex.def Info: figures/I_1e19_cut_10.pdf  used on input line 209.
+Package pdftex.def Info: figures/I_1e19_cut_10.pdf  used on input line 292.
 (pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/t_hot_l_17.pdf, id=1035, 462.52798pt x 346.89601pt>
+[49 <./figures/I_1e17_cut_10.pdf> <./figures/I_1e18_cut_10.pdf> <./figures/I_1e
+19_cut_10.pdf>]
+<figures/t_hot_l_17.pdf, id=1270, 462.52798pt x 346.89601pt>
 File: figures/t_hot_l_17.pdf Graphic file (type pdf)
 <use figures/t_hot_l_17.pdf>
-Package pdftex.def Info: figures/t_hot_l_17.pdf  used on input line 225.
+Package pdftex.def Info: figures/t_hot_l_17.pdf  used on input line 308.
 (pdftex.def)             Requested size: 209.1301pt x 156.8481pt.
-<figures/t_hot_l_18.pdf, id=1036, 462.52798pt x 346.89601pt>
+<figures/t_hot_l_18.pdf, id=1271, 462.52798pt x 346.89601pt>
 File: figures/t_hot_l_18.pdf Graphic file (type pdf)
 <use figures/t_hot_l_18.pdf>
-Package pdftex.def Info: figures/t_hot_l_18.pdf  used on input line 232.
+Package pdftex.def Info: figures/t_hot_l_18.pdf  used on input line 315.
 (pdftex.def)             Requested size: 209.1301pt x 156.8481pt.
-<figures/t_hot_l_19.pdf, id=1037, 462.52798pt x 346.89601pt>
+<figures/t_hot_l_19.pdf, id=1272, 462.52798pt x 346.89601pt>
 File: figures/t_hot_l_19.pdf Graphic file (type pdf)
 <use figures/t_hot_l_19.pdf>
-Package pdftex.def Info: figures/t_hot_l_19.pdf  used on input line 238.
+Package pdftex.def Info: figures/t_hot_l_19.pdf  used on input line 321.
 (pdftex.def)             Requested size: 251.80531pt x 188.85608pt.
-) (chapter5.tex [48 <./figures/I_1e17t_hot.pdf> <./figures/I_1e18t_hot.pdf> <./
-figures/I_1e19t_hot.pdf>] [49 <./figures/I_1e17_cut_10.pdf> <./figures/I_1e18_c
-ut_10.pdf> <./figures/I_1e19_cut_10.pdf>] [50 <./figures/t_hot_l_17.pdf> <./fig
-ures/t_hot_l_18.pdf> <./figures/t_hot_l_19.pdf>]
+) (chapter5.tex [50 <./figures/t_hot_l_17.pdf> <./figures/t_hot_l_18.pdf> <./fi
+gures/t_hot_l_19.pdf>]
 Chapter 5.
 [51
 
@@ -1219,180 +1302,218 @@ Chapter 5.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [52]
-<figures/nn17_pred.pdf, id=1426, 578.16pt x 433.62pt>
+<figures/nn17_pred.pdf, id=1354, 578.16pt x 433.62pt>
 File: figures/nn17_pred.pdf Graphic file (type pdf)
 <use figures/nn17_pred.pdf>
 Package pdftex.def Info: figures/nn17_pred.pdf  used on input line 57.
 (pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/nn18_pred.pdf, id=1427, 578.16pt x 433.62pt>
+
+Underfull \hbox (badness 1558) in paragraph at lines 58--58
+[]\IL2/cmr/m/n/10.95 (a) |Pre-dic-tions of NN model for $\OML/cmm/m/it/10.95 I 
+\OT1/cmr/m/n/10.95 =
+ []
+
+<figures/nn18_pred.pdf, id=1355, 578.16pt x 433.62pt>
 File: figures/nn18_pred.pdf Graphic file (type pdf)
 <use figures/nn18_pred.pdf>
 Package pdftex.def Info: figures/nn18_pred.pdf  used on input line 64.
 (pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/nn19_pred.pdf, id=1428, 578.16pt x 433.62pt>
+
+Underfull \hbox (badness 1478) in paragraph at lines 65--65
+[]\IL2/cmr/m/n/10.95 (b) |Pre-dic-tions of NN model for $\OML/cmm/m/it/10.95 I 
+\OT1/cmr/m/n/10.95 =
+ []
+
+<figures/nn19_pred.pdf, id=1356, 578.16pt x 433.62pt>
 File: figures/nn19_pred.pdf Graphic file (type pdf)
 <use figures/nn19_pred.pdf>
 Package pdftex.def Info: figures/nn19_pred.pdf  used on input line 70.
 (pdftex.def)             Requested size: 251.80531pt x 188.84813pt.
-
-Overfull \hbox (2.3556pt too wide) in paragraph at lines 82--83
-[]\IL2/cmr/m/n/12 Generally, it is pos-si-ble to claim that the over-parametriz
-ed model can be smoothened
- []
-
-<figures/gp17_pred.pdf, id=1429, 578.16pt x 433.62pt>
+[53]
+<figures/gp17_pred.pdf, id=1363, 578.16pt x 433.62pt>
 File: figures/gp17_pred.pdf Graphic file (type pdf)
 <use figures/gp17_pred.pdf>
 Package pdftex.def Info: figures/gp17_pred.pdf  used on input line 91.
 (pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/gp18_pred.pdf, id=1430, 578.16pt x 433.62pt>
+
+Underfull \hbox (badness 1609) in paragraph at lines 92--92
+[]\IL2/cmr/m/n/10.95 (a) |Pre-dic-tions of GP model for $\OML/cmm/m/it/10.95 I 
+\OT1/cmr/m/n/10.95 =
+ []
+
+<figures/gp18_pred.pdf, id=1364, 578.16pt x 433.62pt>
 File: figures/gp18_pred.pdf Graphic file (type pdf)
 <use figures/gp18_pred.pdf>
 Package pdftex.def Info: figures/gp18_pred.pdf  used on input line 98.
 (pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/gp19_pred.pdf, id=1431, 578.16pt x 433.62pt>
+
+Underfull \hbox (badness 1527) in paragraph at lines 99--99
+[]\IL2/cmr/m/n/10.95 (b) |Pre-dic-tions of GP model for $\OML/cmm/m/it/10.95 I 
+\OT1/cmr/m/n/10.95 =
+ []
+
+<figures/gp19_pred.pdf, id=1365, 578.16pt x 433.62pt>
 File: figures/gp19_pred.pdf Graphic file (type pdf)
 <use figures/gp19_pred.pdf>
 Package pdftex.def Info: figures/gp19_pred.pdf  used on input line 104.
 (pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-[53]
-<figures/gp17_pred_ss.pdf, id=1440, 578.16pt x 433.62pt>
+
+Underfull \hbox (badness 1694) in paragraph at lines 105--105
+[]\IL2/cmr/m/n/10.95 (c) |Pre-dic-tions of GP model for $\OML/cmm/m/it/10.95 I 
+\OT1/cmr/m/n/10.95 =
+ []
+
+[54 <./figures/nn17_pred.pdf> <./figures/nn18_pred.pdf> <./figures/nn19_pred.pd
+f>]
+<figures/gp17_pred_ss.pdf, id=1479, 578.16pt x 433.62pt>
 File: figures/gp17_pred_ss.pdf Graphic file (type pdf)
 <use figures/gp17_pred_ss.pdf>
 Package pdftex.def Info: figures/gp17_pred_ss.pdf  used on input line 120.
 (pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/gp18_pred_ss.pdf, id=1441, 578.16pt x 433.62pt>
+<figures/gp18_pred_ss.pdf, id=1480, 578.16pt x 433.62pt>
 File: figures/gp18_pred_ss.pdf Graphic file (type pdf)
 <use figures/gp18_pred_ss.pdf>
 Package pdftex.def Info: figures/gp18_pred_ss.pdf  used on input line 127.
 (pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/gp19_pred_ss.pdf, id=1442, 578.16pt x 433.62pt>
+<figures/gp19_pred_ss.pdf, id=1481, 578.16pt x 433.62pt>
 File: figures/gp19_pred_ss.pdf Graphic file (type pdf)
 <use figures/gp19_pred_ss.pdf>
 Package pdftex.def Info: figures/gp19_pred_ss.pdf  used on input line 133.
 (pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
- [54 <./figures/nn17_pred.pdf> <./figures/nn18_pred.pdf> <./figures/nn19_pred.p
-df>] [55 <./figures/gp17_pred.pdf> <./figures/gp18_pred.pdf> <./figures/gp19_pr
-ed.pdf>]
-<figures/graph_tool.png, id=1668, 776.9025pt x 490.08093pt>
+ [55 <./figures/gp17_pred.pdf> <./figures/gp18_pred.pdf> <./figures/gp19_pred.p
+df>] [56 <./figures/gp17_pred_ss.pdf> <./figures/gp18_pred_ss.pdf> <./figures/g
+p19_pred_ss.pdf>]
+<figures/graph_tool.png, id=1706, 776.9025pt x 490.08093pt>
 File: figures/graph_tool.png Graphic file (type png)
 <use figures/graph_tool.png>
-Package pdftex.def Info: figures/graph_tool.png  used on input line 152.
+Package pdftex.def Info: figures/graph_tool.png  used on input line 154.
 (pdftex.def)             Requested size: 362.77524pt x 228.84995pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[56 <./figures/gp17_pred_ss.pdf> <./figures/gp18_pred_ss.pdf> <./figures/gp19_p
-red_ss.pdf>]
-<figures/graph_tool2.png, id=1779, 776.9025pt x 490.08093pt>
+<figures/graph_tool2.png, id=1707, 776.9025pt x 490.08093pt>
 File: figures/graph_tool2.png Graphic file (type png)
 <use figures/graph_tool2.png>
-Package pdftex.def Info: figures/graph_tool2.png  used on input line 163.
+Package pdftex.def Info: figures/graph_tool2.png  used on input line 165.
 (pdftex.def)             Requested size: 362.77524pt x 228.84995pt.
- [57 <./figures/graph_tool.png> <./figures/graph_tool2.png>]
-<figures/graph_tool3.png, id=1789, 776.9025pt x 490.08093pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[57 <./figures/graph_tool.png>]
+<figures/graph_tool3.png, id=1716, 776.9025pt x 490.08093pt>
 File: figures/graph_tool3.png Graphic file (type png)
 <use figures/graph_tool3.png>
-Package pdftex.def Info: figures/graph_tool3.png  used on input line 175.
+Package pdftex.def Info: figures/graph_tool3.png  used on input line 177.
 (pdftex.def)             Requested size: 362.77524pt x 228.84995pt.
-<figures/cui_compare1.pdf, id=1793, 462.52798pt x 346.89601pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[58 <./figures/graph_tool2.png>]
+<figures/cui_compare1.pdf, id=1727, 462.52798pt x 346.89601pt>
 File: figures/cui_compare1.pdf Graphic file (type pdf)
 <use figures/cui_compare1.pdf>
-Package pdftex.def Info: figures/cui_compare1.pdf  used on input line 199.
-(pdftex.def)             Requested size: 405.45045pt x 304.10492pt.
-
-[58 <./figures/graph_tool3.png>]
-<figures/cui_compare2.pdf, id=1806, 462.52798pt x 346.89601pt>
-File: figures/cui_compare2.pdf Graphic file (type pdf)
-<use figures/cui_compare2.pdf>
-Package pdftex.def Info: figures/cui_compare2.pdf  used on input line 213.
+Package pdftex.def Info: figures/cui_compare1.pdf  used on input line 203.
 (pdftex.def)             Requested size: 405.45045pt x 304.10492pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[59 <./figures/cui_compare1.pdf>] [60 <./figures/cui_compare2.pdf>]
-<figures/improved-model.png, id=1879, 483.30562pt x 375.65344pt>
+[59 <./figures/graph_tool3.png>]
+<figures/cui_compare2.pdf, id=1740, 462.52798pt x 346.89601pt>
+File: figures/cui_compare2.pdf Graphic file (type pdf)
+<use figures/cui_compare2.pdf>
+Package pdftex.def Info: figures/cui_compare2.pdf  used on input line 219.
+(pdftex.def)             Requested size: 405.45045pt x 304.10492pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Citation 'gibbon2005' on page 60 undefined on input line 227.
+
+[60 <./figures/cui_compare1.pdf>] [61 <./figures/cui_compare2.pdf>]
+<figures/improved-model.png, id=1807, 483.30562pt x 375.65344pt>
 File: figures/improved-model.png Graphic file (type png)
 <use figures/improved-model.png>
-Package pdftex.def Info: figures/improved-model.png  used on input line 261.
+Package pdftex.def Info: figures/improved-model.png  used on input line 272.
 (pdftex.def)             Requested size: 209.1301pt x 162.54811pt.
-<figures/improved-model-ss.png, id=1880, 464.4853pt x 356.0803pt>
+<figures/improved-model-ss.png, id=1808, 464.4853pt x 356.0803pt>
 File: figures/improved-model-ss.png Graphic file (type png)
 <use figures/improved-model-ss.png>
-Package pdftex.def Info: figures/improved-model-ss.png  used on input line 268.
+Package pdftex.def Info: figures/improved-model-ss.png  used on input line 279.
 
 (pdftex.def)             Requested size: 209.1301pt x 160.32703pt.
- [61])
-(conclusion.tex [62 <./figures/improved-model.png> <./figures/improved-model-ss
-.png>] [63
+ [62])
+(conclusion.tex [63 <./figures/improved-model.png> <./figures/improved-model-ss
+.png>] [64
 
-]) [64]
+]) [65]
 LaTeX Font Info:    Trying to load font information for IL2+cmtt on input line 
-247.
+248.
 
 (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/cslatex/base\il2cmtt.fd
 File: il2cmtt.fd 1997/08/20 CSLaTeX font definitions
 )
-Overfull \hbox (2.65717pt too wide) in paragraph at lines 248--248
+Overfull \hbox (2.65717pt too wide) in paragraph at lines 249--249
 []\IL2/cmr/m/n/12 J. Daw-son, ``One-dimensional plasma model'', \IL2/cmr/m/it/1
 2 Physics of Flu-ids\IL2/cmr/m/n/12 , vol. 5, pp. 445{
  []
 
-[65
+[66
 
 
 ]
-Overfull \hbox (40.91583pt too wide) in paragraph at lines 248--248
+Overfull \hbox (40.91583pt too wide) in paragraph at lines 249--249
 \IL2/cmr/m/it/12 Tech-no-met-rics\IL2/cmr/m/n/12 , vol. 47, pp. 297{311, 3 Aug.
  2005. \IL2/cmr/m/sc/12 doi\IL2/cmr/m/n/12 : []$\IL2/cmtt/m/n/12 10 . 1198 / 00
 4017005000000058$[]\IL2/cmr/m/n/12 . 
  []
 
-[66]
-Overfull \hbox (8.51352pt too wide) in paragraph at lines 248--248
+[67]
+Overfull \hbox (8.51352pt too wide) in paragraph at lines 249--249
 []\IL2/cmr/m/n/12 H. Tak-abe, \IL2/cmr/m/it/12 The Physics of Laser Plas-mas an
 d Ap-pli-ca-tions - Vol-ume 1\IL2/cmr/m/n/12 . Springer,
  []
 
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 2
-47.
+48.
 (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 247.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 248.
 
-[67] [68] (attachment1.tex
+[68] [69] (attachment1.tex
 Appendix A.
-[69
+[70
 
-] [70]) (attachment2.tex [71]
+] [71]) (attachment2.tex [72]
 Appendix B.
-) [72
+) [73
 
 ] (main.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BC263103FB3611D7C6BC968C7B39535F;5194.
+(rerunfilecheck)             Checksum: 6F439E1D6F3A9B5C2A5AB72BCA733187;5273.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25295 strings out of 476339
- 448665 string characters out of 5788119
- 1876340 words of memory out of 5000000
- 45031 multiletter control sequences out of 15000+600000
- 539534 words of font info for 115 fonts, out of 8000000 for 9000
+ 25382 strings out of 476339
+ 450812 string characters out of 5788119
+ 1878340 words of memory out of 5000000
+ 45105 multiletter control sequences out of 15000+600000
+ 539875 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,17n,77p,2125b,2231s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/public/csfonts/dpi600\c
 stt10.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/public/csfonts/d
 pi600\cstt12.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cs
-fonts/dpi720\cscsc10.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/p
-ublic/csfonts/dpi657\csr10.pk>{C:/Users/samue/AppData/Local/Programs/MiKTeX/fon
-ts/enc/dvips/cm-super/cm-super-ts1.enc} <C:\Users\samue\AppData\Local\MiKTeX\fo
+fonts/dpi720\cscsc10.pk>{C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/enc
+/dvips/cm-super/cm-super-ts1.enc} <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk
+/ljfour/public/csfonts/dpi657\csr10.pk> <C:\Users\samue\AppData\Local\MiKTeX\fo
 nts/pk/ljfour/public/csfonts/dpi720\csbx12.pk> <C:\Users\samue\AppData\Local\Mi
 KTeX\fonts/pk/ljfour/public/csfonts/dpi864\csbx12.pk> <C:\Users\samue\AppData\L
 ocal\MiKTeX\fonts/pk/ljfour/public/csfonts/dpi600\csti12.pk> <C:\Users\samue\Ap
@@ -1418,21 +1539,24 @@ eX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/samue/AppData/Local/Pro
 grams/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Users/samue/App
 Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/s
 amue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:
-/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.
-pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmr7.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmr8.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/samue/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/samue/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/samue/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/samu
-e/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Us
-ers/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pf
-b>
-Output written on main.pdf (72 pages, 3006614 bytes).
+/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17
+.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmr6.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmr7.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr8.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/samue/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/samue/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/samue/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Us
+ers/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pf
+b><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfr
+m1095.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-s
+uper/sfrm1200.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/cm-super/sfrm1728.pfb>
+Output written on main.pdf (73 pages, 3242224 bytes).
 PDF statistics:
- 2733 PDF objects out of 2984 (max. 8388607)
- 287 named destinations out of 1000 (max. 500000)
- 464 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2682 PDF objects out of 2984 (max. 8388607)
+ 292 named destinations out of 1000 (max. 500000)
+ 499 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -4,6 +4,7 @@ sys.path.append(PATH_TO_PROJECT)
 
 import numpy as np
 
+
 # CONSTANTS
 FOLDER_NAME = "data/"
 PATH_TO_HISTOGRAMS = 'C:/Users/samue/OneDrive/Dokumenty/FJFI/MASTERS-THESIS/programs/histograms/'+FOLDER_NAME+'spectra/'
@@ -17,7 +18,7 @@ FOLDER_SAVE_RESULTS = "histograms/"+FOLDER_NAME+"/fitting_results/fit_params/"
 from histograms.HistogramUtils import load_histograms
 from fitting.FittingUtils import fit_hot_temperature, plot_fit, reverse_normalize, print_fit_results, save_fit_results
 
-FIT_SEQUNECE = ["3exp", "3cut", "2exp", "2nlsq"]
+FIT_SEQUNECE = ["3exp"]
 # FIT_SEQUNECE_2 = ["3exp", "3cut", "2exp", "2nlsq", "2cut", "1exp"]
 
 if __name__ == "__main__":
@@ -27,6 +28,8 @@ if __name__ == "__main__":
     # 2. For each histogram, perform the algorithm and save the result to the new folder and to the dataset
     count_failed_fits = 0
     for histogram in histograms:
+        # if histogram[3] != "hist_1e19_060_30":
+        #     continue
         max_hist = np.max(histogram[0])
         
         # 1. NORMALIZE THE HISTOGRAM
@@ -43,7 +46,7 @@ if __name__ == "__main__":
         # # 3. PLOT THE FITS
         plot_fit(histogram, fit_results, fit_type="3exp", save_path=FOLDER_SAVE_3EXP)
         plot_fit(histogram, fit_results, fit_type="2exp", save_path=FOLDER_SAVE_2EXP)
-        plot_fit(histogram, fit_results, fit_type="2nlsq", save_path=FOLDER_SAVE_NLSQ)
+        # plot_fit(histogram, fit_results, fit_type="2nlsq", save_path=FOLDER_SAVE_NLSQ)
         # plot_fit(histogram, fit_results, fit_type="1nlsq", save_path=FOLDER_SAVE_1NLSQ)
         
         # 4. SAVE THE FIT RESULTS TO DATASET

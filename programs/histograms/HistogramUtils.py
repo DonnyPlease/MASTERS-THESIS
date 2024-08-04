@@ -2,10 +2,22 @@ import sys, os
 import numpy as np
 import joblib
 import matplotlib.pyplot as plt
+from matplotlib import rc
 
 # Add the project path
 PATH_TO_PROJECT = 'C:/Users/samue/OneDrive/Dokumenty/FJFI/MASTERS-THESIS/programs/'
 sys.path.append(PATH_TO_PROJECT)
+
+# Configure Matplotlib to use LaTeX for rendering text
+rc('font', family='serif', serif='Computer Modern')
+rc('text', usetex=True)
+rc('font', size=20)          # controls default text sizes
+rc('axes', titlesize=22)     # fontsize of the axes title
+rc('axes', labelsize=18)     # fontsize of the x and y labels
+rc('xtick', labelsize=18)    # fontsize of the tick labels
+rc('ytick', labelsize=18)    # fontsize of the tick labels
+rc('legend', fontsize=18)    # legend fontsize
+rc('figure', titlesize=22)   # fontsize of the figure title
 
 def load_histogram(name):
     with open(name+"/bins.txt", 'r') as file:
@@ -52,23 +64,26 @@ def trim_histogram(hist_path, save_folder):
     x, y = _trim_histogram(hist_path, save_path)
     return x, y
 
-def _plot_histogram(x,y):
-    plt.figure(figsize=(10, 6))
-    plt.scatter(x, y, label='Histogram',c='black',s=7)
-    plt.xlabel('Energy [keV]')
-    plt.ylabel('Counts')
-    plt.yscale('log')
-    plt.grid(True)
-    plt.show()
-
-def plot_trimmed_histogram(hist_path):
-    x, y = load_histogram(hist_path)
-    _plot_histogram(x, y)
+def _plot_histogram(x,y,save_path=None):
     
-def plot_untrimmed_histogram(hist_path):
+    plt.figure(figsize=(10, 6))
+    plt.scatter(x, y, label='Simulation data', c='black',s=10, zorder=5)
+    plt.xlabel(r'$E \, [\mathrm{keV}]$')
+    plt.ylabel(r'$N$')
+    plt.yscale('log')
+    plt.grid(True, zorder=2)
+    plt.legend()
+    plt.savefig(save_path)
+
+def plot_trimmed_histogram(hist_path, save_path):
+    x, y = load_histogram(hist_path)
+    _plot_histogram(x, y, save_path)
+    
+def plot_untrimmed_histogram(hist_path, save_path):
     x, y = load_histogram(hist_path)
     x = np.array([(x[i]+x[i+1])/2 for i in range(len(x)-1)])
-    _plot_histogram(x, y)
+    print(x.shape, y.shape)
+    _plot_histogram(x, y, save_path)
 
 def trim_all_histogram_in_folder(folder_path, save_folder):
     for folder in os.listdir(folder_path):

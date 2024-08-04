@@ -1,6 +1,6 @@
 \chapter{Surrogate hot electron temperature models}
 \label{ch:models-theory}
-In this chapter, we will talk about the models suitable for hot electron temperature modelling. It was already explained in the first chapter that there are many physical processes contributing to the absorption of laser. As a consequence, there is a non-linear relationship between the initial parameters and the hot electron temperature. It would be very difficult to propose an analytical model where the temperature is explicitly dependant on all the initial parameters. There have been works studying how the temperature scales with respect to intensity \cite{kluge2011,cui2013,miller2023,haines2009,beg1997}, angle \cite{cui2013} or length scale and even pulse durations \cite{miller2023}, but none of them models the dependency on all parameters at once. Needless to say, these works are valuable and they will be discussed with respect to predictions of our final model in chapter \ref{ch:comparison}.
+In this chapter, we will talk about the models suitable for hot electron temperature modelling. It was already explained in the first chapter that there are many physical processes contributing to the absorption of laser. As a consequence, there is a non-linear relationship between the initial parameters and the hot electron temperature. It would be very difficult to propose an analytical model where the temperature is explicitly dependant on all the initial parameters. There have been works studying how the temperature scales with respect to intensity \cite{kluge2011,cui2013,miller2023,haines2009,beg1997}, angle \cite{cui2013} or length scale and even pulse durations \cite{miller2023}, but none of them models the dependency on all parameters at once. Needless to say, these works are valuable and they will be discussed with respect to predictions of our final model in Chapter \ref{ch:models-impl}.
 
 Given the complexity and multi-dimensionality of our dataset, few machine learning regression methods offer a promising alternative to analytical models. We will now discuss general principle of regression and several particular regression methods as well as their suitability for this thesis.
 
@@ -37,9 +37,9 @@ The appropriate selection of the feature mapping $\bm{\phi}$ enables one to effe
 Support vector regression (SVR) is powerful regression technique capable of modelling non-linear relationship without any previous assumption about the model. From its formulation it is directly set up to balance complexity and prediction error~\cite{zhang2020}. In several following paragraphs, we will present the most important principles of SVR.
 
 \subsection*{Linear $\epsilon$-SVR model}
-Assuming simple linear model we can simplify equation \ref{eq:gen-linear-model} to $y = \bm{\bar{w}}^T\bm{x} + w_0$ where $\bm{\bar{w}} = (w_1,..,w_d)$. In $\epsilon$-SVR, there are constraints put on the predictions in such way that the prediction $ \bm{\bar{w}}^T\bm{x_i} + w_0$ cannot be further from $y_i$ than $\epsilon$. We can imagine that there is a \textit{tube} with radius $2\epsilon$ around the training points. We also want the \textit{tube} defined by $\epsilon$ to be as \textit{flat} possible, which can be expressed as minimizing $\frac{1}{2} \bm{w}^T\bm{w}$~\cite{zhang2020}.
+Assuming simple linear model we can simplify Equation \ref{eq:gen-linear-model} to $y = \bm{\bar{w}}^T\bm{x} + w_0$ where $\bm{\bar{w}} = (w_1,..,w_d)$. In $\epsilon$-SVR, there are constraints put on the predictions in such way that the prediction $ \bm{\bar{w}}^T\bm{x_i} + w_0$ cannot be further from $y_i$ than parameter $\epsilon$. We can imagine that there is a \textit{tube} with radius $2\epsilon$ around the training points. We also want the \textit{tube} defined by $\epsilon$ to be as \textit{flat} possible, which can be expressed as minimizing $\frac{1}{2} \bm{w}^T\bm{w}$~\cite{zhang2020}.
 
-In reality, having rigid boundary at distance $\epsilon$ from $y_i$ is not practical because of outliers. It is therefore natural to introduce two $slack$ variables $\xi_i$ and $\xi_i^*$, which are used to widen the tube at the points of observation. The optimization problem can be formulated as:
+In reality, having rigid boundary at distance $\epsilon$ from $y_i$ is not practical because of outliers. It is therefore natural to introduce two so-called $slack$ variables $\xi_i$ and $\xi_i^*$, which are used to widen the tube at the points of observation. The optimization problem can be formulated as:
 \begin{align}
 	\label{eq:svr1}
 	\mathrm{minimize}\qquad & \frac{1}{2}\bm{w}^T\bm{w} + C\sum_{i=1}^{n}\left(\xi_i+\xi_i^*\right)  \\
@@ -56,45 +56,44 @@ where $C>0$ is a hyper-parameter determining the trade-off between the flatness 
 $\epsilon$ are tolerated \cite{smola2004}.
 
 \subsection*{Kernel SVR}
-We can leave the assumption that the relationship between $\bm{x}$ and $y$ is linear. We do this by so-called \textit{kernel trick} - transforming features $\bm{x}_i$ to a higher-dimensional kernel space $\mathcal{F}$. Let us note the mapping $\phi(\cdot): \mathcal{X} \rightarrow \mathcal{F}$. $\bm{x}_i$ in \ref{eq:svr2} is replaced by $\phi(\bm{x})$. Moreover, the new optimization problem can be written in dual form \cite{smola2004}:
+We can leave the assumption that the relationship between $\bm{x}$ and $y$ is linear. We do this by so-called \textit{kernel trick} - transforming features $\bm{x}_i$ to a higher-dimensional kernel space $\mathcal{F}$. Let us note the mapping $\phi(\cdot): \mathcal{X} \rightarrow \mathcal{F}$. $\bm{x}_i$ from Equation \ref{eq:svr2} is replaced by $\phi(\bm{x}_i)$. Moreover, the new optimization problem can be written in dual form \cite{smola2004}:
 \begin{equation}
 	\mathrm{max}_{\alpha_i,\alpha_i^*} \, \left\{ -\frac{1}{2}\sum_{i,j}^{n}\left(\alpha_i - \alpha_i^*\right)\left(\alpha_j - \alpha_j^*\right)k(\bm{x}_i,\bm{x}_j) -\epsilon\sum_{i}^{n}\left(\alpha_i + \alpha_i^*\right) + \sum_{i}^{n}y_i\left(\alpha_i - \alpha_i^*\right) \right\}
 \end{equation}
 \begin{equation}
 	\mathrm{subject}\,\mathrm{to}\quad  \sum_{i}^{n}\left(\alpha_i - \alpha_i^*\right) = 0 \,\mathrm{and}\, \alpha_i, \alpha_i^* \in \left[0,C\right]
 \end{equation}
-where $k(\bm{x}_i,\bm{x}_j) = \phi(\bm{x}_i)\phi(\bm{x}_j)$ is the kernel function and $\alpha_i$ and $\alpha_i^*$ are parameters of the model in the dual problem. $\alpha_i$ and $\alpha_i^*$ are defined by \cite{smola2004}:
+where $k(\bm{x}_i,\bm{x}_j) = \phi(\bm{x}_i)\phi(\bm{x}_j)$ is a\textit{ kernel function} and $\alpha_i$ and $\alpha_i^*$ are parameters of the model in the dual problem. $\alpha_i$ and $\alpha_i^*$ are defined by \cite{smola2004}:
 \begin{equation}
 	\bm{w} = \sum_{i=1}^n(\alpha_i - \alpha_i^*) \phi(\bm{x_i}).
 \end{equation}
-There are multiple conditions which the kernel function must satisfy and they can be found in \cite{smola2004}. Popular kernels include linear, polynomial, radial basis function and others \cite{zhang2020}.
-Note that $\bm{w}$ is no longer explicitly present. Another important fact is that the flatness is now relevant in the new space $\mathcal{F}$ and not the original input space $\mathcal{X}$ \cite{smola2004}.
+There are multiple conditions the kernel function must satisfy and they can be found in \cite{smola2004}. Popular kernels include linear, polynomial, radial basis function and others~\cite{zhang2020}. Note that $\bm{w}$ is in the dual problem no longer explicitly present. Another important fact is that the flatness is now relevant in the new space $\mathcal{F}$ and not the original input space $\mathcal{X}$ \cite{smola2004}.
 
-To determine the hyper-parameters $\epsilon$ and $C$ (or other parameters associated with the kernel itself), it is customary to perform a \textit{cross-validation} where we randomly divide the dataset to two parts - training set and test set - and evaluate the predictive performance only on the latter which is not used during the optimization \cite{zhang2020}.
+To determine the hyper-parameters $\epsilon$ and $C$ (or other parameters associated with the kernel itself), it is customary to perform a \textit{cross-validation} where we randomly divide the dataset to two parts -- training set and test set -- and evaluate the predictive performance only on the latter which is not used during the optimization \cite{zhang2020}.
 
 \section{Neural networks}
 Neural networks have a different approach. They still assume almost nothing about the modelled relationship, but as opposed to SVR, where the goal is to minimize the confidence interval by searching for a flat solution, neural networks usually search directly for minimum error on the training data \cite{vapnik2000}. 
 
-The simplest neural network is probably the  Multilayer Perceptron (MLP). A MLP is a type of neural network that consists of an input layer, one or more \textit{hidden} layers, and an output layer. Each layer is composed of neurons, and each neuron in a layer is connected to every neuron in the subsequent layer. Neuron linearly combines all the outputs from the previous layer using its own set of weights and then transforms the result to its output using some function. The mathematical formulation of an MLP can be described as follows:
+The simplest neural network is probably the  Multilayer Perceptron (MLP). A MLP is a type of neural network that consists of an input layer, one or more \textit{hidden} layers, and an output layer. Each layer is composed of neurons, and each neuron in a layer is connected to every neuron in the subsequent layer. Neuron linearly combines all the outputs from the previous layer using its own set of weights and then transforms the result to its output using some function. The mathematical formulation of an MLP with \textit{one} hidden layer can be described as follows:
 
 1. \textbf{Input Layer:} Let the input vector be $\bm{x}$.
 
-2. \textbf{Hidden Layers:} Consider a \textit{single} hidden layer with $m$ neurons. The output of the $j$-th neuron in the hidden layer, denoted as $h_j$, is given by:
+2. \textbf{Hidden Layers:} Consider a hidden layer with $m$ neurons. The output of the $j$-th neuron in the hidden layer, denoted as $h_j$, is given by:
 \begin{equation}
 	h_j = \sigma\left( \sum_{i=1}^{n} w_{ij}^{(1)} x_i + b_j^{(1)} \right)
 \end{equation}
 where $w_{ij}^{(1)}$ is the weight connecting the $i$-th input to the $j$-th hidden neuron, $b_j^{(1)}$ is the bias term for the $j$-th hidden neuron, and $\sigma$ is the \textit{activation function}, that introduces non-linearity.
 
-3. \textbf{Output Layer:} Let the output layer have $1$ neuron. The output of the $l$-th neuron in the output layer, denoted as $y_l$, is given by:
+3. \textbf{Output Layer:} Let the output layer have $l$ neurons. The output of the $l$-th neuron in the output layer, denoted as $y_l$, is given by:
 \begin{equation}
 	y_l = \phi\left( \sum_{j=1}^{m} w_{jl}^{(2)} h_j + b_l^{(2)} \right)
 \end{equation}
-where $w_{jl}^{(2)}$ is the weight connecting the $j$-th hidden neuron to the $l$-th output neuron, $b_l^{(2)}$ is the bias term for the $l$-th output neuron, and $\phi$ is the activation function for the output layer (for regression $\phi$ is the identity) \cite{bishop2006}.
+where $w_{jl}^{(2)}$ is the weight connecting the $j$-th hidden neuron to the $l$-th output neuron, $b_l^{(2)}$ is the bias term for the $l$-th output neuron, and $\phi$ is the activation function for the output layer (for regression $\phi$ is the identity) \cite{bishop2006}. In our case, $l=1$.
 
-Note that for each layer weights are well represented as matrix. Number of hidden layers and the number of neurons has to be chosen. However, even with only two layers with correct non-linear activation functions, any continuous function on a compact domain can be approximated to arbitrary precision if the total number of neurons is large enough~\cite{bishop2006}.
+Note that for each layer, weights are well represented as a matrix. Number of hidden layers and the number of neurons has to be chosen. However, even with only two layers with correct non-linear activation functions, any continuous function on a compact domain can be approximated to arbitrary precision if the total number of neurons is large enough~\cite{bishop2006}. The complexity that can be achieved by even quite small neural network therefore easily surpasses our needs.
 
 \subsection*{Training the MLP}
-The training of neural network includes usually calculating gradients of the loss function with respect to the weights, propagating the gradients back through the network and updating the weights - also known as \textit{gradient descent}. It is usually the case that if the loss and the activations are differentiable functions (w.r. to the weights), because their derivative is needed for the error back-propagation \cite{bishop2006}.
+The training of neural network includes usually calculating gradients of the loss function with respect to the weights, propagating the gradients back through the network and updating the weights. This is also known as \textit{gradient descent}. It is usually the case that the loss and the activations are differentiable functions (w.r. to the weights), because their derivative is needed for the error back-propagation~\cite{bishop2006}.
 
 Gradient descent alone can find local minimum of the error function for the training data but it says nothing about the ability to recognize patterns. There are multiple \textit{regularization} strategies that help neural network generalize but in contrast to SVR they have to be fine-tuned. Common ones are early stopping (not letting the weights to come to the local minimum completely), weight decay (e.g. using $SSE_{\mathrm{reg}}$), batch normalization (the gradients are averaged for multiple training points), or dropout (in each learning process iteration we exclude few neurons from the network) \cite{bishop2006,srivastava2014}.
 

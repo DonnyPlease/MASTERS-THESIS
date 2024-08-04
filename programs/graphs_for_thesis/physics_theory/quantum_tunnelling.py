@@ -1,6 +1,19 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+
+# Configure Matplotlib to use LaTeX for rendering text
+from matplotlib import rc
+rc('font', family='serif', serif='Computer Modern')
+rc('text', usetex=True)
+rc('font', size=18)          # controls default text sizes
+rc('axes', titlesize=20)     # fontsize of the axes title
+rc('axes', labelsize=16)     # fontsize of the x and y labels
+rc('xtick', labelsize=16)    # fontsize of the tick labels
+rc('ytick', labelsize=16)    # fontsize of the tick labels
+rc('legend', fontsize=16)    # legend fontsize
+rc('figure', titlesize=20)   # fontsize of the figure title
+
 # Constants
 e = 1.602e-19  # Elementary charge in Coulombs
 a0 = 5.29177e-11  # Bohr radius in meters
@@ -34,7 +47,7 @@ tunnel_V = np.full_like(tunnel_x, E_ground)
 plt.plot(tunnel_x / a0, tunnel_V, color='red', linewidth=2, linestyle='--', label='Tunneling region')
 
 # Labels and title
-plt.xlabel(r'$r$ [$a_B$]')
+plt.xlabel(r'$r$ [$a_\mathrm{B}$]')
 plt.ylabel(r'$V(r)$ [eV]')
 plt.title("")
 plt.legend()
@@ -45,4 +58,4 @@ plt.yticks(np.append(plt.yticks()[0], E_ground), np.append(plt.yticks()[1], f' {
 plt.ylim([-15, -5])
 
 # Show plot
-plt.show()
+plt.savefig("C:/Users/samue/OneDrive/Dokumenty/FJFI/MASTERS-THESIS/tex/figures/tunnelling.pdf")

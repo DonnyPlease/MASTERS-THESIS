@@ -25,6 +25,9 @@ class DatasetRecord():
         self.f_stdev = '0'
         self.g_stdev = '0'
         self.t_hot_stdev = '0'
+        self.n_hot = '0'
+        self.n_hot_stdev = '0'
+        
         if text_line != '':
             self.initialize_from_text(text_line)
             
@@ -136,7 +139,7 @@ class DatasetUtils():
         final_dataset, _ = DatasetUtils.load_datasets_to_dicts(folder)
         return final_dataset
     
-    def dataset_to_tensors(dataset):
+    def dataset_to_tensors(dataset, q="t_hot"):
         X = []
         Y = []
         for key, item in dataset.items():
@@ -145,7 +148,10 @@ class DatasetUtils():
             l_float = float(l)
             alpha_float = float(alpha)
             X.append([i_float,l_float,alpha_float])
-            Y.append([float(item.t_hot), float(item.t_hot_stdev)])
+            if q == "t_hot":
+                Y.append([float(item.t_hot), float(item.t_hot_stdev)])
+            if q == "n_0":
+                Y.append([float(item.n_hot), float(item.n_hot_stdev)])
         return X, Y
     
     def load_data_for_regression(folder):

@@ -1,6 +1,18 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+# Configure Matplotlib to use LaTeX for rendering text
+from matplotlib import rc
+rc('font', family='serif', serif='Computer Modern')
+rc('text', usetex=True)
+rc('font', size=18)          # controls default text sizes
+rc('axes', titlesize=20)     # fontsize of the axes title
+rc('axes', labelsize=16)     # fontsize of the x and y labels
+rc('xtick', labelsize=16)    # fontsize of the tick labels
+rc('ytick', labelsize=16)    # fontsize of the tick labels
+rc('legend', fontsize=16)    # legend fontsize
+rc('figure', titlesize=20)   # fontsize of the figure title
+
 def k(a, b):
     return np.exp(-0.5 * np.subtract.outer(a, b)**2)
 
@@ -28,6 +40,7 @@ samples = np.random.multivariate_normal(mu_post, cov_post, 5)
 plt.scatter(x_train, y_train, color='black', zorder=5)
 plt.plot(x, samples.T, zorder=1)
 plt.fill_between(x, mu_post - std_dev, mu_post + std_dev, color='gray', alpha=0.3, zorder=2)
+plt.grid(True, zorder=0)
 plt.xlabel("x")
 plt.ylabel("y")
 plt.show()

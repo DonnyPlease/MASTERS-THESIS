@@ -1,6 +1,6 @@
 \chapter{Temperature fitting}
 \label{ch:temp-fitting-theory}
-The results of the EPOCH simulations provide weighted momenta for a subset electrons $\bm{p}_\mathrm{e}$, where the weight represents the number of electrons with that momentum. They are not histograms yet, because more than one macro-particle can have the same value of $\bm{p}_\mathrm{e}$. The energies of electrons can then be calculated from $\bm{p_\mathrm{e}}$ using the relativistic formula:
+The results of the EPOCH simulations provide weighted momenta for a subsets of electrons $\bm{p}_\mathrm{e}$, where the weight represents the number of electrons with that momentum. They are not histograms yet, because more than one macro-particle can have the same value of $\bm{p}_\mathrm{e}$. The energies of electrons can then be calculated from $\bm{p_\mathrm{e}}$ using the relativistic formula:
 \begin{equation}
 	\label{eq:rel-energy}
 	E_\mathrm{e} = m_\mathrm{e}\cdot c^2\left(\sqrt{1+\left(\frac{p_\mathrm{e}}{m_\mathrm{e}\cdot c}\right)^2} -1\right)\mathrm{,}
@@ -9,7 +9,7 @@ where $p_\mathrm{e}=\sqrt{\bm{p}_\mathrm{e}\cdot\bm{p}_\mathrm{e}}$ is the size 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figures/example-histogram}
+	\includegraphics[width=0.9\textwidth]{figures/example-histogram}
 	\caption{An example of electron energy distribution of 2D EPOCH simulation with intensity of laser $I=10^{19}\,\mathrm{W.cm}^{-2}$, characteristic scale of the exponential preplasma profile $L=0.1\,\mathrm{\mu m}$ and angle of incidence with respect to target normal direction $\alpha = 10$°.}
 	\label{fig:example-histogram}
 \end{figure}
@@ -22,7 +22,7 @@ Last but not least, note the apparent exponential relationship between $N_i$ and
 	\label{eq:exp-distr}
 	N_i = N_0 \cdot \mathrm{exp}\left( -\frac{E_i}{T}\right)\mathrm{,}
 \end{equation}
-where $N_i$ is count in $i$-th bin and $E_i$ is the corresponding energy and $T$ is temperature in units discussed in section \ref{sec:temperature-intro}. The relationship is, of course, linear after the logarithmic transformation. The equation of \ref{eq:exp-distr} resembles exponential distribution with $1/T$ missing on the right-hand side. It is also not normalized, because it represents counts that have to add up to total number of electrons with that temperature. For the purpose of this thesis, we will call it the \textit{Boltzmann distribution}, even though it is not completely accurate.
+where $N_i$ is count in $i$-th bin and $E_i$ is the corresponding energy and $T$ is temperature in units discussed in section \ref{sec:temperature-intro}. After the logarithmic transformation, the relationship is, of course, linear. The equation of \ref{eq:exp-distr} resembles exponential distribution with $1/T$ missing on the right-hand side. It is also not normalized, because it represents counts that have to add up to total number of electrons with that temperature. For the purpose of this thesis, we will call it the \textit{Boltzmann distribution}, even though it is not completely accurate.
 
 Fitting the correct part of the histogram using equation \ref{eq:exp-distr} and estimating $T$ and $N_0$ is the first bigger part of this thesis. There are several obstacles, all of which are discussed in following sections.
 
@@ -37,7 +37,7 @@ and
 \begin{equation}
 	f_\mathrm{B}(E)\mathrm{d}E = \frac{1}{T}\exp\left(-\frac{E}{T}\right)\mathrm{d}E.
 \end{equation}
-By ignoring that both are defined by the differential, taking logarithm of both $f_\mathrm{M}(E)$ and $f_\mathrm{B}(E)$ we get:
+Ignoring that both are defined by the differential and taking logarithm of both $f_\mathrm{M}(E)$ and $f_\mathrm{B}(E)$ we get:
 \begin{equation}
 	\bar{f_\mathrm{M}}(E) = \ln\left(f_\mathrm{M}(E)\right) = \ln\left(\frac{\sqrt{E}}{(T)^{3/2}}\right)+\left(-\frac{E}{T}\right)
 \end{equation}
@@ -85,26 +85,30 @@ Modern programming libraries provide access to well-known and generally efficien
 
 Notably, Prony's method \cite{prony1795} and its variations, as discussed in sources such as \cite{potts2010}, have been proposed. It was originally intended for signal approximation - specifically, the determination of complex parameters in exponential functions, similar to Fourier transformation.
 
-Another, much simpler method is known as \textit{successive subtraction}~\cite{wiscombe1977}. This method is frequently employed for exponential decays (negative parameters $b_i$), which closely resemble our problem of exponential distributions. The core concept involves fitting the end of the decay with a single exponential function, subtracting this result from the data, and iteratively identifying all exponential components. This simplicity makes it a promising candidate for our problem, especially since our primary interest lies in determining the temperature of the hottest electrons—the tail. However, automating this method can be challenging, as it is not straightforward to select an interval that can be fitted as a tail in each iteration. Moreover, the tail of our histograms are not reliable as was discussed with regard of the example histogram in figure \ref{fig:example-histogram}.
+Another, much simpler method is known as \textit{successive subtraction}~\cite{wiscombe1977}. This method is frequently employed for exponential decays (negative parameters $b_i$), which closely resemble our problem of exponential distributions. The core concept involves fitting the end of the decay with a single exponential function, subtracting this result from the data, and iteratively identifying all exponential components. The simplicity makes it a promising candidate for our problem, especially since our primary interest lies in determining the temperature of the hottest electrons -- the tail. However, automating this method can be challenging, as it is not straightforward how to select an interval that can be fitted as a tail in each iteration. Moreover, the tails of our histograms are not reliable as was discussed with regard of the example histogram in Figure \ref{fig:example-histogram}.
 
 Another method worth considering is presented in \cite{wiscombe1977}. This method, called exponential sum fitting of transmissions (ESFT), was developed for fitting radiative transmission functions in the context of atmospheric research. ESFT too is an iterative method and might serve as an interesting alternative for future works.
 
 We only mentioned a few methods. A summary with a deeper explanation of these and other methods can be found in \cite{wiscombe1977}, \cite{holmstrom2002} or in \cite{hokanson2013}.
 
-If the goal is to fit only one of the exponentials, such as the parameters of the hot electrons distribution, the standard approach involves manually selecting the "correct" segment of the distribution and fitting it with a single exponential function. For instance, in \cite{cui2013}, where researchers study a problem similar to ours, they appear to use this technique to determine the temperature of hot electrons. The term "correct" is somewhat vague because it can be subjective and we do not have any metric that would quantify how well the segment was chosen. We can only work with the metrics describing the fit itself.
+If the goal is to fit only one of the exponentials, such as the parameters of the hot electrons distribution, the standard approach involves manually selecting the "correct" segment of the distribution and fitting it with a single exponential function. For instance, in \cite{cui2013}, where researchers study a problem similar to ours, they appear to use this technique to determine the temperature of hot electrons. The term "correct" is somewhat vague because it can be subjective and we do not have any metric that would quantify how well the segment was chosen. We can only work with the metrics describing the quality of fit itself.
 
-The last mentioned option currently provides the most reliable approach to fitting the temperature of hot electrons. Even for hundreds of simulations, with the right tool, it is possible to fit manually every histogram within few hours. Having such dataset of histograms and temperatures is valuable for evaluating any method that is trying to automate the fitting process. A tool with an UI was developed specifically for this purpose as a part of this work.
+The last mentioned option currently provides the most reliable approach to fitting the temperature of hot electrons. Even for hundreds of simulations, with the right tool, it is possible to fit manually every histogram within few hours. Having such dataset of histograms and temperatures is valuable for evaluating any method that is trying to automate the fitting process. A tool with an user interface was developed specifically for this purpose as a part of this work.
 
-That being said, we still attempted to automate the fitting. The method we used is explicit an non-iterative.
+That being said, we still attempted to automate the fitting. We use and compare two different methods. 
+
+In the first, we can estimate the the fit parameters of multi-exponential function using linearization trick. This step is explicit an non-iterative. The analytical explanation is presented in the following section.
+
+The second method is more trivial. It is based on the assumption that the part of the spectrum where hot electrons dominate is \textit{reasonably} large. Compared to the first method, it much more resembles what is done when we do the fit manually -- search for region with the smallest slope which corresponds to the highest temperature. The trick here is to \textit{scan} through the histogram by fitting many smaller subsets after simple linearization. Then we choose as result the fit with the highest hot electron temperature estimate. We call this the \textit{Scanning} method and the detailed description of our implementation and the results will be found in Chapter \ref{ch:dataset}.
 
 \subsection*{The 'Jacquelin' method}
 \label{sec:jaquelin}
-We will call the method we chose \textit{Jacquelin method}, because we will be referencing an article by J.Jacquelin who developed it for his own purpose \cite{jacquelin2014}. This method is explicit and non-iterative which is its main advantage. The original derivation presents a universal strategy how to explicitly approximate any function that is a solution to some integral or differential equation. Let us start with derivation of the numerical algorithm for a function:
-
+We will call the explicit estimation \textit{Jacquelin method}, because we will be referencing an article by J.Jacquelin who developed it for his own purpose \cite{jacquelin2014}. As we said, this method is explicit and non-iterative which is its main advantage. Note, that the original derivation presents a universal strategy for how to explicitly approximate any function that is a solution to some integral or differential equation. Let us start with derivation of the numerical algorithm for a function:
 \begin{equation}
 	\label{eq:orig-eq}
 	y(x) = a_0 + a_1\mathrm{e}^{b_1x} + a_2\mathrm{e}^{b_2x}
 \end{equation}
+
 We start by calculating these integrals:
 \begin{flalign*}
 	\;\;\;\;\;\;\;\;\;\;\;\; S(x) & = \int_{x_0}^{x}y(t) \mathrm{d}t \\
@@ -127,22 +131,21 @@ Now, if we reorganize the terms it can be shown that there are constants $A$, $B
 	\label{eq:lin}
 	y(x) = A\cdot SS(x)+B\cdot S(x) + C x^2 + Dx + E.
 \end{equation}
-By comparing coefficients before the exponential terms $\mathrm{e}^{b_1 x}$ and $\mathrm{e}^{b_2 x}$ we get:
+By comparing coefficients in from of the exponential terms $\mathrm{e}^{b_1 x}$ and $\mathrm{e}^{b_2 x}$ we get:
 \begin{align}
 	a_1 & = A\frac{a_1}{b_1^2} + B\frac{a_1}{b_1}  \\
 	a_2 & = A\frac{a_2}{b_2^2} + B\frac{a_2}{b_2}
 \end{align}
-From that it is possible to see that $b_1$ and $b_2$ are roots of the quadratic equation:
+From there, it is possible to see that both $b_1$ and $b_2$ are roots of the quadratic equation:
 \begin{equation}
 	\label{eq:quadratic}
 	b^2 - bB - A = 0.
 \end{equation}
 $b_1$ and $b_2$ are then:
-\begin{align}
+\begin{equation}
 	\label{eq:roots}
-	b_1 = & \frac{1}{2}\left(B + \sqrt{B^2 + 4A}\right) \\
-	b_2 = & \frac{1}{2}\left(B - \sqrt{B^2 + 4A}\right)
-\end{align}
+	b_{1,2} = \frac{1}{2}\left(B \pm \sqrt{B^2 + 4A}\right)
+\end{equation}
 
 The equation \ref{eq:lin} is linear in the unknown parameters $A,..,E$ and after discretization it can be rewritten as: 
 \begin{equation}
@@ -203,12 +206,10 @@ and
 \end{equation}
 
 Now, the solution to the linear equation \ref{eq:lin-vec} can be written as \cite{lin-reg}:
-
 \begin{equation}
 	\boldsymbol{b}=\left(\boldsymbol{X}^T\boldsymbol{X}\right)^{-1}\cdot (\boldsymbol{X}^T\boldsymbol{y})
 \end{equation}
 which in our case can be expanded to:
-
 \begin{equation}
 	\label{eq:lin-reg}
 	\begin{pmatrix}
@@ -256,30 +257,24 @@ One can see that we get a very similar equation as \ref{eq:lin-reg}, that can be
 	\end{pmatrix}
 \end{equation}
 
-In \cite{jacquelin2014}, only the case without the constant $a_0$ is presented, but as we have shown the derivation of the generalized version with constant is not difficult. An extension of Jacquelin method for more than two exponential terms is also not very complicated. Note that adding one term adds two parameters, which leads to matrix of size $7\times7$. However, it always leads to solving for the roots of the polynomial created by the first $N$ elements of the vector $\boldsymbol{b}$, where $N$ is the number of exponential terms. In case of two exponential terms, equations \ref{eq:roots} solve for the roots of the polynomial of Equation \ref{eq:quadratic}. In case of three exponential terms, we would need to calculate $SSS(x)$ from $SS(x)$. There would also be a term $x^3$. If we set $\boldsymbol{X}$ as $\left[SSS(x),SS(x),S(x),x^3,x^2,x^1,1\right]$, we would solve for the roots of:
+In \cite{jacquelin2014}, only the case without the constant $a_0$ is presented, but as we have shown the derivation of the generalized version with constant is not difficult. An extension of Jacquelin method for more than two exponential terms is also not very complicated. Note that adding one term adds two parameters, which leads to matrix of size $7\times7$. However, it always leads to solving for the roots of the polynomial created by the first $N$ elements of the vector $\boldsymbol{b}$, where $N$ is the number of exponential terms. In case of two exponential terms, equation \ref{eq:roots} solves for the roots of the polynomial of Equation \ref{eq:quadratic}. In case of three exponential terms, we would need to calculate $SSS(x)$ from $SS(x)$. There would also be a term $x^3$. If we set $\boldsymbol{X}$ as $\left[SSS(x),SS(x),S(x),x^3,x^2,x^1,1\right]$, we would solve for the roots of:
 \begin{equation}
 	b^3-Cb^2-Bb-A=0.
 \end{equation}
 
-It is necessary to note, that this algorithm is prone to numerical defects coming from the fact that there is a cumulative error related to the calculation of the partial sums. For that reason the resulting matrices can be singular or the polynomial can have imaginary roots.
+It is necessary to note, that this algorithm is prone to numerical defects coming from the fact that there is a cumulative error related to the calculation of the partial sums. For that reason the resulting matrices can be singular or the polynomial can have imaginary roots. Such scenario does not produce reasonable result.
 
-In \cite{mokhomo2021}, Mokhomo et al. did numerical experiments where they have shown that similar method (derived from differential instead of integral equations) can be used for fitting, but does not yield precise estimation results even for noiseless data. Nevertheless, it is an explicit algorithm for approximation of parameters which then can be used as initial guess for more advanced iterative techniques.
+In \cite{mokhomo2021}, Mokhomo et al. did numerical experiments where they have shown that similar method (derived from differential instead of integral equations) can be used for fitting, but does not yield precise estimation results even for noiseless data. Nevertheless, it is an explicit algorithm for approximation of parameters which then can be used as initial guess for more advanced techniques.
 
 When it comes to uncertainty of the coefficients, there are two possibilities. First, it is possible to propagate the experimental error from $y_i$ all the way to the final coefficients. The derivation can be found in \cite{lecca2021}. However, we do not have the standard error of the histogram bins. In principle, this can be obtained by repeating the simulation with the same input parameters but with a different seed for the random number generator which provides initial velocities for particles based on Maxwellian distribution. 
 
 The second option is to take the formula for linear regression and calculate the error estimation directly from that from that. In that case, we calculate estimates $\Delta A$ and $\Delta B$ as standard deviations for $A$ and $B$. Then, using the error propagation formula for the quadratic roots we get:
 \begin{equation}
 	\label{eq:b-coef-error1}
-	\Delta b_1 = \sqrt{\frac{\Delta A^2}{(B^2 + 4A)} + \frac{\Delta B^2}{4} \left(1 + \frac{B}{\sqrt{B^2 + 4A}}\right)^2}
-\end{equation}
-and
-\begin{equation}
-	\label{eq:b-coef-error2}
-	\Delta b_2 = \sqrt{\frac{\Delta A^2}{(B^2 + 4A)} + \frac{\Delta B^2}{4} \left(1 - \frac{B}{\sqrt{B^2 + 4A}}\right)^2},
+	\Delta b_{1,2} = \sqrt{\frac{\Delta A^2}{(B^2 + 4A)} + \frac{\Delta B^2}{4} \left(1 \pm \frac{B}{\sqrt{B^2 + 4A}}\right)^2}
 \end{equation}
 where $\Delta b_1$ and $\Delta b_2$ are the estimates of standard deviations for $b_1$ and $b_2$.
 The standard deviations of $a_0$, $a_1$ and $a_2$ are calculated directly from the second linear regression.
 
-We will not follow same approach for more exponential terms, but it could be done.
-
+We will not follow same approach pf error estimation for more exponential terms, but theoretically, it could be done. In Chapter \ref{ch:dataset}, we will talk about how this method works on our data.
 

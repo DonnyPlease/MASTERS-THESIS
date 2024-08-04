@@ -5,6 +5,7 @@ from Histogram import Histogram
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 from matplotlib.lines import Line2D
+from matplotlib import rc
 from sklearn.linear_model import LinearRegression
 from Dataset import DatasetRecord
 
@@ -18,6 +19,8 @@ class MplCanvas(FigureCanvas):
         self.axes = fig.add_subplot(111)
         super(MplCanvas, self).__init__(fig)
         
+        rc('font', family='serif', serif='Computer Modern')
+        rc('text', usetex=True)
         # Connects
         self.mpl_connect('button_press_event', self.on_click)
         
@@ -38,15 +41,14 @@ class MplCanvas(FigureCanvas):
         self.axes.set_yscale('log')
         
         self.axes.set_ylabel(r"$N$")
-        self.axes.set_xlabel("E [keV]")
+        self.axes.set_xlabel(r"$E \, [\mathrm{keV}]$")
         self.axes.grid(True, zorder=0)
-        
         
          
         if self.histogram.left_cut is not None:
-            self.axes.axvline(x=self.histogram.left_cut, color='black', linestyle='--',zorder=6)
+            self.axes.axvline(x=self.histogram.left_cut, color='black', linestyle='--',zorder=1)
         if self.histogram.right_cut is not None:
-            self.axes.axvline(x=self.histogram.right_cut, color='black', linestyle='--',zorder=6)
+            self.axes.axvline(x=self.histogram.right_cut, color='black', linestyle='--',zorder=1)
         if self.show_custom_fit and self.custom_fit_result is not None:
             self.plot_custom_fit()
         if self.show_original_fit and self.autofit_result is not None:
@@ -61,11 +63,27 @@ class MplCanvas(FigureCanvas):
         self.draw()
     
     def draw_custom_legend(self):
+        
+        base, exponent = "{:.2e}".format(float(self.custom_fit_result.a)).split("e")
+        base = float(base)
+        exponent = int(exponent)
+        
+        base_stdev, exponent_stdev = "{:.2e}".format(float(self.custom_fit_result.a_stdev)).split("e")
+        base_stdev = float(base_stdev)
+        exponent_stdev = int(exponent_stdev)
+        
+        label_n = r"$N_\mathrm{0} =\,$" +r"${0}\cdot10^{{{1}}}$".format(base,exponent) + r"$\,\pm\,$" + r"${0}\cdot10^{{{1}}}$".format(base_stdev,exponent_stdev)
+        label_t = r"$T_\mathrm{hot} =\,$"+ "{:.2f} ".format(float(self.custom_fit_result.t_hot)) + r"$\pm$" + " {:.2f} keV".format(float(self.custom_fit_result.t_hot_stdev)) 
+        
+        
         handles, labels = self.axes.get_legend_handles_labels()
         custom_line = Line2D([0], [0], color='white', lw=2, linestyle='--')
         handles.append(custom_line)
-        label = r"$T_\mathrm{hot}$" +" = {} ± {} keV".format(self.custom_fit_result.t_hot, self.custom_fit_result.t_hot_stdev)
-        labels.append(label)
+        labels.append(label_t)
+        
+        custom_line_2 = Line2D([0], [0], color='white', lw=2, linestyle='--')
+        handles.append(custom_line_2)
+        labels.append(label_n)
         self.axes.legend(handles=handles, labels=labels)
         
     def on_click(self, event):
@@ -92,6 +110,7 @@ class MplCanvas(FigureCanvas):
         a, b, a_stdev, b_stdev = self.fit_one_exponential(x, y)
         
         a *= 1e10
+        a_stdev *= 1e10
         custom_fit_result = DatasetRecord()
         custom_fit_result.I = str(self.histogram.I)
         custom_fit_result.L = str(self.histogram.L)
