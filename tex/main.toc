@@ -16,17 +16,17 @@
 \contentsline {section}{\numberline {3.2}Support vector regression}{32}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Neural networks}{34}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Gaussian Processes}{35}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Dataset (alternative)}{39}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Dataset}{39}{chapter.4}%
 \contentsline {section}{\numberline {4.1}EPOCH Simulations}{39}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Temperature fitting}{40}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Full dataset}{47}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Hot electron temperature modelling}{51}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Models}{52}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Prediction UI tool}{57}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Comparison to other temperature scaling}{59}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Strategy for choosing the next simulations}{61}{section.5.4}%
-\contentsline {chapter}{Conclusion}{64}{chapter*.53}%
-\contentsline {chapter}{Bibliography}{66}{chapter*.53}%
-\contentsline {chapter}{Attachments}{70}{chapter*.54}%
-\contentsline {chapter}{\numberline {A}EPOCH input file}{70}{appendix.A}%
-\contentsline {chapter}{\numberline {B}GP posterior distribution example in Python}{73}{appendix.B}%
+\contentsline {section}{\numberline {4.3}Full dataset}{48}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Hot electron temperature modelling}{52}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Models}{53}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Prediction UI tool}{58}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Comparison to other temperature scaling}{60}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Strategy for choosing the next simulations}{62}{section.5.4}%
+\contentsline {chapter}{Conclusion}{65}{chapter*.54}%
+\contentsline {chapter}{Bibliography}{67}{chapter*.54}%
+\contentsline {chapter}{Attachments}{71}{chapter*.55}%
+\contentsline {chapter}{\numberline {A}EPOCH input file}{71}{appendix.A}%
+\contentsline {chapter}{\numberline {B}GP posterior distribution example in Python}{74}{appendix.B}%

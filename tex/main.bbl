@@ -227,7 +227,7 @@
       \field{issue}{2}
       \field{journaltitle}{Physics of Plasmas}
       \field{month}{2}
-      \field{title}{A study of picosecond laser-solid interactions up to $10^\{19\}$ W $\mathrm\{cm\}^\{-2\}$}
+      \field{title}{A study of picosecond laser-solid interactions up to $10^{19}$ $\mathrm{W.cm}^{-2}$}
       \field{volume}{4}
       \field{year}{1997}
       \field{pages}{447\bibrangedash 457}
@@ -345,43 +345,42 @@
     \endentry
     \entry{cai2006}{article}{}
       \name{author}{4}{}{%
-        {{hash=6799b3ed75b650d0ca6a3416d6650ce4}{%
+        {{hash=d8ee433497a88adfa508dcb28f61f6eb}{%
            family={Cai},
            familyi={C\bibinitperiod},
-           given={Hong-bo},
-           giveni={H\bibinithyphendelim b\bibinitperiod}}}%
+           given={Hong},
+           giveni={H\bibinitperiod}}}%
         {{hash=306f61b972c01e5452d64353ce1974d6}{%
            family={Yu},
            familyi={Y\bibinitperiod},
            given={Wei},
            giveni={W\bibinitperiod}}}%
-        {{hash=ad31ba5c2b6fa80de0a019f1070023e9}{%
+        {{hash=5af6b5e00fc9e433bca30c81aa8d0eed}{%
            family={Zhu},
            familyi={Z\bibinitperiod},
-           given={Shao-ping},
-           giveni={S\bibinithyphendelim p\bibinitperiod}}}%
-        {{hash=f393f555c82e487c2ad0cf1ca1032c50}{%
+           given={Shao},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c722dc349ee000c1e1fe130fd2fbc07f}{%
            family={Zheng},
            familyi={Z\bibinitperiod},
-           given={Chun-yang},
-           giveni={C\bibinithyphendelim y\bibinitperiod}}}%
+           given={Chun},
+           giveni={C\bibinitperiod}}}%
       }
-      \strng{namehash}{c8e1d3f5db9d96baa12512d2a2274327}
-      \strng{fullhash}{533b588e6ed9fb0b3d90338c87b56dcd}
-      \strng{bibnamehash}{533b588e6ed9fb0b3d90338c87b56dcd}
-      \strng{authorbibnamehash}{533b588e6ed9fb0b3d90338c87b56dcd}
-      \strng{authornamehash}{c8e1d3f5db9d96baa12512d2a2274327}
-      \strng{authorfullhash}{533b588e6ed9fb0b3d90338c87b56dcd}
+      \strng{namehash}{481a687b3c8a7057c20689d3ebf4a30a}
+      \strng{fullhash}{6dfefdaf51b7c01bf7703e0a819b8390}
+      \strng{bibnamehash}{6dfefdaf51b7c01bf7703e0a819b8390}
+      \strng{authorbibnamehash}{6dfefdaf51b7c01bf7703e0a819b8390}
+      \strng{authornamehash}{481a687b3c8a7057c20689d3ebf4a30a}
+      \strng{authorfullhash}{6dfefdaf51b7c01bf7703e0a819b8390}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{<p>An analytical fluid model for J×B heating during the normal incidence by a short ultraintense linearly polarized laser on a solid-density plasma is proposed. The steepening of an originally smooth electron density profile as the electrons are pushed inward by the laser is included self-consistently. It is shown that the J×B heating includes two distinct coupling processes depending on the initial laser and plasma conditions: for a moderate intensity (a⩽1), the ponderomotive force of the laser light can drive a large plasma wave at the point ne=4γ0nc resonantly. When this plasma wave is damped, the energy is transferred to the plasma. At higher intensity, the electron density is steepened to a high level by the time-independent ponderomotive force, ne&amp;gt;4γ0nc, so that no 2ω resonance will occur, but the longitudinal component of the oscillating ponderomotive field can lead to an absorption mechanism similar to “vacuum heating.”</p>}
       \field{issn}{1070-664X}
       \field{issue}{11}
       \field{journaltitle}{Physics of Plasmas}
       \field{month}{11}
-      \field{title}{Short-pulse laser absorption via J×B heating in ultrahigh intensity laser plasma interaction}
+      \field{title}{Short-pulse laser absorption via {J×B} heating in ultrahigh intensity laser plasma interaction}
       \field{volume}{13}
       \field{year}{2006}
       \verb{doi}
@@ -521,12 +520,6 @@
       \verb{doi}
       \verb 10.1016/S0010-4655(00)00228-9
       \endverb
-      \verb{urlraw}
-      \verb www.elsevier.nl/locate/cpc
-      \endverb
-      \verb{url}
-      \verb www.elsevier.nl/locate/cpc
-      \endverb
       \keyw{5265Rr Keywords: Particle-in-Cell method,5265y,Charge conservation,Continuity equation}
     \endentry
     \entry{plasma-intro}{inproceedings}{}
@@ -546,6 +539,7 @@
       \strng{authorbibnamehash}{584d27c4d52f916f677c821843c41870}
       \strng{authornamehash}{584d27c4d52f916f677c821843c41870}
       \strng{authorfullhash}{584d27c4d52f916f677c821843c41870}
+      \field{extraname}{1}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{labelnamesource}{author}
@@ -561,6 +555,57 @@
       \verb 10.5170/CERN-2016-001.51
       \endverb
       \keyw{2-fluid model,Dispersion relation,Electromagnetic wave propagation,Langmuir waves,Nonlinear waves,Plasma properties}
+    \endentry
+    \entry{gibbon2005}{book}{}
+      \name{author}{1}{}{%
+        {{hash=f3dc862f2a759f6f885659c5360ca11e}{%
+           family={Gibbon},
+           familyi={G\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Imperial College Press}%
+      }
+      \strng{namehash}{f3dc862f2a759f6f885659c5360ca11e}
+      \strng{fullhash}{f3dc862f2a759f6f885659c5360ca11e}
+      \strng{bibnamehash}{f3dc862f2a759f6f885659c5360ca11e}
+      \strng{authorbibnamehash}{f3dc862f2a759f6f885659c5360ca11e}
+      \strng{authornamehash}{f3dc862f2a759f6f885659c5360ca11e}
+      \strng{authorfullhash}{f3dc862f2a759f6f885659c5360ca11e}
+      \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{1-86094-135-4}
+      \field{title}{Short Pulse Laser Interactions with Matter: An Introduction}
+      \field{year}{2005}
+    \endentry
+    \entry{gpy}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=eecc8029b423225d34494bb7bd3de007}{%
+           family={{GPY Authors}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{eecc8029b423225d34494bb7bd3de007}
+      \strng{fullhash}{eecc8029b423225d34494bb7bd3de007}
+      \strng{bibnamehash}{eecc8029b423225d34494bb7bd3de007}
+      \strng{authorbibnamehash}{eecc8029b423225d34494bb7bd3de007}
+      \strng{authornamehash}{eecc8029b423225d34494bb7bd3de007}
+      \strng{authorfullhash}{eecc8029b423225d34494bb7bd3de007}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{GPy: A Gaussian process framework in python}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb http://github.com/SheffieldML/GPy
+      \endverb
+      \verb{url}
+      \verb http://github.com/SheffieldML/GPy
+      \endverb
     \endentry
     \entry{haines2009}{article}{}
       \name{author}{4}{}{%
@@ -668,12 +713,6 @@
       \verb{doi}
       \verb 10.1016/S0096-3003(00)00138-7
       \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1016/S0096-3003(00)00138-7
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1016/S0096-3003(00)00138-7
-      \endverb
       \keyw{Compartment models,Exponential sums,Nonlinear least squares,Nonlinear parameter estimation,Pisarenko's method,Prony's method}
     \endentry
     \entry{ingrassia2005}{article}{}
@@ -699,7 +738,6 @@
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Neural network modeling for small datasets can be justified from a theoretical point of view according to some of Bartlett's results showing that the generalization performance of a multilayer perceptron (MLP) depends more on the L1 norm ||c||1 of the weights between the hidden layer and the output layer rather than on the total number of weights. In this article we investigate some geometrical properties of MLPs and drawing on linear projection theory, we propose an equivalent number of degrees of freedom to be used in neural model selection criteria like the Akaike information criterion and the Bayes information criterion and in the unbiased estimation of the error variance. This measure proves to be much smaller than the total number of parameters of the network usually adopted, and it does not depend on the number of input variables. Moreover, this concept is compatible with Bartlett's results and with similar ideas long associated with projection-based models and kernel models. Some numerical studies involving both real and simulated datasets are presented and discussed. © 2005 American Statistical Association and the American Society for Quality.}
       \field{issue}{3}
       \field{journaltitle}{Technometrics}
       \field{month}{8}
@@ -897,7 +935,6 @@
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{<p>Biexponential time‐series models commonly find use in biophysics, biochemistry and pharmacokinetics. Indeed, reactions that are described by biexponential functions are typical for many biological processes. The kinetics of these reactions are modelled by transcendental irrational equations interconnecting the reagent concentrations, time and rate constants. The biexponential is apparently a case of nonlinear regression, and as such, very often the estimate of its parameters is obtained with methods and software tools performing nonlinear fits. The first problem that the user encounters when using these techniques consists in having to provide the software with a not too inaccurate estimate of the intervals within which the parameters can vary. Providing arbitrary initial guesses on the parameter ranges to the nonlinear fit procedure causes its nonconvergence. The second problem is the need to obtain an estimate of the parameters with an error interval due to the propagation of the experimental error that affects the measurements of the dependent variable. In this study, we propose an extension of a well‐established mathematical method based on linearization techniques of integral equations for the efficient and unsupervised estimation of the parameters of a biexponential function. Our extension consists in the integration of a model of error propagation from the measurements of the dependent variable to the parameter estimates. There are three main innovative contributions of this work: (1) having made the unsupervised regression method available in experimental practical applications; (2) having provided methods for error propagation in complex operations, such as integration, matrix inversion and multiplication; (3) the calibration of the biexponential dynamics of (i) water desorption of a small ligand from a surface where two types of binding sites are present and (ii) of the decrease of a determinant of viability of organs sustaining ischaemic injury before transplantation.</p>}
       \field{issn}{0170-4214}
       \field{issue}{13}
       \field{journaltitle}{Mathematical Methods in the Applied Sciences}
@@ -941,12 +978,6 @@
       \field{year}{2013}
       \verb{doi}
       \verb 10.1007/978-94-007-6125-4
-      \endverb
-      \verb{urlraw}
-      \verb http://www.springer.com/series/8902
-      \endverb
-      \verb{url}
-      \verb http://www.springer.com/series/8902
       \endverb
     \endentry
     \entry{laser-plasma6}{book}{}
@@ -1096,12 +1127,6 @@
       \field{journaltitle}{International Research Journal of Engineering and Technology}
       \field{title}{Fitting Sum Of Exponentials Model Using Differential Linear Regression}
       \field{year}{2021}
-      \verb{urlraw}
-      \verb www.irjet.net
-      \endverb
-      \verb{url}
-      \verb www.irjet.net
-      \endverb
       \keyw{Exponential Decay,Exponential Growth,Model Fitting,Noise Amplification,Parameter Estimation,Regression}
     \endentry
     \entry{pfeifer2006}{article}{}
@@ -1561,37 +1586,6 @@
       \verb http://www.springer.com/series/15614
       \endverb
     \endentry
-    \entry{gpy}{misc}{}
-      \name{author}{3}{}{%
-        {{hash=a4704fd35f0308287f2937ba3eccf5fe}{%
-           family={The},
-           familyi={T\bibinitperiod}}}%
-        {{hash=e6f5d9e8f5fb5ac840b56da796ee35e9}{%
-           family={GPY},
-           familyi={G\bibinitperiod}}}%
-        {{hash=02684cc6b6ea1811a064f475a5fd1d18}{%
-           family={Authors},
-           familyi={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{ba7df603b001072496befe35a2f6e43d}
-      \strng{fullhash}{7d0565cbc4019943af35c8c5d567c050}
-      \strng{bibnamehash}{7d0565cbc4019943af35c8c5d567c050}
-      \strng{authorbibnamehash}{7d0565cbc4019943af35c8c5d567c050}
-      \strng{authornamehash}{ba7df603b001072496befe35a2f6e43d}
-      \strng{authorfullhash}{7d0565cbc4019943af35c8c5d567c050}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{\{GPy\}: A Gaussian process framework in python}
-      \field{year}{2014}
-      \verb{urlraw}
-      \verb http://github.com/SheffieldML/GPy
-      \endverb
-      \verb{url}
-      \verb http://github.com/SheffieldML/GPy
-      \endverb
-    \endentry
     \entry{tskhakaya2007}{article}{}
       \name{author}{4}{}{%
         {{hash=5871b396d9d2bb497cc30d3761dbdc90}{%
@@ -1647,7 +1641,7 @@
            giveni={V\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {Springer New York}%
+        {Springer, New York}%
       }
       \strng{namehash}{9784300f2e702140e22af8c494322778}
       \strng{fullhash}{9784300f2e702140e22af8c494322778}
@@ -1958,7 +1952,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{gibbon2005}
   \missing{lin-reg}
 \endrefsection
 \endinput

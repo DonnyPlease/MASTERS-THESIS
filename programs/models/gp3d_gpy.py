@@ -158,7 +158,7 @@ class Gp3dGpy():
 
 if __name__ == '__main__':
     # OPTIONS 
-    ACTION = TRAIN
+    ACTION = TEST
     int_factor = 1 
     
     x, y = DatasetUtils.load_data_for_regression(DATASET_FOLDER)

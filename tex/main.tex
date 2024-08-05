@@ -7,6 +7,7 @@
 			sorting=nty,
 			style=ieee,
 			citestyle=numeric-comp]{biblatex}
+\usepackage{xurl}
 \addbibresource{bibliographyExport.bib}
 
 \usepackage[english]{babel}
@@ -37,6 +38,7 @@
 \usepackage{mathtools}
 \usepackage{gensymb}
 \usepackage{fancyvrb}
+\usepackage{url}
 %\usepackage{color} % pro možnost barevného textu
 %\usepackage{fancybox} % umožňuje pokročilé rámečkování
 %\usepackage{index} % nutno použít v případě tvorby rejstříku balíčkem makeindex
@@ -95,16 +97,16 @@
 \newcommand{\rok}{2024}  % rok odevzdání práce (jen rok odevzdání, nikoli celý akademický rok!)
 \newcommand{\kde}{Praze} % studenti z Děčína ZMĚNÍ na: "Děčíně" (doplní se k "prohlášení")
 
-\newcommand{\klicova}{Klíčová slova}   % zde NAPIŠTE česky cca 3-5 klíčových slov
-\newcommand{\keyword}{Key words}       % zde NAPIŠTE anglicky cca 3-5 klíčových slov (přeložte z češtiny, ale odborně)
-\newcommand{\abstrCZ}{Popis práce česky}    % zde NAPIŠTE abstrakt v češtině (alespoň 7 vět, min. 80 slov. Pokuste se, aby CZ i EN abstrakt nezpůsobily přetečení strany 6 na stranu 7, tj. aby se obojí i s klíčovými slovy vešlo na JEDNU stránku)
-\newcommand{\abstrEN}{Popis práce anglicky} % zde NAPIŠTE abstrakt v angličtině
+\newcommand{\klicova}{laser-plasma, absorpce, teplota horkých elektronů, Gaussovské Procesy}   % zde NAPIŠTE česky cca 3-5 klíčových slov
+\newcommand{\keyword}{laser-plasma, absorption, hot electron temperature, particle-in-cell, Gaussian Process}       % zde NAPIŠTE anglicky cca 3-5 klíčových slov (přeložte z češtiny, ale odborně)
+\newcommand{\abstrCZ}{Tato práce představuje možnosti modelování absorpce laseru s vysokou intenzitou a krátkým pulzem v plazmatu pro laserové intenzity v rozmezí od $10^{17}\, \mathrm{W.cm}^{-2}$ do $10^{19}\,\mathrm{W.cm}^{-2}$. Vstupními parametry modelů jsou intenzita laseru, délka škály exponenciálního předplazmového profilu a úhel dopadu laseru na terč. Pro trénink modelů byly použity teploty horkých elektronů z více než 300 simulací metodou particle-in-cell s různými nastaveními. Byla navržena metoda pro automatické fitování teploty horkých elektronů. Vyhodnotili jsme regresné schopnosti Support Vector Regression, neuronových sítí a Gaussovských Procesů (GP) a zjistili jsme, že GP nabízí v této aplikaci nejlepší zobecnění. Diskutuje se strategie pro efektivní rozšíření datové sady.}    % zde NAPIŠTE abstrakt v češtině (alespoň 7 vět, min. 80 slov. Pokuste se, aby CZ i EN abstrakt nezpůsobily přetečení strany 6 na stranu 7, tj. aby se obojí i s klíčovými slovy vešlo na JEDNU stránku)
+\newcommand{\abstrEN}{This thesis presents possibilities for surrogate modelling of high-intensity short-pulse laser absorption in plasma for laser intensities ranging from $10^{17}\, \mathrm{W.cm}^{-2}$ to $10^{19}\,\mathrm{W.cm}^{-2}$. The input parameters of the models are laser intensity, scale length of the exponential preplasma profile and angle of incidence. For training of the models, hot electron temperatures from more than 300 particle-in-cell simulations with different settings were used. A method for automatic hot electron temperature fitting is proposed. We evaluated Support Vector Regression, Neural Network, and Gaussian Processes (GP) regression models, finding GP to offer the best generalization. A strategy for effective dataset expansion is discussed.}
 
 \newcommand{\prohlaseni}{Hereby I declare that this thesis is my original authorial work, which I have worked out on my own with the guidance of my supervisor. All sources, references, and literature used or excerpted during the elaboration of this work are properly cited and listed in complete reference to the due soruce.}
 
-\newcommand{\podekovani}{I would like to thank my supervisor Doc. Ing. Ondřej Klimo, Ph.D. for valuable guidance throughout the entire process. I would like to thank my parents who have supported unconditionally me in unimaginable ways. I would also like to thank my sister and my brother, whose advice helped me find motivation in the times of struggle.
+\newcommand{\podekovani}{I would like to thank my supervisor doc. Ing. Ondřej Klimo, Ph.D. for valuable guidance throughout the entire process. I would like to thank my parents who have supported me unconditionally in unimaginable ways. I would also like to thank my sister and my brother, whose advice helped me find motivation in the times of struggle.
 
-Huge thanks goes to my friends (yes, even those of you who think plasma is not real), because without you life would be boring and it would be hard to find meaning in anything.}
+Huge thanks goes to all my friends. Yes, even those of you who think that plasma is not real or that statistics is stupid. Without you, life would be boring and it would be hard to find meaning in anything.}
 
 
 \begin{document}
@@ -198,20 +200,22 @@ In Prague on .................... &........................................ \\	%
 
 % použití přípravy:    % dovnitř "tabular" vůbec NESAHEJTE!
 \begin{tabular}{ll}
-  {\em Title:} & \odstavec{\delka}{\nazeven} \\[2em]
+  {\em Title:} & \odstavec{\delka}{\nazeven} \\[1em]
   {\em Author:} & \autor \\[1em]
   {\em Study programme:} & \program \\[1em]
   {\em Type of thesis:} & \druh \\[1em]
-  {\em Supervisor:} & \odstavec{\delka}{\vedouci\ \pracovisteVed} \\
-    
-  \multicolumn{2}{l}{\odstavec{\textwidth}{{\em Abstract:} ~ \abstrEN  }} \\[1em]
-  {\em Key words:} & \odstavec{\delka}{\klicova} \\[2em]
+  {\em Supervisor:} & \odstavec{\delka}{\vedouci\ \pracovisteVed} \\ [4em]
+  {\em Abstract:} & \odstavec{\delka}{\abstrEN} \\ [13em]
+ 
+  %\multicolumn{2}{l}{\odstavec{\textwidth}{{\em Abstract:} ~ \abstrEN  }} \\[1em]
+  {\em Key words:} & \odstavec{\delka}{\keyword} \\[2em]
 
-  {\em Title:} & ~\\
-  \multicolumn{2}{l}{\odstavec{\textwidth}{\bf \nazeven}}\\[1em]
-  {\em Author:} & \autor \\[1em]
-  \multicolumn{2}{l}{\odstavec{\textwidth}{{\em Abstract:} ~ \abstrCZ  }} \\[1em]
-  {\em Key words:} & \odstavec{\delka}{\keyword}
+  {\em Název:} & \nazevcz \\[1em]
+  %\multicolumn{2}{l}{\odstavec{\textwidth}{\bf }}\\[1em]
+  %{\em Autor:} & \autor \\[1em]
+  %\multicolumn{2}{l}{\odstavec{\textwidth}{{\em Abstrakt:} ~ \abstrCZ  }} \\[1em]
+  {\em Abstrakt:} & \odstavec{\delka}{\abstrCZ} \\ [14em]
+  {\em Klíčova slova:} & \odstavec{\delka}{\klicova}
 \end{tabular}
 
 

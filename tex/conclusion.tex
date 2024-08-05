@@ -12,9 +12,10 @@ The GP model not only estimates the hot electron temperature but also provides a
 
 The original dataset was not selected in an equidistant manner, which is difficult to define in this context. During the training process, the inputs were transformed using hyper-parameters. We opted for a cubic transformation, but fine-tuning these hyper-parameters and appropriately expanding the dataset could enhance the model.
 
-Finally, we compared our model to previous works. While few studies provide exact analytical models of hot electron temperature scaling, we validated the power law $T_\mathrm{hot} \sim I^{1/3}$ for the optimized angle of resonance absorption, as investigated by Cui et al. \cite{cui2013}. We also found that deviating from that angle alters the relationship between $I$ and $T_\mathrm{hot}$, with the power law no longer holding true. Our model indicates a more complex relationship, especially since relativistic effects become significant at intensities above $I = 10^{18} , W , \mathrm{cm}^{-2}$.
+Finally, we compared our model to previous works. While few studies provide exact analytical models of hot electron temperature scaling, we validated the power law $T_\mathrm{hot} \sim I^{1/3}$ for the optimized angle of resonance absorption, as investigated by Cui et al. \cite{cui2013}. We also found that deviating from that angle alters the relationship between $I$ and $T_\mathrm{hot}$, with the power law no longer holding true. Our model indicates a more complex relationship, especially since relativistic effects become significant at intensities above $I = 10^{18}\, W . \mathrm{cm}^{-2}$.
 
 In summary, we demonstrated that the complex physical processes of laser absorption in dense plasma can be simplified into a surrogate model using Gaussian Processes. Significantly expanding the dataset is feasible and would enhance model accuracy, assuming improvements in fitting the hot electron temperature can be achieved.
 
+At \url{https://github.com/DonnyPlease/MASTERS-THESIS}, one can find programs used during the fitting and modelling, dataset, histograms for all simulations as well as source code for both UI tools with their documentation.
 
 

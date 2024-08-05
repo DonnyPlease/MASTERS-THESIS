@@ -2,6 +2,18 @@ import numpy as np
 from scipy.interpolate import griddata
 import matplotlib.pyplot as plt
 
+from matplotlib import rc
+rc('font', family='serif', serif='Computer Modern')
+rc('text', usetex=True)
+rc('font', size=18)          # controls default text sizes
+rc('axes', titlesize=20)     # fontsize of the axes title
+rc('axes', labelsize=16)     # fontsize of the x and y labels
+rc('xtick', labelsize=16)    # fontsize of the tick labels
+rc('ytick', labelsize=16)    # fontsize of the tick labels
+rc('legend', fontsize=16)    # legend fontsize
+rc('figure', titlesize=20)   # fontsize of the figure title
+
+
 def integrate_histogram(bins, counts, energy_cut=0):
     """
     Integrate the histogram by summing the counts and multiplying by the bin width.
@@ -57,11 +69,10 @@ def draw_integrals(file_name, target_folder, energy_cut):
 
         plt.figure(figsize=(8, 6))
         plt.pcolormesh(X, Y, Z, cmap="inferno")
-        plt.colorbar(label='Total Energy [eV]')
+        plt.colorbar(label='Total Energy [arb. units]')
         plt.xscale('log')
-        plt.xlabel(r'$l$ [nm]')
+        plt.xlabel(r'$L \,[\mathrm{\mu m}]$')
         plt.ylabel(r'$\alpha$ '+'[°]')
-        plt.title("I = " + current)
         # plt.show()
         
         # plt.scatter(x,y,c='black',s=10,marker='o')

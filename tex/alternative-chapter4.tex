@@ -1,6 +1,6 @@
-\chapter{Dataset (alternative)}
-\label{ch:dataset-alternative}
-In this chapter we will describe in detail our simulations and our best strategy to do the automated temperature fitting. In the last section, we discuss the dataset obtained by temperature fitting.
+\chapter{Dataset}
+\label{ch:dataset}
+In this chapter we will describe in detail our simulations and our best strategy to do the automated temperature fitting. In the last section, we discuss the dataset obtained by this fitting.
 \section{EPOCH Simulations}
 The EPOCH simulation was run with the following parameters:
 \begin{itemize}
@@ -15,7 +15,7 @@ The EPOCH simulation was run with the following parameters:
 	\item The characteristic scale length of the preplasma with exponential profile: \newline $L\in\{0.01,0.02,0.05,0.1,0.2,0.5,1,2,5\}$ in microns.
 	
 \end{itemize}
-The simulations have been performed on the Q3 node of the Quantum Hyperion cluster at FNSPE. The input file that used to start the EPOCH simulation can be seen in appendix \ref{att:input-deck}.
+The simulations have been performed on the Q3 node of the Quantum Hyperion cluster at FNSPE. The input file that used to start the EPOCH simulation can be seen in appendix \ref{att:input-deck}. Hot electrons propagating into the target are recorded when they cross a virtual boundary inside the dense part of the target close to its rear side.
 
 \section{Temperature fitting}
 The results of the simulations are transformed into histograms as it was described in the beginning of chapter \ref{ch:temp-fitting-theory}. We fixed the energy histogram size to 1000 bins with their width scaling with the maximum electron energy. In the following pages, we will describe a strategy we developed and used to find the temperature from the vast majority of the energy histograms. The effectiveness of this strategy varies for different histograms, because it depends on multiple properties.
@@ -34,17 +34,17 @@ We also cut the end of the spectrum for reasons discussed in Chapter \ref{ch:tem
 		\begin{subfigure}{0.49\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{figures/untrimmed-hist}
-		\caption{An example of uncut histogram obtained with simulation parameters $I=10^{17}\,\mathrm{W.cm}^{-2}$, $L=1.0\,\mathrm{\mu m}$.}
+		\caption{An example of uncut histogram.}
 		\label{fig:ex-uncut}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}{0.49\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{figures/trimmed-hist}
-		\caption{An example of cut histogram obtained with simulation parameters $I=10^{17}\,\mathrm{W.cm}^{-2}$, $L=1.0\,\mathrm{\mu m}$ and $\alpha = 30$°.}
+		\caption{An example of cut histogram.}
 		\label{fig:ex-cut}
 	\end{subfigure}
-	\caption{An example of trimmed histogram obtained with simulation parameters $I=10^{17}\,\mathrm{W.cm}^{-2}$, $L=1.0\,\mathrm{\mu m}$ and $\alpha = 30$°.}
+	\caption{Examples of histograms obtained with simulation parameters $I=10^{17}\,\mathrm{W.cm}^{-2}$, $L=1.0\,\mathrm{\mu m}$ and $\alpha = 30$°.}
 	\label{fig:trimmed-hist}
 \end{figure}
 
@@ -86,7 +86,7 @@ where $b_3$ is chosen as the smallest of the negative coefficients $b_1,\, b_2,\
 
 In some fits, the absolute value of one of the factors $a_i$ $(i=1..3)$ can be small. Then the corresponding $b_i$ can be positive without significant impact on the fitted section of the histogram. In the limit of energy going to infinity, this does not have a valid physical interpretation, but it still does not have to be a concern if the other two terms behave well. In the other cases of the fit failing altogether, it often helps to narrow down the energy range even more from both ends (e.g. by 5 to 10 bins from each side) and try it again. If the fit fails multiple times despite the narrowing, the histogram one should rather fit it differently.
 
-At the first sight, the Jacquelin method gives promising results. Qualitative analysis is done later when we compare the results to the temperature estimates done manually. For various reasons, there are situations where the Jacquelin method does not perform very well. The most probable reasons are related to irregularities at the end of the spectrums where the energies do not seem to be very reliable. We noticed that this is especially the case for histograms from simulations run with intensity $I=10^{19}\,\mathrm{W.cm}^{-2}$. This also means that higher temperature estimates usually have a bigger chance to have larger error. It is true that these graphs usually also have higher overall electron counts with high energies, but that does not seem to cause issues in all cases with $I=10^{19}\,\mathrm{W.cm}^{-2}$ and therefore it is most likely not that important. 
+At the first sight, the Jacquelin method gives promising results. Qualitative analysis is done later when we compare the results to the temperature estimates done manually. For various reasons, there are situations where the Jacquelin method does not perform very well. The most probable reasons are related to irregularities at the end of the spectra where the energies do not seem to be very reliable. We noticed that this is especially the case for histograms from simulations run with intensity $I=10^{19}\,\mathrm{W.cm}^{-2}$. This also means that higher temperature estimates usually have a bigger chance to have larger error.
 
 A graph with an example of a poor fit can be seen in Figure \ref{fig:3exp-ex-bad}. However, the fit is poor only when it comes to the hot electron temperature. One can immediately see that the $T_\mathrm{hot}$ estimate does not correspond to any part of the spectrum. The lower energy part of the spectrum are fitted well.
 \begin{figure}[ht]
@@ -105,9 +105,9 @@ The second fitting method is called Scanning. Here we take a segment -- in our c
 	\label{eq:lin-one-exp}
 	\mathrm{ln}(N) = A + bE
 \end{equation}
-where $a = \mathrm{A}$. Equation \ref{eq:lin-one-exp} is a linear equation and can be solved using classic linear regression. Estimation of standard errors $\Delta A$ and $\Delta b$ is simply calculated from the covariance matrix.
+where $A = \mathrm{ln}(a)$. Equation \ref{eq:lin-one-exp} is a linear equation and can be solved using classic linear regression. Estimation of standard errors $\Delta A$ and $\Delta b$ is simply calculated from the covariance matrix.
 
-We do this for every set of consecutive 150 bins in the histogram. For example for histogram with 900 bins (after the initial cuts), we have 750 individual linear regressions. After that, we select the one with the smallest value of $b$ in absolute value. The $T_\mathrm{hot}$ estimate is calculated in the same way as in equation \ref{eq:t-hot-from-b}. Naturally, the corresponding $a$ is set equal to $N_0$ from the Boltzmann distribution. The standard error estimates for $T_\mathrm{hot}$ and $N_0$ are then:
+We do this for every set of consecutive 150 bins in the histogram. For example for histogram with 900 bins (after the initial cuts), we have 750 individual linear regressions. After that, we select the one with the smallest value of $b$ in absolute value. The $T_\mathrm{hot}$ estimate is calculated as $T_\mathrm{hot}=-1/b$. Naturally, the corresponding $a$ is set equal to $N_0$ from the Boltzmann distribution. The standard error estimates for $T_\mathrm{hot}$ and $N_0$ are then:
 \begin{equation}
 	\Delta T_\mathrm{hot} = \frac{\Delta b}{b^2} =  \Delta b\cdot   T_\mathrm{hot}^2
 \end{equation}
@@ -136,14 +136,14 @@ which follows from the error propagation formula.
 	\label{fig:scan-fit-good-example}
 \end{figure}
 
-Visually, this method seems to work very well. Two examples on the same histograms as before can be seen in Figure \ref{fig:scan-fit-good-example}. Here we also show two lines which show the start and the end of the fitted segment that produced fit the highest temperature estimate. Estimates of $T_\mathrm{hot}$ and $N_0$ are very similar to results of the first method.
+Visually, this method seems to work very well. Two examples on the same histograms as before can be seen in Figure \ref{fig:scan-fit-good-example}. Here we also show two lines which show the start and the end of the fitted segment that produced fit with the highest temperature estimate. Estimates of $T_\mathrm{hot}$ and $N_0$ are very similar to results of the first method.
 
 It is possible to fit a vast majority of our histograms using this method. The choice of how many bins one fits at a time obviously affects the results. The main factor by which one should decide is probably the initial number of bins. Generally, in this application, bigger fitted segments produce lower temperature estimates than smaller ones.
 
 \subsection*{Fitting method - Manual}
 As we said in the Chapter \ref{ch:temp-fitting-theory}, a tool was developed to make the manual fitting of $T_{\mathrm{hot}}$ and $N_0$ more effective. It was developed in Python using PyQt6 framework and it makes the manual fitting very quick for large amounts of histograms. Its effectiveness has roots in the possibility to load the whole folder with histograms and for each select the most reasonable region with two clicks of the mouse. The fit result is then saved directly to the dataset. We used a custom format to save the dataset so that it might be in the future extended to support different fitting strategies. Currently the only option is to select the range and click "Fit" which performs a linear regression in the same way as in the Scanning method. The tool also provides an option to show the original fit obtained by the automated process. 
 
-An example of a fit performed manually can be seen in Figure \ref{fig:manual-fit-example}. The selected region to be fitted is very similar to the automated selection of the previous method. 
+An example of a fit performed manually can be seen in Figure \ref{fig:manual-fit-example}. The selected regions to be fitted are very similar to the automated selections of the previous method. 
 \begin{figure}[ht]
 	\centering
 	\begin{subfigure}{0.49\textwidth}
@@ -188,27 +188,27 @@ and the same for $T_\mathrm{hot,scan}$. Then we calculate mean square relative e
 
 From the table, it is evident the Scanning method is better than the three-exponential Jacquelin method. Note that the MSRE is larger than MARE. Both metrics have values of the same order for both methods.
 
-We plot the relative errors with respect to $T_\mathrm{hot,manual}$ for each evaluated simulation. The scatter plot containing the relative errors can be seen in Figure \ref{fig:relative-errors}. We again discard approximately 10 percent of fits (20 worst 3-exp fits and of what remained 20 worst Scanning fits). From the graph, we can conclude that the majority of the $T_\mathrm{hot}$ estimates is within the relative error of 0.5. That is probably acceptable for small values of $T_\mathrm{hot}$ (up to 20 keV), because the absolute value of this error is not that significant. For higher energies, having relative error 0.5 is disappointing to say the least, but it again points to the fact that the automation of the fitting is very challenging. The three-exponential Jacquelin method seems to perform quite poorly for estimates of temperature higher than 400 keV.
+We plot the relative errors with respect to $T_\mathrm{hot,manual}$ for each evaluated simulation. The scatter plot containing the relative errors can be seen in Figure \ref{fig:relative-errors}. We again discard approximately 10 percent of fits - we put aside 20 worst 3-exp fits and then 20 worst Scanning fits of what remained to make the plot more compact. From the graph, we can conclude that the majority of the $T_\mathrm{hot}$ estimates is within the relative error of 0.5. That is probably acceptable for small values of $T_\mathrm{hot}$ (up to 20 keV), because the absolute value of this error is not that significant. For higher energies, having relative error 0.5 is disappointing to say the least, but it again points to the fact that the automation of the fitting is very challenging. The three-exponential Jacquelin method seems to perform quite poorly for estimates of temperature higher than 400 keV.
 
-\begin{figure}[ht]
+\begin{figure}[t]
 	\centering
-	\includegraphics[width=0.98\textwidth]{figures/relative-error2}
+	\includegraphics[width=0.98\textwidth]{figures/relative-error}
 	\caption{Relative errors of the $T_\mathrm{hot}$ for two fitting methods.}
 	\label{fig:relative-errors}
 \end{figure}
 
-The histograms of relative errors for both methods can be seen in Figure \ref{fig:relative-errors-hists}. It is possible to see that the three-exponential Jacquelin method has the relative errors much more symmetrical around 0 compared to the Scanning method.
+The histograms of relative errors for both methods can be seen in Figure \ref{fig:relative-errors-hists}. It is possible to see that the three-exponential Jacquelin method has the relative errors much more symmetrical around 0 compared to the Scanning method. The systemic inaccuracy comes from the way we select the optimal fit. The strategy probably could be optimized if we took a different size of the histogram. However, making the fitted region larger can cause is to be larger than the actual region dominated by hot electrons in some histograms. One has to decide what is more important.
 
 \begin{figure}[ht]
 	\centering
-	\begin{subfigure}{0.49\textwidth}
+	\begin{subfigure}{0.45\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{figures/3exp-residuals}
 		\caption{3-exponential method relative errors.}
 		\label{fig:3exp-histogram}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}{0.49\textwidth}
+	\begin{subfigure}{0.45\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{figures/scan-residuals}
 		\caption{Scanning method relative errors.}
@@ -218,8 +218,22 @@ The histograms of relative errors for both methods can be seen in Figure \ref{fi
 	\label{fig:relative-errors-hists}
 \end{figure}
 
+It is difficult to say whether the $T_\mathrm{hot}$ estimates are good on their own. To get the idea, which histograms should be handled separately, we propose the following method. We take results from both strategies and find the relative difference (\textit{RD}) of the first one to the Scanning method defined intuitively as $RD_\mathrm{hot,scan} = \frac{T_\mathrm{hot,3exp}-T_\mathrm{hot,scan}}{T_\mathrm{hot,scan}}$.
 
-In conclusion, there definitely is a necessity for improvement of this process, if one wants to rely on fitting thousands of histograms at once. The presented strategies can produce acceptable results, but in the current state they probably shouldn't be completely unsupervised. The failed fits have to be handled separately and without a brief inspection of each fitted histogram, the reliability can be questionable. Needless to say, both of the presented methods may serve as starting point for further improvement.
+We can plot these in a similar way as before but now with $T_\mathrm{hot,scan}$ on the bottom axis. The results can be seen if Figure \ref{fig:relative-errors-two}. There are multiple occasions where the three-exponential Jacquelin method produces too large estimates. Note that the largest values on $T_\mathrm{hot,scan}$ axis are larger than before. This corresponds to the positive relative errors for large $T_\mathrm{hot,manual}$ in Figure \ref{fig:relative-errors-two}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.98\textwidth]{figures/relative-error2}
+	\caption{Relative errors of 3-exponential Jacquelin method with respect to Scanning method.}
+	\label{fig:relative-errors-two}
+\end{figure}
+
+In cases where the difference is large, we should consider examining them manually, because the difference might suggest that the histogram is problematic. The selection of threshold for \textit{large} is a matter of trade-off between the time spent examining various histograms and the precision. What we proposed proves to be a good way of identifying the worst estimates first. It could be attributed to the fact that the methods are different and independent and the likelihood that both give absurd results is low.
+
+In conclusion, we can say that there definitely is a necessity for improvement of the fitting, if one wants to rely on fitting thousands of histograms at once. The presented strategies can sometimes produce acceptable results and we have shown a mechanism for identifying the results with high uncertainty. However, in the current state, even the rest of the fits probably shouldn't be completely unsupervised. Without a brief inspection of each fitted histogram, the reliability can be questionable. Needless to say, both of the presented methods may serve as a starting point for further improvement.
+
+
 
 \newpage
 \section{Full dataset}
@@ -252,10 +266,10 @@ In this section, we will present the dataset used for modelling. Naturally, the 
 
 The visualization of the dataset itself can give us valuable insight to the behaviour of the function of $T_{\mathrm{hot}} = T_{\mathrm{hot}}(I,L,\alpha)$. Because there are three parameters for which $T_{\mathrm{hot}}$ is being modelled, the visualization can be tricky. The issue can be approached from multiple points of view.
 
-Let us start by showing the dependency of the fitted temperature on simulation parameters with three fixed intensities $I = 10^{17} \,\mathrm{W.cm}^{-2}$, $I = 10^{18} \,\mathrm{W.cm}^{-2}$ and $I = 10^{19} \,\mathrm{W.cm}^{-2}$. This way we can "slice" through the three dimensional space of parameters and get a good idea what we are modelling. By the way, this approach is almost completely corresponding to the way the parameter space was sampled for the simulations. Most of the parameters were chosen as a points of grid with certain steps in $\alpha$ and logarithmic steps in $L$. This is not true for all points and because of that, these graphs were made using linear interpolation to the grid of similar density. In other words, the values should not be considered exact and the graphs serve only as illustration. The graphs can be seen in figure \ref{fig:dataset1}.
+Let us start by showing the dependency of the fitted temperature on simulation parameters with three fixed intensities $I = 10^{17} \,\mathrm{W.cm}^{-2}$, $I = 10^{18} \,\mathrm{W.cm}^{-2}$ and $I = 10^{19} \,\mathrm{W.cm}^{-2}$. This way we can "slice" through the three dimensional space of parameters and get a good idea what we are modelling. By the way, this approach is almost completely corresponding to the way the parameter space was sampled for the simulations. Most of the parameters were chosen as a points of grid with certain steps in $\alpha$ and logarithmic steps in $L$. This is not true for all points and because of that, these graphs were made using linear interpolation to the grid of similar density. In other words, the values should not be considered exact and the graphs serve only as illustration. The graphs can be seen in Figure \ref{fig:dataset1}.
 
 
-The initial observation from these three graphs can for instance be the increasing temperature scales on the right side of each graph, which corresponds to the increasing intensity. This demonstrates the fundamental relationship: as the energy carried by the laser pulse increases, the temperature of the hot electrons rises too. Next thing one might notice is that size of the temperatures range also changes with intensity. For both $I = 10^{17} \mathrm{W.cm}^{-2}$ and $I = 10^{18} \mathrm{W.cm}^{-2}$, there is a region (or simulation point) with hot electron temperature close to zero. For intensity $I = 10^{19} \mathrm{W.cm}^{-2}$ this region disappears. 
+The initial observation from these three graphs can for instance be the increasing temperature scales on the right side of each graph, which corresponds to the increasing intensity. This demonstrates the fundamental relationship: as the energy carried by the laser pulse increases, the temperature of the hot electrons rises too. Next thing one might notice is that size of the temperatures range also changes with intensity. For both $I = 10^{17}ň, \mathrm{W.cm}^{-2}$ and $I = 10^{18}ň, \mathrm{W.cm}^{-2}$, there is a region (or simulation point) with hot electron temperature close to zero. For intensity $I = 10^{19} ň,\mathrm{W.cm}^{-2}$ this region disappears. 
 
 It is also possible to make some qualitative comments about the dataset in the light of the absorption theory which was briefly discussed in Chapter \ref{ch:plasma-theory}. For example, one might be the optimal angle of resonance absorption described by Equation \ref{eq:res-opt}. We claimed that the other absorption mechanism are expected to be most dominant for higher laser intensities. For intensity $I = 10^{17} \, \mathrm{W.cm}^{-2}$, we can find an agreement with this theoretical model by plotting the optimal resonance absorption curve on top of that part of the dataset. Such graph can be seen in Figure \ref{fig:opt-res-abs}.
 
@@ -268,7 +282,7 @@ It is also possible to make some qualitative comments about the dataset in the l
 
 On the other hand, for higher intensities there appears a different maximum for small angles and longer preplasma scale lengths. This agrees with theory about $\bm{J} \times \bm{B}$ heating.
 
-What might be particularly interesting is the evident rise of temperatures for $L=0.5 \,\mathrm{\mu m}$ for the intensity $I = 10^{19}\, \mathrm{W.cm}^{-2}$, especially for small incidence angles. The total absorption is relatively small for these parameters, as can be seen in figure \ref{fig:dataset2-c}. In this case, the density scale length is equal to half the laser wavelength. This means that the standing wave which develops due to interference of the incident and the reflected laser wave exactly matches with the plasma density profile. This case requires further investigation which is beyond the scope of this thesis but it is inspired by these results.
+What might be particularly interesting is the evident rise of temperatures for $L=0.5 \,\mathrm{\mu m}$ for the intensity $I = 10^{19}\, \mathrm{W.cm}^{-2}$, especially for small incidence angles. The total absorption is relatively small for these parameters, as can be seen in Figure~\ref{fig:dataset2-c}. In this case, the density scale length is equal to half the laser wavelength. This means that the standing wave which develops due to interference of the incident and the reflected laser wave exactly matches with the plasma density profile. This case requires further investigation which is beyond the scope of this thesis but it is inspired by these results.
 
 It is important to realize, that these graphs do not represent the general absorption patterns. To compare \textit{total} absorption across the domain of simulation points, it is necessary to also include the energy absorbed by the rest of the electrons. We will visualize it in similar way but instead of temperature, we look at the overall energy carried by all the electrons. This can be done by integrating each of the histograms. For the same reasons as in the previous section, we restrict ourselves to electron energies higher than threshold of 10 keV. The total absorbed energy for the same three intensities is displayed in the graphs in Figure \ref{fig:dataset2}.
 
@@ -299,7 +313,7 @@ It is important to realize, that these graphs do not represent the general absor
 
 It is possible to see, that the maximum overall absorption is happening in cases of bigger incidence angles. As discussed before, the resonance absorption and vacuum heating both require a finite incidence angle which can be relatively large. Also for the intensity $I = 10^{19} \, \mathrm{W.cm}^{-2}$ there is relatively larger absorption happening for small angles and large scale lengths. This is in agreement with the theory presented in Chapter \ref{ch:plasma-theory}.
 
-Moving on, let us shift our attention back to the study of the actual dataset of temperatures. Without interpolation, we can plot the temperature with respect to scale length and incidence angle so that the actual values of temperature are more clear. Three graphs corresponding	 to the same three intensities are show in Figure~\ref{fig:dataset3}.
+Moving on, let us shift our attention back to the study of the actual dataset of temperatures. Without interpolation, we can plot the temperature with respect to scale length and incidence angle so that the actual values of temperature are more clear. Three graphs corresponding	 to the same three intensities are shows in Figure~\ref{fig:dataset3}. We do not show all the simulated points (we skip the small angles), because it helps with the readability.
 
 \begin{figure}[t]
 	\centering
@@ -322,7 +336,7 @@ Moving on, let us shift our attention back to the study of the actual dataset of
 		\caption{Dataset with $I = 1 \times 10^{19} \mathrm{W.cm}^{-2}$.}
 		\label{fig:dataset3-c}
 	\end{subfigure}
-	\caption{Illustration of total energy absorption shown for three simulated intensities.}
+	\caption{Dataset for three simulated intensities shown in different axes.}
 	\label{fig:dataset3}
 \end{figure}
 

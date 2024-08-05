@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.14)  4 AUG 2024 04:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.14)  5 AUG 2024 18:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -341,8 +341,11 @@ Package: xparse 2023-01-16 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
 
-))
-(C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+)) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/xurl\xurl.sty
+Package: xurl 2022/01/09 v 0.10 modify URL breaks
+
+xurl: Set penalties for biblatex
+) (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2023/02/13 3.86 The Babel package
 \babel@savecnt=\count392
 \U@D=\dimen141
@@ -803,26 +806,26 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for IL2/cmr/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for IL2/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -841,20 +844,13 @@ Package biblatex Info: ... file 'main.bbl' found.
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                gibbon2005
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
 (biblatex)                lin-reg
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
 )
-Package biblatex Info: Reference section=0 on input line 110.
-Package biblatex Info: Reference segment=0 on input line 110.
+Package biblatex Info: Reference section=0 on input line 112.
+Package biblatex Info: Reference segment=0 on input line 112.
 
 (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -929,7 +925,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 110.
+Package hyperref Info: Link coloring OFF on input line 112.
 (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -938,24 +934,24 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count455
-LaTeX Info: Redefining \celsius on input line 110.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 110
+LaTeX Info: Redefining \celsius on input line 112.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 112
 .
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 110.
-Package gensymb Info: Using \Omega for \ohm on input line 110.
+LaTeX Info: Redefining \ohm on input line 112.
+Package gensymb Info: Using \Omega for \ohm on input line 112.
 
 Package gensymb Warning: Not defining \micro.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 118
+LaTeX Font Info:    Trying to load font information for U+msa on input line 120
 .
 (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 118
+LaTeX Font Info:    Trying to load font information for U+msb on input line 120
 .
 
 (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -965,7 +961,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: symbol_cvut_konturova_verze_cb.pdf Graphic file (type pdf)
 <use symbol_cvut_konturova_verze_cb.pdf>
 Package pdftex.def Info: symbol_cvut_konturova_verze_cb.pdf  used on input line
- 123.
+ 125.
 (pdftex.def)             Requested size: 126.78534pt x 96.54243pt.
 
 [1
@@ -978,7 +974,7 @@ pdfTeX warning: pdflatex.exe (file ./zadani_cele.pdf): PDF inclusion: found PDF
 <zadani_cele.pdf, id=139, 597.55246pt x 845.07724pt>
 File: zadani_cele.pdf Graphic file (type pdf)
 <use zadani_cele.pdf>
-Package pdftex.def Info: zadani_cele.pdf  used on input line 147.
+Package pdftex.def Info: zadani_cele.pdf  used on input line 149.
 (pdftex.def)             Requested size: 597.551pt x 845.07518pt.
 
 
@@ -986,7 +982,7 @@ pdfTeX warning: pdflatex.exe (file ./zadani_cele.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
 File: zadani_cele.pdf Graphic file (type pdf)
 <use zadani_cele.pdf>
-Package pdftex.def Info: zadani_cele.pdf  used on input line 147.
+Package pdftex.def Info: zadani_cele.pdf  used on input line 149.
 (pdftex.def)             Requested size: 597.551pt x 845.07518pt.
 
 
@@ -999,29 +995,29 @@ pdfTeX warning: pdflatex.exe (file ./zadani_cele.pdf): PDF inclusion: found PDF
 <zadani_cele.pdf, id=142, page=1, 597.55246pt x 845.07724pt>
 File: zadani_cele.pdf Graphic file (type pdf)
 <use zadani_cele.pdf, page 1>
-Package pdftex.def Info: zadani_cele.pdf , page1 used on input line 147.
+Package pdftex.def Info: zadani_cele.pdf , page1 used on input line 149.
 (pdftex.def)             Requested size: 597.551pt x 845.07518pt.
 File: zadani_cele.pdf Graphic file (type pdf)
 <use zadani_cele.pdf, page 1>
-Package pdftex.def Info: zadani_cele.pdf , page1 used on input line 147.
+Package pdftex.def Info: zadani_cele.pdf , page1 used on input line 149.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
 File: zadani_cele.pdf Graphic file (type pdf)
 <use zadani_cele.pdf, page 1>
-Package pdftex.def Info: zadani_cele.pdf , page1 used on input line 147.
+Package pdftex.def Info: zadani_cele.pdf , page1 used on input line 149.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
 File: zadani_cele.pdf Graphic file (type pdf)
 <use zadani_cele.pdf, page 1>
-Package pdftex.def Info: zadani_cele.pdf , page1 used on input line 147.
+Package pdftex.def Info: zadani_cele.pdf , page1 used on input line 149.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
 File: zadani_cele.pdf Graphic file (type pdf)
 <use zadani_cele.pdf, page 1>
-Package pdftex.def Info: zadani_cele.pdf , page1 used on input line 147.
+Package pdftex.def Info: zadani_cele.pdf , page1 used on input line 149.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
 [2 <./zadani_cele.pdf>] [3] [4]
 \odstavecbox=\box63
 \vyskaodstavce=\skip82
 
-Overfull \hbox (31.64261pt too wide) in paragraph at lines 200--216
+Overfull \hbox (31.64261pt too wide) in paragraph at lines 202--220
 [][] 
  []
 
@@ -1099,19 +1095,8 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [23
 
-] [24 <./figures/example-histogram.pdf>] [25] [26]
-
-LaTeX Warning: Reference `ch:dataset' on page 27 undefined on input line 102.
-
-[27] [28]
-
-LaTeX Warning: Citation 'lin-reg' on page 29 undefined on input line 208.
-
-[29]
-
-LaTeX Warning: Reference `ch:dataset' on page 30 undefined on input line 279.
-
-) (models-theory.tex [30]
+] [24 <./figures/example-histogram.pdf>] [25] [26] [27] [28] [29])
+(models-theory.tex [30]
 Chapter 3.
 [31
 
@@ -1121,13 +1106,13 @@ Overfull \hbox (3.39935pt too wide) detected at line 62
  []
 
 [33] [34]
-<figures/gaussian-samples.pdf, id=733, 591.8913pt x 312.2064pt>
+<figures/gaussian-samples.pdf, id=735, 591.8913pt x 312.2064pt>
 File: figures/gaussian-samples.pdf Graphic file (type pdf)
 <use figures/gaussian-samples.pdf>
 Package pdftex.def Info: figures/gaussian-samples.pdf  used on input line 116.
 (pdftex.def)             Requested size: 418.25368pt x 220.62004pt.
  [35]
-<figures/gaussian-samples-post.pdf, id=749, 704.6325pt x 362.07271pt>
+<figures/gaussian-samples-post.pdf, id=751, 704.6325pt x 362.07271pt>
 File: figures/gaussian-samples-post.pdf Graphic file (type pdf)
 <use figures/gaussian-samples-post.pdf>
 Package pdftex.def Info: figures/gaussian-samples-post.pdf  used on input line 
@@ -1139,72 +1124,56 @@ Chapter 4.
 [39
 
 ]
-<figures/untrimmed-hist.pdf, id=804, 722.7pt x 433.62pt>
+<figures/untrimmed-hist.pdf, id=806, 722.7pt x 433.62pt>
 File: figures/untrimmed-hist.pdf Graphic file (type pdf)
 <use figures/untrimmed-hist.pdf>
 Package pdftex.def Info: figures/untrimmed-hist.pdf  used on input line 36.
 (pdftex.def)             Requested size: 209.1301pt x 125.4753pt.
-
-Underfull \hbox (badness 1173) in paragraph at lines 37--37
-\IL2/cmr/m/n/10.95 tained with sim-u-la-tion pa-ram-e-ters $\OML/cmm/m/it/10.95
- I \OT1/cmr/m/n/10.95 =
- []
-
-<figures/trimmed-hist.pdf, id=805, 722.7pt x 433.62pt>
+<figures/trimmed-hist.pdf, id=807, 722.7pt x 433.62pt>
 File: figures/trimmed-hist.pdf Graphic file (type pdf)
 <use figures/trimmed-hist.pdf>
 Package pdftex.def Info: figures/trimmed-hist.pdf  used on input line 43.
 (pdftex.def)             Requested size: 209.1301pt x 125.4753pt.
 
-Underfull \hbox (badness 2564) in paragraph at lines 44--44
-[]\IL2/cmr/m/n/10.95 (b) |An ex-am-ple of cut his-togram ob-
- []
-
-
-Underfull \hbox (badness 1173) in paragraph at lines 44--44
-\IL2/cmr/m/n/10.95 tained with sim-u-la-tion pa-ram-e-ters $\OML/cmm/m/it/10.95
- I \OT1/cmr/m/n/10.95 =
- []
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [40]
-<figures/3exp-ex1.pdf, id=815, 462.52798pt x 346.89601pt>
+<figures/3exp-ex1.pdf, id=817, 462.52798pt x 346.89601pt>
 File: figures/3exp-ex1.pdf Graphic file (type pdf)
 <use figures/3exp-ex1.pdf>
 Package pdftex.def Info: figures/3exp-ex1.pdf  used on input line 65.
 (pdftex.def)             Requested size: 209.1301pt x 156.8481pt.
-<figures/3exp-ex2.pdf, id=816, 462.52798pt x 346.89601pt>
+<figures/3exp-ex2.pdf, id=818, 462.52798pt x 346.89601pt>
 File: figures/3exp-ex2.pdf Graphic file (type pdf)
 <use figures/3exp-ex2.pdf>
 Package pdftex.def Info: figures/3exp-ex2.pdf  used on input line 72.
 (pdftex.def)             Requested size: 209.1301pt x 156.8481pt.
  [41 <./figures/untrimmed-hist.pdf> <./figures/trimmed-hist.pdf>]
-<figures/3exp-ex-bad.pdf, id=854, 462.52798pt x 346.89601pt>
+<figures/3exp-ex-bad.pdf, id=853, 462.52798pt x 346.89601pt>
 File: figures/3exp-ex-bad.pdf Graphic file (type pdf)
 <use figures/3exp-ex-bad.pdf>
 Package pdftex.def Info: figures/3exp-ex-bad.pdf  used on input line 94.
 (pdftex.def)             Requested size: 341.43436pt x 256.0903pt.
  [42 <./figures/3exp-ex1.pdf> <./figures/3exp-ex2.pdf>]
-<figures/scan-ex1.pdf, id=916, 462.52798pt x 346.89601pt>
+<figures/scan-ex1.pdf, id=917, 462.52798pt x 346.89601pt>
 File: figures/scan-ex1.pdf Graphic file (type pdf)
 <use figures/scan-ex1.pdf>
 Package pdftex.def Info: figures/scan-ex1.pdf  used on input line 124.
 (pdftex.def)             Requested size: 209.1301pt x 156.8481pt.
-<figures/scan-ex2.pdf, id=917, 462.52798pt x 346.89601pt>
+<figures/scan-ex2.pdf, id=918, 462.52798pt x 346.89601pt>
 File: figures/scan-ex2.pdf Graphic file (type pdf)
 <use figures/scan-ex2.pdf>
 Package pdftex.def Info: figures/scan-ex2.pdf  used on input line 131.
 (pdftex.def)             Requested size: 209.1301pt x 156.8481pt.
  [43 <./figures/3exp-ex-bad.pdf>]
-<figures/hist_1e17_100_30_manual.png, id=953, 414.04688pt x 285.31593pt>
+<figures/hist_1e17_100_30_manual.png, id=955, 414.04688pt x 285.31593pt>
 File: figures/hist_1e17_100_30_manual.png Graphic file (type png)
 <use figures/hist_1e17_100_30_manual.png>
 Package pdftex.def Info: figures/hist_1e17_100_30_manual.png  used on input lin
 e 151.
 (pdftex.def)             Requested size: 209.1301pt x 144.1117pt.
-<figures/hist_1e19_500_60_manual.png, id=954, 409.53pt x 280.04625pt>
+<figures/hist_1e19_500_60_manual.png, id=956, 409.53pt x 280.04625pt>
 File: figures/hist_1e19_500_60_manual.png Graphic file (type png)
 <use figures/hist_1e19_500_60_manual.png>
 Package pdftex.def Info: figures/hist_1e19_500_60_manual.png  used on input lin
@@ -1219,90 +1188,109 @@ ter than the three-exponential
 
 [45 <./figures/hist_1e17_100_30_manual.png> <./figures/hist_1e19_500_60_manual.
 png>]
-<figures/relative-error2.pdf, id=1002, 791.35652pt x 364.2408pt>
-File: figures/relative-error2.pdf Graphic file (type pdf)
-<use figures/relative-error2.pdf>
-Package pdftex.def Info: figures/relative-error2.pdf  used on input line 195.
-(pdftex.def)             Requested size: 418.25368pt x 192.51315pt.
-<figures/3exp-residuals.pdf, id=1004, 462.52798pt x 346.89601pt>
+<figures/relative-error.pdf, id=1003, 630.9171pt x 346.89601pt>
+File: figures/relative-error.pdf Graphic file (type pdf)
+<use figures/relative-error.pdf>
+Package pdftex.def Info: figures/relative-error.pdf  used on input line 195.
+(pdftex.def)             Requested size: 418.25368pt x 229.96835pt.
+<figures/3exp-residuals.pdf, id=1005, 462.52798pt x 346.89601pt>
 File: figures/3exp-residuals.pdf Graphic file (type pdf)
 <use figures/3exp-residuals.pdf>
 Package pdftex.def Info: figures/3exp-residuals.pdf  used on input line 206.
-(pdftex.def)             Requested size: 209.1301pt x 156.8481pt.
-<figures/scan-residuals.pdf, id=1005, 462.52798pt x 346.89601pt>
+(pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
+<figures/scan-residuals.pdf, id=1006, 462.52798pt x 346.89601pt>
 File: figures/scan-residuals.pdf Graphic file (type pdf)
 <use figures/scan-residuals.pdf>
 Package pdftex.def Info: figures/scan-residuals.pdf  used on input line 213.
-(pdftex.def)             Requested size: 209.1301pt x 156.8481pt.
- [46 <./figures/relative-error2.pdf> <./figures/3exp-residuals.pdf> <./figures/
-scan-residuals.pdf>]
-<figures/I_1e17t_hot.pdf, id=1051, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
+ [46 <./figures/relative-error.pdf> <./figures/3exp-residuals.pdf> <./figures/s
+can-residuals.pdf>]
+<figures/relative-error2.pdf, id=1085, 583.9416pt x 337.50089pt>
+File: figures/relative-error2.pdf Graphic file (type pdf)
+<use figures/relative-error2.pdf>
+Package pdftex.def Info: figures/relative-error2.pdf  used on input line 227.
+(pdftex.def)             Requested size: 418.25368pt x 241.73874pt.
+ [47 <./figures/relative-error2.pdf>]
+<figures/I_1e17t_hot.pdf, id=1105, 578.16pt x 433.62pt>
 File: figures/I_1e17t_hot.pdf Graphic file (type pdf)
 <use figures/I_1e17t_hot.pdf>
-Package pdftex.def Info: figures/I_1e17t_hot.pdf  used on input line 231.
+Package pdftex.def Info: figures/I_1e17t_hot.pdf  used on input line 245.
 (pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/I_1e18t_hot.pdf, id=1052, 578.16pt x 433.62pt>
+<figures/I_1e18t_hot.pdf, id=1106, 578.16pt x 433.62pt>
 File: figures/I_1e18t_hot.pdf Graphic file (type pdf)
 <use figures/I_1e18t_hot.pdf>
-Package pdftex.def Info: figures/I_1e18t_hot.pdf  used on input line 238.
+Package pdftex.def Info: figures/I_1e18t_hot.pdf  used on input line 252.
 (pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/I_1e19t_hot.pdf, id=1053, 578.16pt x 433.62pt>
+<figures/I_1e19t_hot.pdf, id=1107, 578.16pt x 433.62pt>
 File: figures/I_1e19t_hot.pdf Graphic file (type pdf)
 <use figures/I_1e19t_hot.pdf>
-Package pdftex.def Info: figures/I_1e19t_hot.pdf  used on input line 244.
+Package pdftex.def Info: figures/I_1e19t_hot.pdf  used on input line 258.
 (pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
- [47 <./figures/I_1e17t_hot.pdf> <./figures/I_1e18t_hot.pdf> <./figures/I_1e19t
+ [48 <./figures/I_1e17t_hot.pdf> <./figures/I_1e18t_hot.pdf> <./figures/I_1e19t
 _hot.pdf>]
-<figures/optimal-res-absorption.pdf, id=1110, 578.16pt x 433.62pt>
+
+LaTeX Warning: Command \v invalid in math mode on input line 272.
+
+Missing character: There is no ò in font cmr12!
+
+LaTeX Warning: Command \v invalid in math mode on input line 272.
+
+Missing character: There is no ò in font cmr12!
+
+LaTeX Warning: Command \v invalid in math mode on input line 272.
+
+Missing character: There is no ò in font cmr12!
+<figures/optimal-res-absorption.pdf, id=1164, 578.16pt x 433.62pt>
 File: figures/optimal-res-absorption.pdf Graphic file (type pdf)
 <use figures/optimal-res-absorption.pdf>
 Package pdftex.def Info: figures/optimal-res-absorption.pdf  used on input line
- 264.
+ 278.
 (pdftex.def)             Requested size: 256.0774pt x 192.05714pt.
- [48 <./figures/optimal-res-absorption.pdf>]
-<figures/I_1e17_cut_10.pdf, id=1134, 578.16pt x 433.62pt>
+[49 <./figures/optimal-res-absorption.pdf>]
+<figures/I_1e17_cut_10.pdf, id=1189, 578.16pt x 433.62pt>
 File: figures/I_1e17_cut_10.pdf Graphic file (type pdf)
 <use figures/I_1e17_cut_10.pdf>
-Package pdftex.def Info: figures/I_1e17_cut_10.pdf  used on input line 279.
+Package pdftex.def Info: figures/I_1e17_cut_10.pdf  used on input line 293.
 (pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/I_1e18_cut_10.pdf, id=1135, 578.16pt x 433.62pt>
+<figures/I_1e18_cut_10.pdf, id=1190, 578.16pt x 433.62pt>
 File: figures/I_1e18_cut_10.pdf Graphic file (type pdf)
 <use figures/I_1e18_cut_10.pdf>
-Package pdftex.def Info: figures/I_1e18_cut_10.pdf  used on input line 286.
+Package pdftex.def Info: figures/I_1e18_cut_10.pdf  used on input line 300.
 (pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/I_1e19_cut_10.pdf, id=1136, 578.16pt x 433.62pt>
+<figures/I_1e19_cut_10.pdf, id=1191, 578.16pt x 433.62pt>
 File: figures/I_1e19_cut_10.pdf Graphic file (type pdf)
 <use figures/I_1e19_cut_10.pdf>
-Package pdftex.def Info: figures/I_1e19_cut_10.pdf  used on input line 292.
+Package pdftex.def Info: figures/I_1e19_cut_10.pdf  used on input line 306.
 (pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-[49 <./figures/I_1e17_cut_10.pdf> <./figures/I_1e18_cut_10.pdf> <./figures/I_1e
-19_cut_10.pdf>]
-<figures/t_hot_l_17.pdf, id=1270, 462.52798pt x 346.89601pt>
+ [50 <./figures/I_1e17_cut_10.pdf> <./figures/I_1e18_cut_10.pdf> <./figures/I_1
+e19_cut_10.pdf>]
+<figures/t_hot_l_17.pdf, id=1252, 462.52798pt x 346.89601pt>
 File: figures/t_hot_l_17.pdf Graphic file (type pdf)
 <use figures/t_hot_l_17.pdf>
-Package pdftex.def Info: figures/t_hot_l_17.pdf  used on input line 308.
+Package pdftex.def Info: figures/t_hot_l_17.pdf  used on input line 322.
 (pdftex.def)             Requested size: 209.1301pt x 156.8481pt.
-<figures/t_hot_l_18.pdf, id=1271, 462.52798pt x 346.89601pt>
+<figures/t_hot_l_18.pdf, id=1253, 462.52798pt x 346.89601pt>
 File: figures/t_hot_l_18.pdf Graphic file (type pdf)
 <use figures/t_hot_l_18.pdf>
-Package pdftex.def Info: figures/t_hot_l_18.pdf  used on input line 315.
+Package pdftex.def Info: figures/t_hot_l_18.pdf  used on input line 329.
 (pdftex.def)             Requested size: 209.1301pt x 156.8481pt.
-<figures/t_hot_l_19.pdf, id=1272, 462.52798pt x 346.89601pt>
+<figures/t_hot_l_19.pdf, id=1254, 462.52798pt x 346.89601pt>
 File: figures/t_hot_l_19.pdf Graphic file (type pdf)
 <use figures/t_hot_l_19.pdf>
-Package pdftex.def Info: figures/t_hot_l_19.pdf  used on input line 321.
+Package pdftex.def Info: figures/t_hot_l_19.pdf  used on input line 335.
 (pdftex.def)             Requested size: 251.80531pt x 188.85608pt.
-) (chapter5.tex [50 <./figures/t_hot_l_17.pdf> <./figures/t_hot_l_18.pdf> <./fi
-gures/t_hot_l_19.pdf>]
+) (chapter5.tex
+[51 <./figures/t_hot_l_17.pdf> <./figures/t_hot_l_18.pdf> <./figures/t_hot_l_19
+.pdf>]
 Chapter 5.
-[51
+[52
 
 ]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[52]
-<figures/nn17_pred.pdf, id=1354, 578.16pt x 433.62pt>
+[53]
+<figures/nn17_pred.pdf, id=1336, 578.16pt x 433.62pt>
 File: figures/nn17_pred.pdf Graphic file (type pdf)
 <use figures/nn17_pred.pdf>
 Package pdftex.def Info: figures/nn17_pred.pdf  used on input line 57.
@@ -1313,7 +1301,7 @@ Underfull \hbox (badness 1558) in paragraph at lines 58--58
 \OT1/cmr/m/n/10.95 =
  []
 
-<figures/nn18_pred.pdf, id=1355, 578.16pt x 433.62pt>
+<figures/nn18_pred.pdf, id=1337, 578.16pt x 433.62pt>
 File: figures/nn18_pred.pdf Graphic file (type pdf)
 <use figures/nn18_pred.pdf>
 Package pdftex.def Info: figures/nn18_pred.pdf  used on input line 64.
@@ -1324,13 +1312,13 @@ Underfull \hbox (badness 1478) in paragraph at lines 65--65
 \OT1/cmr/m/n/10.95 =
  []
 
-<figures/nn19_pred.pdf, id=1356, 578.16pt x 433.62pt>
+<figures/nn19_pred.pdf, id=1338, 578.16pt x 433.62pt>
 File: figures/nn19_pred.pdf Graphic file (type pdf)
 <use figures/nn19_pred.pdf>
 Package pdftex.def Info: figures/nn19_pred.pdf  used on input line 70.
 (pdftex.def)             Requested size: 251.80531pt x 188.84813pt.
-[53]
-<figures/gp17_pred.pdf, id=1363, 578.16pt x 433.62pt>
+[54]
+<figures/gp17_pred.pdf, id=1345, 578.16pt x 433.62pt>
 File: figures/gp17_pred.pdf Graphic file (type pdf)
 <use figures/gp17_pred.pdf>
 Package pdftex.def Info: figures/gp17_pred.pdf  used on input line 91.
@@ -1341,7 +1329,7 @@ Underfull \hbox (badness 1609) in paragraph at lines 92--92
 \OT1/cmr/m/n/10.95 =
  []
 
-<figures/gp18_pred.pdf, id=1364, 578.16pt x 433.62pt>
+<figures/gp18_pred.pdf, id=1346, 578.16pt x 433.62pt>
 File: figures/gp18_pred.pdf Graphic file (type pdf)
 <use figures/gp18_pred.pdf>
 Package pdftex.def Info: figures/gp18_pred.pdf  used on input line 98.
@@ -1352,7 +1340,7 @@ Underfull \hbox (badness 1527) in paragraph at lines 99--99
 \OT1/cmr/m/n/10.95 =
  []
 
-<figures/gp19_pred.pdf, id=1365, 578.16pt x 433.62pt>
+<figures/gp19_pred.pdf, id=1347, 578.16pt x 433.62pt>
 File: figures/gp19_pred.pdf Graphic file (type pdf)
 <use figures/gp19_pred.pdf>
 Package pdftex.def Info: figures/gp19_pred.pdf  used on input line 104.
@@ -1363,155 +1351,134 @@ Underfull \hbox (badness 1694) in paragraph at lines 105--105
 \OT1/cmr/m/n/10.95 =
  []
 
-[54 <./figures/nn17_pred.pdf> <./figures/nn18_pred.pdf> <./figures/nn19_pred.pd
+[55 <./figures/nn17_pred.pdf> <./figures/nn18_pred.pdf> <./figures/nn19_pred.pd
 f>]
-<figures/gp17_pred_ss.pdf, id=1479, 578.16pt x 433.62pt>
+<figures/gp17_pred_ss.pdf, id=1462, 578.16pt x 433.62pt>
 File: figures/gp17_pred_ss.pdf Graphic file (type pdf)
 <use figures/gp17_pred_ss.pdf>
 Package pdftex.def Info: figures/gp17_pred_ss.pdf  used on input line 120.
 (pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/gp18_pred_ss.pdf, id=1480, 578.16pt x 433.62pt>
+<figures/gp18_pred_ss.pdf, id=1463, 578.16pt x 433.62pt>
 File: figures/gp18_pred_ss.pdf Graphic file (type pdf)
 <use figures/gp18_pred_ss.pdf>
 Package pdftex.def Info: figures/gp18_pred_ss.pdf  used on input line 127.
 (pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/gp19_pred_ss.pdf, id=1481, 578.16pt x 433.62pt>
+<figures/gp19_pred_ss.pdf, id=1464, 578.16pt x 433.62pt>
 File: figures/gp19_pred_ss.pdf Graphic file (type pdf)
 <use figures/gp19_pred_ss.pdf>
 Package pdftex.def Info: figures/gp19_pred_ss.pdf  used on input line 133.
 (pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
- [55 <./figures/gp17_pred.pdf> <./figures/gp18_pred.pdf> <./figures/gp19_pred.p
-df>] [56 <./figures/gp17_pred_ss.pdf> <./figures/gp18_pred_ss.pdf> <./figures/g
+ [56 <./figures/gp17_pred.pdf> <./figures/gp18_pred.pdf> <./figures/gp19_pred.p
+df>] [57 <./figures/gp17_pred_ss.pdf> <./figures/gp18_pred_ss.pdf> <./figures/g
 p19_pred_ss.pdf>]
-<figures/graph_tool.png, id=1706, 776.9025pt x 490.08093pt>
+<figures/graph_tool.png, id=1568, 776.9025pt x 490.08093pt>
 File: figures/graph_tool.png Graphic file (type png)
 <use figures/graph_tool.png>
 Package pdftex.def Info: figures/graph_tool.png  used on input line 154.
-(pdftex.def)             Requested size: 362.77524pt x 228.84995pt.
-<figures/graph_tool2.png, id=1707, 776.9025pt x 490.08093pt>
+(pdftex.def)             Requested size: 341.43436pt x 215.38202pt.
+<figures/graph_tool2.png, id=1569, 776.9025pt x 490.08093pt>
 File: figures/graph_tool2.png Graphic file (type png)
 <use figures/graph_tool2.png>
 Package pdftex.def Info: figures/graph_tool2.png  used on input line 165.
-(pdftex.def)             Requested size: 362.77524pt x 228.84995pt.
+(pdftex.def)             Requested size: 341.43436pt x 215.38202pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[57 <./figures/graph_tool.png>]
-<figures/graph_tool3.png, id=1716, 776.9025pt x 490.08093pt>
+[58 <./figures/graph_tool.png>]
+<figures/graph_tool3.png, id=1578, 776.9025pt x 490.08093pt>
 File: figures/graph_tool3.png Graphic file (type png)
 <use figures/graph_tool3.png>
-Package pdftex.def Info: figures/graph_tool3.png  used on input line 177.
-(pdftex.def)             Requested size: 362.77524pt x 228.84995pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[58 <./figures/graph_tool2.png>]
-<figures/cui_compare1.pdf, id=1727, 462.52798pt x 346.89601pt>
+Package pdftex.def Info: figures/graph_tool3.png  used on input line 176.
+(pdftex.def)             Requested size: 341.43436pt x 215.38202pt.
+ [59 <./figures/graph_tool2.png> <./figures/graph_tool3.png>]
+<figures/cui_compare1.pdf, id=1590, 462.52798pt x 346.89601pt>
 File: figures/cui_compare1.pdf Graphic file (type pdf)
 <use figures/cui_compare1.pdf>
-Package pdftex.def Info: figures/cui_compare1.pdf  used on input line 203.
+Package pdftex.def Info: figures/cui_compare1.pdf  used on input line 199.
 (pdftex.def)             Requested size: 405.45045pt x 304.10492pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[59 <./figures/graph_tool3.png>]
-<figures/cui_compare2.pdf, id=1740, 462.52798pt x 346.89601pt>
+ [60 <./figures/cui_compare1.pdf>]
+<figures/cui_compare2.pdf, id=1633, 462.52798pt x 346.89601pt>
 File: figures/cui_compare2.pdf Graphic file (type pdf)
 <use figures/cui_compare2.pdf>
-Package pdftex.def Info: figures/cui_compare2.pdf  used on input line 219.
+Package pdftex.def Info: figures/cui_compare2.pdf  used on input line 215.
 (pdftex.def)             Requested size: 405.45045pt x 304.10492pt.
-
+ [61 <./figures/cui_compare2.pdf>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Citation 'gibbon2005' on page 60 undefined on input line 227.
-
-[60 <./figures/cui_compare1.pdf>] [61 <./figures/cui_compare2.pdf>]
-<figures/improved-model.png, id=1807, 483.30562pt x 375.65344pt>
+[62]
+<figures/improved-model.png, id=1672, 483.30562pt x 375.65344pt>
 File: figures/improved-model.png Graphic file (type png)
 <use figures/improved-model.png>
-Package pdftex.def Info: figures/improved-model.png  used on input line 272.
+Package pdftex.def Info: figures/improved-model.png  used on input line 268.
 (pdftex.def)             Requested size: 209.1301pt x 162.54811pt.
-<figures/improved-model-ss.png, id=1808, 464.4853pt x 356.0803pt>
+<figures/improved-model-ss.png, id=1673, 464.4853pt x 356.0803pt>
 File: figures/improved-model-ss.png Graphic file (type png)
 <use figures/improved-model-ss.png>
-Package pdftex.def Info: figures/improved-model-ss.png  used on input line 279.
+Package pdftex.def Info: figures/improved-model-ss.png  used on input line 275.
 
 (pdftex.def)             Requested size: 209.1301pt x 160.32703pt.
- [62])
-(conclusion.tex [63 <./figures/improved-model.png> <./figures/improved-model-ss
-.png>] [64
+ [63 <./figures/improved-model.png> <./figures/improved-model-ss.png>])
+(conclusion.tex [64] [65
 
-]) [65]
+]
 LaTeX Font Info:    Trying to load font information for IL2+cmtt on input line 
-248.
+19.
 
 (C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/cslatex/base\il2cmtt.fd
 File: il2cmtt.fd 1997/08/20 CSLaTeX font definitions
-)
-Overfull \hbox (2.65717pt too wide) in paragraph at lines 249--249
+))
+[66]
+Overfull \hbox (2.65717pt too wide) in paragraph at lines 253--253
 []\IL2/cmr/m/n/12 J. Daw-son, ``One-dimensional plasma model'', \IL2/cmr/m/it/1
 2 Physics of Flu-ids\IL2/cmr/m/n/12 , vol. 5, pp. 445{
  []
 
-[66
+[67
 
 
-]
-Overfull \hbox (40.91583pt too wide) in paragraph at lines 249--249
-\IL2/cmr/m/it/12 Tech-no-met-rics\IL2/cmr/m/n/12 , vol. 47, pp. 297{311, 3 Aug.
- 2005. \IL2/cmr/m/sc/12 doi\IL2/cmr/m/n/12 : []$\IL2/cmtt/m/n/12 10 . 1198 / 00
-4017005000000058$[]\IL2/cmr/m/n/12 . 
- []
-
-[67]
-Overfull \hbox (8.51352pt too wide) in paragraph at lines 249--249
+] [68]
+Overfull \hbox (8.51352pt too wide) in paragraph at lines 253--253
 []\IL2/cmr/m/n/12 H. Tak-abe, \IL2/cmr/m/it/12 The Physics of Laser Plas-mas an
 d Ap-pli-ca-tions - Vol-ume 1\IL2/cmr/m/n/12 . Springer,
  []
 
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 2
-48.
-(C:\Users\samue\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
-File: omscmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 248.
-
-[68] [69] (attachment1.tex
+[69] [70] (attachment1.tex
 Appendix A.
-[70
+[71
 
-] [71]) (attachment2.tex [72]
+] [72]) (attachment2.tex [73]
 Appendix B.
-) [73
+) [74
 
 ] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6F439E1D6F3A9B5C2A5AB72BCA733187;5273.
+(rerunfilecheck)             Checksum: 78CA25CB9FA03F7F0802D0757A1723C4;5194.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25382 strings out of 476339
- 450812 string characters out of 5788119
+ 25404 strings out of 476339
+ 451624 string characters out of 5788119
  1878340 words of memory out of 5000000
- 45105 multiletter control sequences out of 15000+600000
+ 45122 multiletter control sequences out of 15000+600000
  539875 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,17n,77p,2125b,2231s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,17n,77p,1897b,2231s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/public/csfonts/dpi600\c
 stt10.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/public/csfonts/d
-pi600\cstt12.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cs
-fonts/dpi720\cscsc10.pk>{C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/enc
+pi720\cscsc10.pk> <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk/ljfour/public/c
+sfonts/dpi600\cstt12.pk>{C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/enc
 /dvips/cm-super/cm-super-ts1.enc} <C:\Users\samue\AppData\Local\MiKTeX\fonts/pk
 /ljfour/public/csfonts/dpi657\csr10.pk> <C:\Users\samue\AppData\Local\MiKTeX\fo
 nts/pk/ljfour/public/csfonts/dpi720\csbx12.pk> <C:\Users\samue\AppData\Local\Mi
@@ -1554,9 +1521,9 @@ b><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfr
 m1095.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-s
 uper/sfrm1200.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/cm-super/sfrm1728.pfb>
-Output written on main.pdf (73 pages, 3242224 bytes).
+Output written on main.pdf (74 pages, 3251485 bytes).
 PDF statistics:
- 2682 PDF objects out of 2984 (max. 8388607)
- 292 named destinations out of 1000 (max. 500000)
- 499 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2549 PDF objects out of 2984 (max. 8388607)
+ 295 named destinations out of 1000 (max. 500000)
+ 504 words of extra memory for PDF output out of 10000 (max. 10000000)
 

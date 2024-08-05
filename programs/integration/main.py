@@ -13,7 +13,7 @@ CURRENT_FOLDER_PATH = os.path.dirname(os.path.abspath(__file__)).replace("\\","/
 
 if __name__ == "__main__":
     ENERGY_CUT = 10 # in keV
-    mode = INTEGRATE 
+    mode = PLOT 
     if mode == INTEGRATE:
         histograms = load_histograms(HISTOGRAMS_SOURCE_FOLDER_PATH)
         integrals = []

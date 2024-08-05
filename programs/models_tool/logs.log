@@ -2174,3 +2174,1816 @@ DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x00
 DEBUG:__main__:Prediction done
 DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000026AC5BBA8D0>
 DEBUG:__main__:Prediction drawn
+DEBUG:__main__:Model gp3dgpy_model.pkl added
+DEBUG:__main__:Model gp3d_model.pkl added
+DEBUG:__main__:Model gp_model.pkl added
+DEBUG:__main__:Model gp_new_model.pkl added
+DEBUG:__main__:Model nn_model.pkl added
+DEBUG:__main__:Model svr_model.pkl added
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:Model gp loaded
+DEBUG:__main__:MainWindow initialized
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\c0\1e\c01e676a7f8d15866d6c6f3d08669b76.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.dviread:opening tfm file C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr12.tfm
+DEBUG:matplotlib.dviread:lh=18, bc=0, ec=127, nw=34, nh=16, nd=10
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\36\eb\36ebaf9d0ad3595189ae10dbc14f0e85.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.dviread:opening tfm file C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi12.tfm
+DEBUG:matplotlib.dviread:lh=18, bc=0, ec=127, nw=97, nh=15, nd=9
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:latex -interaction=nonstopmode --halt-on-error --output-directory=tmps8592sqi b0f1049d19d4f04ccfb73aa23eccbd83.tex
+DEBUG:matplotlib.texmanager:b'This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=latex.fmt)\r\n restricted \\write18 enabled.\r\nentering extended mode\r\n(b0f1049d19d4f04ccfb73aa23eccbd83.tex\r\nLaTeX2e <2022-11-01> patch level 1\r\nL3 programming layer <2023-02-07>\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\article.cls\r\nDocument Class: article 2022/07/02 v1.4n Standard LaTeX document class\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\size10.clo))\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/type1cm\\type1cm.sty)\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/cm-super\\type1ec.sty\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\t1cmr.fd))\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\inputenc.sty)\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/geometry\\geometry.sty\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics\\keyval.sty)\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/iftex\\ifvtex.sty\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/iftex\\iftex.sty))\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/geometry\\geometry.cfg))\r\n\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/underscore\\underscore.s\r\nty) (C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\textcomp.sty)\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/l3backend\\l3backend-dvi\r\nps.def)\r\nNo file b0f1049d19d4f04ccfb73aa23eccbd83.aux.\r\n*geometry* driver: auto-detecting\r\n*geometry* detected driver: dvips\r\n[1]\r\n(C:\\Users\\samue\\.matplotlib\\tex.cache\\b0\\f1\\tmps8592sqi\\b0f1049d19d4f04ccfb73aa\r\n23eccbd83.aux) )\r\nOutput written on C:\\Users\\samue\\.matplotlib\\tex.cache\\b0\\f1\\tmps8592sqi\\b0f104\r\n9d19d4f04ccfb73aa23eccbd83.dvi (1 page, 320 bytes).\r\nTranscript written on C:\\Users\\samue\\.matplotlib\\tex.cache\\b0\\f1\\tmps8592sqi\\b0\r\nf1049d19d4f04ccfb73aa23eccbd83.log.\r\n'
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\b0\f1\b0f1049d19d4f04ccfb73aa23eccbd83.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:latex -interaction=nonstopmode --halt-on-error --output-directory=tmp5kpsqp1g d1af0cdce57f92b3f299f333f4bbcda8.tex
+DEBUG:matplotlib.texmanager:b'This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=latex.fmt)\r\n restricted \\write18 enabled.\r\nentering extended mode\r\n(d1af0cdce57f92b3f299f333f4bbcda8.tex\r\nLaTeX2e <2022-11-01> patch level 1\r\nL3 programming layer <2023-02-07>\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\article.cls\r\nDocument Class: article 2022/07/02 v1.4n Standard LaTeX document class\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\size10.clo))\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/type1cm\\type1cm.sty)\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/cm-super\\type1ec.sty\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\t1cmr.fd))\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\inputenc.sty)\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/geometry\\geometry.sty\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics\\keyval.sty)\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/iftex\\ifvtex.sty\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/iftex\\iftex.sty))\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/geometry\\geometry.cfg))\r\n\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/underscore\\underscore.s\r\nty) (C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\textcomp.sty)\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/l3backend\\l3backend-dvi\r\nps.def)\r\nNo file d1af0cdce57f92b3f299f333f4bbcda8.aux.\r\n*geometry* driver: auto-detecting\r\n*geometry* detected driver: dvips\r\n[1]\r\n(C:\\Users\\samue\\.matplotlib\\tex.cache\\d1\\af\\tmp5kpsqp1g\\d1af0cdce57f92b3f299f33\r\n3f4bbcda8.aux) )\r\nOutput written on C:\\Users\\samue\\.matplotlib\\tex.cache\\d1\\af\\tmp5kpsqp1g\\d1af0c\r\ndce57f92b3f299f333f4bbcda8.dvi (1 page, 320 bytes).\r\nTranscript written on C:\\Users\\samue\\.matplotlib\\tex.cache\\d1\\af\\tmp5kpsqp1g\\d1\r\naf0cdce57f92b3f299f333f4bbcda8.log.\r\n'
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\d1\af\d1af0cdce57f92b3f299f333f4bbcda8.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:latex -interaction=nonstopmode --halt-on-error --output-directory=tmphilw3w8i 5cfbeb5c27641d25c24fc0a91b9ed90d.tex
+DEBUG:matplotlib.texmanager:b'This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=latex.fmt)\r\n restricted \\write18 enabled.\r\nentering extended mode\r\n(5cfbeb5c27641d25c24fc0a91b9ed90d.tex\r\nLaTeX2e <2022-11-01> patch level 1\r\nL3 programming layer <2023-02-07>\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\article.cls\r\nDocument Class: article 2022/07/02 v1.4n Standard LaTeX document class\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\size10.clo))\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/type1cm\\type1cm.sty)\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/cm-super\\type1ec.sty\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\t1cmr.fd))\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\inputenc.sty)\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/geometry\\geometry.sty\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics\\keyval.sty)\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/iftex\\ifvtex.sty\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/iftex\\iftex.sty))\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/geometry\\geometry.cfg))\r\n\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/underscore\\underscore.s\r\nty) (C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\textcomp.sty)\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/l3backend\\l3backend-dvi\r\nps.def)\r\nNo file 5cfbeb5c27641d25c24fc0a91b9ed90d.aux.\r\n*geometry* driver: auto-detecting\r\n*geometry* detected driver: dvips\r\n[1]\r\n(C:\\Users\\samue\\.matplotlib\\tex.cache\\5c\\fb\\tmphilw3w8i\\5cfbeb5c27641d25c24fc0a\r\n91b9ed90d.aux) )\r\nOutput written on C:\\Users\\samue\\.matplotlib\\tex.cache\\5c\\fb\\tmphilw3w8i\\5cfbeb\r\n5c27641d25c24fc0a91b9ed90d.dvi (1 page, 320 bytes).\r\nTranscript written on C:\\Users\\samue\\.matplotlib\\tex.cache\\5c\\fb\\tmphilw3w8i\\5c\r\nfbeb5c27641d25c24fc0a91b9ed90d.log.\r\n'
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\5c\fb\5cfbeb5c27641d25c24fc0a91b9ed90d.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:latex -interaction=nonstopmode --halt-on-error --output-directory=tmp4krx6lsc 2c4c8d1dfad7efbf733ef1947dd4a924.tex
+DEBUG:matplotlib.texmanager:b'This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=latex.fmt)\r\n restricted \\write18 enabled.\r\nentering extended mode\r\n(2c4c8d1dfad7efbf733ef1947dd4a924.tex\r\nLaTeX2e <2022-11-01> patch level 1\r\nL3 programming layer <2023-02-07>\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\article.cls\r\nDocument Class: article 2022/07/02 v1.4n Standard LaTeX document class\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\size10.clo))\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/type1cm\\type1cm.sty)\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/cm-super\\type1ec.sty\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\t1cmr.fd))\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\inputenc.sty)\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/geometry\\geometry.sty\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics\\keyval.sty)\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/iftex\\ifvtex.sty\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/iftex\\iftex.sty))\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/geometry\\geometry.cfg))\r\n\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/underscore\\underscore.s\r\nty) (C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\textcomp.sty)\r\n(C:\\Users\\samue\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/l3backend\\l3backend-dvi\r\nps.def)\r\nNo file 2c4c8d1dfad7efbf733ef1947dd4a924.aux.\r\n*geometry* driver: auto-detecting\r\n*geometry* detected driver: dvips\r\n[1]\r\n(C:\\Users\\samue\\.matplotlib\\tex.cache\\2c\\4c\\tmp4krx6lsc\\2c4c8d1dfad7efbf733ef19\r\n47dd4a924.aux) )\r\nOutput written on C:\\Users\\samue\\.matplotlib\\tex.cache\\2c\\4c\\tmp4krx6lsc\\2c4c8d\r\n1dfad7efbf733ef1947dd4a924.dvi (1 page, 320 bytes).\r\nTranscript written on C:\\Users\\samue\\.matplotlib\\tex.cache\\2c\\4c\\tmp4krx6lsc\\2c\r\n4c8d1dfad7efbf733ef1947dd4a924.log.\r\n'
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\2c\4c\2c4c8d1dfad7efbf733ef1947dd4a924.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\c7\49\c7496ca670284712ea79eb877aafea1c.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:dvipng -bg Transparent -D 100 -T tight -o 'C:\Users\samue\.matplotlib\tex.cache\3c\b4\3cb4faa76cdb28f3c466a0c8da24c69c.png' 'C:\Users\samue\.matplotlib\tex.cache\36\eb\36ebaf9d0ad3595189ae10dbc14f0e85.dvi'
+DEBUG:matplotlib.texmanager:b'This is dvipng 1.16 Copyright 2002-2015, 2019 Jan-Ake Larsson\r\n[1] \r\n'
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 41 45
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 98 14
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 124 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 145 150
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\36\eb\36ebaf9d0ad3595189ae10dbc14f0e85.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:dvipng -bg Transparent -D 100 -T tight -o 'C:\Users\samue\.matplotlib\tex.cache\ed\04\ed04bafd001ce9768d2290a54b701334.png' 'C:\Users\samue\.matplotlib\tex.cache\b0\f1\b0f1049d19d4f04ccfb73aa23eccbd83.dvi'
+DEBUG:matplotlib.texmanager:b'This is dvipng 1.16 Copyright 2002-2015, 2019 Jan-Ake Larsson\r\n[1] \r\n'
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 41 48
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 101 15
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 128 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 149 163
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\b0\f1\b0f1049d19d4f04ccfb73aa23eccbd83.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:dvipng -bg Transparent -D 100 -T tight -o 'C:\Users\samue\.matplotlib\tex.cache\86\1c\861ca97a43019761c9c435d696de87c5.png' 'C:\Users\samue\.matplotlib\tex.cache\d1\af\d1af0cdce57f92b3f299f333f4bbcda8.dvi'
+DEBUG:matplotlib.texmanager:b'This is dvipng 1.16 Copyright 2002-2015, 2019 Jan-Ake Larsson\r\n[1] \r\n'
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 41 45
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 98 14
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 124 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 145 141
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\d1\af\d1af0cdce57f92b3f299f333f4bbcda8.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:dvipng -bg Transparent -D 100 -T tight -o 'C:\Users\samue\.matplotlib\tex.cache\a5\8d\a58de3327c9c0f14fe163481ec09a872.png' 'C:\Users\samue\.matplotlib\tex.cache\5c\fb\5cfbeb5c27641d25c24fc0a91b9ed90d.dvi'
+DEBUG:matplotlib.texmanager:b'This is dvipng 1.16 Copyright 2002-2015, 2019 Jan-Ake Larsson\r\n[1] \r\n'
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 41 48
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 101 15
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 128 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 149 169
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\5c\fb\5cfbeb5c27641d25c24fc0a91b9ed90d.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:dvipng -bg Transparent -D 100 -T tight -o 'C:\Users\samue\.matplotlib\tex.cache\f1\92\f192f5fac05fddf761363662178719f9.png' 'C:\Users\samue\.matplotlib\tex.cache\2c\4c\2c4c8d1dfad7efbf733ef1947dd4a924.dvi'
+DEBUG:matplotlib.texmanager:b'This is dvipng 1.16 Copyright 2002-2015, 2019 Jan-Ake Larsson\r\n[1] \r\n'
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 41 48
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 101 15
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 128 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 149 173
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\2c\4c\2c4c8d1dfad7efbf733ef1947dd4a924.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:dvipng -bg Transparent -D 100 -T tight -o 'C:\Users\samue\.matplotlib\tex.cache\13\72\1372ebb78fcfb09239b0b79e23aeb458.png' 'C:\Users\samue\.matplotlib\tex.cache\c7\49\c7496ca670284712ea79eb877aafea1c.dvi'
+DEBUG:matplotlib.texmanager:b'This is dvipng 1.16 Copyright 2002-2015, 2019 Jan-Ake Larsson\r\n[1] \r\n'
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 41 48
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 101 15
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 128 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 149 111
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\c7\49\c7496ca670284712ea79eb877aafea1c.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\36\eb\36ebaf9d0ad3595189ae10dbc14f0e85.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\b0\f1\b0f1049d19d4f04ccfb73aa23eccbd83.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\d1\af\d1af0cdce57f92b3f299f333f4bbcda8.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\5c\fb\5cfbeb5c27641d25c24fc0a91b9ed90d.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\2c\4c\2c4c8d1dfad7efbf733ef1947dd4a924.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\c7\49\c7496ca670284712ea79eb877aafea1c.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:__main__:Prediction done
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x0000012C43809640>
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\bf\68\bf6896de3033192f063e1109ecff23d5.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.dviread:opening tfm file C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy10.tfm
+DEBUG:matplotlib.dviread:lh=18, bc=0, ec=127, nw=44, nh=15, nd=16
+DEBUG:matplotlib.dviread:opening tfm file C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr10.tfm
+DEBUG:matplotlib.dviread:lh=18, bc=0, ec=127, nw=36, nh=16, nd=10
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\08\e3\08e34dd342bc831047cdaaeecd0e3f63.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\69\71\69711c6c90ff9adb3b43c3cb54142468.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:dvipng -bg Transparent -D 100 -T tight -o 'C:\Users\samue\.matplotlib\tex.cache\05\b8\05b8f24fcd05e62e74e8e83977d70de6.png' 'C:\Users\samue\.matplotlib\tex.cache\bf\68\bf6896de3033192f063e1109ecff23d5.dvi'
+DEBUG:matplotlib.texmanager:b'This is dvipng 1.16 Copyright 2002-2015, 2019 Jan-Ake Larsson\r\n[1] \r\n'
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 41 48
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 101 15
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 128 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 149 182
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\bf\68\bf6896de3033192f063e1109ecff23d5.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:dvipng -bg Transparent -D 100 -T tight -o 'C:\Users\samue\.matplotlib\tex.cache\99\8d\998df97ea265efb1414bccaaa519450b.png' 'C:\Users\samue\.matplotlib\tex.cache\08\e3\08e34dd342bc831047cdaaeecd0e3f63.dvi'
+DEBUG:matplotlib.texmanager:b'This is dvipng 1.16 Copyright 2002-2015, 2019 Jan-Ake Larsson\r\n[1] \r\n'
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 41 48
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 101 15
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 128 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 149 176
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\08\e3\08e34dd342bc831047cdaaeecd0e3f63.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:dvipng -bg Transparent -D 100 -T tight -o 'C:\Users\samue\.matplotlib\tex.cache\84\89\8489a5143708107264d255f4950a0ac2.png' 'C:\Users\samue\.matplotlib\tex.cache\69\71\69711c6c90ff9adb3b43c3cb54142468.dvi'
+DEBUG:matplotlib.texmanager:b'This is dvipng 1.16 Copyright 2002-2015, 2019 Jan-Ake Larsson\r\n[1] \r\n'
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 41 48
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 101 15
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 128 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 149 162
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\69\71\69711c6c90ff9adb3b43c3cb54142468.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\57\cf\57cfc60a2a1c9883f601514d770c160b.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:dvipng -bg Transparent -D 100 -T tight -o 'C:\Users\samue\.matplotlib\tex.cache\70\64\7064c683ef9e11894450f3781cbdb582.png' 'C:\Users\samue\.matplotlib\tex.cache\57\cf\57cfc60a2a1c9883f601514d770c160b.dvi'
+DEBUG:matplotlib.texmanager:b'This is dvipng 1.16 Copyright 2002-2015, 2019 Jan-Ake Larsson\r\n[1] \r\n'
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 41 48
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 101 15
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 128 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 149 291
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\57\cf\57cfc60a2a1c9883f601514d770c160b.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\c8\02\c802d21be4d279fbaeaa6603b1b02580.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\03\38\0338231c90920e4064a16ad4ff737d14.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\0e\bd\0ebdf4d688a4ce151df13d276be48af2.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\8f\ea\8fea676a6ef217b9d4ec1de5fb808713.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\51\2e\512e4427f5c1313e6e9be4ae9f757cee.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\ba\ef\baefa56d35bd82a747903e4112068038.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\ca\88\ca88f77852af19c2835b7e4e32a905ea.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:dvipng -bg Transparent -D 100 -T tight -o 'C:\Users\samue\.matplotlib\tex.cache\90\43\9043506beebeb9abd868b4b410e51889.png' 'C:\Users\samue\.matplotlib\tex.cache\c8\02\c802d21be4d279fbaeaa6603b1b02580.dvi'
+DEBUG:matplotlib.texmanager:b'This is dvipng 1.16 Copyright 2002-2015, 2019 Jan-Ake Larsson\r\n[1] \r\n'
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 41 45
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 98 14
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 124 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 145 74
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\c8\02\c802d21be4d279fbaeaa6603b1b02580.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:dvipng -bg Transparent -D 100 -T tight -o 'C:\Users\samue\.matplotlib\tex.cache\db\af\dbaf6aaf438d35645ee46a9a8ab11ebe.png' 'C:\Users\samue\.matplotlib\tex.cache\03\38\0338231c90920e4064a16ad4ff737d14.dvi'
+DEBUG:matplotlib.texmanager:b'This is dvipng 1.16 Copyright 2002-2015, 2019 Jan-Ake Larsson\r\n[1] \r\n'
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 41 48
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 101 15
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 128 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 149 105
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\03\38\0338231c90920e4064a16ad4ff737d14.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:dvipng -bg Transparent -D 100 -T tight -o 'C:\Users\samue\.matplotlib\tex.cache\db\f4\dbf41e3faea4353b97ed451913ffb6ac.png' 'C:\Users\samue\.matplotlib\tex.cache\0e\bd\0ebdf4d688a4ce151df13d276be48af2.dvi'
+DEBUG:matplotlib.texmanager:b'This is dvipng 1.16 Copyright 2002-2015, 2019 Jan-Ake Larsson\r\n[1] \r\n'
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 41 48
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 101 15
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 128 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 149 146
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\0e\bd\0ebdf4d688a4ce151df13d276be48af2.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:dvipng -bg Transparent -D 100 -T tight -o 'C:\Users\samue\.matplotlib\tex.cache\18\4b\184bc5f73226fb843e4973eac185a093.png' 'C:\Users\samue\.matplotlib\tex.cache\8f\ea\8fea676a6ef217b9d4ec1de5fb808713.dvi'
+DEBUG:matplotlib.texmanager:b'This is dvipng 1.16 Copyright 2002-2015, 2019 Jan-Ake Larsson\r\n[1] \r\n'
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 41 48
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 101 15
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 128 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 149 148
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\8f\ea\8fea676a6ef217b9d4ec1de5fb808713.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:dvipng -bg Transparent -D 100 -T tight -o 'C:\Users\samue\.matplotlib\tex.cache\f2\1c\f21cc823cbe2564f2753be95968758a4.png' 'C:\Users\samue\.matplotlib\tex.cache\51\2e\512e4427f5c1313e6e9be4ae9f757cee.dvi'
+DEBUG:matplotlib.texmanager:b'This is dvipng 1.16 Copyright 2002-2015, 2019 Jan-Ake Larsson\r\n[1] \r\n'
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 41 45
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 98 14
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 124 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 145 130
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\51\2e\512e4427f5c1313e6e9be4ae9f757cee.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:dvipng -bg Transparent -D 100 -T tight -o 'C:\Users\samue\.matplotlib\tex.cache\2b\57\2b572c4dfd5aaa9038b171adf9eec2ab.png' 'C:\Users\samue\.matplotlib\tex.cache\ba\ef\baefa56d35bd82a747903e4112068038.dvi'
+DEBUG:matplotlib.texmanager:b'This is dvipng 1.16 Copyright 2002-2015, 2019 Jan-Ake Larsson\r\n[1] \r\n'
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 41 48
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 101 15
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 128 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 149 143
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\ba\ef\baefa56d35bd82a747903e4112068038.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:dvipng -bg Transparent -D 100 -T tight -o 'C:\Users\samue\.matplotlib\tex.cache\b7\e0\b7e0814e5c2553e07b7f2bc70b056b22.png' 'C:\Users\samue\.matplotlib\tex.cache\ca\88\ca88f77852af19c2835b7e4e32a905ea.dvi'
+DEBUG:matplotlib.texmanager:b'This is dvipng 1.16 Copyright 2002-2015, 2019 Jan-Ake Larsson\r\n[1] \r\n'
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 41 48
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 101 15
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 128 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 149 152
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\ca\88\ca88f77852af19c2835b7e4e32a905ea.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\f1\cf\f1cfbed84e40b4b2684f863bcedbe6e0.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.dviread:opening tfm file C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcrm1728.tfm
+DEBUG:matplotlib.dviread:lh=18, bc=0, ec=246, nw=38, nh=16, nd=12
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:dvipng -bg Transparent -D 100 -T tight -o 'C:\Users\samue\.matplotlib\tex.cache\6e\00\6e00caf31185ff64ce80a4436a0b0de8.png' 'C:\Users\samue\.matplotlib\tex.cache\f1\cf\f1cfbed84e40b4b2684f863bcedbe6e0.dvi'
+DEBUG:matplotlib.texmanager:b'This is dvipng 1.16 Copyright 2002-2015, 2019 Jan-Ake Larsson\r\n[1] \r\n'
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 41 48
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 101 15
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 128 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 149 162
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\f1\cf\f1cfbed84e40b4b2684f863bcedbe6e0.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\4f\40\4f40dffd0fb7e1a7736e205f6b332bb7.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\9f\05\9f05056d509c452f1855e34fd0ef9ca0.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\c8\02\c802d21be4d279fbaeaa6603b1b02580.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\0e\bd\0ebdf4d688a4ce151df13d276be48af2.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\51\2e\512e4427f5c1313e6e9be4ae9f757cee.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\ca\88\ca88f77852af19c2835b7e4e32a905ea.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:dvipng -bg Transparent -D 100 -T tight -o 'C:\Users\samue\.matplotlib\tex.cache\05\1b\051ba17719fe8a6373e730b78d803ca5.png' 'C:\Users\samue\.matplotlib\tex.cache\4f\40\4f40dffd0fb7e1a7736e205f6b332bb7.dvi'
+DEBUG:matplotlib.texmanager:b'This is dvipng 1.16 Copyright 2002-2015, 2019 Jan-Ake Larsson\r\n[1] \r\n'
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 41 48
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 101 15
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 128 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 149 155
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\4f\40\4f40dffd0fb7e1a7736e205f6b332bb7.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:dvipng -bg Transparent -D 100 -T tight -o 'C:\Users\samue\.matplotlib\tex.cache\b8\f9\b8f98031c43a55e12dba51e9ceb493dc.png' 'C:\Users\samue\.matplotlib\tex.cache\9f\05\9f05056d509c452f1855e34fd0ef9ca0.dvi'
+DEBUG:matplotlib.texmanager:b'This is dvipng 1.16 Copyright 2002-2015, 2019 Jan-Ake Larsson\r\n[1] \r\n'
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 41 48
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 101 15
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 128 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 149 160
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\9f\05\9f05056d509c452f1855e34fd0ef9ca0.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\c9\b0\c9b0c6697654101c5e267607fbba5260.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:matplotlib.dviread:opening tfm file C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi10.tfm
+DEBUG:matplotlib.dviread:lh=18, bc=0, ec=127, nw=98, nh=15, nd=9
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:dvipng -bg Transparent -D 100 -T tight -o 'C:\Users\samue\.matplotlib\tex.cache\b4\75\b475230c906256f592cd60b1d69b65ec.png' 'C:\Users\samue\.matplotlib\tex.cache\c9\b0\c9b0c6697654101c5e267607fbba5260.dvi'
+DEBUG:matplotlib.texmanager:b'This is dvipng 1.16 Copyright 2002-2015, 2019 Jan-Ake Larsson\r\n[1] \r\n'
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 41 48
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 101 15
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 128 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 149 479
+DEBUG:matplotlib.texmanager:Computer Modern font is not compatible with usetex.
+INFO:matplotlib.texmanager:No LaTeX-compatible font found for the serif fontfamily in rcParams. Using default.
+DEBUG:matplotlib.texmanager:DejaVu Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: sans-serif, font: Computer Modern Sans Serif, info: \usepackage{type1ec}
+DEBUG:matplotlib.texmanager:Apple Chancery font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Textile font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: cursive, font: Zapf Chancery, info: \usepackage{chancery}
+DEBUG:matplotlib.texmanager:DejaVu Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:Bitstream Vera Sans Mono font is not compatible with usetex.
+DEBUG:matplotlib.texmanager:family: monospace, font: Computer Modern Typewriter, info: \usepackage{type1ec}
+DEBUG:matplotlib.dviread:Dvi: C:\Users\samue\.matplotlib\tex.cache\c9\b0\c9b0c6697654101c5e267607fbba5260.dvi
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: header=l3backend-dvips.pro
+DEBUG:matplotlib.dviread:Dvi._xxx: encountered special: papersize=5203.43999pt,5203.43999pt
+DEBUG:__main__:Prediction drawn
+DEBUG:__main__:No folder chosen
